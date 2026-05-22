@@ -1,13 +1,13 @@
 {
-  "totalRequests": 326,
-  "successfulRequests": 222,
+  "totalRequests": 328,
+  "successfulRequests": 224,
   "failedRequests": 104,
   "savedRequests": 0,
   "totalVisits": 0,
   "platforms": {
     "facebook": {
-      "total": 42,
-      "success": 32,
+      "total": 44,
+      "success": 34,
       "fail": 10,
       "keys": {
         "9ac29222efmsh81d43b990a8ce7dp17df2jsn6f83cbfb17b7": {
@@ -21,18 +21,18 @@
         "9ac29222efmsh81d43b990a8ce7dp17df2fjsn6f83cbfb17b7": {
           "name": "API 1",
           "status": "active",
-          "remaining": "4938",
+          "remaining": "4937",
           "limit": "unkn",
-          "used": 8,
-          "lastCheck": "2026-05-21T21:37:27.101Z"
+          "used": 10,
+          "lastCheck": "2026-05-22T05:58:23.364Z"
         },
         "758fcf1cc5msh22d82fc41a79267p198a7cjsn191acdd3b16d": {
           "name": "API 1",
           "status": "active",
           "remaining": "unkn",
           "limit": "unkn",
-          "used": 1,
-          "lastCheck": "2026-05-21T21:37:26.035Z"
+          "used": 3,
+          "lastCheck": "2026-05-22T05:58:22.432Z"
         }
       }
     },
