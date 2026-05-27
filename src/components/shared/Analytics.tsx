@@ -4,7 +4,7 @@ import { GoogleAnalytics } from "@next/third-parties/google"
 export function Analytics() {
   // Use environment variable, fallback to placeholder if not set
   // To make this work, the user needs to add NEXT_PUBLIC_GA_ID in their .env file
-  const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID || "G-XXXXXXXXXX"
+  const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID || "G-TD8KBJGLGR"
   const FB_PIXEL_ID = process.env.NEXT_PUBLIC_FB_PIXEL_ID
   const CLARITY_ID = process.env.NEXT_PUBLIC_CLARITY_ID
 
