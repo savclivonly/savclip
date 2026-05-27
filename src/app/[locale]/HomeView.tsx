@@ -21,7 +21,6 @@ import { toast } from "react-hot-toast"
 import { isSmartInput, handleSmartRedirect } from "@/utils/platform-detector"
 import { useRouter, useSearchParams } from "next/navigation"
 import { translateToolName } from "@/utils/translate-tool"
-import { RatingWidget } from "@/components/shared/RatingWidget"
 
 
 const ChromeExtensionBanner = dynamic(() => import("@/components/layout/ChromeExtensionBanner").then(mod => mod.ChromeExtensionBanner))
@@ -419,11 +418,6 @@ function HomeViewContent({ locale, dict }: { locale: Locale; dict: any }) {
           </button>
         </div>
       </section>
-
-      {/* RATING WIDGET */}
-      <div className="flex flex-col items-center justify-center py-12 bg-neutral-50 dark:bg-neutral-900/10 border-t border-b border-neutral-100 dark:border-neutral-800">
-        <RatingWidget toolKey="home" defaultRating={4.9} defaultReviewCount={25420} locale={locale} />
-      </div>
 
       <ChromeExtensionBanner dict={dict} />
     </div>

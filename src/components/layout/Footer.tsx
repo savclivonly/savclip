@@ -8,10 +8,17 @@ import { ReactNode, useState } from "react"
 import { translateToolName } from "@/utils/translate-tool"
 import { cn } from "@/utils/cn"
 import { motion, AnimatePresence } from "framer-motion"
+import { RatingWidget } from "@/components/shared/RatingWidget"
+import { TOOL_CONFIGS } from "@/lib/tool-configs"
 
 export function Footer({ locale, dict }: { locale: string, dict: any }) {
   const pathname = usePathname() || "";
   const currentLocale = locale || 'en';
+  
+  const toolKey = pathname.replace(/^\/[a-z]{2}(?=\/|$)/, "").replace(/^\//, "") || "home";
+  const config = TOOL_CONFIGS[toolKey];
+  const defaultRating = config ? (parseFloat(config.ratingValue) || 4.9) : 4.9;
+  const defaultReviewCount = config ? (parseInt(config.reviewCount.replace(/[^0-9]/g, ""), 10) || 25420) : 25420;
   
   const branding = dict?.footer_branding || {
     title: "SavClip – Fast & Secure",
@@ -465,6 +472,10 @@ export function Footer({ locale, dict }: { locale: string, dict: any }) {
                    currentLocale === 'ar' ? 'يعمل بكامل الكفاءة' : 'FULLY OPERATIONAL'}
                 </span>
              </p>
+          </div>
+          
+          <div className="mb-2">
+             <RatingWidget toolKey={toolKey} defaultRating={defaultRating} defaultReviewCount={defaultReviewCount} locale={currentLocale} />
           </div>
           
           <p className="max-w-4xl text-[10px] font-black tracking-[0.2em] text-pink-600/80 mb-6 px-4">
