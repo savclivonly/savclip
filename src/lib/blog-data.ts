@@ -7,6 +7,7 @@ export interface BlogPost {
   author: string;
   category: string;
   image: string;
+  relatedTools?: { label: string; href: string }[];
 }
 
 export const BLOG_POSTS: BlogPost[] = [
@@ -18,7 +19,12 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "2026-05-10",
     author: "Ramzan Ahmad",
     category: "Instagram Tips",
-    image: "/images/blog/reels-guide.jpg"
+    image: "/images/blog/reels-guide.png",
+    relatedTools: [
+      { label: "Instagram Reels Downloader", href: "/instagram-reels-downloader" },
+      { label: "Instagram Video Downloader", href: "/instagram-video-downloader" },
+      { label: "Instagram Story Viewer", href: "/instagram-story-viewer" }
+    ]
   },
   {
     slug: "tiktok-no-watermark-downloader-guide",
@@ -28,7 +34,12 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "2026-05-12",
     author: "Ramzan Ahmad",
     category: "TikTok Tips",
-    image: "/images/blog/tiktok-guide.jpg"
+    image: "/images/blog/tiktok-guide.png",
+    relatedTools: [
+      { label: "TikTok Video Downloader", href: "/tiktok-video-downloader" },
+      { label: "TikTok Shorts Downloader", href: "/tiktok-shorts-downloader" },
+      { label: "TikTok MP3 Downloader", href: "/tiktok-mp3-downloader" }
+    ]
   },
   {
     slug: "best-hashtags-for-viral-reels",
@@ -38,7 +49,12 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "2026-05-14",
     author: "SavClip AI",
     category: "Creator Growth",
-    image: "/images/blog/hashtags-guide.jpg"
+    image: "/images/blog/hashtags-guide.png",
+    relatedTools: [
+      { label: "Instagram Reels Downloader", href: "/instagram-reels-downloader" },
+      { label: "TikTok Trending Hashtag Generator", href: "/tiktok-trending-hashtag-generator" },
+      { label: "YouTube Tag Generator", href: "/youtube-tag-generator" }
+    ]
   },
   {
     slug: "youtube-shorts-algorithm-secrets",
@@ -48,7 +64,12 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "2026-05-15",
     author: "SavClip AI",
     category: "YouTube Shorts",
-    image: "/images/blog/youtube-shorts.jpg"
+    image: "/images/blog/youtube-shorts.png",
+    relatedTools: [
+      { label: "YouTube Shorts Downloader", href: "/youtube-shorts-downloader" },
+      { label: "YouTube Video Downloader", href: "/youtube-video-downloader" },
+      { label: "YouTube to MP3 Converter", href: "/youtube-to-mp3-converter" }
+    ]
   },
   {
     slug: "how-to-make-viral-reels-fast",
@@ -58,7 +79,11 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "2026-05-16",
     author: "Ramzan Ahmad",
     category: "Viral Reels",
-    image: "/images/blog/viral-reels.jpg"
+    image: "/images/blog/viral-reels.png",
+    relatedTools: [
+      { label: "Instagram Reels Downloader", href: "/instagram-reels-downloader" },
+      { label: "Instagram Video Compressor", href: "/instagram-video-compressor" }
+    ]
   },
   {
     slug: "best-instagram-bio-ideas",
@@ -68,6 +93,10 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "2026-05-17",
     author: "SavClip AI",
     category: "Creator Growth",
-    image: "/images/blog/ig-bio.jpg"
+    image: "/images/blog/ig-bio.png",
+    relatedTools: [
+      { label: "Instagram Profile Viewer", href: "/instagram-profile-viewer" },
+      { label: "Instagram DP Downloader", href: "/instagram-dp-downloader" }
+    ]
   }
 ];

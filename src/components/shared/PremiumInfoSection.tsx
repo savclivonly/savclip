@@ -39,7 +39,7 @@ export function PremiumInfoSection({
             </p>
             <div className="mt-10 flex flex-wrap justify-center items-center gap-4">
                <span className="inline-flex items-center rounded-full bg-pink-100 px-6 py-2 text-xs font-black uppercase tracking-widest text-pink-700 dark:bg-pink-900/30 dark:text-pink-300 shadow-sm">
-                 <span className="mr-2 h-2 w-2 rounded-full bg-pink-600 animate-pulse" />
+                 <span className="me-2 h-2 w-2 rounded-full bg-pink-600 animate-pulse" />
                  Verified Secure
                </span>
                <span className="inline-flex items-center rounded-full bg-purple-100 px-6 py-2 text-xs font-black uppercase tracking-widest text-purple-700 dark:bg-purple-900/30 dark:text-purple-300 shadow-sm">

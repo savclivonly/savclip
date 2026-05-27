@@ -22,10 +22,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Static Pages
   const staticRoutes = [
     "",
-    "/hashtags",
-    "/captions",
-    "/bio",
     "/about",
+    "/blog",
     "/contact",
     "/privacy-policy",
     "/terms",
@@ -34,7 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ]
 
   // Dynamic tool routes from the file system
-  const appLocaleDir = path.join(process.cwd(), "src", "app")
+  const appLocaleDir = path.join(process.cwd(), "src", "app", "[locale]")
   let dynamicTools: string[] = []
 
   try {
@@ -141,33 +139,59 @@ export default function sitemap(): MetadataRoute.Sitemap {
     dynamicTools = fallbackTools.map(tool => `/${tool}`);
   }
 
-  // Static Routes
-  staticRoutes.forEach((route) => {
-    sitemapEntries.push({
-      url: `${SITE_URL}${route}`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: route === "" ? 1.0 : 0.8,
-    })
-  })
+  const locales = ['en', 'pt', 'es', 'id', 'ar']
 
-  // Dynamic Tool Routes
-  dynamicTools.forEach((route) => {
-    sitemapEntries.push({
-      url: `${SITE_URL}${route}`,
-      lastModified: new Date(),
-      changeFrequency: "daily",
-      priority: 0.9,
-    })
-  })
+  const getAlternatesForRoute = (route: string) => {
+    const cleanRoute = route.startsWith('/') ? route.slice(1) : route;
+    
+    const languages: Record<string, string> = {
+      'x-default': cleanRoute ? `${SITE_URL}/${cleanRoute}` : `${SITE_URL}/`,
+      'en': cleanRoute ? `${SITE_URL}/${cleanRoute}` : `${SITE_URL}/`,
+      'pt': cleanRoute ? `${SITE_URL}/pt/${cleanRoute}` : `${SITE_URL}/pt`,
+      'es': cleanRoute ? `${SITE_URL}/es/${cleanRoute}` : `${SITE_URL}/es`,
+      'id': cleanRoute ? `${SITE_URL}/id/${cleanRoute}` : `${SITE_URL}/id`,
+      'ar': cleanRoute ? `${SITE_URL}/ar/${cleanRoute}` : `${SITE_URL}/ar`,
+    };
 
-  // Blog Posts
-  BLOG_POSTS.forEach((post) => {
-    sitemapEntries.push({
-      url: `${SITE_URL}/blog/${post.slug}`,
-      lastModified: new Date(post.date),
-      changeFrequency: "monthly",
-      priority: 0.7,
+    return {
+      languages: languages,
+    };
+  };
+
+  locales.forEach((locale) => {
+    const localePrefix = locale === 'en' ? '' : `/${locale}`
+
+    // Static Routes
+    staticRoutes.forEach((route) => {
+      sitemapEntries.push({
+        url: `${SITE_URL}${localePrefix}${route}`,
+        lastModified: new Date(),
+        changeFrequency: "weekly",
+        priority: route === "" ? 1.0 : 0.8,
+        alternates: getAlternatesForRoute(route),
+      })
+    })
+
+    // Dynamic Tool Routes
+    dynamicTools.forEach((route) => {
+      sitemapEntries.push({
+        url: `${SITE_URL}${localePrefix}${route}`,
+        lastModified: new Date(),
+        changeFrequency: "daily",
+        priority: 0.9,
+        alternates: getAlternatesForRoute(route),
+      })
+    })
+
+    // Blog Posts
+    BLOG_POSTS.forEach((post) => {
+      sitemapEntries.push({
+        url: `${SITE_URL}${localePrefix}/blog/${post.slug}`,
+        lastModified: new Date(post.date),
+        changeFrequency: "monthly",
+        priority: 0.7,
+        alternates: getAlternatesForRoute(`blog/${post.slug}`),
+      })
     })
   })
 

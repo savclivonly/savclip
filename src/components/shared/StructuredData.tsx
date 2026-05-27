@@ -1,29 +1,36 @@
-import Script from "next/script"
-import { useId } from "react"
+import { translateToolName } from "@/utils/translate-tool"
 
 const SITE_URL = "https://savclip.com"
+const locales = ['pt', 'es', 'id', 'ar']
 
 interface StructuredDataProps {
   type: "FAQPage" | "HowTo" | "SoftwareApplication" | "BreadcrumbList" | "WebSite"
   data: any
+  locale?: string
 }
 
-export function StructuredData({ type, data }: StructuredDataProps) {
-  const generatedId = useId()
-    let schema: any = {}
+export function StructuredData({ type, data, locale = 'en' }: StructuredDataProps) {
+  const dataStr = typeof data === 'object' ? JSON.stringify(data) : String(data)
+  const hash = dataStr.slice(0, 15).replace(/[^a-zA-Z0-9]/g, '')
+  const generatedId = `${type}-${hash}`
+  let schema: any = {}
 
   if (type === "BreadcrumbList") {
     schema = {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": Array.isArray(data) ? data.map((item: any, index: number) => {
-        // Normalize item URL to always be absolute (Google requires fully qualified URLs)
-        const rawItem: string = item.item || "/"
+        let rawItem: string = item.item || "/"
+        // Prepend locale prefix for translated pages
+        if (locale && locale !== 'en' && !rawItem.startsWith('http')) {
+          const rawPath = rawItem.startsWith('/') ? rawItem : '/' + rawItem;
+          rawItem = `/${locale}${rawPath === '/' ? '' : rawPath}`;
+        }
         const absoluteItem = rawItem.startsWith("http") ? rawItem : `${SITE_URL}${rawItem.startsWith("/") ? rawItem : "/" + rawItem}`
         return {
           "@type": "ListItem",
           "position": index + 1,
-          "name": item.name,
+          "name": translateToolName(item.name, locale),
           "item": absoluteItem
         }
       }) : []
@@ -31,15 +38,16 @@ export function StructuredData({ type, data }: StructuredDataProps) {
   }
 
   if (type === "SoftwareApplication") {
+    const localizedTitle = translateToolName(data.title, locale);
     const appSchema = {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
-      "name": data.title,
+      "name": localizedTitle,
       "image": "https://savclip.com/icon.png",
       "operatingSystem": "iOS, Android, Windows, macOS, Linux",
       "applicationCategory": "SocialNetworkingApplication",
       "datePublished": "2024-01-10T08:00:00+00:00",
-      "dateModified": new Date().toISOString(),
+      "dateModified": "2026-05-24T08:00:00+00:00",
       "softwareVersion": "1.5.2",
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -51,52 +59,78 @@ export function StructuredData({ type, data }: StructuredDataProps) {
         "price": "0",
         "priceCurrency": "USD"
       },
-      "description": data.description || "Free online social media downloader for videos, reels, and stories."
+      "description": data.description || translateToolName("Free online social media downloader for videos, reels, and stories.", locale)
     };
 
     const howToSchema = {
       "@context": "https://schema.org",
       "@type": "HowTo",
-      "name": `How to use ${data.title}`,
-      "description": `Follow these 3 easy steps to download media using ${data.title}.`,
+      "name": translateToolName("How to use {title}", locale).replace("{title}", localizedTitle),
+      "description": translateToolName("Follow these 3 easy steps to download media using {title}.", locale).replace("{title}", localizedTitle),
       "step": [
         {
           "@type": "HowToStep",
           "position": 1,
-          "name": "Copy the Link",
+          "name": translateToolName("Copy the Link", locale),
           "itemListElement": [
             {
               "@type": "HowToDirection",
-              "text": `Open the social media application or website, find the media you want to save, and copy its URL or share link.`
+              "text": translateToolName("Open the social media application or website, find the media you want to save, and copy its URL or share link.", locale)
             }
           ]
         },
         {
           "@type": "HowToStep",
           "position": 2,
-          "name": "Paste the Link",
+          "name": translateToolName("Paste the Link", locale),
           "itemListElement": [
             {
               "@type": "HowToDirection",
-              "text": `Go to the ${data.title} page on SavClip, and paste the copied link into the input box at the top.`
+              "text": translateToolName("Go to the {title} page on SavClip, and paste the copied link into the input box at the top.", locale).replace("{title}", localizedTitle)
             }
           ]
         },
         {
           "@type": "HowToStep",
           "position": 3,
-          "name": "Download the Media",
+          "name": translateToolName("Download the Media", locale),
           "itemListElement": [
             {
               "@type": "HowToDirection",
-              "text": `Click the 'Download' button. Once processed, select your preferred quality to save the file to your device.`
+              "text": translateToolName("Click the 'Download' button. Once processed, select your preferred quality to save the file to your device.", locale)
             }
           ]
         }
       ]
     };
 
-    schema = [appSchema, howToSchema];
+    const productSchema = {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": localizedTitle,
+      "image": "https://savclip.com/icon.png",
+      "description": data.description || translateToolName("Free online social media downloader for videos, reels, and stories.", locale),
+      "brand": {
+        "@type": "Brand",
+        "name": "SavClip"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": data.ratingValue || "4.9",
+        "ratingCount": data.reviewCount || "12840",
+        "reviewCount": data.reviewCount || "12840",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    };
+
+    schema = [appSchema, productSchema, howToSchema];
   }
 
   if (type === "HowTo") {
@@ -108,7 +142,7 @@ export function StructuredData({ type, data }: StructuredDataProps) {
       "step": Array.isArray(data.steps) ? data.steps.map((step: any, index: number) => ({
         "@type": "HowToStep",
         "position": index + 1,
-        "name": (typeof step === 'object' && (step.name || step.title)) ? (step.name || step.title) : `Step ${index + 1}`,
+        "name": (typeof step === 'object' && (step.name || step.title)) ? (step.name || step.title) : `${translateToolName("Step", locale)} ${index + 1}`,
         "text": typeof step === 'string' ? step : (step.desc || step.title || step.text)
       })) : []
     }
@@ -122,7 +156,7 @@ export function StructuredData({ type, data }: StructuredDataProps) {
       "alternateName": ["SavClip Downloader", "SavClip"],
       "url": "https://savclip.com",
       "datePublished": "2024-01-10T08:00:00+00:00",
-      "dateModified": new Date().toISOString(),
+      "dateModified": "2026-05-24T08:00:00+00:00",
       "potentialAction": {
         "@type": "SearchAction",
         "target": "https://savclip.com?url={search_term_string}",
@@ -148,7 +182,7 @@ export function StructuredData({ type, data }: StructuredDataProps) {
   }
 
   return (
-    <Script
+    <script
       id={`json-ld-${type}-${generatedId}`}
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}

@@ -1,20 +1,26 @@
+"use client";
+
 import React from "react";
 import { CheckCircle2, Zap, ShieldCheck, Monitor, Video, Smartphone, Layers, Music } from "lucide-react";
+import { useCurrentLocale } from "@/hooks/useCurrentLocale";
+import { translateToolName } from "@/utils/translate-tool";
 
 export function FeaturesSection({ platform }: { platform: string }) {
+  const locale = useCurrentLocale();
   const getDynamicFeatures = (p: string) => {
     const pLower = p.toLowerCase();
+    const translatedPlatform = translateToolName(p, locale);
     
     // Base features that adapt to the platform name
     const features = [
       { 
-        title: `Fast ${p} Extraction`, 
-        desc: `Our advanced backend servers fetch ${p} content directly from the source API, ensuring zero delays and instant downloads.`,
+        title: translateToolName("Fast {platform} Extraction", locale).replace("{platform}", translatedPlatform), 
+        desc: translateToolName("Our advanced backend servers fetch {platform} content directly from the source API, ensuring zero delays and instant downloads.", locale).replace("{platform}", translatedPlatform),
         icon: <Zap className="h-6 w-6 text-yellow-500" />
       },
       { 
-        title: "100% Anonymous & Secure", 
-        desc: `You do not need to log into your account to save ${p} media. We never track your download history.`,
+        title: translateToolName("100% Anonymous & Secure", locale), 
+        desc: translateToolName("You do not need to log into your account to save {platform} media. We never track your download history.", locale).replace("{platform}", translatedPlatform),
         icon: <ShieldCheck className="h-6 w-6 text-green-500" />
       }
     ];
@@ -22,32 +28,32 @@ export function FeaturesSection({ platform }: { platform: string }) {
     // Conditional features based on keywords
     if (pLower.includes("video") || pLower.includes("reels") || pLower.includes("shorts")) {
       features.push({
-        title: "Original HD Quality",
-        desc: `We extract the uncompressed ${p} file, giving you crisp Full HD and 4K resolutions exactly as uploaded by the creator.`,
+        title: translateToolName("Original HD Quality", locale),
+        desc: translateToolName("We extract the uncompressed {platform} file, giving you crisp Full HD and 4K resolutions exactly as uploaded by the creator.", locale).replace("{platform}", translatedPlatform),
         icon: <Monitor className="h-6 w-6 text-cyan-500" />
       });
     }
 
     if (pLower.includes("tiktok") || pLower.includes("watermark")) {
       features.push({
-        title: "No Watermark Guarantee",
-        desc: `Say goodbye to annoying logos. We bypass the rendering engine to give you a completely clean, unbranded video file.`,
+        title: translateToolName("No Watermark Guarantee", locale),
+        desc: translateToolName("Say goodbye to annoying logos. We bypass the rendering engine to give you a completely clean, unbranded video file.", locale),
         icon: <Video className="h-6 w-6 text-pink-500" />
       });
     }
 
     if (pLower.includes("audio") || pLower.includes("mp3")) {
       features.push({
-        title: "High Bitrate MP3",
-        desc: `Convert and save ${p} audio in top-tier 320kbps format, perfect for music libraries and offline listening.`,
+        title: translateToolName("High Bitrate MP3", locale),
+        desc: translateToolName("Convert and save {platform} audio in top-tier 320kbps format, perfect for music libraries and offline listening.", locale).replace("{platform}", translatedPlatform),
         icon: <Music className="h-6 w-6 text-purple-500" />
       });
     }
 
     if (pLower.includes("photo") || pLower.includes("dp") || pLower.includes("carousel")) {
       features.push({
-        title: "Original Resolution Images",
-        desc: `Download pictures without the heavy compression applied by social apps. Get the raw, high-quality image file instantly.`,
+        title: translateToolName("Original Resolution Images", locale),
+        desc: translateToolName("Download pictures without the heavy compression applied by social apps. Get the raw, high-quality image file instantly.", locale),
         icon: <Layers className="h-6 w-6 text-indigo-500" />
       });
     }
@@ -55,8 +61,8 @@ export function FeaturesSection({ platform }: { platform: string }) {
     // Add a generic device feature if we only have 2 or 3
     if (features.length < 3) {
       features.push({
-        title: "Works on All Devices",
-        desc: `Whether you are using an iPhone, Android, Mac, or Windows PC, this ${p} tool works perfectly in any web browser.`,
+        title: translateToolName("Works on All Devices", locale),
+        desc: translateToolName("Whether you are using an iPhone, Android, Mac, or Windows PC, this {platform} tool works perfectly in any web browser.", locale).replace("{platform}", translatedPlatform),
         icon: <Smartphone className="h-6 w-6 text-blue-500" />
       });
     }
@@ -66,12 +72,13 @@ export function FeaturesSection({ platform }: { platform: string }) {
   };
 
   const activeFeatures = getDynamicFeatures(platform);
+  const translatedTitlePlatform = translateToolName(platform, locale);
 
   return (
     <section className="py-20 bg-neutral-50 dark:bg-neutral-950 px-4">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-neutral-900 dark:text-white leading-tight text-center mb-16">
-          Premium Features for {platform}
+          {translateToolName("Premium Features for {platform}", locale).replace("{platform}", translatedTitlePlatform)}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {activeFeatures.map((feature, i) => (

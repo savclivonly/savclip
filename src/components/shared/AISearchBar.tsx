@@ -34,7 +34,7 @@ export function AISearchBar({
         animate={{ opacity: 1, y: 0 }}
         className="relative flex items-center rounded-3xl border border-neutral-800 bg-[#0a0a0a] p-1.5 shadow-2xl ring-1 ring-white/5 transition-all focus-within:ring-2 focus-within:ring-white/10"
       >
-        <div className="flex flex-1 items-center gap-4 pl-8">
+        <div className="flex flex-1 items-center gap-4 ps-8">
            <Search className="h-6 w-6 text-neutral-600" />
            <input
              type="text"
@@ -42,7 +42,7 @@ export function AISearchBar({
              onChange={(e) => onChange(e.target.value)}
              placeholder={placeholder}
              onKeyDown={(e) => e.key === "Enter" && onSearch()}
-             className="flex-1 bg-transparent py-4 pr-8 text-xl font-bold text-white placeholder:text-neutral-500 outline-none sm:text-2xl"
+             className="flex-1 bg-transparent py-4 pe-8 text-xl font-bold text-white placeholder:text-neutral-500 outline-none sm:text-2xl"
            />
         </div>
       </motion.div>

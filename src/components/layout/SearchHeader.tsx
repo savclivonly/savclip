@@ -12,6 +12,7 @@ import { useAutoDownload } from "@/hooks/useAutoDownload";
 import { useDownloadHistory } from "@/hooks/useDownloadHistory";
 import { LoadingBar } from "@/components/ui/LoadingBar";
 import { locales, type Locale } from "@/i18n";
+import { translateToolName } from "@/utils/translate-tool";
 
 const DownloadPreview = dynamic(
   () => import("@/components/layout/DownloadPreview").then((mod) => mod.DownloadPreview),
@@ -166,10 +167,11 @@ function SearchHeaderContent({
 
   useAutoDownload(handleSearch, locale, "search-header");
   
-  // Find active tab ID by checking the current pathname against hrefs
+  // Find active tab ID by checking the current pathname against hrefs (handling dynamic locale prefix)
   let activeId = "";
+  const cleanPathname = pathname.replace(/^\/[a-z]{2}(?=\/|$)/, "");
   for (const tab of tabs) {
-    if (pathname === tab.href) {
+    if (cleanPathname === tab.href) {
       activeId = tab.id;
       break;
     }
@@ -230,15 +232,15 @@ function SearchHeaderContent({
               iconClass="text-white"
             />
             {/* Trust Badges */}
-            <div className="mt-6 flex flex-wrap justify-center gap-4 sm:gap-8 opacity-90">
+            <div className="mt-6 flex flex-row flex-nowrap justify-center gap-3 sm:gap-8 opacity-90">
                {[
-                 { label: "No Watermark", icon: <Video className="h-4 w-4" /> },
-                 { label: "Secure", icon: <Lock className="h-4 w-4" /> },
-                 { label: "100% Free", icon: <Globe className="h-4 w-4" /> }
+                 { label: "No Watermark", icon: <Video className="h-3.5 w-3.5 sm:h-4 w-4" /> },
+                 { label: "Secure", icon: <Lock className="h-3.5 w-3.5 sm:h-4 w-4" /> },
+                 { label: "100% Free", icon: <Globe className="h-3.5 w-3.5 sm:h-4 w-4" /> }
                ].map((badge, i) => (
-                 <div key={i} className="flex items-center gap-1.5 text-[10px] sm:text-xs font-bold text-white uppercase tracking-widest">
-                    <span className="p-1 bg-white/20 rounded-lg backdrop-blur-md">{badge.icon}</span>
-                    <span className="drop-shadow-sm">{badge.label}</span>
+                 <div key={i} className={`flex items-center gap-1.5 font-bold text-white uppercase tracking-wider sm:tracking-widest hover:scale-105 transition-transform whitespace-nowrap ${locale === 'ar' ? "text-[11px] sm:text-sm" : "text-[8px] sm:text-xs"}`}>
+                    <span className="p-0.5 sm:p-1 bg-white/20 rounded-lg backdrop-blur-md shrink-0">{badge.icon}</span>
+                    <span className="drop-shadow-sm">{translateToolName(badge.label, locale)}</span>
                  </div>
                ))}
             </div>
@@ -248,7 +250,7 @@ function SearchHeaderContent({
         {/* Loading Bar and Download Preview dynamic rendering */}
         {!hideSearchBar && (
           <div className="mt-4 flex flex-col items-center gap-8 w-full max-w-3xl">
-            <LoadingBar isLoading={isLoading} label="Analyzing media..." gradient="from-indigo-500 via-purple-500 to-rose-500" />
+            <LoadingBar isLoading={isLoading} label={translateToolName("Analyzing media...", locale)} gradient="from-indigo-500 via-purple-500 to-rose-500" />
             <DownloadPreview 
               data={downloadData} 
               isLoading={isLoading} 

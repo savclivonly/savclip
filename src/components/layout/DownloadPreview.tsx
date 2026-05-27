@@ -602,7 +602,7 @@ export function DownloadPreview({
                     ) : (
                         <Image
                           src={data.thumbnail ? `/api/proxy-download?url=${encodeURIComponent(data.thumbnail)}&type=image&inline=true` : "/window.svg"}
-                          alt="Preview"
+                          alt={data.title ? `Download Preview - ${data.title}` : "Social Media Download Preview"}
                           width={400}
                           height={600}
                           priority

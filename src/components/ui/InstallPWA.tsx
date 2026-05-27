@@ -70,11 +70,11 @@ export function InstallPWA() {
           initial={false}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: 30, scale: 0.98 }}
-          className="fixed bottom-6 left-1/2 -translate-x-1/2 z-[100] w-[calc(100%-2rem)] max-w-[400px] overflow-hidden rounded-[2rem] border border-white/10 bg-black/80 px-4 py-3 shadow-[0_20px_50px_rgba(0,0,0,0.5)] backdrop-blur-3xl sm:left-auto sm:right-6 sm:translate-x-0"
+          className="fixed bottom-6 left-1/2 -translate-x-1/2 z-[100] w-[calc(100%-2rem)] max-w-[400px] overflow-hidden rounded-[2rem] border border-white/10 bg-black/80 px-4 py-3 shadow-[0_20px_50px_rgba(0,0,0,0.5)] backdrop-blur-3xl sm:start-auto sm:end-6 sm:translate-x-0"
         >
           <div className="flex items-center gap-4">
             <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-black border border-white/10 overflow-hidden">
-               <Image src="/icon-192x192.png" alt="Logo" width={40} height={40} className="w-10 h-10 object-contain" />
+               <Image src="/icon-192x192.png" alt="SavClip PWA App Icon - Fast Video Downloader" width={40} height={40} className="w-10 h-10 object-contain" />
             </div>
             
             <div className="flex-1 min-w-0">

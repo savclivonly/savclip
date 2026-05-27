@@ -1,4 +1,3 @@
-"use client"
 
 import React from 'react'
 import Link from 'next/link'
@@ -9,13 +8,14 @@ interface BreadcrumbsProps {
   items: { name: string; item: string }[]
   rating?: string
   reviewCount?: string
+  locale?: string
 }
 
-export function Breadcrumbs({ items, rating = "4.9", reviewCount = "12,840" }: BreadcrumbsProps) {
+export function Breadcrumbs({ items, rating = "4.9", reviewCount = "12,840", locale }: BreadcrumbsProps) {
   return (
     <>
       {/* JSON-LD Schema remains for SEO but UI is hidden as requested */}
-      <StructuredData type="BreadcrumbList" data={items} />
+      <StructuredData type="BreadcrumbList" data={items} locale={locale} />
     </>
   )
 }

@@ -1,0 +1,52 @@
+export const articleSections = [
+  {
+    "type": "heading",
+    "level": 2,
+    "content": "Usa el Visor de Historias de Instagram con máxima privacidad"
+  },
+  {
+    "type": "paragraph",
+    "content": "Nuestra herramienta de visualización de historias públicas te da control total. Guarda fotos y videos temporales en tu dispositivo de forma segura y discreta. Si deseas probar otras funciones, también puedes usar nuestro <a href=\"/instagram-video-downloader\">Descargador de Video</a> o consultar el <a href=\"/instagram-reels-downloader\">Descargador de Reels</a> para obtener un acceso completo."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "¿Cómo funciona el anonimato en SavClip?"
+  },
+  {
+    "type": "paragraph",
+    "content": "SavClip funciona como un intermediario seguro. Nuestro sistema accede al archivo y te lo muestra de manera externa, por lo que permaneces 100% invisible para el autor del post."
+  }
+];
+
+export const faqs = [
+  {
+    "q": "¿El creador de la historia sabrá que la descargué con SavClip?",
+    "a": "No, para nada. El proceso es 100% privado. El autor nunca sabrá que visualizaste o guardaste sus historias."
+  },
+  {
+    "q": "¿Puedo descargar historias de cuentas privadas de Instagram?",
+    "a": "No, por respeto a las políticas de privacidad de los usuarios, nuestra herramienta solo permite descargas desde cuentas abiertas."
+  },
+  {
+    "q": "¿Las historias guardadas expiran después de 24 horas?",
+    "a": "No, una vez que descargas la historia en tu dispositivo, se guarda de forma definitiva para verla cuando quieras."
+  },
+  {
+    "q": "¿Se descargan las historias en alta definición (HD)?",
+    "a": "Sí, SavClip obtiene el archivo con la calidad original de imagen de los servidores de Instagram."
+  }
+];
+
+export const meta = {
+  title: "Visor de Historias Instagram Ver Stories Gratis - SavClip",
+  description: "Guarda stories de Instagram de forma 100% secreta. El visor privado garantiza que no dejes rastros."
+};
+
+export const header = {
+  title: "Visor de Historias",
+  title1: "Descargar",
+  title2: "Instagram Historias",
+  title3: "Stories HD",
+  subtitle: "Visualiza historias de Instagram en secreto y guárdalas antes de que expiren."
+};

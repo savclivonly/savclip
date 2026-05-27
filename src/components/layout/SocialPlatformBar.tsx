@@ -9,6 +9,8 @@ import { motion } from "framer-motion"
 import { usePathname } from "next/navigation"
 import { cn } from "@/utils/cn"
 
+import { useCurrentLocale } from "@/hooks/useCurrentLocale"
+
 const PLATFORMS = [
   {
     id: "instagram",
@@ -92,6 +94,13 @@ const PLATFORMS = [
 
 export function SocialPlatformBar({ activeId, className }: { activeId: string, className?: string }) {
   const pathname = usePathname() || ""
+  const locale = useCurrentLocale()
+
+  const getLocalizedHref = (path: string) => {
+    const cleanPath = path.startsWith('/') ? path : `/${path}`
+    if (locale === 'en') return cleanPath
+    return `/${locale}${cleanPath === '/' ? '' : cleanPath}`
+  }
 
   return (
     <div 
@@ -103,7 +112,7 @@ export function SocialPlatformBar({ activeId, className }: { activeId: string, c
         return (
           <Link
             key={platform.id}
-            href={platform.href}
+            href={getLocalizedHref(platform.href)}
             className="relative group shrink-0"
           >
             <motion.div

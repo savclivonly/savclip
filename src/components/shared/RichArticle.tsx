@@ -19,9 +19,35 @@ interface RichArticleProps {
   boilerplate?: string
   mockup?: React.ReactNode
   h2SizeClass?: string
+  locale?: string
+}
+
+function localizeHtmlLinks(html: string, locale?: string) {
+  if (!html) return "";
+  if (!locale || locale === 'en') return html;
+
+  // Replace href="/..." with href="/locale/..."
+  // Make sure not to match absolute links or links already prefixed
+  return html.replace(/href="\/([^"]*)"/g, (match, path) => {
+    if (
+      path.startsWith(`${locale}/`) || 
+      path === locale || 
+      path.startsWith('http://') || 
+      path.startsWith('https://') || 
+      path.startsWith('//')
+    ) {
+      return match;
+    }
+    return `href="/${locale}/${path}"`;
+  });
 }
 
 function splitHeading(content: string) {
+  // Do not split Arabic headings to keep them on a single line
+  if (/[\u0600-\u06FF]/.test(content)) {
+    return [content, ""];
+  }
+
   const splitPhrases = [
     "is the Best",
     "to Download",
@@ -64,16 +90,16 @@ function splitHeading(content: string) {
   return [content, ""];
 }
 
-export function RichArticle({ sections, accentColor = "text-pink-600", boilerplate, mockup, h2SizeClass }: RichArticleProps) {
+export function RichArticle({ sections, accentColor = "text-pink-600", boilerplate, mockup, h2SizeClass, locale }: RichArticleProps) {
   // Backward compatibility for old string content
   if (typeof sections === "string") {
     return (
       <div className="prose prose-neutral dark:prose-invert max-w-none">
-        <div className="text-lg leading-relaxed text-neutral-600 dark:text-neutral-400 font-medium opacity-90 first-letter:text-5xl first-letter:font-black first-letter:mr-3 first-letter:float-left space-y-4 text-justify md:text-left hyphens-auto">
-          <div dangerouslySetInnerHTML={{ __html: sections.replace(/\n\n/g, '<br/><br/>') }} />
+        <div className="text-lg leading-relaxed text-neutral-600 dark:text-neutral-400 font-medium opacity-90 first-letter:text-5xl first-letter:font-black first-letter:me-3 first-letter:float-start space-y-4 text-justify md:text-start hyphens-auto">
+          <div dangerouslySetInnerHTML={{ __html: localizeHtmlLinks(sections.replace(/\n\n/g, '<br/><br/>'), locale) }} />
           {boilerplate && (
             <div className="mt-12 pt-12 border-t border-neutral-100 dark:border-neutral-800 opacity-60 italic text-sm">
-               <div dangerouslySetInnerHTML={{ __html: boilerplate.replace(/\n\n/g, '<br/><br/>') }} />
+               <div dangerouslySetInnerHTML={{ __html: localizeHtmlLinks(boilerplate.replace(/\n\n/g, '<br/><br/>'), locale) }} />
             </div>
           )}
         </div>
@@ -136,10 +162,10 @@ export function RichArticle({ sections, accentColor = "text-pink-600", boilerpla
               <p
                 key={idx}
                 className={cn(
-                  "text-lg leading-relaxed text-neutral-600 dark:text-neutral-400 font-medium opacity-90 text-justify md:text-left hyphens-auto",
+                  "text-lg leading-relaxed text-neutral-600 dark:text-neutral-400 font-medium opacity-90 text-justify md:text-start hyphens-auto",
                   idx === 1 && sections[0].type === 'heading' ? "-mt-6 md:mt-0" : ""
                 )}
-                dangerouslySetInnerHTML={{ __html: section.content || "" }}
+                dangerouslySetInnerHTML={{ __html: localizeHtmlLinks(section.content || "", locale) }}
               />
             )
 
@@ -152,9 +178,10 @@ export function RichArticle({ sections, accentColor = "text-pink-600", boilerpla
                     className="flex items-start gap-3 p-4 rounded-2xl bg-neutral-50 dark:bg-neutral-900/50 border border-neutral-100 dark:border-neutral-800"
                   >
                     <Check className={`h-5 w-5 mt-0.5 shrink-0 ${accentColor}`} />
-                    <span className="text-neutral-600 dark:text-neutral-400 font-bold text-sm">
-                      {item}
-                    </span>
+                    <span 
+                      className="text-neutral-600 dark:text-neutral-400 font-bold text-sm"
+                      dangerouslySetInnerHTML={{ __html: localizeHtmlLinks(item || "", locale) }}
+                    />
                   </li>
                 ))}
               </ul>
@@ -164,7 +191,7 @@ export function RichArticle({ sections, accentColor = "text-pink-600", boilerpla
             return (
               <div
                 key={idx}
-                className={`relative overflow-hidden rounded-3xl p-8 bg-linear-to-br from-neutral-50 to-white dark:from-neutral-900/40 dark:to-neutral-900/20 border-l-4 border-pink-600 shadow-2xl`}
+                className={`relative overflow-hidden rounded-3xl p-8 bg-linear-to-br from-neutral-50 to-white dark:from-neutral-900/40 dark:to-neutral-900/20 border-s-4 border-pink-600 shadow-2xl`}
               >
                 <div className="flex gap-4">
                   <Info className={`h-8 w-8 shrink-0 ${accentColor}`} />
@@ -172,9 +199,10 @@ export function RichArticle({ sections, accentColor = "text-pink-600", boilerpla
                     <h4 className="font-black text-neutral-900 dark:text-white uppercase italic tracking-tighter text-lg mb-2">
                       {section.title || "Pro Tip"}
                     </h4>
-                    <p className="text-neutral-500 dark:text-neutral-400 font-bold opacity-80">
-                      {section.content}
-                    </p>
+                    <p 
+                      className="text-neutral-500 dark:text-neutral-400 font-bold opacity-80"
+                      dangerouslySetInnerHTML={{ __html: localizeHtmlLinks(section.content || "", locale) }}
+                    />
                   </div>
                 </div>
               </div>
@@ -183,7 +211,7 @@ export function RichArticle({ sections, accentColor = "text-pink-600", boilerpla
           case "table":
             return (
               <div key={idx} className="overflow-hidden rounded-3xl border border-neutral-100 dark:border-neutral-800 shadow-xl">
-                <table className="w-full text-left border-collapse">
+                <table className="w-full text-start border-collapse">
                   <thead className="bg-neutral-50 dark:bg-neutral-900">
                     <tr>
                       {section.columns?.map((col, i) => (
@@ -205,9 +233,8 @@ export function RichArticle({ sections, accentColor = "text-pink-600", boilerpla
                             className={`px-6 py-4 text-sm font-bold ${
                               j === 0 ? "text-neutral-900 dark:text-white" : "text-neutral-500 dark:text-neutral-400"
                             }`}
-                          >
-                            {cell}
-                          </td>
+                            dangerouslySetInnerHTML={{ __html: localizeHtmlLinks(cell || "", locale) }}
+                          />
                         ))}
                       </tr>
                     ))}

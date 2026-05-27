@@ -52,27 +52,6 @@ const platforms = [
     href: "/telegram-video-downloader",
     icon: Send,
     bg: "bg-linear-to-tr from-sky-500 to-blue-500 shadow-sky-500/20"
-  },
-  {
-    name: "AI Hashtags",
-    desc: "Generate viral hashtags to boost your Instagram and TikTok reach.",
-    href: "/hashtags",
-    icon: Hash,
-    bg: "bg-linear-to-tr from-fuchsia-500 to-pink-500 shadow-fuchsia-500/20"
-  },
-  {
-    name: "AI Captions",
-    desc: "Write engaging captions that drive comments and shares instantly.",
-    href: "/captions",
-    icon: Type,
-    bg: "bg-linear-to-tr from-cyan-500 to-blue-500 shadow-cyan-500/20"
-  },
-  {
-    name: "AI Bio Maker",
-    desc: "Craft the perfect Link-in-Bio profile to turn visitors into followers.",
-    href: "/bio",
-    icon: Link2,
-    bg: "bg-linear-to-tr from-emerald-500 to-teal-500 shadow-emerald-500/20"
   }
 ];
 

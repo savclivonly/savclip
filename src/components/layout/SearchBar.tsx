@@ -8,6 +8,9 @@ import { useRouter, usePathname, useSearchParams } from "next/navigation"
 import { getPlatformFromUrl, getLocalizedRoute, getPlatformFromPath, isAnyPlatformUrl, getPreciseRouteFromUrl } from "@/utils/platform-detector"
 import { toast } from "react-hot-toast"
 import { locales } from "@/i18n"
+import { useCurrentLocale } from "@/hooks/useCurrentLocale"
+import { getDictionary } from "@/dictionaries/client"
+import { translateToolName } from "@/utils/translate-tool"
 
 interface SearchBarProps {
   onSearch: (url: string) => void
@@ -33,7 +36,7 @@ function SearchBarInner({
   onSearch, 
   isLoading, 
   placeholder,
-  dict,
+  dict: propDict,
   validate = isAnyPlatformUrl,
   errorMsg,
   buttonClass = "bg-linear-to-br from-rose-600 via-pink-600 to-purple-600 text-white shadow-lg ring-1 ring-inset ring-white/20",
@@ -41,6 +44,10 @@ function SearchBarInner({
   initialValue = "",
   className
 }: SearchBarProps) {
+  const locale = useCurrentLocale()
+  const clientDict = getDictionary(locale)
+  const dict = propDict || clientDict
+
   const [url, setUrl] = React.useState(initialValue)
   const [error, setError] = React.useState<string | null>(null)
 
@@ -185,11 +192,11 @@ function SearchBarInner({
               }}
               placeholder={displayPlaceholder}
               className={cn(
-                "w-full bg-transparent py-5 pl-6 pr-32 text-neutral-900 outline-none placeholder:text-neutral-500 dark:text-white dark:placeholder:text-neutral-400 sm:text-lg font-bold",
+                "w-full bg-transparent py-5 ps-6 pe-32 text-neutral-900 outline-none placeholder:text-neutral-500 dark:text-white dark:placeholder:text-neutral-400 sm:text-lg font-bold",
                 error && "bg-red-50"
               )}
             />
-            <div className="absolute right-2 flex items-center gap-2">
+            <div className="absolute end-2 flex items-center gap-2">
               {url && (
                 <button
                   type="button"
@@ -204,10 +211,10 @@ function SearchBarInner({
                 type="button"
                 onClick={handlePaste}
                 className="group flex items-center gap-2 rounded-lg bg-neutral-50 border border-neutral-300 px-3 py-1.5 text-sm font-bold text-neutral-700 shadow-sm transition-all hover:bg-neutral-100 active:scale-95 dark:bg-neutral-800 dark:border-neutral-700 dark:text-white"
-                title="Paste Link"
+                title={translateToolName("Paste Link", locale)}
               >
                 <Clipboard className="h-4 w-4 text-neutral-600 dark:text-neutral-400" />
-                <span className="font-bold">Paste</span>
+                <span className="font-bold">{translateToolName("Paste", locale)}</span>
               </button>
             </div>
           </div>

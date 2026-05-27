@@ -3,12 +3,14 @@
 import * as React from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Camera, ChevronDown, ChevronRight, Menu, X, Globe, Ghost, Send, Play, Hash, Music, History, Sparkles, Compass, BookOpen, Type, Link2 } from "lucide-react"
+import { Camera, ChevronDown, ChevronRight, Menu, X, Globe, Ghost, Send, Play, Hash, Music, History, Sparkles, Compass, BookOpen } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { cn } from "@/utils/cn"
 import { usePathname, useRouter } from "next/navigation"
 
 import { PLATFORM_NAV_CONFIG } from "@/lib/nav-config"
+import { languageNames, languageFlags } from "@/i18n"
+import { translateToolName } from "@/utils/translate-tool"
 
 // Inline custom SVGs to optimize bundle size and reduce TBT/LCP
 const SettingsIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -27,19 +29,45 @@ const LayoutGridIcon = (props: React.SVGProps<SVGSVGElement>) => (
   </svg>
 )
 
-export function Navbar({ dict }: { dict: any }) {
+export function Navbar({ locale, dict }: { locale?: string; dict: any }) {
   const [isOpen, setIsOpen] = React.useState(false)
   const [isSettingsExpanded, setIsSettingsExpanded] = React.useState(false)
-  const [isAIToolsExpanded, setIsAIToolsExpanded] = React.useState(false)
+
   const [isMounted, setIsMounted] = React.useState(false)
+  const [isLangOpen, setIsLangOpen] = React.useState(false)
+  const [queryString, setQueryString] = React.useState("")
   const pathname = usePathname()
   const router = useRouter()
 
   React.useEffect(() => {
     setIsMounted(true)
+    if (typeof window !== "undefined") {
+      setQueryString(window.location.search)
+    }
   }, [])
 
-  const currentLocale = 'en';
+  const getLocalizedPathForLocale = React.useCallback((targetLoc: string) => {
+    if (!pathname) return '/';
+    let cleanPath = pathname;
+    const otherLocales = ['pt', 'es', 'id', 'ar'];
+    for (const oLoc of otherLocales) {
+      if (pathname.startsWith(`/${oLoc}/`)) {
+        cleanPath = pathname.substring(oLoc.length + 1);
+        break;
+      } else if (pathname === `/${oLoc}`) {
+        cleanPath = '/';
+        break;
+      }
+    }
+    
+    if (targetLoc === 'en') {
+      return cleanPath === '' ? '/' : (cleanPath.startsWith('/') ? cleanPath : '/' + cleanPath);
+    } else {
+      return `/${targetLoc}${cleanPath.startsWith('/') ? cleanPath : '/' + cleanPath}`;
+    }
+  }, [pathname]);
+
+  const currentLocale = locale || 'en';
 
   const getLabel = (href: string, fallback: string) => {
     if (!dict || !dict.platforms) return fallback;
@@ -54,42 +82,42 @@ export function Navbar({ dict }: { dict: any }) {
   };
 
   const getLocalizedHref = (path: string) => {
-    return path.startsWith('/') ? path : `/${path}`
+    const cleanPath = path.startsWith('/') ? path : `/${path}`
+    if (currentLocale === 'en') return cleanPath
+    return `/${currentLocale}${cleanPath === '/' ? '' : cleanPath}`
   }
+
 
   const openHistory = () => {
     window.dispatchEvent(new CustomEvent('toggle-history-drawer'));
   };
 
   const services = React.useMemo(() => [
-    { name: dict?.navbar?.home || "Home", href: "/", icon: <Compass className="h-4 w-4" />, color: "text-indigo-600", category: 'home', group: 'other' },
+    { name: "Home", href: "/", icon: <Compass className="h-4 w-4" />, color: "text-indigo-600", category: 'home', group: 'other' },
     { name: "Blog", href: "/blog", icon: <BookOpen className="h-4 w-4" />, color: "text-orange-600", category: 'blog', group: 'other' },
-    { name: dict?.categories?.insta || "Instagram", href: "/instagram-video-downloader", icon: <Camera className="h-4 w-4" />, color: "text-pink-600", category: 'insta', group: 'downloader' },
-    { name: dict?.categories?.fb || "Facebook", href: "/facebook-video-downloader", icon: <Globe className="h-4 w-4" />, color: "text-blue-600", category: 'fb', group: 'downloader' },
-    { name: dict?.categories?.snap || "Snapchat", href: "/snapchat-video-downloader", icon: <Ghost className="h-4 w-4" />, color: "text-yellow-500", category: 'snap', group: 'downloader' },
-    { name: dict?.categories?.tele || "Telegram", href: "/telegram-video-downloader", icon: <Send className="h-4 w-4" />, color: "text-sky-500", category: 'tele', group: 'downloader' },
-    { name: dict?.categories?.tiktok || "TikTok", href: "/tiktok-video-downloader", icon: <Music className="h-4 w-4" />, color: "text-neutral-900 dark:text-white", category: 'tiktok', group: 'downloader' },
-    { name: dict?.categories?.yt || "YouTube", href: "/youtube-video-downloader", icon: <Play className="h-4 w-4 fill-current" />, color: "text-red-600", category: 'yt', group: 'downloader' },
-    { name: dict?.categories?.tw || "Twitter", href: "/x-video-downloader", icon: <Hash className="h-4 w-4" />, color: "text-neutral-800 dark:text-neutral-400", category: 'tw', group: 'downloader' },
-    { name: dict?.categories?.hashtags || "Hashtags", href: "/hashtags", icon: <Hash className="h-4 w-4" />, color: "text-blue-500", category: 'hashtags', group: 'ai_tools' },
-    { name: dict?.categories?.captions || "Captions", href: "/captions", icon: <Type className="h-4 w-4" />, color: "text-purple-500", category: 'captions', group: 'ai_tools' },
-    { name: dict?.categories?.bio || "Bio Link", href: "/bio", icon: <Link2 className="h-4 w-4" />, color: "text-green-500", category: 'bio', group: 'ai_tools' },
-  ], [dict])
+    { name: "Instagram", href: "/instagram-video-downloader", icon: <Camera className="h-4 w-4" />, color: "text-pink-600", category: 'insta', group: 'downloader' },
+    { name: "Facebook", href: "/facebook-video-downloader", icon: <Globe className="h-4 w-4" />, color: "text-blue-600", category: 'fb', group: 'downloader' },
+    { name: "Snapchat", href: "/snapchat-video-downloader", icon: <Ghost className="h-4 w-4" />, color: "text-yellow-500", category: 'snap', group: 'downloader' },
+    { name: "Telegram", href: "/telegram-video-downloader", icon: <Send className="h-4 w-4" />, color: "text-sky-500", category: 'tele', group: 'downloader' },
+    { name: "TikTok", href: "/tiktok-video-downloader", icon: <Music className="h-4 w-4" />, color: "text-neutral-900 dark:text-white", category: 'tiktok', group: 'downloader' },
+    { name: "YouTube", href: "/youtube-video-downloader", icon: <Play className="h-4 w-4 fill-current" />, color: "text-red-600", category: 'yt', group: 'downloader' },
+    { name: "Twitter / X", href: "/x-video-downloader", icon: <Hash className="h-4 w-4" />, color: "text-neutral-800 dark:text-neutral-400", category: 'tw', group: 'downloader' },
+  ], [])
 
 
   const platform = React.useMemo(() => {
     const pathWithoutLocale = pathname ? pathname.replace(/^\/[a-z]{2}/, '') || '/' : '/';
 
-    if (pathWithoutLocale.startsWith('/instagram')) return { id: dict?.categories?.insta || "Instagram", prefix: 'Sav', suffix: 'Clip', icon: Camera, bg: 'from-pink-500 to-rose-600', text: 'text-pink-600' }
-    if (pathWithoutLocale.startsWith('/facebook')) return { id: dict?.categories?.fb || "Facebook", prefix: 'FB', suffix: 'Clip', icon: Globe, bg: 'from-blue-600 to-blue-800', text: 'text-blue-600' }
-    if (pathWithoutLocale.startsWith('/youtube')) return { id: dict?.categories?.yt || "YouTube", prefix: 'YT', suffix: 'Clip', icon: Play, bg: 'from-red-600 to-red-800', text: 'text-red-600' }
-    if (pathWithoutLocale.startsWith('/tiktok')) return { id: dict?.categories?.tiktok || "TikTok", prefix: 'Tik', suffix: 'Clip', icon: Music, bg: 'from-neutral-800 to-black', text: 'text-pink-600' }
-    if (pathWithoutLocale.startsWith('/twitter')) return { id: dict?.categories?.tw || "Twitter", prefix: 'X', suffix: 'Clip', icon: Hash, bg: 'from-neutral-800 to-black', text: 'text-neutral-900 dark:text-neutral-400' }
-    if (pathWithoutLocale.startsWith('/snapchat')) return { id: dict?.categories?.snap || "Snapchat", prefix: 'Snap', suffix: 'Clip', icon: Ghost, bg: 'from-yellow-400 to-yellow-500', text: 'text-yellow-500' }
-    if (pathWithoutLocale.startsWith('/telegram')) return { id: dict?.categories?.tele || "Telegram", prefix: 'Tele', suffix: 'Clip', icon: Send, bg: 'from-sky-500 to-blue-600', text: 'text-sky-500' }
+    if (pathWithoutLocale.startsWith('/instagram')) return { id: "Instagram", prefix: 'Sav', suffix: 'Clip', icon: Camera, bg: 'from-pink-500 to-rose-600', text: 'text-pink-600' }
+    if (pathWithoutLocale.startsWith('/facebook')) return { id: "Facebook", prefix: 'FB', suffix: 'Clip', icon: Globe, bg: 'from-blue-600 to-blue-800', text: 'text-blue-600' }
+    if (pathWithoutLocale.startsWith('/youtube')) return { id: "YouTube", prefix: 'YT', suffix: 'Clip', icon: Play, bg: 'from-red-600 to-red-800', text: 'text-red-600' }
+    if (pathWithoutLocale.startsWith('/tiktok')) return { id: "TikTok", prefix: 'Tik', suffix: 'Clip', icon: Music, bg: 'from-neutral-800 to-black', text: 'text-pink-600' }
+    if (pathWithoutLocale.startsWith('/twitter')) return { id: "Twitter / X", prefix: 'X', suffix: 'Clip', icon: Hash, bg: 'from-neutral-800 to-black', text: 'text-neutral-900 dark:text-neutral-400' }
+    if (pathWithoutLocale.startsWith('/snapchat')) return { id: "Snapchat", prefix: 'Snap', suffix: 'Clip', icon: Ghost, bg: 'from-yellow-400 to-yellow-500', text: 'text-yellow-500' }
+    if (pathWithoutLocale.startsWith('/telegram')) return { id: "Telegram", prefix: 'Tele', suffix: 'Clip', icon: Send, bg: 'from-sky-500 to-blue-600', text: 'text-sky-500' }
     // Default (Home / Generic)
     return { id: "SavClip", prefix: 'Sav', suffix: 'Clip', icon: Sparkles, bg: 'from-indigo-600 to-violet-700', text: 'text-indigo-600' }
-  }, [pathname, dict?.categories])
+  }, [pathname])
 
   const sortedServices = React.useMemo(() => {
     return [...services].sort((a, b) => {
@@ -100,7 +128,7 @@ export function Navbar({ dict }: { dict: any }) {
   }, [platform.id, services])
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b border-neutral-100 bg-white/70 backdrop-blur-xl shadow-[0_2px_20px_-3px_rgba(0,0,0,0.05)] dark:border-white/10 dark:bg-black/70">
+    <nav dir="ltr" className="sticky top-0 z-50 w-full border-b border-neutral-100 bg-white/70 backdrop-blur-xl shadow-[0_2px_20px_-3px_rgba(0,0,0,0.05)] dark:border-white/10 dark:bg-black/70">
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <div className="flex h-14 sm:h-16 items-center justify-between">
           <div className="flex items-center gap-4 lg:gap-8">
@@ -109,14 +137,15 @@ export function Navbar({ dict }: { dict: any }) {
                 <div className="absolute inset-0 bg-blue-500/10 blur-xl opacity-0 dark:opacity-100" />
                 <Image 
                   src="/assets/logo.png" 
-                  alt="SavClip Logo" 
+                  alt="SavClip Logo - All-in-One Social Media Downloader" 
                   width={40} 
                   height={40} 
                   className="object-contain relative z-10 dark:brightness-125 dark:drop-shadow-[0_0_8_rgba(59,130,246,0.5)]"
                 />
               </div>
               <span className="text-[21px] sm:text-2xl font-black tracking-[0.12em] uppercase text-neutral-900 dark:text-white transition-all duration-300">
-                SAV<span className={cn("bg-clip-text text-transparent bg-gradient-to-r inline-block", 
+                SAV
+                <span className={cn("bg-clip-text text-transparent bg-gradient-to-r inline-block", 
                   platform.text.includes('pink') ? "from-pink-500 via-rose-500 to-rose-600 drop-shadow-[0_2px_10px_rgba(244,63,94,0.4)]" :
                   platform.text.includes('blue') ? "from-blue-500 via-indigo-500 to-indigo-600 drop-shadow-[0_2px_10px_rgba(59,130,246,0.4)]" :
                   platform.text.includes('red') ? "from-red-500 via-rose-500 to-rose-600 drop-shadow-[0_2px_10px_rgba(239,68,68,0.4)]" :
@@ -130,7 +159,7 @@ export function Navbar({ dict }: { dict: any }) {
             {/* Desktop Service Links */}
             <div className="hidden xl:flex items-center gap-5 ms-4">
               {sortedServices
-                .filter(s => s.category !== 'captions' && s.category !== 'bio')
+                .filter(s => s.category !== 'home' && s.category !== 'blog')
                 .map((service) => {
                   const navData = PLATFORM_NAV_CONFIG[service.category];
                 return (
@@ -149,12 +178,12 @@ export function Navbar({ dict }: { dict: any }) {
 
                     {/* Desktop Hover Dropdown */}
                     {navData && (
-                      <div className="absolute top-full left-0 hidden group-hover/item:block pt-2">
+                      <div className="absolute top-full start-0 hidden group-hover/item:block pt-2">
                         <div className={cn("w-[600px] grid grid-cols-2 gap-8 bg-white/95 dark:bg-neutral-900/95 backdrop-blur-xl p-8 rounded-3xl shadow-2xl border border-neutral-100 dark:border-neutral-800", navData.borderColor)}>
-                           {navData.categories.map((cat) => (
+                            {navData.categories.map((cat) => (
                              <div key={cat.titleKey} className="flex flex-col gap-4">
                                 <p className="text-[10px] font-black tracking-widest text-neutral-400">
-                                  {dict.navbar?.[cat.titleKey as keyof typeof dict.navbar] || cat.titleKey}
+                                  {cat.titleKey}
                                 </p>
                                 <ul className="flex flex-col gap-2.5">
                                   {cat.links.map((link) => (
@@ -164,7 +193,7 @@ export function Navbar({ dict }: { dict: any }) {
                                         href={getLocalizedHref(link.href)}
                                         className={cn("text-xs font-bold text-neutral-600 dark:text-neutral-400 hover:translate-x-1 transition-all inline-block", navData.hoverColor)}
                                       >
-                                        {isMounted ? getLabel(link.href, link.label) : link.label}
+                                        {link.label}
                                       </Link>
                                     </li>
                                   ))}
@@ -181,6 +210,53 @@ export function Navbar({ dict }: { dict: any }) {
           </div>
 
           <div className="flex items-center gap-2 sm:gap-4">
+            {/* Language Switcher Dropdown */}
+            <div className="relative">
+              <button
+                onClick={() => setIsLangOpen(!isLangOpen)}
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-neutral-50/40 dark:bg-neutral-900/40 border border-neutral-200/30 dark:border-neutral-800/30 hover:bg-neutral-100/60 dark:hover:bg-neutral-800/60 transition-all active:scale-95 text-neutral-600 dark:text-neutral-400 shadow-xs"
+                title="Switch Language"
+              >
+                <Globe className="h-[18px] w-[18px]" />
+              </button>
+
+              <AnimatePresence>
+                {isLangOpen && (
+                  <>
+                    <div className="fixed inset-0 z-40" onClick={() => setIsLangOpen(false)} />
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.95, y: -10 }}
+                      animate={{ opacity: 1, scale: 1, y: 0 }}
+                      exit={{ opacity: 0, scale: 0.95, y: -10 }}
+                      className="absolute end-0 mt-2 z-50 w-48 rounded-2xl bg-white dark:bg-neutral-900 border border-neutral-100 dark:border-neutral-800 shadow-2xl p-2"
+                    >
+                      {['en', 'pt', 'es', 'id', 'ar'].map((loc) => {
+                        const name = (languageNames as any)[loc] || loc;
+                        const flag = (languageFlags as any)[loc] || '🌐';
+                        const isActive = currentLocale === loc;
+                        return (
+                          <Link
+                            key={loc}
+                            href={`${getLocalizedPathForLocale(loc)}${queryString}`}
+                            onClick={() => setIsLangOpen(false)}
+                            className={cn(
+                              "flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-left text-xs font-bold transition-all",
+                              isActive
+                                ? "bg-pink-500/10 text-pink-600 dark:bg-pink-500/20 dark:text-pink-400"
+                                : "text-neutral-600 dark:text-neutral-400 hover:bg-neutral-50 dark:hover:bg-neutral-800"
+                            )}
+                          >
+                            <span className="text-base">{flag}</span>
+                            <span className="flex-1">{name}</span>
+                          </Link>
+                        );
+                      })}
+                    </motion.div>
+                  </>
+                )}
+              </AnimatePresence>
+            </div>
+
             <button
               onClick={openHistory}
               className="flex h-10 w-10 items-center justify-center rounded-full bg-neutral-50/40 dark:bg-neutral-900/40 border border-neutral-200/30 dark:border-neutral-800/30 hover:bg-neutral-100/60 dark:hover:bg-neutral-800/60 transition-all active:scale-95 text-neutral-600 dark:text-neutral-400 shadow-xs"
@@ -188,6 +264,7 @@ export function Navbar({ dict }: { dict: any }) {
             >
               <History className="h-[18px] w-[18px]" />
             </button>
+
 
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -220,7 +297,9 @@ export function Navbar({ dict }: { dict: any }) {
                     <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-linear-to-br from-pink-600 to-rose-600 text-white shadow-xl shadow-pink-500/30 group-hover:scale-110 transition-transform">
                       <Compass className="h-5 w-5" />
                     </div>
-                    <span className="text-sm font-bold text-neutral-900 dark:text-white uppercase tracking-tight">Home</span>
+                    <span className="text-sm font-bold text-neutral-900 dark:text-white uppercase tracking-tight">
+                      Home
+                    </span>
                   </button>
 
                   <button
@@ -233,7 +312,9 @@ export function Navbar({ dict }: { dict: any }) {
                     <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-linear-to-br from-violet-600 to-indigo-600 text-white shadow-xl shadow-violet-500/30 group-hover:scale-110 transition-transform">
                       <History className="h-5 w-5" />
                     </div>
-                    <span className="text-sm font-bold text-neutral-900 dark:text-white uppercase tracking-tight">History</span>
+                    <span className="text-sm font-bold text-neutral-900 dark:text-white uppercase tracking-tight">
+                      History
+                    </span>
                   </button>
                 </div>
               </div>
@@ -242,7 +323,9 @@ export function Navbar({ dict }: { dict: any }) {
               <div className="space-y-4">
                 <div className="flex items-center gap-3 px-1">
                   <div className="h-[2px] w-8 bg-pink-600 rounded-full" />
-                  <p className="text-[11px] font-black uppercase tracking-[0.3em] text-neutral-400">Download Tools</p>
+                  <p className="text-[11px] font-black uppercase tracking-[0.3em] text-neutral-400">
+                    Download Tools
+                  </p>
                 </div>
                 
                 <div className="grid grid-cols-1 gap-2.5">
@@ -261,7 +344,9 @@ export function Navbar({ dict }: { dict: any }) {
                         </div>
                         <div className="flex flex-col items-start gap-0.5">
                           <span className="text-sm font-bold text-neutral-900 dark:text-white uppercase tracking-tight">{service.name}</span>
-                          <span className="text-xs font-medium text-neutral-400 dark:text-neutral-500 uppercase tracking-tight">Fast Downloader</span>
+                          <span className="text-xs font-medium text-neutral-400 dark:text-neutral-500 uppercase tracking-tight">
+                            Fast Downloader
+                          </span>
                         </div>
                       </div>
                       <div className="h-8 w-8 rounded-full flex items-center justify-center bg-neutral-100 dark:bg-neutral-800 group-hover:bg-pink-600 group-hover:text-white transition-all">
@@ -272,20 +357,24 @@ export function Navbar({ dict }: { dict: any }) {
                 </div>
               </div>
 
+
+
               {/* Preferences & Info */}
               <div className="space-y-4">
                 <div className="flex items-center gap-3 px-1">
                   <div className="h-[2px] w-8 bg-neutral-400 rounded-full" />
-                  <p className="text-[11px] font-black uppercase tracking-[0.3em] text-neutral-400">Preferences</p>
+                  <p className="text-[11px] font-black uppercase tracking-[0.3em] text-neutral-400">
+                    Preferences
+                  </p>
                 </div>
                 
                 <button
                   onClick={() => setIsSettingsExpanded(!isSettingsExpanded)}
                   className={cn(
-                    "flex w-full items-center justify-between rounded-2xl p-4 transition-all border group active:scale-[0.99]",
-                    isSettingsExpanded 
-                      ? "bg-white dark:bg-neutral-800 border-pink-500/20 shadow-lg shadow-pink-500/5" 
-                      : "bg-neutral-50/50 dark:bg-neutral-900/30 border-transparent hover:border-neutral-100 dark:hover:border-neutral-700"
+                     "flex w-full items-center justify-between rounded-2xl p-4 transition-all border group active:scale-[0.99]",
+                     isSettingsExpanded 
+                       ? "bg-white dark:bg-neutral-800 border-pink-500/20 shadow-lg shadow-pink-500/5" 
+                       : "bg-neutral-50/50 dark:bg-neutral-900/30 border-transparent hover:border-neutral-100 dark:hover:border-neutral-700"
                   )}
                 >
                   <div className="flex items-center gap-4">
@@ -298,8 +387,12 @@ export function Navbar({ dict }: { dict: any }) {
                       <SettingsIcon className="h-5 w-5" />
                     </div>
                     <div className="flex flex-col items-start gap-0.5">
-                      <span className="text-sm font-bold text-neutral-900 dark:text-white uppercase tracking-tight">SETTINGS & INFO</span>
-                      <span className="text-xs font-medium text-neutral-400 dark:text-neutral-500 uppercase tracking-tight">App Preferences</span>
+                      <span className="text-sm font-bold text-neutral-900 dark:text-white uppercase tracking-tight">
+                        Settings & Info
+                      </span>
+                      <span className="text-xs font-medium text-neutral-400 dark:text-neutral-500 uppercase tracking-tight">
+                        App Preferences
+                      </span>
                     </div>
                   </div>
                   <div className={cn(
@@ -327,8 +420,12 @@ export function Navbar({ dict }: { dict: any }) {
                                 <LayoutGridIcon className="h-5 w-5" />
                               </div>
                               <div className="flex flex-col">
-                                <span className="text-sm font-bold text-neutral-800 dark:text-neutral-200 uppercase tracking-tight">Media Previews</span>
-                                <span className="text-xs font-medium text-neutral-400 dark:text-neutral-500">Show thumbnails</span>
+                                <span className="text-sm font-bold text-neutral-800 dark:text-neutral-200 uppercase tracking-tight">
+                                  Media Previews
+                                </span>
+                                <span className="text-xs font-medium text-neutral-400 dark:text-neutral-500">
+                                  Show thumbnails
+                                </span>
                               </div>
                             </div>
                             <label className="relative inline-flex items-center cursor-pointer scale-110">
@@ -338,9 +435,41 @@ export function Navbar({ dict }: { dict: any }) {
                           </div>
                         </div>
 
+                        {/* Mobile Language Selector */}
+                        <div className="pt-6 border-t border-neutral-100 dark:border-neutral-800">
+                          <p className="text-[10px] font-black uppercase tracking-[0.2em] text-neutral-400 mb-4 px-1 text-center">
+                            Select Language
+                          </p>
+                          <div className="grid grid-cols-2 gap-3">
+                            {['en', 'pt', 'es', 'id', 'ar'].map((loc) => {
+                              const name = (languageNames as any)[loc] || loc;
+                              const flag = (languageFlags as any)[loc] || '🌐';
+                              const isActive = currentLocale === loc;
+                              return (
+                                <Link
+                                  key={loc}
+                                  href={`${getLocalizedPathForLocale(loc)}${queryString}`}
+                                  onClick={() => setIsOpen(false)}
+                                  className={cn(
+                                    "flex items-center gap-2 justify-center rounded-xl px-4 py-3 transition-all border",
+                                    isActive
+                                      ? "bg-pink-500/10 text-pink-600 border-pink-500/20"
+                                      : "bg-neutral-50 dark:bg-neutral-800/50 text-neutral-600 dark:text-neutral-400 border-transparent hover:bg-neutral-100 dark:hover:bg-neutral-800"
+                                  )}
+                                >
+                                  <span className="text-sm">{flag}</span>
+                                  <span className="text-[11px] font-black uppercase tracking-wider">{name}</span>
+                                </Link>
+                              );
+                            })}
+                          </div>
+                        </div>
+
                         {/* Footer Links */}
                         <div className="pt-6 border-t border-neutral-100 dark:border-neutral-800">
-                          <p className="text-[10px] font-black uppercase tracking-[0.2em] text-neutral-400 mb-4 px-1 text-center">Company Info</p>
+                          <p className="text-[10px] font-black uppercase tracking-[0.2em] text-neutral-400 mb-4 px-1 text-center">
+                            Company Info
+                          </p>
                           <div className="grid grid-cols-2 gap-3">
                             {[
                               { name: "About Us", href: "/about" },
@@ -358,7 +487,9 @@ export function Navbar({ dict }: { dict: any }) {
                                 }}
                                 className="flex items-center justify-center text-center rounded-xl px-4 py-3 bg-neutral-50 dark:bg-neutral-800/50 hover:bg-pink-50 dark:hover:bg-pink-900/20 hover:text-pink-600 transition-all text-neutral-500 dark:text-neutral-400"
                               >
-                                <span className="text-[11px] font-black uppercase tracking-wider">{link.name}</span>
+                                <span className="text-[11px] font-black uppercase tracking-wider">
+                                  {link.name}
+                                </span>
                               </button>
                             ))}
                           </div>

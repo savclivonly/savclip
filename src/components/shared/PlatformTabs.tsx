@@ -4,6 +4,9 @@ import * as React from "react"
 import Link from "next/link"
 import { cn } from "@/utils/cn"
 import { motion } from "framer-motion"
+import { useCurrentLocale } from "@/hooks/useCurrentLocale"
+import { getDictionary } from "@/dictionaries/client"
+import { translateToolName } from "@/utils/translate-tool"
 
 export interface TabItem {
   id: string
@@ -22,20 +25,27 @@ interface PlatformTabsProps {
   indicatorColor?: string
 }
 
-export function PlatformTabs({ items, activeId, activeColor = "text-pink-600", tabs, className, locale = "en", indicatorColor = "bg-white" }: PlatformTabsProps) {
+export function PlatformTabs({ items, activeId, activeColor = "text-pink-600", tabs: propTabs, className, locale: propLocale, indicatorColor = "bg-white" }: PlatformTabsProps) {
+  const currentLocale = useCurrentLocale()
+  const locale = propLocale || currentLocale
+  const clientDict = getDictionary(locale)
+  const tabs = propTabs || clientDict?.tabs
+
   return (
     <div className={cn("mt-1 sm:mt-3 mb-6 sm:mb-10 flex justify-center w-full px-2 sm:px-0", className)}>
       <div className="grid grid-cols-5 items-center gap-0.5 rounded-2xl bg-black/20 p-1 backdrop-blur-xl border border-white/10 shadow-2xl outline-hidden ring-1 ring-white/5 w-full max-w-4xl mx-auto">
         {items.map((item) => {
           const isActive = item.id === activeId
-          const label = tabs?.[item.id] || item.label
+          const label = (tabs as any)?.[item.id] || translateToolName(item.label, locale)
+          const rawHref = item.href
+          const localizedHref = locale === 'en' ? rawHref : `/${locale}${rawHref.startsWith('/') ? rawHref : '/' + rawHref}`
           return (
             <Link
               key={item.id}
-              href={item.href}
+              href={localizedHref}
               prefetch={true}
               className={cn(
-                "group relative flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-1.5 rounded-xl py-2 sm:py-2.5 text-[9px] sm:text-[13px] font-black tracking-tight transition-all duration-300 w-full",
+                "group relative flex flex-col sm:flex-row items-center justify-center gap-1.5 sm:gap-2 rounded-xl py-2 sm:py-2.5 text-[9px] sm:text-[13px] font-black tracking-tight transition-all duration-300 w-full",
                 isActive ? activeColor : "text-white/60 hover:text-white"
               )}
             >
