@@ -2,34 +2,34 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "كيف يعمل فحص القيود الجغرافية لمنصة YouTube؟"
+    "content": "Como funciona a verificação de restrição regional do YouTube?"
   },
   {
     "type": "paragraph",
-    "content": "يتصل نظامنا بخوادم YouTube في الوقت الفعلي للتحقق مما إذا كان مقطع الفيديو يواجه قيود عرض في دول معينة أو حظر بسبب حقوق النشر. Se você quiser experimentar outros recursos, também poderá usar nosso <a href=\"/youtube-video-cutter\">Cortador de Vídeo</a> ou verificar o <a href=\"/youtube-comment-picker\">Selecionador de Comentários</a> para acesso completo."
+    "content": "Nosso sistema consulta as informações públicas dos servidores do YouTube em tempo real para verificar se o conteúdo possui restrições geográficas ou bloqueios de exibição por direitos autorais. Se você quiser experimentar outros recursos, também poderá usar nosso <a href=\"/youtube-video-cutter\">Cortador de Vídeo</a> ou verificar o <a href=\"/youtube-comment-picker\">Selecionador de Comentários</a> para acesso completo."
   }
 ];
 
 export const faqs = [
   {
-    "q": "كيف أفحص القيود الجغرافية لفيديو على YouTube؟",
-    "a": "الصق رابط الفيديو أو القناة في شريط البحث بالأعلى، واضغط على فحص لعرض خريطة التوفر الجغرافي."
+    "q": "Como verificar bloqueio regional no YouTube?",
+    "a": "Cole a URL do vídeo ou canal na caixa de busca e clique em verificar para obter o mapa de disponibilidade mundial."
   },
   {
-    "q": "هل أداة فحص الحظر دقيقة؟",
-    "a": "نعم، نجلب البيانات الرسمية من APIs لتقديم نتائج دقيقة وفورية."
+    "q": "O verificador de restrições é preciso?",
+    "a": "Sim, consultamos as APIs públicas para entregar as restrições em tempo real."
   }
 ];
 
 export const meta = {
-  title: "Verificador de Restrição Regional YouTube فحص الحظر الجغرافي - SavClip",
-  description: "تحقق من توفر الفيديوهات على YouTube في الوقت الفعلي. اكتشف ما إذا كان الفيديو محظوراً في أي بلد."
+  title: "Verificador de Restrição Regional YouTube Verificar Bloqueios - SavClip",
+  description: "Analise disponibilidade de vídeos no YouTube em tempo real. Descubra se um vídeo está bloqueado em algum país."
 };
 
 export const header = {
   title: "Verificador de Restrição Regional",
-  title1: "تحقق",
+  title1: "Checar",
   title2: "YouTube Restrição Regional",
-  title3: "قيود الحظر",
-  subtitle: "اكتشف القيود الإقليمية للوسائط على YouTube أون لاين."
+  title3: "Bloqueios",
+  subtitle: "Descubra restrições regionais de mídia no YouTube online."
 };

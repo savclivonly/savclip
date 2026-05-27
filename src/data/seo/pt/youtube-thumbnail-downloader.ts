@@ -2,7 +2,7 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Por que usar o SavClip para a Baixador de Miniaturas do YouTube?"
+    "content": "Por que usar o SavClip para o Baixador de Miniaturas do YouTube?"
   },
   {
     "type": "paragraph",

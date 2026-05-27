@@ -2,34 +2,34 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "لماذا تستخدم مولد السيرة الذاتية (البيو) لمنصة Telegram؟"
+    "content": "Por que usar o Gerador de Bios do Telegram?"
   },
   {
     "type": "paragraph",
-    "content": "تعد السيرة الذاتية الجذابة الخطوة الأولى لتحويل زوار الحساب إلى متابعين دائمين. استخدم أداتنا الذكية لصياغة نصوص بيو مبتكرة ومحسنة تناسب تخصصك على Telegram. Se você quiser experimentar outros recursos, também poderá usar nosso <a href=\"/telegram-video-downloader\">Baixador de Vídeos</a> ou verificar o <a href=\"/telegram-private-video-downloader\">Baixador de Mídia</a> para acesso completo."
+    "content": "Uma biografia atraente é a chave para converter visitantes do perfil em seguidores. Use nossa inteligência artificial para gerar textos criativos e otimizados para o seu nicho no Telegram. Se você quiser experimentar outros recursos, também poderá usar nosso <a href=\"/telegram-video-downloader\">Baixador de Vídeos</a> ou verificar o <a href=\"/telegram-private-video-downloader\">Baixador de Mídia</a> para acesso completo."
   }
 ];
 
 export const faqs = [
   {
-    "q": "كيف يمكنني توليد بيو لحساب Telegram؟",
-    "a": "أدخل مجالك أو الكلمات الدلالية الأساسية، وحدد أسلوب الكتابة، ثم اضغط على توليد لتلقي خيارات متعددة فريدة ومميزة."
+    "q": "Como gerar uma biografia para o Telegram?",
+    "a": "Insira seu nicho ou palavras-chave principais, selecione o tom de voz e clique em gerar para receber opções exclusivas de bios."
   },
   {
-    "q": "هل مولد السيرة الذاتية بالذكاء الاصطناعي مجاني؟",
-    "a": "نعم، يقدم موقع SavClip هذا المساعد الذكي مجاناً بالكامل لجميع صناع المحتوى."
+    "q": "O gerador de bios por IA é gratuito?",
+    "a": "Sim, o SavClip oferece este assistente de IA totalmente grátis para todos os criadores."
   }
 ];
 
 export const meta = {
-  title: "Gerador de Bios Telegram ذكاء اصطناعي - SavClip",
-  description: "ولد بيو مميز لمنصة Telegram باستخدام الذكاء الاصطناعي مجاناً وبسرعة. اجعل ملفك الشخصي فريداً."
+  title: "Gerador de Bios Telegram IA Grátis - SavClip",
+  description: "Gere bios profissionais para o Telegram usando inteligência artificial de forma rápida e simples. Destaque seu perfil."
 };
 
 export const header = {
   title: "Gerador de Bios",
-  title1: "توليد",
+  title1: "Gerar",
   title2: "Telegram Bios",
-  title3: "سيو ملف شخصي",
-  subtitle: "صمم بيو رائع لحسابك على Telegram مجاناً وبسهولة."
+  title3: "Otimizado",
+  subtitle: "Crie uma apresentação atraente para seu perfil do Telegram gratuitamente."
 };

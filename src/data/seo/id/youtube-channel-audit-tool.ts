@@ -2,51 +2,34 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Bagaimana SavClip mempermudah proses Alat Audit Saluran YouTube"
+    "content": "Audit profil atau saluran YouTube Anda"
   },
   {
     "type": "paragraph",
-    "content": "Kami merancang antarmuka ringkas agar proses unduhan berjalan lancar. SavClip fokus pada kecepatan dan kemudahan akses. Jika Anda ingin mencoba fitur lain, Anda juga dapat menggunakan <a href=\"/youtube-tag-generator\">Pembuat Tag</a> kami atau memeriksa <a href=\"/youtube-description-generator\">Pembuat Deskripsi</a> untuk akses lengkap."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Kompatibel di semua jenis browser"
-  },
-  {
-    "type": "paragraph",
-    "content": "Kami membaca link terstruktur publik untuk memanggil file media asli tanpa merusak kualitas visual, memastikan kualitas terbaik yang tersedia."
+    "content": "Alat audit kami menganalisis tag, deskripsi, dan metadata halaman YouTube serta menyarankan perbaikan penting untuk meningkatkan jangkauan organik Anda. Jika Anda ingin mencoba fitur lain, Anda juga dapat menggunakan <a href=\"/youtube-tag-generator\">Pembuat Tag</a> kami atau memeriksa <a href=\"/youtube-description-generator\">Pembuat Deskripsi</a> untuk akses lengkap."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Bagaimana cara menyimpan file dari YouTube online?",
-    "a": "Salin link postingan, tempel di kolom pencarian atas kami, lalu klik Unduh untuk menyimpan file langsung ke penyimpanan Anda."
+    "q": "Bagaimana cara mengaudit saluran YouTube?",
+    "a": "Masukkan tautan atau nama saluran di kotak pencarian, klik analisis dan dapatkan laporan optimasi SEO yang mendetail."
   },
   {
-    "q": "Apakah ada batasan kecepatan unduhan?",
-    "a": "Tidak ada. Server kami menyalurkan bandwidth ultra cepat agar file terunduh hanya dalam hitungan detik."
-  },
-  {
-    "q": "Apakah alat ini berfungsi untuk semua jenis file publik di YouTube?",
-    "a": "Ya, alat kami mendukung penyimpanan media terbuka yang ada pada platform tersebut."
-  },
-  {
-    "q": "Apakah ada batasan kecepatan unduhan?",
-    "a": "Tidak ada. Server kami menyalurkan kecepatan penuh agar file selesai diunduh secara instan."
+    "q": "Apakah saya perlu memberikan akses akun untuk audit?",
+    "a": "Tidak. Kami hanya membaca data publik YouTube, tanpa memerlukan kata sandi atau hak istimewa admin."
   }
 ];
 
 export const meta = {
-  title: "Alat Audit Saluran YouTube Simpan Media - SavClip",
-  description: "Unduh dan konversi file dari YouTube secara cepat dan aman. Tanpa pasang aplikasi tambahan."
+  title: "Alat Audit Saluran YouTube SEO Gratis - SavClip",
+  description: "Analisis metrik dan SEO untuk YouTube secara online dengan gratis dan transparan. Dapatkan laporan optimasi instan."
 };
 
 export const header = {
   title: "Alat Audit Saluran",
-  title1: "Simpan",
+  title1: "Analisis",
   title2: "YouTube Audit Saluran",
-  title3: "Media Kualitas HD",
-  subtitle: "Simpan konten publik YouTube dengan privasi penuh dan tanpa kendala."
+  title3: "Wawasan",
+  subtitle: "Dapatkan wawasan dan laporan performa untuk mengoptimalkan profil YouTube Anda."
 };

@@ -133,15 +133,41 @@ function spin(text, seed) {
   return spun;
 }
 
-function spinAndReplace(text, seed, platformName, toolName) {
+function spinAndReplace(text, seed, platformName, toolName, lang) {
   if (!text) return "";
   let temp = text
     .replace(/{{platform}}/g, "__PLATFORM__")
     .replace(/{{tool}}/g, "__TOOL__");
   let spun = spin(temp, seed);
-  return spun
-    .replace(/__PLATFORM__/g, platformName)
-    .replace(/__TOOL__/g, toolName);
+  let result = spun.replace(/__PLATFORM__/g, platformName);
+
+  if (lang === 'pt') {
+    const isFeminine = toolName.startsWith('Ferramenta');
+    if (isFeminine) {
+      result = result.replace(/para\s+a\s+__TOOL__/gi, `para a ${toolName}`);
+      result = result.replace(/o\s+__TOOL__/gi, `a ${toolName}`);
+      result = result.replace(/__TOOL__/g, toolName);
+    } else {
+      result = result.replace(/para\s+a\s+__TOOL__/gi, `para o ${toolName}`);
+      result = result.replace(/o\s+__TOOL__/gi, `o ${toolName}`);
+      result = result.replace(/__TOOL__/g, toolName);
+    }
+  } else if (lang === 'es') {
+    const isFeminine = toolName.startsWith('Herramienta');
+    if (isFeminine) {
+      result = result.replace(/para\s+la\s+__TOOL__/gi, `para la ${toolName}`);
+      result = result.replace(/el\s+__TOOL__/gi, `la ${toolName}`);
+      result = result.replace(/__TOOL__/g, toolName);
+    } else {
+      result = result.replace(/para\s+la\s+__TOOL__/gi, `para el ${toolName}`);
+      result = result.replace(/el\s+__TOOL__/gi, `el ${toolName}`);
+      result = result.replace(/__TOOL__/g, toolName);
+    }
+  } else {
+    result = result.replace(/__TOOL__/g, toolName);
+  }
+
+  return result;
 }
 
 function getSeed(filename) {
@@ -407,342 +433,6 @@ const spintaxDb = {
         { q: "É seguro baixar filtros do {{platform}}?", a: "Sim, processamos o download direto dos servidores oficiais sem expor sua conta ou requerer downloads adicionais." }
       ]
     },
-    link: {
-      metaTitle: "{{tool}} {{platform}} {Links de Convite|Gerar URL} - SavClip",
-      metaDesc: "{Crie links diretos e caminhos|Gerador de links} para {{platform}} de forma {rápida e simples|totalmente gratuita}. Melhore a conversão de inscritos e o rastreamento de URLs.",
-      subtitle: "{Gere links de convite direto para o {{platform}} de forma simples.|Crie URLs de redirecionamento otimizados para o {{platform}}.}",
-      title1: "{Criar|Gerar}", title3: "{Links Otimizados|Crescimento}",
-      articleSections: [
-        { type: "heading", level: 2, content: "Por que usar o Gerador de Links do {{platform}}?" },
-        { type: "paragraph", content: "Criar links de redirecionamento direto ajuda a abrir o aplicativo do {{platform}} imediatamente no celular do usuário, evitando desistências e aumentando sua taxa de conversão de inscritos de forma orgânica." }
-      ],
-      faqs: [
-        { q: "Como gerar link de convite do {{platform}}?", a: "Insira o nome de usuário ou código do canal no formulário superior, clique em gerar e copie a nova URL de redirecionamento." },
-        { q: "Esta ferramenta de link é gratuita?", a: "Sim, é um utilitário de link totalmente grátis e sem limites de geração diária." }
-      ]
-    },
-    restriction: {
-      metaTitle: "{{tool}} {{platform}} {Online e Grátis|Verificar Bloqueios} - SavClip",
-      metaDesc: "{Verifique restrições regionais e bloqueios|Analise disponibilidade de vídeos} no {{platform}} {instantaneamente|em tempo real}. Descubra se um vídeo está bloqueado em algum país.",
-      subtitle: "{Verifique se vídeos do {{platform}} possuem bloqueios por país ou país restrito.|Descubra restrições regionais de mídia no {{platform}} online.}",
-      title1: "{Verificar|Checar}", title3: "{Status de Região|Bloqueios}",
-      articleSections: [
-        { type: "heading", level: 2, content: "Como funciona a verificação de restrição regional do {{platform}}?" },
-        { type: "paragraph", content: "Nosso sistema consulta as informações públicas dos servidores do {{platform}} em tempo real para verificar se o conteúdo possui restrições geográficas ou bloqueios de exibição por direitos autorais." }
-      ],
-      faqs: [
-        { q: "Como verificar bloqueio regional no {{platform}}?", a: "Cole a URL do vídeo ou canal na caixa de busca e clique em verificar para obter o mapa de disponibilidade mundial." },
-        { q: "O verificador de restrições é preciso?", a: "Sim, consultamos as APIs públicas para entregar as restrições em tempo real." }
-      ]
-    },
-    space: {
-      metaTitle: "{{tool}} {{platform}} {Download MP3|Gravar Space HD} - SavClip",
-      metaDesc: "{Baixe gravações de audio e Spaces|Salve áudio de transmissões} do {{platform}} em {alta qualidade MP3|320kbps}. Converta transmissões ao vivo para ouvir offline.",
-      subtitle: "{Salve transmissões de áudio e Spaces do {{platform}} em MP3 de alta fidelidade.|Converta áudios de Spaces do {{platform}} para ouvir offline com praticidade.}",
-      title1: "{Baixar|Extrair}", title3: "{MP3 HD|Transmissão}",
-      articleSections: [
-        { type: "heading", level: 2, content: "O melhor extrator de áudio e Spaces do {{platform}}" },
-        { type: "paragraph", content: "Com o SavClip, você pode baixar transmissões de áudio completas do {{platform}} convertidas diretamente para o formato MP3 de alta taxa de bits (320kbps), perfeito para escutar offline." }
-      ],
-      faqs: [
-        { q: "Como baixar o áudio de um Space do {{platform}}?", a: "Copie a URL da gravação ou Space ativo, cole em nosso site e clique no botão de download para obter a faixa MP3." },
-        { q: "É possível converter o áudio em alta qualidade?", a: "Sim, extraímos o fluxo bruto do áudio garantindo bitrates excelentes sem compressão prejudicial." }
-      ]
-    },
-    finder: {
-      metaTitle: "{{tool}} {{platform}} {Canais Populares|Tendências} - SavClip",
-      metaDesc: "{Descubra canais populares e tendências|Encontre grupos em destaque} no {{platform}} por categoria. Explore novos recursos e comunidades online.",
-      subtitle: "{Encontre e explore canais e grupos em destaque no {{platform}} de forma simples.|Descubra as comunidades mais populares do {{platform}} divididas por nicho.}",
-      title1: "{Localizar|Descobrir}", title3: "{Tendências|Comunidades}",
-      articleSections: [
-        { type: "heading", level: 2, content: "Encontre os canais mais populares do {{platform}}" },
-        { type: "paragraph", content: "Nosso diretório automatizado ajuda você a rastrear e encontrar canais, perfis ou grupos em ascensão no {{platform}} classificados por temas e engajamento real." }
-      ],
-      faqs: [
-        { q: "Como descobrir canais em alta no {{platform}}?", a: "Navegue pelo nosso painel de categorias para visualizar canais e grupos ordenados por relevância e crescimento." },
-        { q: "A lista de comunidades do {{platform}} é atualizada?", a: "Sim, atualizamos nossa base regularmente para refletir as novas tendências de audiência no {{platform}}." }
-      ]
-    },
-    audit: {
-      metaTitle: "{{tool}} {{platform}} {Auditoria de Canal|SEO Grátis} - SavClip",
-      metaDesc: "{Audite canais e páginas|Analise métricas e SEO} do {{platform}} online de forma {gratuita e transparente|rápida}. Obtenha relatórios de otimização instantâneos.",
-      subtitle: "{Faça auditoria de SEO e analise métricas de páginas do {{platform}} gratuitamente.|Obtenha insights e relatórios de desempenho para otimizar seu perfil no {{platform}}.}",
-      title1: "{Auditar|Analisar}", title3: "{SEO Grátis|Insights}",
-      articleSections: [
-        { type: "heading", level: 2, content: "Audite seu perfil ou canal no {{platform}}" },
-        { type: "paragraph", content: "Nossa ferramenta de auditoria analisa tags, descrições e metadados de páginas do {{platform}} sugerindo melhorias essenciais para impulsionar seu alcance e tráfego orgânico." }
-      ],
-      faqs: [
-        { q: "Como auditar um canal do {{platform}}?", a: "Digite o link ou nome do canal no buscador, clique em analisar e receba o relatório de otimização de SEO detalhado." },
-        { q: "Preciso conceder acesso à minha conta para a auditoria?", a: "Não. Lemos exclusivamente dados públicos do {{platform}}, sem necessidade de login ou privilégios de administrador." }
-      ]
-    },
-    lens: {
-      metaTitle: "{{tool}} {{platform}} {Fácil y Seguro|Guardar Lentes} - SavClip",
-      metaDesc: "{La mejor herramienta online para guardar medios|Descarga y convierte archivos} de {{platform}} de forma {rápida y segura|gratuita}. Sin descargas de apps o extensiones.",
-      subtitle: "{Guarda lentes y filtros favoritos de {{platform}} de forma rápida y segura.|Obtén efectos y lentes de {{platform}} directamente en tu dispositivo.}",
-      title1: "{Descargar|Guardar}", title3: "{Filtros HD|Lentes Gratis}",
-      articleSections: [
-        { type: "heading", level: 2, content: "¿Cómo guardar Lentes y Filtros de {{platform}}?" },
-        { type: "paragraph", content: "Nuestro {{tool}} está diseñado para ofrecer el salvado rápido de lentes de {{platform}}. Copia el enlace del filtro o lente, pégalo en la barra superior y descarga los archivos en pocos segundos de forma gratuita." }
-      ],
-      faqs: [
-        { q: "¿Cómo descargar lentes de {{platform}}?", a: "Pega la URL de la lente en la caja de búsqueda y haz clic en descargar para transferir los archivos de efecto a tu dispositivo." },
-        { q: "¿Es seguro descargar filtros de {{platform}}?", a: "Sí, procesamos la descarga directa de los servidores oficiales sin exponer tu cuenta o requerir descargas adicionales." }
-      ]
-    },
-    link: {
-      metaTitle: "{{tool}} {{platform}} {Enlaces de Invitación|Generar URL} - SavClip",
-      metaDesc: "{Crea enlaces directos y rutas|Generador de enlaces} para {{platform}} de forma {rápida y sencilla|totalmente gratis}. Mejora la conversión de suscriptores y el rastreo de URLs.",
-      subtitle: "{Genera enlaces de invitación directa para {{platform}} de forma sencilla.|Crea URLs de redireccionamiento optimizados para {{platform}}.}",
-      title1: "{Crear|Generar}", title3: "{Enlaces Optimizados|Crecimiento}",
-      articleSections: [
-        { type: "heading", level: 2, content: "¿Por qué usar el Generador de Enlaces de {{platform}}?" },
-        { type: "paragraph", content: "Crear enlaces de redireccionamiento directo ayuda a abrir la aplicación de {{platform}} inmediatamente en el celular del usuario, evitando rebotes y aumentando tu tasa de conversión de suscriptores de forma orgánica." }
-      ],
-      faqs: [
-        { q: "¿Cómo generar enlace de invitación de {{platform}}?", a: "Introduce el nombre de usuario o código del canal en el formulario superior, haz clic en generar y copia la nueva URL de redireccionamiento." },
-        { q: "¿Esta herramienta de enlace es gratuita?", a: "Sí, es una utilidad de enlace totalmente gratis y sin límites de generación diaria." }
-      ]
-    },
-    restriction: {
-      metaTitle: "{{tool}} {{platform}} {Online y Gratis|Verificar Bloqueos} - SavClip",
-      metaDesc: "{Verifica restricciones regionales y bloqueos|Analiza disponibilidad de videos} en {{platform}} {al instante|en tiempo real}. Descubre si un video está bloqueado en algún país.",
-      subtitle: "{Verifica si videos de {{platform}} tienen bloqueos por país o restricciones de edad.|Descubre restricciones regionales de medios en {{platform}} online.}",
-      title1: "{Verificar|Chequear}", title3: "{Status de Región|Bloqueos}",
-      articleSections: [
-        { type: "heading", level: 2, content: "¿Cómo funciona la verificación de restricción regional de {{platform}}?" },
-        { type: "paragraph", content: "Nuestro sistema consulta la información pública de los servidores de {{platform}} en tiempo real para verificar si el contenido tiene restricciones geográficas o bloqueos de exhibición por derechos de autor." }
-      ],
-      faqs: [
-        { q: "¿Cómo verificar bloqueo regional en {{platform}}?", a: "Cole el enlace del video o canal en la caja de búsqueda y haz clic en verificar para obtener el mapa de disponibilidad mundial." },
-        { q: "¿El verificador de restricciones es preciso?", a: "Sí, consultamos las APIs oficiales para entregar las restricciones en tiempo real." }
-      ]
-    },
-    space: {
-      metaTitle: "{{tool}} {{platform}} {Descargar MP3|Grabar Space HD} - SavClip",
-      metaDesc: "{Descarga grabaciones de audio y Spaces|Guarda audio de transmisiones} de {{platform}} en {alta calidad MP3|320kbps}. Convierte transmisiones en vivo para escuchar offline.",
-      subtitle: "{Guarda transmisiones de audio y Spaces de {{platform}} en MP3 de alta fidelidad.|Convierte audios de Spaces de {{platform}} para escuchar offline con facilidad.}",
-      title1: "{Descargar|Extraer}", title3: "{MP3 HD|Transmisión}",
-      articleSections: [
-        { type: "heading", level: 2, content: "El mejor extractor de audio y Spaces de {{platform}}" },
-        { type: "paragraph", content: "Con SavClip, puedes descargar transmisiones de audio completas de {{platform}} convertidas directamente a formato MP3 de alta fidelidad (320kbps), perfecto para escuchar offline." }
-      ],
-      faqs: [
-        { q: "¿Cómo descargar el audio de un Space de {{platform}}?", a: "Copia la URL de la grabación o Space activo, pégala en nuestro sitio y haz clic en descargar para obtener la pista MP3." },
-        { q: "¿Es posible convertir el audio en alta calidad?", a: "Sí, extraemos el flujo bruto del audio garantizando bitrates excelentes sin compresión dañina." }
-      ]
-    },
-    finder: {
-      metaTitle: "{{tool}} {{platform}} {Canales de Tendencia|Populares} - SavClip",
-      metaDesc: "{Descubre canales de tendencia y populares|Encuentra grupos destacados} en {{platform}} por categoría. Explora nuevos recursos y comunidades online.",
-      subtitle: "{Encuentra y explora canales y grupos destacados en {{platform}} de forma sencilla.|Descubre las comunidades más populares de {{platform}} divididas por nicho.}",
-      title1: "{Buscar|Descubrir}", title3: "{Tendencias|Comunidades}",
-      articleSections: [
-        { type: "heading", level: 2, content: "Encuentra los canales más populares de {{platform}}" },
-        { type: "paragraph", content: "Nuestro directorio automatizado te ayuda a rastrear y encontrar canales, perfiles o grupos en ascenso en {{platform}} clasificados por temas y alcance real." }
-      ],
-      faqs: [
-        { q: "¿Cómo descubrir canales en tendencia en {{platform}}?", a: "Navega por nuestro panel de categorías para visualizar canales y grupos ordenados por relevancia y crecimiento." },
-        { q: "¿La lista de comunidades de {{platform}} se actualiza?", a: "Sí, actualizamos nuestra base regularmente para reflejar las nuevas tendencias de audiencia en {{platform}}." }
-      ]
-    },
-    audit: {
-      metaTitle: "{{tool}} {{platform}} {Auditoría de Canal|SEO Gratis} - SavClip",
-      metaDesc: "{Audita canales y páginas|Analiza métricas y SEO} de {{platform}} online de forma {gratuita y transparente|rápida}. Obtén reportes de optimización al instante.",
-      subtitle: "{Haz auditoría de SEO y analiza métricas de páginas de {{platform}} gratis.|Obtén insights y reportes de rendimiento para optimizar tu perfil en {{platform}}.}",
-      title1: "{Auditar|Analizar}", title3: "{SEO Gratis|Insights}",
-      articleSections: [
-        { type: "heading", level: 2, content: "Audita tu perfil o canal en {{platform}}" },
-        { type: "paragraph", content: "Nuestra herramienta de auditoría analiza etiquetas, descripciones y metadados de páginas de {{platform}} sugiriendo mejoras esenciales para impulsar tu alcance orgánico." }
-      ],
-      faqs: [
-        { q: "¿Cómo auditar un canal de {{platform}}?", a: "Introduce el enlace o nombre del canal en el buscador, haz clic en analizar y recibe el reporte de optimización de SEO detallado." },
-        { q: "¿Necesito dar acceso a mi cuenta para la auditoría?", a: "No. Leemos exclusivamente datos públicos de {{platform}}, sin necesidad de contraseñas ni privilegios de administrador." }
-      ]
-    },
-    lens: {
-      metaTitle: "{{tool}} {{platform}} {Mudah & Aman|Simpan Lensa} - SavClip",
-      metaDesc: "{Alat online terbaik untuk menyimpan media|Unduh dan konversi file} dari {{platform}} secara {cepat dan aman|gratis}. Tanpa pasang aplikasi tambahan.",
-      subtitle: "{Simpan lensa dan filter favorit dari {{platform}} secara cepat dan aman.|Dapatkan efek dan lensa {{platform}} langsung di perangkat Anda.}",
-      title1: "{Unduh|Simpan}", title3: "{Filter HD|Lensa Gratis}",
-      articleSections: [
-        { type: "heading", level: 2, content: "Bagaimana cara menyimpan Lensa dan Filter {{platform}}?" },
-        { type: "paragraph", content: "Alat {{tool}} kami dirancang untuk menawarkan penyimpanan cepat untuk lensa {{platform}}. Salin tautan filter atau lensa, tempel di bilah atas dan unduh file dalam beberapa detik secara gratis." }
-      ],
-      faqs: [
-        { q: "Bagaimana cara mengunduh lensa {{platform}}?", a: "Tempel URL lensa di kotak pencarian dan klik unduh untuk mentransfer file efek ke perangkat Anda." },
-        { q: "Apakah aman mengunduh filter {{platform}}?", a: "Ya, kami memproses unduhan langsung dari server resmi tanpa mengekspos akun Anda atau memerlukan unduhan tambahan." }
-      ]
-    },
-    link: {
-      metaTitle: "{{tool}} {{platform}} {Tautan Undangan|Buat URL} - SavClip",
-      metaDesc: "{Buat tautan langsung dan jalur|Pembuat tautan} untuk {{platform}} secara {cepat dan sederhana|gratis}. Tingkatkan konversi pelanggan dan pelacakan URL.",
-      subtitle: "{Buat tautan undangan langsung untuk {{platform}} secara mudah.|Hasilkan URL pengalihan yang dioptimalkan untuk {{platform}}.}",
-      title1: "{Buat|Hasilkan}", title3: "{Tautan Optimal|Pertumbuhan}",
-      articleSections: [
-        { type: "heading", level: 2, content: "Mengapa menggunakan Pembuat Tautan {{platform}}?" },
-        { type: "paragraph", content: "Membuat tautan pengalihan langsung membantu membuka aplikasi {{platform}} secara instan di ponsel pengguna, mencegah pengguna keluar dan meningkatkan pertumbuhan pelanggan secara organik." }
-      ],
-      faqs: [
-        { q: "Bagaimana cara membuat tautan undangan {{platform}}?", a: "Masukkan nama pengguna atau kode saluran di formulir atas, klik buat dan salin URL pengalihan baru." },
-        { q: "Apakah alat tautan ini gratis?", a: "Ya, ini adalah alat utilitas tautan yang sepenuhnya gratis tanpa batasan pembuatan harian." }
-      ]
-    },
-    restriction: {
-      metaTitle: "{{tool}} {{platform}} {Online & Gratis|Cek Blokir} - SavClip",
-      metaDesc: "{Periksa pembatasan wilayah dan blokir|Analisis ketersediaan video} di {{platform}} secara {instan|real-time}. Temukan apakah video diblokir di negara tertentu.",
-      subtitle: "{Periksa apakah video {{platform}} memiliki blokir negara atau pembatasan usia.|Temukan pembatasan wilayah media di {{platform}} secara online.}",
-      title1: "{Periksa|Cek}", title3: "{Status Wilayah|Blokir}",
-      articleSections: [
-        { type: "heading", level: 2, content: "Bagaimana cara kerja pemeriksaan pembatasan wilayah {{platform}}?" },
-        { type: "paragraph", content: "Sistem kami menanyakan informasi publik dari server {{platform}} secara real-time untuk memeriksa apakah konten memiliki pembatasan geografis atau blokir hak cipta." }
-      ],
-      faqs: [
-        { q: "Bagaimana cara memeriksa blokir regional di {{platform}}?", a: "Tempel tautan video atau saluran di kotak pencarian dan klik cek untuk mendapatkan peta ketersediaan global." },
-        { q: "Apakah pemeriksa pembatasan ini akurat?", a: "Ya, kami menggunakan API publik untuk memberikan informasi pembatasan secara real-time." }
-      ]
-    },
-    space: {
-      metaTitle: "{{tool}} {{platform}} {Unduh MP3|Simpan Space HD} - SavClip",
-      metaDesc: "{Unduh rekaman audio dan Spaces|Simpan audio siaran} dari {{platform}} dalam {kualitas tinggi MP3|320kbps}. Konversi siaran langsung untuk didengarkan offline.",
-      subtitle: "{Simpan siaran audio dan Spaces dari {{platform}} ke MP3 kualitas tinggi.|Konversi audio Spaces {{platform}} untuk didengarkan offline secara praktis.}",
-      title1: "{Unduh|Ekstrak}", title3: "{MP3 HD|Siaran Audio}",
-      articleSections: [
-        { type: "heading", level: 2, content: "Ekstraktor audio dan Spaces {{platform}} terbaik" },
-        { type: "paragraph", content: "Dengan SavClip, Anda dapat mengunduh rekaman audio penuh dari {{platform}} yang dikonversi langsung ke format MP3 dengan bitrate tinggi (320kbps), cocok untuk diputar secara offline." }
-      ],
-      faqs: [
-        { q: "Bagaimana cara mengunduh audio Space {{platform}}?", a: "Salin URL rekaman atau Space aktif, tempel di situs kami dan klik unduh untuk mendapatkan file MP3." },
-        { q: "Apakah bisa mengonversi audio dalam kualitas tinggi?", a: "Ya, kami mengekstrak aliran audio mentah untuk memastikan kualitas suara terbaik tanpa kompresi berbahaya." }
-      ]
-    },
-    finder: {
-      metaTitle: "{{tool}} {{platform}} {Saluran Populer|Tren} - SavClip",
-      metaDesc: "{Temukan saluran populer dan tren|Cari grup unggulan} di {{platform}} berdasarkan kategori. Jelajahi sumber daya dan komunitas baru secara online.",
-      subtitle: "{Cari dan jelajahi saluran serta grup unggulan di {{platform}} secara mudah.|Temukan komunitas terpopuler di {{platform}} berdasarkan ceruk pasar.}",
-      title1: "{Cari|Temukan}", title3: "{Tren|Komunitas}",
-      articleSections: [
-        { type: "heading", level: 2, content: "Temukan saluran paling populer di {{platform}}" },
-        { type: "paragraph", content: "Direktori otomatis kami membantu Anda melacak dan menemukan saluran, profil, atau grup yang sedang berkembang di {{platform}} berdasarkan topik dan tingkat interaksi nyata." }
-      ],
-      faqs: [
-        { q: "Bagaimana cara menemukan saluran yang sedang tren di {{platform}}?", a: "Jelajahi panel kategori kami untuk melihat saluran dan grup yang diurutkan berdasarkan relevansi dan pertumbuhan." },
-        { q: "Apakah daftar komunitas {{platform}} ini diperbarui?", a: "Ya, kami memperbarui basis data kami secara berkala untuk mencerminkan tren pemirsa terbaru di {{platform}}." }
-      ]
-    },
-    audit: {
-      metaTitle: "{{tool}} {{platform}} {Audit Saluran|SEO Gratis} - SavClip",
-      metaDesc: "{Audit saluran dan halaman|Analisis metrik dan SEO} untuk {{platform}} secara online dengan {gratis dan transparan|cepat}. Dapatkan laporan optimasi instan.",
-      subtitle: "{Lakukan audit SEO dan analisis metrik halaman {{platform}} secara gratis.|Dapatkan wawasan dan laporan performa untuk mengoptimalkan profil {{platform}} Anda.}",
-      title1: "{Audit|Analisis}", title3: "{SEO Gratis|Wawasan}",
-      articleSections: [
-        { type: "heading", level: 2, content: "Audit profil atau saluran {{platform}} Anda" },
-        { type: "paragraph", content: "Alat audit kami menganalisis tag, deskripsi, dan metadata halaman {{platform}} serta menyarankan perbaikan penting untuk meningkatkan jangkauan organik Anda." }
-      ],
-      faqs: [
-        { q: "Bagaimana cara mengaudit saluran {{platform}}?", a: "Masukkan tautan atau nama saluran di kotak pencarian, klik analisis dan dapatkan laporan optimasi SEO yang mendetail." },
-        { q: "Apakah saya perlu memberikan akses akun untuk audit?", a: "Tidak. Kami hanya membaca data publik {{platform}}, tanpa memerlukan kata sandi atau hak istimewa admin." }
-      ]
-    },
-    lens: {
-      metaTitle: "{{tool}} {{platform}} {سهل وآمن|حفظ عدسات} - SavClip",
-      metaDesc: "{أفضل موقع أون لاين لحفظ وتحميل وسائط|تحميل وتحويل ملفات} {{platform}} بشكل {سريع وآمن|مجاني}. بدون تنزيل برامج أو إضافات.",
-      subtitle: "{احفظ عدسات وفلاتر {{platform}} المفضلة لديك بسرعة وأمان.|احصل على تأثيرات وعدسات {{platform}} مباشرة على جهازك.}",
-      title1: "{تحميل|حفظ}", title3: "{فلاتر HD|عدسات مجانية}",
-      articleSections: [
-        { type: "heading", level: 2, content: "كيفية حفظ عدسات وفلاتر {{platform}}؟" },
-        { type: "paragraph", content: "تم تصميم أداة {{tool}} لتوفير حفظ سريع لعدسات وفلاتر {{platform}}. انسخ رابط الفلتر أو العدسة، ثم الصقه في شريط البحث بالأعلى وحمل الملفات في ثوانٍ معدودة مجاناً." }
-      ],
-      faqs: [
-        { q: "كيف أحمل عدسات وفلاتر {{platform}}؟", a: "الصق رابط العدسة في صندوق البحث واضغط على زر تحميل لنقل ملفات التأثيرات إلى جهازك فوراً." },
-        { q: "هل تحميل فلاتر {{platform}} آمن؟", a: "نعم، نقوم بجلب الملفات مباشرة من خوادم المنصة الرسمية دون المساس بأمان حسابك أو الحاجة لأدوات إضافية." }
-      ]
-    },
-    link: {
-      metaTitle: "{{tool}} {{platform}} {روابط دعوة|توليد URL} - SavClip",
-      metaDesc: "{أنشئ روابط مباشرة ومسارات انضمام|مولد روابط} لمنصة {{platform}} بشكل {سريع وسهل|مجاني بالكامل}. حسّن تحويل المشتركين وتتبع الروابط.",
-      subtitle: "{أنشئ روابط دعوة مباشرة لمنصة {{platform}} بسهولة.|أنشئ روابط توجيه محسنة لمنصة {{platform}}.}",
-      title1: "{توليد|إنشاء}", title3: "{روابط محسنة|نمو القناة}",
-      articleSections: [
-        { type: "heading", level: 2, content: "لماذا تستخدم مولد روابط {{platform}}؟" },
-        { type: "paragraph", content: "يساعد إنشاء روابط توجيه مباشرة في فتح تطبيق {{platform}} فوراً على هاتف المستخدم، مما يقلل من نسب الخروج ويضاعف عدد المشتركين الجدد بشكل طبيعي." }
-      ],
-      faqs: [
-        { q: "كيف أولد رابط دعوة لمنصة {{platform}}؟", a: "اكتب اسم مستخدم القناة أو كود الدعوة في الحقل العلوي، واضغط على توليد لتنسخ الرابط المباشر الجديد." },
-        { q: "هل أداة توليد الروابط مجانية؟", a: "نعم، نقدم هذه الخدمة مجاناً بالكامل وبلا حدود يومية للاستخدام." }
-      ]
-    },
-    restriction: {
-      metaTitle: "{{tool}} {{platform}} {أون لاين مجاناً|فحص الحظر الجغرافي} - SavClip",
-      metaDesc: "{افحص القيود الجغرافية والحظر|تحقق من توفر الفيديوهات} على {{platform}} {فوراً|في الوقت الفعلي}. اكتشف ما إذا كان الفيديو محظوراً في أي بلد.",
-      subtitle: "{تحقق مما إذا كانت فيديوهات {{platform}} تواجه قيوداً جغرافية أو قيود فئات عمرية.|اكتشف القيود الإقليمية للوسائط على {{platform}} أون لاين.}",
-      title1: "{فحص|تحقق}", title3: "{حالة المنطقة|قيود الحظر}",
-      articleSections: [
-        { type: "heading", level: 2, content: "كيف يعمل فحص القيود الجغرافية لمنصة {{platform}}؟" },
-        { type: "paragraph", content: "يتصل نظامنا بخوادم {{platform}} في الوقت الفعلي للتحقق مما إذا كان مقطع الفيديو يواجه قيود عرض في دول معينة أو حظر بسبب حقوق النشر." }
-      ],
-      faqs: [
-        { q: "كيف أفحص القيود الجغرافية لفيديو على {{platform}}؟", a: "الصق رابط الفيديو أو القناة في شريط البحث بالأعلى، واضغط على فحص لعرض خريطة التوفر الجغرافي." },
-        { q: "هل أداة فحص الحظر دقيقة؟", a: "نعم، نجلب البيانات الرسمية من APIs لتقديم نتائج دقيقة وفورية." }
-      ]
-    },
-    space: {
-      metaTitle: "{{tool}} {{platform}} {تحميل MP3|حفظ المساحات HD} - SavClip",
-      metaDesc: "{حمل تسجيلات المساحات الصوتية|احفظ صوت البث المباشر} من {{platform}} بجودة {MP3 عالية|320 كيلوبيت}. حول البث الصوتي للاستماع دون اتصال.",
-      subtitle: "{احفظ المساحات الصوتية وبث {{platform}} بصيغة MP3 عالية الدقة.|حول صوت مساحات {{platform}} للاستماع دون اتصال بسهولة.}",
-      title1: "{تحميل|استخراج}", title3: "{MP3 عالي الدقة|بث صوتي}",
-      articleSections: [
-        { type: "heading", level: 2, content: "أفضل برنامج استخراج صوت ومساحات لمنصة {{platform}}" },
-        { type: "paragraph", content: "مع موقع SavClip، يمكنك تحميل المساحات الصوتية المسجلة بالكامل وتحويلها مباشرة إلى صيغة MP3 عالية الجودة (320kbps) للاستماع إليها أينما كنت دون اتصال." }
-      ],
-      faqs: [
-        { q: "كيف أحمل صوت مساحة (Space) من {{platform}}؟", a: "انسخ رابط المساحة الصوتية أو التسجيل، وضعه في موقعنا واضغط على تحميل لاستخراج ملف MP3." },
-        { q: "هل يدعم الموقع جودة الصوت العالية؟", a: "نعم، نقوم باستخراج الصوت الخام لضمان أفضل معدل بت وبدون أي ضغط يقلل من نقاء الصوت." }
-      ]
-    },
-    finder: {
-      metaTitle: "{{tool}} {{platform}} {القنوات الرائجة|مجموعات مميزة} - SavClip",
-      metaDesc: "{اكتشف القنوات الرائجة والمجموعات الرائدة|ابحث عن مجتمعات مميزة} على {{platform}} حسب المجال. استكشف مصادر ومجموعات جديدة فوراً.",
-      subtitle: "{ابحث عن القنوات والمجموعات المميزة واستكشفها على {{platform}} بسهولة.|اكتشف المجتمعات الأكثر رواجاً على {{platform}} حسب التخصص.}",
-      title1: "{بحث|اكتشاف}", title3: "{الرواج|مجتمعات مميزة}",
-      articleSections: [
-        { type: "heading", level: 2, content: "ابحث عن القنوات والمجموعات الأكثر رواجاً على {{platform}}" },
-        { type: "paragraph", content: "يساعدك دليلنا التلقائي في العثور على القنوات والمجموعات النشطة والصاعدة على {{platform}} مصنفة حسب الاهتمامات والتفاعل الحقيقي." }
-      ],
-      faqs: [
-        { q: "كيف أكتشف القنوات النشطة والرائجة على {{platform}}؟", a: "تصفح قوائم التصنيفات لدينا لعرض القنوات والمجموعات مرتبة حسب نموها ومعدلات تفاعل المتابعين." },
-        { q: "هل يتم تحديث قائمة المجموعات والقنوات؟", a: "نعم، نقوم بتحديث البيانات بانتظام لتعكس التغيرات والاتجاهات الجديدة في منصة {{platform}}." }
-      ]
-    },
-    audit: {
-      metaTitle: "{{tool}} {{platform}} {تدقيق القنوات|سيو مجاني} - SavClip",
-      metaDesc: "{دقق القنوات والصفحات|حلل مقاييس السيو} لمنصة {{platform}} أون لاين بشكل {مجاني وشفاف|سريع}. احصل على تقارير تحسين الأداء فوراً.",
-      subtitle: "{قم بتدقيق السيو وفحص مقاييس صفحات وحسابات {{platform}} مجاناً.|احصل على تحليلات وتقارير أداء لتحسين حسابك على {{platform}} بسهولة.}",
-      title1: "{تدقيق|تحليل}", title3: "{سيو مجاني|إحصائيات}",
-      articleSections: [
-        { type: "heading", level: 2, content: "دقق قناتك أو صفحتك على {{platform}} وحسن السيو" },
-        { type: "paragraph", content: "تقوم أداة التدقيق بتحليل الأوصاف والكلمات الدلالية المستخدمة لصفحتك في {{platform}} وتقدم لك نصائح هامة لزيادة وضوح حسابك في نتائج البحث." }
-      ],
-      faqs: [
-        { q: "كيف يمكنني فحص وتدقيق قناة {{platform}}؟", a: "ضع رابط القناة في شريط البحث، واضغط على تحليل لاستلام تقرير سيو وتفاعل متكامل وفوري." },
-        { q: "هل تتطلب أداة فحص القنوات إعطاء صلاحيات لحسابي؟", a: "كلا، الأداة تعمل عبر قراءة البيانات المفتوحة للعامة فقط، دون طلب كلمات مرور أو تسجيل دخول." }
-      ]
-    },
-    lens: {
-      metaTitle: "{{tool}} {{platform}} {Fácil e Seguro|Salvar Lentes} - SavClip",
-      metaDesc: "{A melhor ferramenta online para salvar mídias|Baixe e converta arquivos} do {{platform}} de forma {rápida e segura|gratuita}. Sem downloads de apps ou extensões.",
-      subtitle: "{Salve lentes e filtros favoritos do {{platform}} de forma rápida e segura.|Obtenha efeitos e lentes do {{platform}} diretamente no seu aparelho.}",
-      title1: "{Baixar|Salvar}", title3: "{Filtros HD|Lentes Grátis}",
-      articleSections: [
-        { type: "heading", level: 2, content: "Como salvar Lentes e Filtros do {{platform}}?" },
-        { type: "paragraph", content: "Nosso {{tool}} foi projetado para oferecer o salvamento rápido de lentes do {{platform}}. Copie o link do filtro ou lente, cole na barra superior e baixe os arquivos em poucos segundos de forma gratuita." }
-      ],
-      faqs: [
-        { q: "Como baixar lentes do {{platform}}?", a: "Cole a URL da lente na caixa de pesquisa e clique em baixar para transferir os arquivos de efeito para o seu dispositivo." },
-        { q: "É seguro baixar filtros do {{platform}}?", a: "Sim, processamos o download direto dos servidores oficiais sem expor sua conta ou requerer downloads adicionais." }
-      ]
-    },
     bio: {
       metaTitle: "{{tool}} {{platform}} {Gerador de Bios|IA Grátis} - SavClip",
       metaDesc: "{Crie biografias incríveis|Gere bios profissionais} para o {{platform}} usando inteligência artificial de forma {rápida e simples|gratuita}. Destaque seu perfil.",
@@ -825,300 +515,6 @@ const spintaxDb = {
       faqs: [
         { q: "Como auditar um canal do {{platform}}?", a: "Digite o link ou nome do canal no buscador, clique em analisar e receba o relatório de otimização de SEO detalhado." },
         { q: "Preciso conceder acesso à minha conta para a auditoria?", a: "Não. Lemos exclusivamente dados públicos do {{platform}}, sem necessidade de login ou privilégios de administrador." }
-      ]
-    },
-    lens: {
-      metaTitle: "{{tool}} {{platform}} {Fácil y Seguro|Guardar Lentes} - SavClip",
-      metaDesc: "{La mejor herramienta online para guardar medios|Descarga y convierte archivos} de {{platform}} de forma {rápida y segura|gratuita}. Sin descargas de apps o extensiones.",
-      subtitle: "{Guarda lentes y filtros favoritos de {{platform}} de forma rápida y segura.|Obtén efectos y lentes de {{platform}} directamente en tu dispositivo.}",
-      title1: "{Descargar|Guardar}", title3: "{Filtros HD|Lentes Gratis}",
-      articleSections: [
-        { type: "heading", level: 2, content: "¿Cómo guardar Lentes y Filtros de {{platform}}?" },
-        { type: "paragraph", content: "Nuestro {{tool}} está diseñado para ofrecer el salvado rápido de lentes de {{platform}}. Copia el enlace del filtro o lente, pégalo en la barra superior y descarga los archivos en pocos segundos de forma gratuita." }
-      ],
-      faqs: [
-        { q: "¿Cómo descargar lentes de {{platform}}?", a: "Pega la URL de la lente en la caja de búsqueda y haz clic en descargar para transferir los archivos de efecto a tu dispositivo." },
-        { q: "¿Es seguro descargar filtros de {{platform}}?", a: "Sí, procesamos la descarga directa de los servidores oficiales sin exponer tu cuenta o requerir descargas adicionales." }
-      ]
-    },
-    bio: {
-      metaTitle: "{{tool}} {{platform}} {Generador de Bios|IA Gratis} - SavClip",
-      metaDesc: "{Crea biografías increíbles|Genera bios profesionales} para {{platform}} usando inteligencia artificial de forma {rápida y sencilla|gratis}. Destaca tu perfil.",
-      subtitle: "{Genera biografías profesionales y atractivas para {{platform}} con inteligencia artificial.|Crea una presentación atractiva para tu perfil de {{platform}} gratis.}",
-      title1: "{Crear|Generar}", title3: "{Bio por IA|Optimizado}",
-      articleSections: [
-        { type: "heading", level: 2, content: "¿Por qué usar el Generador de Bios de {{platform}}?" },
-        { type: "paragraph", content: "Una biografía atractiva es la clave para convertir visitantes del perfil en seguidores. Usa nuestra inteligencia artificial para generar textos creativos y optimizados para tu nicho en {{platform}}." }
-      ],
-      faqs: [
-        { q: "¿Cómo generar una biografía para {{platform}}?", a: "Introduce tu nicho o palabras clave principales, selecciona el tono de voz y haz clic en generar para recibir opciones exclusivas de bios." },
-        { q: "¿El generador de bios por IA es gratuito?", a: "Sí, SavClip ofrece este asistente de IA totalmente gratis para todos los creadores." }
-      ]
-    },
-    link: {
-      metaTitle: "{{tool}} {{platform}} {Enlaces de Invitación|Generar URL} - SavClip",
-      metaDesc: "{Crea enlaces directos y rutas|Generador de enlaces} para {{platform}} de forma {rápida y sencilla|totalmente gratis}. Mejora la conversión de suscriptores y el rastreo de URLs.",
-      subtitle: "{Genera enlaces de invitación directa para {{platform}} de forma sencilla.|Crea URLs de redireccionamiento optimizados para {{platform}}.}",
-      title1: "{Crear|Generar}", title3: "{Enlaces Optimizados|Crecimiento}",
-      articleSections: [
-        { type: "heading", level: 2, content: "¿Por qué usar el Generador de Enlaces de {{platform}}?" },
-        { type: "paragraph", content: "Crear enlaces de redireccionamiento directo ayuda a abrir la aplicación de {{platform}} inmediatamente en el celular del usuario, evitando rebotes y aumentando tu tasa de conversión de suscriptores de forma orgánica." }
-      ],
-      faqs: [
-        { q: "¿Cómo generar enlace de invitación de {{platform}}?", a: "Introduce el nombre de usuario o código del canal en el formulario superior, haz clic en generar y copia la nueva URL de redireccionamiento." },
-        { q: "¿Esta herramienta de enlace es gratuita?", a: "Sí, es una utilidad de enlace totalmente gratis y sin límites de generación diaria." }
-      ]
-    },
-    restriction: {
-      metaTitle: "{{tool}} {{platform}} {Online y Gratis|Verificar Bloqueos} - SavClip",
-      metaDesc: "{Verifica restricciones regionales y bloqueos|Analiza disponibilidad de videos} en {{platform}} {al instante|en tiempo real}. Descubre si un video está bloqueado en algún país.",
-      subtitle: "{Verifica si videos de {{platform}} tienen bloqueos por país o restricciones de edad.|Descubre restricciones regionales de medios en {{platform}} online.}",
-      title1: "{Verificar|Chequear}", title3: "{Status de Región|Bloqueos}",
-      articleSections: [
-        { type: "heading", level: 2, content: "¿Cómo funciona la verificación de restricción regional de {{platform}}?" },
-        { type: "paragraph", content: "Nuestro sistema consulta la información pública de los servidores de {{platform}} en tiempo real para verificar si el contenido tiene restricciones geográficas o bloqueos de exhibición por derechos de autor." }
-      ],
-      faqs: [
-        { q: "¿Cómo verificar bloqueo regional en {{platform}}?", a: "Cole el enlace del video o canal en la caja de búsqueda y haz clic en verificar para obtener el mapa de disponibilidad mundial." },
-        { q: "¿El verificador de restricciones es preciso?", a: "Sí, consultamos las APIs oficiales para entregar las restricciones en tiempo real." }
-      ]
-    },
-    space: {
-      metaTitle: "{{tool}} {{platform}} {Descargar MP3|Grabar Space HD} - SavClip",
-      metaDesc: "{Descarga grabaciones de audio y Spaces|Guarda audio de transmisiones} de {{platform}} en {alta calidad MP3|320kbps}. Convierte transmisiones en vivo para escuchar offline.",
-      subtitle: "{Guarda transmisiones de audio y Spaces de {{platform}} en MP3 de alta fidelidad.|Convierte audios de Spaces de {{platform}} para escuchar offline con facilidad.}",
-      title1: "{Descargar|Extraer}", title3: "{MP3 HD|Transmisión}",
-      articleSections: [
-        { type: "heading", level: 2, content: "El mejor extractor de audio y Spaces de {{platform}}" },
-        { type: "paragraph", content: "Con SavClip, puedes descargar transmisiones de audio completas de {{platform}} convertidas directamente a formato MP3 de alta fidelidad (320kbps), perfecto para escuchar offline." }
-      ],
-      faqs: [
-        { q: "¿Cómo descargar el audio de un Space de {{platform}}?", a: "Copia la URL de la grabación o Space activo, pégala en nuestro sitio y haz clic en descargar para obtener la pista MP3." },
-        { q: "¿Es posible convertir el audio en alta calidad?", a: "Sí, extraemos el flujo bruto del audio garantizando bitrates excelentes sin compresión dañina." }
-      ]
-    },
-    finder: {
-      metaTitle: "{{tool}} {{platform}} {Canales de Tendencia|Populares} - SavClip",
-      metaDesc: "{Descubre canales de tendencia y populares|Encuentra grupos destacados} en {{platform}} por categoría. Explora nuevos recursos y comunidades online.",
-      subtitle: "{Encuentra y explora canales y grupos destacados en {{platform}} de forma sencilla.|Descubre las comunidades más populares de {{platform}} divididas por nicho.}",
-      title1: "{Buscar|Descubrir}", title3: "{Tendencias|Comunidades}",
-      articleSections: [
-        { type: "heading", level: 2, content: "Encuentra los canales más populares de {{platform}}" },
-        { type: "paragraph", content: "Nuestro directorio automatizado te ayuda a rastrear y encontrar canales, perfiles o grupos en ascenso en {{platform}} clasificados por temas y alcance real." }
-      ],
-      faqs: [
-        { q: "¿Cómo descubrir canales en tendencia en {{platform}}?", a: "Navega por nuestro panel de categorías para visualizar canales y grupos ordenados por relevancia y crecimiento." },
-        { q: "¿La lista de comunidades de {{platform}} se encuentra actualizada?", a: "Sí, actualizamos nuestra base regularmente para reflejar las nuevas tendencias de audiencia en {{platform}}." }
-      ]
-    },
-    audit: {
-      metaTitle: "{{tool}} {{platform}} {Auditoría de Canal|SEO Gratis} - SavClip",
-      metaDesc: "{Audita canales y páginas|Analiza métricas y SEO} de {{platform}} online de forma {gratuita y transparente|rápida}. Obtén reportes de optimización al instante.",
-      subtitle: "{Haz auditoría de SEO y analiza métricas de páginas de {{platform}} gratis.|Obtén insights y reportes de rendimiento para optimizar tu perfil en {{platform}}.}",
-      title1: "{Auditar|Analizar}", title3: "{SEO Gratis|Insights}",
-      articleSections: [
-        { type: "heading", level: 2, content: "Audita tu perfil o canal en {{platform}}" },
-        { type: "paragraph", content: "Nuestra herramienta de auditoría analiza etiquetas, descripciones y metadados de páginas de {{platform}} sugiriendo mejoras esenciales para impulsar tu alcance orgánico." }
-      ],
-      faqs: [
-        { q: "¿Cómo auditar un canal de {{platform}}?", a: "Introduce el enlace o nombre del canal en el buscador, haz clic en analizar y recibe el reporte de optimización de SEO detallado." },
-        { q: "¿Necesito dar acceso a mi cuenta para la auditoría?", a: "No. Leemos exclusivamente datos públicos de {{platform}}, sin necesidad de contraseñas ni privilegios de administrador." }
-      ]
-    },
-    lens: {
-      metaTitle: "{{tool}} {{platform}} {Mudah & Aman|Simpan Lensa} - SavClip",
-      metaDesc: "{Alat online terbaik untuk menyimpan media|Unduh dan konversi file} dari {{platform}} secara {cepat dan aman|gratis}. Tanpa pasang aplikasi tambahan.",
-      subtitle: "{Simpan lensa dan filter favorit dari {{platform}} secara cepat dan aman.|Dapatkan efek dan lensa {{platform}} langsung di perangkat Anda.}",
-      title1: "{Unduh|Simpan}", title3: "{Filter HD|Lensa Gratis}",
-      articleSections: [
-        { type: "heading", level: 2, content: "Bagaimana cara menyimpan Lensa dan Filter {{platform}}?" },
-        { type: "paragraph", content: "Alat {{tool}} kami dirancang untuk menawarkan penyimpanan cepat untuk lensa {{platform}}. Salin tautan filter atau lensa, tempel di bilah atas dan unduh file dalam beberapa detik secara gratis." }
-      ],
-      faqs: [
-        { q: "Bagaimana cara mengunduh lensa {{platform}}?", a: "Tempel URL lensa di kotak pencarian dan klik unduh untuk mentransfer file efek ke perangkat Anda." },
-        { q: "Apakah aman mengunduh filter {{platform}}?", a: "Ya, kami memproses unduhan langsung dari server resmi tanpa mengekspos akun Anda atau memerlukan unduhan tambahan." }
-      ]
-    },
-    bio: {
-      metaTitle: "{{tool}} {{platform}} {Pembuat Bio|AI Gratis} - SavClip",
-      metaDesc: "{Buat biografi menarik|Hasilkan bio profesional} untuk {{platform}} menggunakan kecerdasan buatan secara {cepat dan mudah|gratis}. Soroti profil Anda.",
-      subtitle: "{Gunakan kecerdasan buatan untuk membuat biografi {{platform}} yang menarik.|Buat teks perkenalan profil {{platform}} yang unik secara gratis.}",
-      title1: "{Buat|Hasilkan}", title3: "{Bio AI|Optimal}",
-      articleSections: [
-        { type: "heading", level: 2, content: "Mengapa menggunakan Pembuat Bio {{platform}}?" },
-        { type: "paragraph", content: "Biografi yang menarik adalah kunci untuk mengubah pengunjung profil menjadi pengikut. Gunakan AI kami untuk menghasilkan teks bios yang kreatif dan sesuai dengan kebutuhan profil {{platform}} Anda." }
-      ],
-      faqs: [
-        { q: "Bagaimana cara membuat bio untuk {{platform}}?", a: "Masukkan kata kunci utama Anda, pilih gaya bahasa, lalu klik buat untuk menerima berbagai opsi bios unik." },
-        { q: "Apakah pembuat bio AI ini gratis?", a: "Ya, SavClip menyediakan asisten bio kecerdasan buatan ini 100% gratis untuk semua pengguna." }
-      ]
-    },
-    link: {
-      metaTitle: "{{tool}} {{platform}} {Tautan Undangan|Buat URL} - SavClip",
-      metaDesc: "{Buat tautan langsung dan jalur|Pembuat tautan} untuk {{platform}} secara {cepat dan sederhana|gratis}. Tingkatkan konversi pelanggan dan pelacakan URL.",
-      subtitle: "{Buat tautan undangan langsung untuk {{platform}} secara mudah.|Hasilkan URL pengalihan yang dioptimalkan untuk {{platform}}.}",
-      title1: "{Buat|Hasilkan}", title3: "{Tautan Optimal|Pertumbuhan}",
-      articleSections: [
-        { type: "heading", level: 2, content: "Mengapa menggunakan Pembuat Tautan {{platform}}?" },
-        { type: "paragraph", content: "Membuat tautan pengalihan langsung membantu membuka aplikasi {{platform}} secara instan di ponsel pengguna, mencegah pengguna keluar dan meningkatkan pertumbuhan pelanggan secara organik." }
-      ],
-      faqs: [
-        { q: "Bagaimana cara membuat tautan undangan {{platform}}?", a: "Masukkan nama pengguna atau kode saluran di formulir atas, klik buat dan salin URL pengalihan baru." },
-        { q: "Apakah alat tautan ini gratis?", a: "Ya, ini adalah alat utilitas tautan yang sepenuhnya gratis tanpa batasan pembuatan harian." }
-      ]
-    },
-    restriction: {
-      metaTitle: "{{tool}} {{platform}} {Online & Gratis|Cek Blokir} - SavClip",
-      metaDesc: "{Periksa pembatasan wilayah dan blokir|Analisis ketersediaan video} di {{platform}} secara {instan|real-time}. Temukan apakah video diblokir di negara tertentu.",
-      subtitle: "{Periksa apakah video {{platform}} memiliki blokir negara atau pembatasan usia.|Temukan pembatasan wilayah media di {{platform}} secara online.}",
-      title1: "{Periksa|Cek}", title3: "{Status Wilayah|Blokir}",
-      articleSections: [
-        { type: "heading", level: 2, content: "Bagaimana cara kerja pemeriksaan pembatasan wilayah {{platform}}?" },
-        { type: "paragraph", content: "Sistem kami menanyakan informasi publik dari server {{platform}} secara real-time untuk memeriksa apakah konten memiliki pembatasan geografis atau blokir hak cipta." }
-      ],
-      faqs: [
-        { q: "Bagaimana cara memeriksa blokir regional di {{platform}}?", a: "Tempel tautan video atau saluran di kotak pencarian dan klik cek untuk mendapatkan peta ketersediaan global." },
-        { q: "Apakah pemeriksa pembatasan ini akurat?", a: "Ya, kami menggunakan API publik untuk memberikan informasi pembatasan secara real-time." }
-      ]
-    },
-    space: {
-      metaTitle: "{{tool}} {{platform}} {Unduh MP3|Simpan Space HD} - SavClip",
-      metaDesc: "{Unduh rekaman audio dan Spaces|Simpan audio siaran} dari {{platform}} dalam {kualitas tinggi MP3|320kbps}. Konversi siaran langsung untuk didengarkan offline.",
-      subtitle: "{Simpan siaran audio dan Spaces dari {{platform}} ke MP3 kualitas tinggi.|Konversi audio Spaces {{platform}} untuk didengarkan offline secara praktis.}",
-      title1: "{Unduh|Ekstrak}", title3: "{MP3 HD|Siaran Audio}",
-      articleSections: [
-        { type: "heading", level: 2, content: "Ekstraktor audio dan Spaces {{platform}} terbaik" },
-        { type: "paragraph", content: "Dengan SavClip, Anda dapat mengunduh rekaman audio penuh dari {{platform}} yang dikonversi langsung ke format MP3 dengan bitrate tinggi (320kbps), cocok untuk diputar secara offline." }
-      ],
-      faqs: [
-        { q: "Bagaimana cara mengunduh audio Space {{platform}}?", a: "Salin URL rekaman atau Space aktif, tempel di situs kami dan klik unduh untuk mendapatkan file MP3." },
-        { q: "Apakah bisa mengonversi audio dalam kualitas tinggi?", a: "Ya, kami mengekstrak aliran audio mentah untuk memastikan kualitas suara terbaik tanpa kompresi berbahaya." }
-      ]
-    },
-    finder: {
-      metaTitle: "{{tool}} {{platform}} {Saluran Populer|Tren} - SavClip",
-      metaDesc: "{Temukan saluran populer dan tren|Cari grup unggulan} di {{platform}} berdasarkan kategori. Jelajahi sumber daya dan komunitas baru secara online.",
-      subtitle: "{Cari dan jelajahi saluran serta grup unggulan di {{platform}} secara mudah.|Temukan komunitas terpopuler di {{platform}} berdasarkan ceruk pasar.}",
-      title1: "{Cari|Temukan}", title3: "{Tren|Komunitas}",
-      articleSections: [
-        { type: "heading", level: 2, content: "Temukan saluran paling populer di {{platform}}" },
-        { type: "paragraph", content: "Direktori otomatis kami membantu Anda melacak dan menemukan saluran, profil, atau grup yang sedang berkembang di {{platform}} berdasarkan topik dan tingkat interaksi nyata." }
-      ],
-      faqs: [
-        { q: "Bagaimana cara menemukan saluran yang sedang tren di {{platform}}?", a: "Jelajahi panel kategori kami untuk melihat saluran dan grup yang diurutkan berdasarkan relevansi dan pertumbuhan." },
-        { q: "Apakah daftar komunitas {{platform}} ini diperbarui?", a: "Ya, kami memperbarui basis data kami secara berkala untuk mencerminkan tren pemirsa terbaru di {{platform}}." }
-      ]
-    },
-    audit: {
-      metaTitle: "{{tool}} {{platform}} {Audit Saluran|SEO Gratis} - SavClip",
-      metaDesc: "{Audit saluran dan halaman|Analisis metrik dan SEO} untuk {{platform}} secara online dengan {gratis dan transparan|cepat}. Dapatkan laporan optimasi instan.",
-      subtitle: "{Lakukan audit SEO dan analisis metrik halaman {{platform}} secara gratis.|Dapatkan wawasan dan laporan performa untuk mengoptimalkan profil {{platform}} Anda.}",
-      title1: "{Audit|Analisis}", title3: "{SEO Gratis|Wawasan}",
-      articleSections: [
-        { type: "heading", level: 2, content: "Audit profil atau saluran {{platform}} Anda" },
-        { type: "paragraph", content: "Alat audit kami menganalisis tag, deskripsi, dan metadata halaman {{platform}} serta menyarankan perbaikan penting untuk meningkatkan jangkauan organik Anda." }
-      ],
-      faqs: [
-        { q: "Bagaimana cara mengaudit saluran {{platform}}?", a: "Masukkan tautan atau nama saluran di kotak pencarian, klik analisis dan dapatkan laporan optimasi SEO yang mendetail." },
-        { q: "Apakah saya perlu memberikan akses akun untuk audit?", a: "Tidak. Kami hanya membaca data publik {{platform}}, tanpa memerlukan kata sandi atau hak istimewa admin." }
-      ]
-    },
-    lens: {
-      metaTitle: "{{tool}} {{platform}} {سهل وآمن|حفظ عدسات} - SavClip",
-      metaDesc: "{أفضل موقع أون لاين لحفظ وتحميل وسائط|تحميل وتحويل ملفات} {{platform}} بشكل {سريع وآمن|مجاني}. بدون تنزيل برامج أو إضافات.",
-      subtitle: "{احفظ عدسات وفلاتر {{platform}} المفضلة لديك بسرعة وأمان.|احصل على تأثيرات وعدسات {{platform}} مباشرة على جهازك.}",
-      title1: "{تحميل|حفظ}", title3: "{فلاتر HD|عدسات مجانية}",
-      articleSections: [
-        { type: "heading", level: 2, content: "كيفية حفظ عدسات وفلاتر {{platform}}؟" },
-        { type: "paragraph", content: "تم تصميم أداة {{tool}} لتوفير حفظ سريع لعدسات وفلاتر {{platform}}. انسخ رابط الفلتر أو العدسة، ثم الصقه في شريط البحث بالأعلى وحمل الملفات في ثوانٍ معدودة مجاناً." }
-      ],
-      faqs: [
-        { q: "كيف أحمل عدسات وفلاتر {{platform}}؟", a: "الصق رابط العدسة في صندوق البحث واضغط على زر تحميل لنقل ملفات التأثيرات إلى جهازك فوراً." },
-        { q: "هل تحميل فلاتر {{platform}} آمن؟", a: "نعم، نقوم بجلب الملفات مباشرة من خوادم المنصة الرسمية دون المساس بأمان حسابك أو الحاجة لأدوات إضافية." }
-      ]
-    },
-    bio: {
-      metaTitle: "{{tool}} {{platform}} {مولد سيرة ذاتية|ذكاء اصطناعي} - SavClip",
-      metaDesc: "{أنشئ سيرة ذاتية احترافية|ولد بيو مميز} لمنصة {{platform}} باستخدام الذكاء الاصطناعي مجاناً وبسرعة. اجعل ملفك الشخصي فريداً.",
-      subtitle: "{أنشئ نصوص سيرة ذاتية جذابة واحترافية لمنصة {{platform}} بالذكاء الاصطناعي.|صمم بيو رائع لحسابك على {{platform}} مجاناً وبسهولة.}",
-      title1: "{إنشاء|توليد}", title3: "{بيو ذكي|سيو ملف شخصي}",
-      articleSections: [
-        { type: "heading", level: 2, content: "لماذا تستخدم مولد السيرة الذاتية (البيو) لمنصة {{platform}}؟" },
-        { type: "paragraph", content: "تعد السيرة الذاتية الجذابة الخطوة الأولى لتحويل زوار الحساب إلى متابعين دائمين. استخدم أداتنا الذكية لصياغة نصوص بيو مبتكرة ومحسنة تناسب تخصصك على {{platform}}." }
-      ],
-      faqs: [
-        { q: "كيف يمكنني توليد بيو لحساب {{platform}}؟", a: "أدخل مجالك أو الكلمات الدلالية الأساسية، وحدد أسلوب الكتابة، ثم اضغط على توليد لتلقي خيارات متعددة فريدة ومميزة." },
-        { q: "هل مولد السيرة الذاتية بالذكاء الاصطناعي مجاني؟", a: "نعم، يقدم موقع SavClip هذا المساعد الذكي مجاناً بالكامل لجميع صناع المحتوى." }
-      ]
-    },
-    link: {
-      metaTitle: "{{tool}} {{platform}} {روابط دعوة|توليد URL} - SavClip",
-      metaDesc: "{أنشئ روابط مباشرة ومسارات انضمام|مولد روابط} لمنصة {{platform}} بشكل {سريع وسهل|مجاني بالكامل}. حسّن تحويل المشتركين وتتبع الروابط.",
-      subtitle: "{أنشئ روابط دعوة مباشرة لمنصة {{platform}} بسهولة.|أنشئ روابط توجيه محسنة لمنصة {{platform}}.}",
-      title1: "{توليد|إنشاء}", title3: "{روابط محسنة|نمو القناة}",
-      articleSections: [
-        { type: "heading", level: 2, content: "لماذا تستخدم مولد روابط {{platform}}؟" },
-        { type: "paragraph", content: "يساعد إنشاء روابط توجيه مباشرة في فتح تطبيق {{platform}} فوراً على هاتف المستخدم، مما يقلل من نسب الخروج ويضاعف عدد المشتركين الجدد بشكل طبيعي." }
-      ],
-      faqs: [
-        { q: "كيف أولد رابط دعوة لمنصة {{platform}}؟", a: "اكتب اسم مستخدم القناة أو كود الدعوة في الحقل العلوي، واضغط على توليد لتنسخ الرابط المباشر الجديد." },
-        { q: "هل أداة توليد الروابط مجانية؟", a: "نعم، نقدم هذه الخدمة مجاناً بالكامل وبلا حدود يومية للاستخدام." }
-      ]
-    },
-    restriction: {
-      metaTitle: "{{tool}} {{platform}} {أون لاين مجاناً|فحص الحظر الجغرافي} - SavClip",
-      metaDesc: "{افحص القيود الجغرافية والحظر|تحقق من توفر الفيديوهات} على {{platform}} {فوراً|في الوقت الفعلي}. اكتشف ما إذا كان الفيديو محظوراً في أي بلد.",
-      subtitle: "{تحقق مما إذا كانت فيديوهات {{platform}} تواجه قيوداً جغرافية أو قيود فئات عمرية.|اكتشف القيود الإقليمية للوسائط على {{platform}} أون لاين.}",
-      title1: "{فحص|تحقق}", title3: "{حالة المنطقة|قيود الحظر}",
-      articleSections: [
-        { type: "heading", level: 2, content: "كيف يعمل فحص القيود الجغرافية لمنصة {{platform}}؟" },
-        { type: "paragraph", content: "يتصل نظامنا بخوادم {{platform}} في الوقت الفعلي للتحقق مما إذا كان مقطع الفيديو يواجه قيود عرض في دول معينة أو حظر بسبب حقوق النشر." }
-      ],
-      faqs: [
-        { q: "كيف أفحص القيود الجغرافية لفيديو على {{platform}}؟", a: "الصق رابط الفيديو أو القناة في شريط البحث بالأعلى، واضغط على فحص لعرض خريطة التوفر الجغرافي." },
-        { q: "هل أداة فحص الحظر دقيقة؟", a: "نعم، نجلب البيانات الرسمية من APIs لتقديم نتائج دقيقة وفورية." }
-      ]
-    },
-    space: {
-      metaTitle: "{{tool}} {{platform}} {تحميل MP3|حفظ المساحات HD} - SavClip",
-      metaDesc: "{حمل تسجيلات المساحات الصوتية|احفظ صوت البث المباشر} من {{platform}} بجودة {MP3 عالية|320 كيلوبيت}. حول البث الصوتي للاستماع دون اتصال.",
-      subtitle: "{احفظ المساحات الصوتية وبث {{platform}} بصيغة MP3 عالية الدقة.|حول صوت مساحات {{platform}} للاستماع دون اتصال بسهولة.}",
-      title1: "{تحميل|استخراج}", title3: "{MP3 عالي الدقة|بث صوتي}",
-      articleSections: [
-        { type: "heading", level: 2, content: "أفضل برنامج استخراج صوت ومساحات لمنصة {{platform}}" },
-        { type: "paragraph", content: "مع موقع SavClip، يمكنك تحميل المساحات الصوتية المسجلة بالكامل وتحويلها مباشرة إلى صيغة MP3 عالية الجودة (320kbps) للاستماع إليها أينما كنت دون اتصال." }
-      ],
-      faqs: [
-        { q: "كيف أحمل صوت مساحة (Space) من {{platform}}؟", a: "انسخ رابط المساحة الصوتية أو التسجيل، وضعه في موقعنا واضغط على تحميل لاستخراج ملف MP3." },
-        { q: "هل يدعم الموقع جودة الصوت العالية؟", a: "نعم، نقوم باستخراج الصوت الخام لضمان أفضل معدل بت وبدون أي ضغط يقلل من نقاء الصوت." }
-      ]
-    },
-    finder: {
-      metaTitle: "{{tool}} {{platform}} {القنوات الرائجة|مجموعات مميزة} - SavClip",
-      metaDesc: "{اكتشف القنوات الرائجة والمجموعات الرائدة|ابحث عن مجتمعات مميزة} على {{platform}} حسب المجال. استكشف مصادر ومجموعات جديدة فوراً.",
-      subtitle: "{ابحث عن القنوات والمجموعات المميزة واستكشفها على {{platform}} بسهولة.|اكتشف المجتمعات الأكثر رواجاً على {{platform}} حسب التخصص.}",
-      title1: "{بحث|اكتشاف}", title3: "{الرواج|مجتمعات مميزة}",
-      articleSections: [
-        { type: "heading", level: 2, content: "ابحث عن القنوات والمجموعات الأكثر رواجاً على {{platform}}" },
-        { type: "paragraph", content: "يساعدك دليلنا التلقائي في العثور على القنوات والمجموعات النشطة والصاعدة على {{platform}} مصنفة حسب الاهتمامات والتفاعل الحقيقي." }
-      ],
-      faqs: [
-        { q: "كيف أكتشف القنوات النشطة والرائجة على {{platform}}؟", a: "تصفح قوائم التصنيفات لدينا لعرض القنوات والمجموعات مرتبة حسب نموها ومعدلات تفاعل المتابعين." },
-        { q: "هل يتم تحديث قائمة المجموعات والقنوات؟", a: "نعم، نقوم بتحديث البيانات بانتظام لتعكس التغيرات والاتجاهات الجديدة في منصة {{platform}}." }
-      ]
-    },
-    audit: {
-      metaTitle: "{{tool}} {{platform}} {تدقيق القنوات|سيو مجاني} - SavClip",
-      metaDesc: "{دقق القنوات والصفحات|حلل مقاييس السيو} لمنصة {{platform}} أون لاين بشكل {مجاني وشفاف|سريع}. احصل على تقارير تحسين الأداء فوراً.",
-      subtitle: "{قم بتدقيق السيو وفحص مقاييس صفحات وحسابات {{platform}} مجاناً.|احصل على تحليلات وتقارير أداء لتحسين حسابك على {{platform}} بسهولة.}",
-      title1: "{تدقيق|تحليل}", title3: "{سيو مجاني|إحصائيات}",
-      articleSections: [
-        { type: "heading", level: 2, content: "دقق قناتك أو صفحتك على {{platform}} وحسن السيو" },
-        { type: "paragraph", content: "تقوم أداة التدقيق بتحليل الأوصاف والكلمات الدلالية المستخدمة لصفحتك في {{platform}} وتقدم لك نصائح هامة لزيادة وضوح حسابك في نتائج البحث." }
-      ],
-      faqs: [
-        { q: "كيف يمكنني فحص وتدقيق قناة {{platform}}؟", a: "ضع رابط القناة في شريط البحث، واضغط على تحليل لاستلام تقرير سيو وتفاعل متكامل وفوري." },
-        { q: "هل تتطلب أداة فحص القنوات إعطاء صلاحيات لحسابي؟", a: "كلا، الأداة تعمل عبر قراءة البيانات المفتوحة للعامة فقط، دون طلب كلمات مرور أو تسجيل دخول." }
       ]
     },
     default: {
@@ -1305,6 +701,104 @@ const spintaxDb = {
         { q: "¿La herramienta permite filtrar comentarios repetidos o de spam?", a: "Sí, puedes configurar filtros personalizados para eliminar {participaciones duplicadas|comentarios de spam} automáticamente." }
       ]
     },
+    lens: {
+      metaTitle: "{{tool}} {{platform}} {Fácil y Seguro|Guardar Lentes} - SavClip",
+      metaDesc: "{La mejor herramienta online para guardar medios|Descarga y convierte archivos} de {{platform}} de forma {rápida y segura|gratuita}. Sin descargas de apps o extensiones.",
+      subtitle: "{Guarda lentes y filtros favoritos de {{platform}} de forma rápida y segura.|Obtén efectos y lentes de {{platform}} directamente en tu dispositivo.}",
+      title1: "{Descargar|Guardar}", title3: "{Filtros HD|Lentes Gratis}",
+      articleSections: [
+        { type: "heading", level: 2, content: "¿Cómo guardar Lentes y Filtros de {{platform}}?" },
+        { type: "paragraph", content: "Nuestro {{tool}} está diseñado para ofrecer el salvado rápido de lentes de {{platform}}. Copia el enlace del filtro o lente, pégalo en la barra superior y descarga los archivos en pocos segundos de forma gratuita." }
+      ],
+      faqs: [
+        { q: "¿Cómo descargar lentes de {{platform}}?", a: "Pega la URL de la lente en la caja de búsqueda y haz clic en descargar para transferir los archivos de efecto a tu dispositivo." },
+        { q: "¿Es seguro descargar filtros de {{platform}}?", a: "Sí, procesamos la descarga directa de los servidores oficiales sin exponer tu cuenta o requerir descargas adicionales." }
+      ]
+    },
+    bio: {
+      metaTitle: "{{tool}} {{platform}} {Generador de Bios|IA Gratis} - SavClip",
+      metaDesc: "{Crea biografías increíbles|Genera bios profesionales} para {{platform}} usando inteligencia artificial de forma {rápida y sencilla|gratis}. Destaca tu perfil.",
+      subtitle: "{Genera biografías profesionales y atractivas para {{platform}} con inteligencia artificial.|Crea una presentación atractiva para tu perfil de {{platform}} gratis.}",
+      title1: "{Crear|Generar}", title3: "{Bio por IA|Optimizado}",
+      articleSections: [
+        { type: "heading", level: 2, content: "¿Por qué usar el Generador de Bios de {{platform}}?" },
+        { type: "paragraph", content: "Una biografía atractiva es la clave para convertir visitantes del perfil en seguidores. Usa nuestra inteligencia artificial para generar textos creativos y optimizados para tu nicho en {{platform}}." }
+      ],
+      faqs: [
+        { q: "¿Cómo generar una biografía para {{platform}}?", a: "Introduce tu nicho o palabras clave principales, selecciona el tono de voz y haz clic en generar para recibir opciones exclusivas de bios." },
+        { q: "¿El generador de bios por IA es gratuito?", a: "Sí, SavClip ofrece este asistente de IA totalmente gratis para todos los creadores." }
+      ]
+    },
+    link: {
+      metaTitle: "{{tool}} {{platform}} {Enlaces de Invitación|Generar URL} - SavClip",
+      metaDesc: "{Crea enlaces directos y rutas|Generador de enlaces} para {{platform}} de forma {rápida y sencilla|totalmente gratis}. Mejora la conversión de suscriptores y el rastreo de URLs.",
+      subtitle: "{Genera enlaces de invitación directa para {{platform}} de forma sencilla.|Crea URLs de redireccionamiento optimizados para {{platform}}.}",
+      title1: "{Crear|Generar}", title3: "{Enlaces Optimizados|Crecimiento}",
+      articleSections: [
+        { type: "heading", level: 2, content: "¿Por qué usar el Generador de Enlaces de {{platform}}?" },
+        { type: "paragraph", content: "Crear enlaces de redireccionamiento directo ayuda a abrir la aplicación de {{platform}} inmediatamente en el celular del usuario, evitando rebotes y aumentando tu tasa de conversión de suscriptores de forma orgánica." }
+      ],
+      faqs: [
+        { q: "¿Cómo generar enlace de invitación de {{platform}}?", a: "Introduce el nombre de usuario o código del canal en el formulario superior, haz clic en generar y copia la nueva URL de redireccionamiento." },
+        { q: "¿Esta herramienta de enlace es gratuita?", a: "Sí, es una utilidad de enlace totalmente gratis y sin límites de generación diaria." }
+      ]
+    },
+    restriction: {
+      metaTitle: "{{tool}} {{platform}} {Online y Gratis|Verificar Bloqueos} - SavClip",
+      metaDesc: "{Verifica restricciones regionales y bloqueos|Analiza disponibilidad de videos} en {{platform}} {al instante|en tiempo real}. Descubre si un video está bloqueado en algún país.",
+      subtitle: "{Verifica si videos de {{platform}} tienen bloqueos por país o restricciones de edad.|Descubre restricciones regionales de medios en {{platform}} online.}",
+      title1: "{Verificar|Chequear}", title3: "{Status de Región|Bloqueos}",
+      articleSections: [
+        { type: "heading", level: 2, content: "¿Cómo funciona la verificación de restricción regional de {{platform}}?" },
+        { type: "paragraph", content: "Nuestro sistema consulta la información pública de los servidores de {{platform}} en tiempo real para verificar si el contenido tiene restricciones geográficas o bloqueos de exhibición por derechos de autor." }
+      ],
+      faqs: [
+        { q: "¿Cómo verificar bloqueo regional en {{platform}}?", a: "Cole el enlace del video o canal en la caja de búsqueda y haz clic en verificar para obtener el mapa de disponibilidad mundial." },
+        { q: "¿El verificador de restricciones es preciso?", a: "Sí, consultamos las APIs oficiales para entregar las restricciones en tiempo real." }
+      ]
+    },
+    space: {
+      metaTitle: "{{tool}} {{platform}} {Descargar MP3|Grabar Space HD} - SavClip",
+      metaDesc: "{Descarga grabaciones de audio y Spaces|Guarda audio de transmisiones} de {{platform}} en {alta calidad MP3|320kbps}. Convierte transmisiones en vivo para escuchar offline.",
+      subtitle: "{Guarda transmisiones de audio y Spaces de {{platform}} en MP3 de alta fidelidad.|Convierte audios de Spaces de {{platform}} para escuchar offline con facilidad.}",
+      title1: "{Descargar|Extraer}", title3: "{MP3 HD|Transmisión}",
+      articleSections: [
+        { type: "heading", level: 2, content: "El mejor extractor de audio y Spaces de {{platform}}" },
+        { type: "paragraph", content: "Con SavClip, puedes descargar transmisiones de audio completas de {{platform}} convertidas directamente a formato MP3 de alta fidelidad (320kbps), perfecto para escuchar offline." }
+      ],
+      faqs: [
+        { q: "¿Cómo descargar el audio de un Space de {{platform}}?", a: "Copia la URL de la grabación o Space activo, pégala en nuestro sitio y haz clic en descargar para obtener la pista MP3." },
+        { q: "¿Es posible convertir el audio en alta calidad?", a: "Sí, extraemos el flujo bruto del audio garantizando bitrates excelentes sin compresión dañina." }
+      ]
+    },
+    finder: {
+      metaTitle: "{{tool}} {{platform}} {Canales de Tendencia|Populares} - SavClip",
+      metaDesc: "{Descubre canales de tendencia y populares|Encuentra grupos destacados} en {{platform}} por categoría. Explora nuevos recursos y comunidades online.",
+      subtitle: "{Encuentra y explora canales y grupos destacados en {{platform}} de forma sencilla.|Descubre las comunidades más populares de {{platform}} divididas por nicho.}",
+      title1: "{Buscar|Descubrir}", title3: "{Tendencias|Comunidades}",
+      articleSections: [
+        { type: "heading", level: 2, content: "Encuentra los canales más populares de {{platform}}" },
+        { type: "paragraph", content: "Nuestro directorio automatizado te ayuda a rastrear y encontrar canales, perfiles o grupos en ascenso en {{platform}} clasificados por temas y alcance real." }
+      ],
+      faqs: [
+        { q: "¿Cómo descubrir canales en tendencia en {{platform}}?", a: "Navega por nuestro panel de categorías para visualizar canales y grupos ordenados por relevancia y crecimiento." },
+        { q: "¿La lista de comunidades de {{platform}} se encuentra actualizada?", a: "Sí, actualizamos nuestra base regularmente para reflejar las nuevas tendencias de audiencia en {{platform}}." }
+      ]
+    },
+    audit: {
+      metaTitle: "{{tool}} {{platform}} {Auditoría de Canal|SEO Gratis} - SavClip",
+      metaDesc: "{Audita canales y páginas|Analiza métricas y SEO} de {{platform}} online de forma {gratuita y transparente|rápida}. Obtén reportes de optimización al instante.",
+      subtitle: "{Haz auditoría de SEO y analiza métricas de páginas de {{platform}} gratis.|Obtén insights y reportes de rendimiento para optimizar tu perfil en {{platform}}.}",
+      title1: "{Auditar|Analizar}", title3: "{SEO Gratis|Insights}",
+      articleSections: [
+        { type: "heading", level: 2, content: "Audita tu perfil o canal en {{platform}}" },
+        { type: "paragraph", content: "Nuestra herramienta de auditoría analiza etiquetas, descripciones y metadados de páginas de {{platform}} sugiriendo mejoras esenciales para impulsar tu alcance orgánico." }
+      ],
+      faqs: [
+        { q: "¿Cómo auditar un canal de {{platform}}?", a: "Introduce el enlace o nombre del canal en el buscador, haz clic en analizar y recibe el reporte de optimización de SEO detallado." },
+        { q: "¿Necesito dar acceso a mi cuenta para la auditoría?", a: "No. Leemos exclusivamente datos públicos de {{platform}}, sin necesidad de contraseñas ni privilegios de administrador." }
+      ]
+    },
     default: {
       metaTitle: "{{tool}} {{platform}} {Gratis y Seguro|Guardar Média} - SavClip",
       metaDesc: "{La mejor herramienta en línea para guardar medios|Descarga y convierte archivos} de {{platform}} de forma {rápida y segura|gratis}. Sin instalar extensiones.",
@@ -1487,6 +981,104 @@ const spintaxDb = {
         { q: "Apakah aman menggunakan alat audit saluran ini?", a: "Sangat aman. Kami hanya memproses informasi publik yang disediakan oleh {{platform}}, tanpa meminta sandi atau hak akses admin." },
         { q: "Apakah komentar undian dimuat secara real-time?", a: "Ya, alat kami mengakses API publik {{platform}} untuk memuat data komentar {terbaru|secara langsung}." },
         { q: "Apakah alat ini bisa menyaring spam atau komentar duplikat?", a: "Ya, Anda bisa menyaring {pengguna yang berkomentar berulang kali|spam} agar undian berjalan secara adil." }
+      ]
+    },
+    lens: {
+      metaTitle: "{{tool}} {{platform}} {Mudah & Aman|Simpan Lensa} - SavClip",
+      metaDesc: "{Alat online terbaik untuk menyimpan media|Unduh dan konversi file} dari {{platform}} secara {cepat dan aman|gratis}. Tanpa pasang aplikasi tambahan.",
+      subtitle: "{Simpan lensa dan filter favorit dari {{platform}} secara cepat dan aman.|Dapatkan efek dan lensa {{platform}} langsung di perangkat Anda.}",
+      title1: "{Unduh|Simpan}", title3: "{Filter HD|Lensa Gratis}",
+      articleSections: [
+        { type: "heading", level: 2, content: "Bagaimana cara menyimpan Lensa dan Filter {{platform}}?" },
+        { type: "paragraph", content: "Alat {{tool}} kami dirancang untuk menawarkan penyimpanan cepat untuk lensa {{platform}}. Salin tautan filter atau lensa, tempel di bilah atas dan unduh file dalam beberapa detik secara gratis." }
+      ],
+      faqs: [
+        { q: "Bagaimana cara mengunduh lensa {{platform}}?", a: "Tempel URL lensa di kotak pencarian dan klik unduh untuk mentransfer file efek ke perangkat Anda." },
+        { q: "Apakah aman mengunduh filter {{platform}}?", a: "Ya, kami memproses unduhan langsung dari server resmi tanpa mengekspos akun Anda atau memerlukan unduhan tambahan." }
+      ]
+    },
+    bio: {
+      metaTitle: "{{tool}} {{platform}} {Pembuat Bio|AI Gratis} - SavClip",
+      metaDesc: "{Buat biografi menarik|Hasilkan bio profesional} untuk {{platform}} menggunakan kecerdasan buatan secara {cepat dan mudah|gratis}. Soroti profil Anda.",
+      subtitle: "{Gunakan kecerdasan buatan untuk membuat biografi {{platform}} yang menarik.|Buat teks perkenalan profil {{platform}} yang unik secara gratis.}",
+      title1: "{Buat|Hasilkan}", title3: "{Bio AI|Optimal}",
+      articleSections: [
+        { type: "heading", level: 2, content: "Mengapa menggunakan Pembuat Bio {{platform}}?" },
+        { type: "paragraph", content: "Biografi yang menarik adalah kunci untuk mengubah pengunjung profil menjadi pengikut. Gunakan AI kami untuk menghasilkan teks bios yang kreatif dan sesuai dengan kebutuhan profil {{platform}} Anda." }
+      ],
+      faqs: [
+        { q: "Bagaimana cara membuat bio untuk {{platform}}?", a: "Masukkan kata kunci utama Anda, pilih gaya bahasa, lalu klik buat untuk menerima berbagai opsi bios unik." },
+        { q: "Apakah pembuat bio AI ini gratis?", a: "Ya, SavClip menyediakan asisten bio kecerdasan buatan ini 100% gratis untuk semua pengguna." }
+      ]
+    },
+    link: {
+      metaTitle: "{{tool}} {{platform}} {Tautan Undangan|Buat URL} - SavClip",
+      metaDesc: "{Buat tautan langsung dan jalur|Pembuat tautan} untuk {{platform}} secara {cepat dan sederhana|gratis}. Tingkatkan konversi pelanggan dan pelacakan URL.",
+      subtitle: "{Buat tautan undangan langsung untuk {{platform}} secara mudah.|Hasilkan URL pengalihan yang dioptimalkan untuk {{platform}}.}",
+      title1: "{Buat|Hasilkan}", title3: "{Tautan Optimal|Pertumbuhan}",
+      articleSections: [
+        { type: "heading", level: 2, content: "Mengapa menggunakan Pembuat Tautan {{platform}}?" },
+        { type: "paragraph", content: "Membuat tautan pengalihan langsung membantu membuka aplikasi {{platform}} secara instan di ponsel pengguna, mencegah pengguna keluar dan meningkatkan pertumbuhan pelanggan secara organik." }
+      ],
+      faqs: [
+        { q: "Bagaimana cara membuat tautan undangan {{platform}}?", a: "Masukkan nama pengguna atau kode saluran di formulir atas, klik buat dan salin URL pengalihan baru." },
+        { q: "Apakah alat tautan ini gratis?", a: "Ya, ini adalah alat utilitas tautan yang sepenuhnya gratis tanpa batasan pembuatan harian." }
+      ]
+    },
+    restriction: {
+      metaTitle: "{{tool}} {{platform}} {Online & Gratis|Cek Blokir} - SavClip",
+      metaDesc: "{Periksa pembatasan wilayah dan blokir|Analisis ketersediaan video} di {{platform}} secara {instan|real-time}. Temukan apakah video diblokir di negara tertentu.",
+      subtitle: "{Periksa apakah video {{platform}} memiliki blokir negara atau pembatasan usia.|Temukan pembatasan wilayah media di {{platform}} secara online.}",
+      title1: "{Periksa|Cek}", title3: "{Status Wilayah|Blokir}",
+      articleSections: [
+        { type: "heading", level: 2, content: "Bagaimana cara kerja pemeriksaan pembatasan wilayah {{platform}}?" },
+        { type: "paragraph", content: "Sistem kami menanyakan informasi publik dari server {{platform}} secara real-time untuk memeriksa apakah konten memiliki pembatasan geografis atau blokir hak cipta." }
+      ],
+      faqs: [
+        { q: "Bagaimana cara memeriksa blokir regional di {{platform}}?", a: "Tempel tautan video atau saluran di kotak pencarian dan klik cek untuk mendapatkan peta ketersediaan global." },
+        { q: "Apakah pemeriksa pembatasan ini akurat?", a: "Ya, kami menggunakan API publik untuk memberikan informasi pembatasan secara real-time." }
+      ]
+    },
+    space: {
+      metaTitle: "{{tool}} {{platform}} {Unduh MP3|Simpan Space HD} - SavClip",
+      metaDesc: "{Unduh rekaman audio dan Spaces|Simpan audio siaran} dari {{platform}} dalam {kualitas tinggi MP3|320kbps}. Konversi siaran langsung untuk didengarkan offline.",
+      subtitle: "{Simpan siaran audio dan Spaces dari {{platform}} ke MP3 kualitas tinggi.|Konversi audio Spaces {{platform}} untuk didengarkan offline secara praktis.}",
+      title1: "{Unduh|Ekstrak}", title3: "{MP3 HD|Siaran Audio}",
+      articleSections: [
+        { type: "heading", level: 2, content: "Ekstraktor audio dan Spaces {{platform}} terbaik" },
+        { type: "paragraph", content: "Dengan SavClip, Anda dapat mengunduh rekaman audio penuh dari {{platform}} yang dikonversi langsung ke format MP3 dengan bitrate tinggi (320kbps), cocok untuk diputar secara offline." }
+      ],
+      faqs: [
+        { q: "Bagaimana cara mengunduh audio Space {{platform}}?", a: "Salin URL rekaman atau Space aktif, tempel di situs kami dan klik unduh untuk mendapatkan file MP3." },
+        { q: "Apakah bisa mengonversi audio dalam kualitas tinggi?", a: "Ya, kami mengekstrak aliran audio mentah untuk memastikan kualitas suara terbaik tanpa kompresi berbahaya." }
+      ]
+    },
+    finder: {
+      metaTitle: "{{tool}} {{platform}} {Saluran Populer|Tren} - SavClip",
+      metaDesc: "{Temukan saluran populer dan tren|Cari grup unggulan} di {{platform}} berdasarkan kategori. Jelajahi sumber daya dan komunitas baru secara online.",
+      subtitle: "{Cari dan jelajahi saluran serta grup unggulan di {{platform}} secara mudah.|Temukan komunitas terpopuler di {{platform}} berdasarkan ceruk pasar.}",
+      title1: "{Cari|Temukan}", title3: "{Tren|Komunitas}",
+      articleSections: [
+        { type: "heading", level: 2, content: "Temukan saluran paling populer di {{platform}}" },
+        { type: "paragraph", content: "Direktori otomatis kami membantu Anda melacak dan menemukan saluran, profil, atau grup yang sedang berkembang di {{platform}} berdasarkan topik dan tingkat interaksi nyata." }
+      ],
+      faqs: [
+        { q: "Bagaimana cara menemukan saluran yang sedang tren di {{platform}}?", a: "Jelajahi panel kategori kami untuk melihat saluran dan grup yang diurutkan berdasarkan relevansi dan pertumbuhan." },
+        { q: "Apakah daftar komunitas {{platform}} ini diperbarui?", a: "Ya, kami memperbarui basis data kami secara berkala untuk mencerminkan tren pemirsa terbaru di {{platform}}." }
+      ]
+    },
+    audit: {
+      metaTitle: "{{tool}} {{platform}} {Audit Saluran|SEO Gratis} - SavClip",
+      metaDesc: "{Audit saluran dan halaman|Analisis metrik dan SEO} untuk {{platform}} secara online dengan {gratis dan transparan|cepat}. Dapatkan laporan optimasi instan.",
+      subtitle: "{Lakukan audit SEO dan analisis metrik halaman {{platform}} secara gratis.|Dapatkan wawasan dan laporan performa untuk mengoptimalkan profil {{platform}} Anda.}",
+      title1: "{Audit|Analisis}", title3: "{SEO Gratis|Wawasan}",
+      articleSections: [
+        { type: "heading", level: 2, content: "Audit profil atau saluran {{platform}} Anda" },
+        { type: "paragraph", content: "Alat audit kami menganalisis tag, deskripsi, dan metadata halaman {{platform}} serta menyarankan perbaikan penting untuk meningkatkan jangkauan organik Anda." }
+      ],
+      faqs: [
+        { q: "Bagaimana cara mengaudit saluran {{platform}}?", a: "Masukkan tautan atau nama saluran di kotak pencarian, klik analisis dan dapatkan laporan optimasi SEO yang mendetail." },
+        { q: "Apakah saya perlu memberikan akses akun untuk audit?", a: "Tidak. Kami hanya membaca data publik {{platform}}, tanpa memerlukan kata sandi atau hak istimewa admin." }
       ]
     },
     default: {
@@ -1673,6 +1265,104 @@ const spintaxDb = {
         { q: "هل تساعد الأداة في تصفية تعليقات السبام والتكرار؟", a: "نعم، يمكنك تفعيل خيارات الفلترة لاستبعاد {التعليقات المتكررة|تعليقات السبام} تلقائياً وبسهولة تامة." }
       ]
     },
+    lens: {
+      metaTitle: "{{tool}} {{platform}} {سهل وآمن|حفظ عدسات} - SavClip",
+      metaDesc: "{أفضل موقع أون لاين لحفظ وتحميل وسائط|تحميل وتحويل ملفات} {{platform}} بشكل {سريع وآمن|مجاني}. بدون تنزيل برامج أو إضافات.",
+      subtitle: "{احفظ عدسات وفلاتر {{platform}} المفضلة لديك بسرعة وأمان.|احصل على تأثيرات وعدسات {{platform}} مباشرة على جهازك.}",
+      title1: "{تحميل|حفظ}", title3: "{فلاتر HD|عدسات مجانية}",
+      articleSections: [
+        { type: "heading", level: 2, content: "كيفية حفظ عدسات وفلاتر {{platform}}؟" },
+        { type: "paragraph", content: "تم تصميم أداة {{tool}} لتوفير حفظ سريع لعدسات وفلاتر {{platform}}. انسخ رابط الفلتر أو العدسة، ثم الصقه في شريط البحث بالأعلى وحمل الملفات في ثوانٍ معدودة مجاناً." }
+      ],
+      faqs: [
+        { q: "كيف أحمل عدسات وفلاتر {{platform}}؟", a: "الصق رابط العدسة في صندوق البحث واضغط على زر تحميل لنقل ملفات التأثيرات إلى جهازك فوراً." },
+        { q: "هل تحميل فلاتر {{platform}} آمن؟", a: "نعم، نقوم بجلب الملفات مباشرة من خوادم المنصة الرسمية دون المساس بأمان حسابك أو الحاجة لأدوات إضافية." }
+      ]
+    },
+    bio: {
+      metaTitle: "{{tool}} {{platform}} {مولد سيرة ذاتية|ذكاء اصطناعي} - SavClip",
+      metaDesc: "{أنشئ سيرة ذاتية احترافية|ولد بيو مميز} لمنصة {{platform}} باستخدام الذكاء الاصطناعي مجاناً وبسرعة. اجعل ملفك الشخصي فريداً.",
+      subtitle: "{أنشئ نصوص سيرة ذاتية جذابة واحترافية لمنصة {{platform}} بالذكاء الاصطناعي.|صمم بيو رائع لحسابك على {{platform}} مجاناً وبسهولة.}",
+      title1: "{إنشاء|توليد}", title3: "{بيو ذكي|سيو ملف شخصي}",
+      articleSections: [
+        { type: "heading", level: 2, content: "لماذا تستخدم مولد السيرة الذاتية (البيو) لمنصة {{platform}}؟" },
+        { type: "paragraph", content: "تعد السيرة الذاتية الجذابة الخطوة الأولى لتحويل زوار الحساب إلى متابعين دائمين. استخدم أداتنا الذكية لصياغة نصوص بيو مبتكرة ومحسنة تناسب تخصصك على {{platform}}." }
+      ],
+      faqs: [
+        { q: "كيف يمكنني توليد بيو لحساب {{platform}}؟", a: "أدخل مجالك أو الكلمات الدلالية الأساسية، وحدد أسلوب الكتابة، ثم اضغط على توليد لتلقي خيارات متعددة فريدة ومميزة." },
+        { q: "هل مولد السيرة الذاتية بالذكاء الاصطناعي مجاني؟", a: "نعم، يقدم موقع SavClip هذا المساعد الذكي مجاناً بالكامل لجميع صناع المحتوى." }
+      ]
+    },
+    link: {
+      metaTitle: "{{tool}} {{platform}} {روابط دعوة|توليد URL} - SavClip",
+      metaDesc: "{أنشئ روابط مباشرة ومسارات انضمام|مولد روابط} لمنصة {{platform}} بشكل {سريع وسهل|مجاني بالكامل}. حسّن تحويل المشتركين وتتبع الروابط.",
+      subtitle: "{أنشئ روابط دعوة مباشرة لمنصة {{platform}} بسهولة.|أنشئ روابط توجيه محسنة لمنصة {{platform}}.}",
+      title1: "{توليد|إنشاء}", title3: "{روابط محسنة|نمو القناة}",
+      articleSections: [
+        { type: "heading", level: 2, content: "لماذا تستخدم مولد روابط {{platform}}؟" },
+        { type: "paragraph", content: "يساعد إنشاء روابط توجيه مباشرة في فتح تطبيق {{platform}} فوراً على هاتف المستخدم، مما يقلل من نسب الخروج ويضاعف عدد المشتركين الجدد بشكل طبيعي." }
+      ],
+      faqs: [
+        { q: "كيف أولد رابط دعوة لمنصة {{platform}}؟", a: "اكتب اسم مستخدم القناة أو كود الدعوة في الحقل العلوي، واضغط على توليد لتنسخ الرابط المباشر الجديد." },
+        { q: "هل أداة توليد الروابط مجانية؟", a: "نعم، نقدم هذه الخدمة مجاناً بالكامل وبلا حدود يومية للاستخدام." }
+      ]
+    },
+    restriction: {
+      metaTitle: "{{tool}} {{platform}} {أون لاين مجاناً|فحص الحظر الجغرافي} - SavClip",
+      metaDesc: "{افحص القيود الجغرافية والحظر|تحقق من توفر الفيديوهات} على {{platform}} {فوراً|في الوقت الفعلي}. اكتشف ما إذا كان الفيديو محظوراً في أي بلد.",
+      subtitle: "{تحقق مما إذا كانت فيديوهات {{platform}} تواجه قيوداً جغرافية أو قيود فئات عمرية.|اكتشف القيود الإقليمية للوسائط على {{platform}} أون لاين.}",
+      title1: "{فحص|تحقق}", title3: "{حالة المنطقة|قيود الحظر}",
+      articleSections: [
+        { type: "heading", level: 2, content: "كيف يعمل فحص القيود الجغرافية لمنصة {{platform}}؟" },
+        { type: "paragraph", content: "يتصل نظامنا بخوادم {{platform}} في الوقت الفعلي للتحقق مما إذا كان مقطع الفيديو يواجه قيود عرض في دول معينة أو حظر بسبب حقوق النشر." }
+      ],
+      faqs: [
+        { q: "كيف أفحص القيود الجغرافية لفيديو على {{platform}}؟", a: "الصق رابط الفيديو أو القناة في شريط البحث بالأعلى، واضغط على فحص لعرض خريطة التوفر الجغرافي." },
+        { q: "هل أداة فحص الحظر دقيقة؟", a: "نعم، نجلب البيانات الرسمية من APIs لتقديم نتائج دقيقة وفورية." }
+      ]
+    },
+    space: {
+      metaTitle: "{{tool}} {{platform}} {تحميل MP3|حفظ المساحات HD} - SavClip",
+      metaDesc: "{حمل تسجيلات المساحات الصوتية|احفظ صوت البث المباشر} من {{platform}} بجودة {MP3 عالية|320 كيلوبيت}. حول البث الصوتي للاستماع دون اتصال.",
+      subtitle: "{احفظ المساحات الصوتية وبث {{platform}} بصيغة MP3 عالية الدقة.|حول صوت مساحات {{platform}} للاستماع دون اتصال بسهولة.}",
+      title1: "{تحميل|استخراج}", title3: "{MP3 عالي الدقة|بث صوتي}",
+      articleSections: [
+        { type: "heading", level: 2, content: "أفضل برنامج استخراج صوت ومساحات لمنصة {{platform}}" },
+        { type: "paragraph", content: "مع موقع SavClip، يمكنك تحميل المساحات الصوتية المسجلة بالكامل وتحويلها مباشرة إلى صيغة MP3 عالية الجودة (320kbps) للاستماع إليها أينما كنت دون اتصال." }
+      ],
+      faqs: [
+        { q: "كيف أحمل صوت مساحة (Space) من {{platform}}؟", a: "انسخ رابط المساحة الصوتية أو التسجيل، وضعه في موقعنا واضغط على تحميل لاستخراج ملف MP3." },
+        { q: "هل يدعم الموقع جودة الصوت العالية؟", a: "نعم، نقوم باستخراج الصوت الخام لضمان أفضل معدل بت وبدون أي ضغط يقلل من نقاء الصوت." }
+      ]
+    },
+    finder: {
+      metaTitle: "{{tool}} {{platform}} {القنوات الرائجة|مجموعات مميزة} - SavClip",
+      metaDesc: "{اكتشف القنوات الرائجة والمجموعات الرائدة|ابحث عن مجتمعات مميزة} على {{platform}} حسب المجال. استكشف مصادر ومجموعات جديدة فوراً.",
+      subtitle: "{ابحث عن القنوات والمجموعات المميزة واستكشفها على {{platform}} بسهولة.|اكتشف المجتمعات الأكثر رواجاً على {{platform}} حسب التخصص.}",
+      title1: "{بحث|اكتشاف}", title3: "{الرواج|مجتمعات مميزة}",
+      articleSections: [
+        { type: "heading", level: 2, content: "ابحث عن القنوات والمجموعات الأكثر رواجاً على {{platform}}" },
+        { type: "paragraph", content: "يساعدك دليلنا التلقائي في العثور على القنوات والمجموعات النشطة والصاعدة على {{platform}} مصنفة حسب الاهتمامات والتفاعل الحقيقي." }
+      ],
+      faqs: [
+        { q: "كيف أكتشف القنوات النشطة والرائجة على {{platform}}؟", a: "تصفح قوائم التصنيفات لدينا لعرض القنوات والمجموعات مرتبة حسب نموها ومعدلات تفاعل المتابعين." },
+        { q: "هل يتم تحديث قائمة المجموعات والقنوات؟", a: "نعم، نقوم بتحديث البيانات بانتظام لتعكس التغيرات والاتجاهات الجديدة في منصة {{platform}}." }
+      ]
+    },
+    audit: {
+      metaTitle: "{{tool}} {{platform}} {تدقيق القنوات|سيو مجاني} - SavClip",
+      metaDesc: "{دقق القنوات والصفحات|حلل مقاييس السيو} لمنصة {{platform}} أون لاين بشكل {مجاني وشفاف|سريع}. احصل على تقارير تحسين الأداء فوراً.",
+      subtitle: "{قم بتدقيق السيو وفحص مقاييس صفحات وحسابات {{platform}} مجاناً.|احصل على تحليلات وتقارير أداء لتحسين حسابك على {{platform}} بسهولة.}",
+      title1: "{تدقيق|تحليل}", title3: "{سيو مجاني|إحصائيات}",
+      articleSections: [
+        { type: "heading", level: 2, content: "دقق قناتك أو صفحتك على {{platform}} وحسن السيو" },
+        { type: "paragraph", content: "تقوم أداة التدقيق بتحليل الأوصاف والكلمات الدلالية المستخدمة لصفحتك في {{platform}} وتقدم لك نصائح هامة لزيادة وضوح حسابك في نتائج البحث." }
+      ],
+      faqs: [
+        { q: "كيف يمكنني فحص وتدقيق قناة {{platform}}؟", a: "ضع رابط القناة في شريط البحث، واضغط على تحليل لاستلام تقرير سيو وتفاعل متكامل وفوري." },
+        { q: "هل تتطلب أداة فحص القنوات إعطاء صلاحيات لحسابي؟", a: "كلا، الأداة تعمل عبر قراءة البيانات المفتوحة للعامة فقط، دون طلب كلمات مرور أو تسجيل دخول." }
+      ]
+    },
     default: {
       metaTitle: "{{tool}} {{platform}} {سهل وآمن|حفظ الوسائط} - SavClip",
       metaDesc: "{أفضل موقع أون لاين لحفظ وتحميل وسائط|تحميل وتحويل ملفات} {{platform}} بشكل {سريع وآمن|مجاني}. بدون تنزيل برامج أو إضافات.",
@@ -1830,14 +1520,14 @@ for (const lang of locales) {
     const seed = getSeed(filename);
 
     // Apply spintax spinning to metadata and header text
-    const metaTitle = spinAndReplace(template.metaTitle, seed, platformName, toolName);
-    const metaDesc = spinAndReplace(template.metaDesc, seed, platformName, toolName);
+    const metaTitle = spinAndReplace(template.metaTitle, seed, platformName, toolName, lang);
+    const metaDesc = spinAndReplace(template.metaDesc, seed, platformName, toolName, lang);
 
     const headerTitle = toolName;
-    const headerSubtitle = spinAndReplace(template.subtitle, seed, platformName, toolName);
+    const headerSubtitle = spinAndReplace(template.subtitle, seed, platformName, toolName, lang);
 
     // Dynamic generation of title1, title2, title3 based on lang and spintax
-    const headerTitle1 = spinAndReplace(template.title1 || (lang === 'ar' ? "تحميل" : (lang === 'pt' ? "Baixar" : (lang === 'es' ? "Descargar" : "Unduh"))), seed, platformName, toolName);
+    const headerTitle1 = spinAndReplace(template.title1 || (lang === 'ar' ? "تحميل" : (lang === 'pt' ? "Baixar" : (lang === 'es' ? "Descargar" : "Unduh"))), seed, platformName, toolName, lang);
     
     // title2 represents Platform Name + Tool Type Name (excluding the word "Baixador/Descargador/Pengunduh/تحميل" to make it shorter and cleaner)
     // For example: YouTube Video Downloader -> YouTube Video / YouTube MP3
@@ -1855,12 +1545,12 @@ for (const lang of locales) {
       }
     }
     const headerTitle2 = `${platformName} ${title2Phrase}`;
-    const headerTitle3 = spinAndReplace(template.title3 || (lang === 'ar' ? "ميديا HD" : (lang === 'pt' ? "Mídia HD" : (lang === 'es' ? "Medios HD" : "Media HD"))), seed, platformName, toolName);
+    const headerTitle3 = spinAndReplace(template.title3 || (lang === 'ar' ? "ميديا HD" : (lang === 'pt' ? "Mídia HD" : (lang === 'es' ? "Medios HD" : "Media HD"))), seed, platformName, toolName, lang);
 
     const baseFormattedArticle = template.articleSections.map(section => {
       return {
         ...section,
-        content: spinAndReplace(section.content, seed, platformName, toolName)
+        content: spinAndReplace(section.content, seed, platformName, toolName, lang)
       };
     });
 
@@ -1868,8 +1558,8 @@ for (const lang of locales) {
 
     const formattedFaqs = template.faqs.map(faq => {
       return {
-        q: spinAndReplace(faq.q, seed, platformName, toolName),
-        a: spinAndReplace(faq.a, seed, platformName, toolName)
+        q: spinAndReplace(faq.q, seed, platformName, toolName, lang),
+        a: spinAndReplace(faq.a, seed, platformName, toolName, lang)
       };
     });
 

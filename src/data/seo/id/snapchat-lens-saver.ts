@@ -2,44 +2,27 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Bagaimana SavClip mempermudah proses Penyimpan Lensa Snapchat"
+    "content": "Bagaimana cara menyimpan Lensa dan Filter Snapchat?"
   },
   {
     "type": "paragraph",
-    "content": "Kami merancang antarmuka ringkas agar proses unduhan berjalan lancar. SavClip fokus pada kecepatan dan kemudahan akses. Jika Anda ingin mencoba fitur lain, Anda juga dapat menggunakan <a href=\"/snapchat-private-story-downloader\">Pengunduh Cerita Privat</a> kami atau memeriksa <a href=\"/snapchat-video-compressor\">Kompresor Video</a> untuk akses lengkap."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Kompatibel di semua jenis browser"
-  },
-  {
-    "type": "paragraph",
-    "content": "Kami membaca link terstruktur publik untuk memanggil file media asli tanpa merusak kualitas visual, memastikan kualitas terbaik yang tersedia."
+    "content": "Alat Penyimpan Lensa kami dirancang untuk menawarkan penyimpanan cepat untuk lensa Snapchat. Salin tautan filter atau lensa, tempel di bilah atas dan unduh file dalam beberapa detik secara gratis. Jika Anda ingin mencoba fitur lain, Anda juga dapat menggunakan <a href=\"/snapchat-private-story-downloader\">Pengunduh Cerita Privat</a> kami atau memeriksa <a href=\"/snapchat-video-compressor\">Kompresor Video</a> untuk akses lengkap."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Bagaimana cara menyimpan file dari Snapchat online?",
-    "a": "Salin link postingan, tempel di kolom pencarian atas kami, lalu klik Unduh untuk menyimpan file langsung ke penyimpanan Anda."
+    "q": "Bagaimana cara mengunduh lensa Snapchat?",
+    "a": "Tempel URL lensa di kotak pencarian dan klik unduh untuk mentransfer file efek ke perangkat Anda."
   },
   {
-    "q": "Apakah ada batasan kecepatan unduhan?",
-    "a": "Tidak ada. Server kami menyalurkan bandwidth ultra cepat agar file terunduh hanya dalam hitungan detik."
-  },
-  {
-    "q": "Apakah alat ini berfungsi untuk semua jenis file publik di Snapchat?",
-    "a": "Ya, alat kami mendukung penyimpanan media terbuka yang ada pada platform tersebut."
-  },
-  {
-    "q": "Apakah ada batasan kecepatan unduhan?",
-    "a": "Tidak ada. Server kami menyalurkan kecepatan penuh agar file selesai diunduh secara instan."
+    "q": "Apakah aman mengunduh filter Snapchat?",
+    "a": "Ya, kami memproses unduhan langsung dari server resmi tanpa mengekspos akun Anda atau memerlukan unduhan tambahan."
   }
 ];
 
 export const meta = {
-  title: "Penyimpan Lensa Snapchat Simpan Media - SavClip",
+  title: "Penyimpan Lensa Snapchat Simpan Lensa - SavClip",
   description: "Unduh dan konversi file dari Snapchat secara gratis. Tanpa pasang aplikasi tambahan."
 };
 
@@ -47,6 +30,6 @@ export const header = {
   title: "Penyimpan Lensa",
   title1: "Simpan",
   title2: "Snapchat Penyimpan Lensa",
-  title3: "Media Kualitas HD",
-  subtitle: "Simpan konten publik Snapchat dengan privasi penuh dan tanpa kendala."
+  title3: "Lensa Gratis",
+  subtitle: "Dapatkan efek dan lensa Snapchat langsung di perangkat Anda."
 };

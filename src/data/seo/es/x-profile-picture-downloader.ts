@@ -2,7 +2,7 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "¿Por qué usar SavClip para la Descargador de Fotos de Perfil de X (Twitter)?"
+    "content": "¿Por qué usar SavClip para el Descargador de Fotos de Perfil de X (Twitter)?"
   },
   {
     "type": "paragraph",

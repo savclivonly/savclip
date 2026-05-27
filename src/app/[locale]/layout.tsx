@@ -9,6 +9,7 @@ export function generateStaticParams() {
   ];
 }
 import type { Metadata } from "next";
+import { Inter, Cairo, Tajawal } from "next/font/google";
 import "../globals.css";
 import { ThemeProvider } from "@/components/shared/ThemeProvider";
 import { Toaster } from "react-hot-toast";
@@ -99,6 +100,25 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
   };
 }
 
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const cairo = Cairo({
+  subsets: ["arabic"],
+  variable: "--font-cairo",
+  display: "swap",
+});
+
+const tajawal = Tajawal({
+  subsets: ["arabic"],
+  weight: ["200", "300", "400", "500", "700", "800", "900"],
+  variable: "--font-tajawal",
+  display: "swap",
+});
+
 export const viewport: Viewport = {
   themeColor: "#ec4899",
   width: "device-width",
@@ -150,10 +170,7 @@ export default async function RootLayout(props: { children: React.ReactNode; par
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="512x512" href="/icon.png" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..900&family=Inter:wght@100..900&family=Tajawal:wght@200..900&display=swap" rel="stylesheet" />
-        
+
         
         
         
@@ -179,7 +196,7 @@ export default async function RootLayout(props: { children: React.ReactNode; par
           }}
         />
       </head>
-      <body suppressHydrationWarning className="font-sans bg-white text-neutral-900 antialiased dark:bg-black dark:text-neutral-100">
+      <body suppressHydrationWarning className={`${inter.variable} ${cairo.variable} ${tajawal.variable} font-sans bg-white text-neutral-900 antialiased dark:bg-black dark:text-neutral-100`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

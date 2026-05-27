@@ -2,34 +2,34 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "لماذا تستخدم مولد روابط Telegram؟"
+    "content": "Por que usar o Gerador de Links do Telegram?"
   },
   {
     "type": "paragraph",
-    "content": "يساعد إنشاء روابط توجيه مباشرة في فتح تطبيق Telegram فوراً على هاتف المستخدم، مما يقلل من نسب الخروج ويضاعف عدد المشتركين الجدد بشكل طبيعي. Se você quiser experimentar outros recursos, também poderá usar nosso <a href=\"/telegram-video-compressor\">Compressor de Vídeos</a> ou verificar o <a href=\"/telegram-bio-generator\">Gerador de Bios</a> para acesso completo."
+    "content": "Criar links de redirecionamento direto ajuda a abrir o aplicativo do Telegram imediatamente no celular do usuário, evitando desistências e aumentando sua taxa de conversão de inscritos de forma orgânica. Se você quiser experimentar outros recursos, também poderá usar nosso <a href=\"/telegram-video-compressor\">Compressor de Vídeos</a> ou verificar o <a href=\"/telegram-bio-generator\">Gerador de Bios</a> para acesso completo."
   }
 ];
 
 export const faqs = [
   {
-    "q": "كيف أولد رابط دعوة لمنصة Telegram؟",
-    "a": "اكتب اسم مستخدم القناة أو كود الدعوة في الحقل العلوي، واضغط على توليد لتنسخ الرابط المباشر الجديد."
+    "q": "Como gerar link de convite do Telegram?",
+    "a": "Insira o nome de usuário ou código do canal no formulário superior, clique em gerar e copie a nova URL de redirecionamento."
   },
   {
-    "q": "هل أداة توليد الروابط مجانية؟",
-    "a": "نعم، نقدم هذه الخدمة مجاناً بالكامل وبلا حدود يومية للاستخدام."
+    "q": "Esta ferramenta de link é gratuita?",
+    "a": "Sim, é um utilitário de link totalmente grátis e sem limites de geração diária."
   }
 ];
 
 export const meta = {
-  title: "Gerador de Links de Canais Telegram توليد URL - SavClip",
-  description: "مولد روابط لمنصة Telegram بشكل سريع وسهل. حسّن تحويل المشتركين وتتبع الروابط."
+  title: "Gerador de Links de Canais Telegram Gerar URL - SavClip",
+  description: "Gerador de links para Telegram de forma rápida e simples. Melhore a conversão de inscritos e o rastreamento de URLs."
 };
 
 export const header = {
   title: "Gerador de Links de Canais",
-  title1: "إنشاء",
+  title1: "Gerar",
   title2: "Telegram Links de Canais",
-  title3: "نمو القناة",
-  subtitle: "أنشئ روابط توجيه محسنة لمنصة Telegram."
+  title3: "Crescimento",
+  subtitle: "Crie URLs de redirecionamento otimizados para o Telegram."
 };

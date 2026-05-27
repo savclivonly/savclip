@@ -2,7 +2,7 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Por que usar o SavClip para a Baixador de Fotos do Telegram?"
+    "content": "Por que usar o SavClip para o Baixador de Fotos do Telegram?"
   },
   {
     "type": "paragraph",

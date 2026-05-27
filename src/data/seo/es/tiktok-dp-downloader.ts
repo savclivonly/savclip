@@ -2,7 +2,7 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "¿Por qué usar SavClip para la Descargador de Foto de Perfil de TikTok?"
+    "content": "¿Por qué usar SavClip para el Descargador de Foto de Perfil de TikTok?"
   },
   {
     "type": "paragraph",

@@ -21,6 +21,8 @@ import { toast } from "react-hot-toast"
 import { isSmartInput, handleSmartRedirect } from "@/utils/platform-detector"
 import { useRouter, useSearchParams } from "next/navigation"
 import { translateToolName } from "@/utils/translate-tool"
+import { RatingWidget } from "@/components/shared/RatingWidget"
+
 
 const ChromeExtensionBanner = dynamic(() => import("@/components/layout/ChromeExtensionBanner").then(mod => mod.ChromeExtensionBanner))
 import { PurpleStepGuide } from "@/components/shared/PurpleStepGuide"
@@ -164,6 +166,8 @@ function HomeViewContent({ locale, dict }: { locale: Locale; dict: any }) {
             <p className="text-sm md:text-xl font-medium text-white/90 text-center px-4 max-w-3xl drop-shadow-md">
               {dict.home?.hero?.subtitle || "Download HD videos, Reels, Shorts, and Photos from any social platform. Fast, secure, and completely free—with absolutely no watermarks."}
             </p>
+            <RatingWidget toolKey="home" defaultRating={4.9} defaultReviewCount={25420} locale={locale} />
+
           </motion.div>
 
           <div className="w-full max-w-4xl mt-0 sm:mt-4">

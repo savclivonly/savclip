@@ -2,7 +2,7 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "¿Por qué usar SavClip para la Descargador de Banners de X (Twitter)?"
+    "content": "¿Por qué usar SavClip para el Descargador de Banners de X (Twitter)?"
   },
   {
     "type": "paragraph",

@@ -2,51 +2,34 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Cómo SavClip optimiza el uso de Generador de Biografías de Telegram"
+    "content": "¿Por qué usar el Generador de Bios de Telegram?"
   },
   {
     "type": "paragraph",
-    "content": "Diseñamos nuestra interfaz para darte la mayor comodidad de descarga. SavClip te ofrece una experiencia limpia, rápida y enfocada en lo que necesitas. Si deseas probar otras funciones, también puedes usar nuestro <a href=\"/telegram-video-downloader\">Descargador de Video</a> o consultar el <a href=\"/telegram-private-video-downloader\">Descargador de Medios</a> para obtener un acceso completo."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Compatibilidad en celulares y PC"
-  },
-  {
-    "type": "paragraph",
-    "content": "Nos conectamos con los enlaces estructurados públicos para traerte el archivo original sin alteraciones de bitrate, garantizando la máxima calidad disponible."
+    "content": "Una biografía atractiva es la clave para convertir visitantes del perfil en seguidores. Usa nuestra inteligencia artificial para generar textos creativos y optimizados para tu nicho en Telegram. Si deseas probar otras funciones, también puedes usar nuestro <a href=\"/telegram-video-downloader\">Descargador de Video</a> o consultar el <a href=\"/telegram-private-video-downloader\">Descargador de Medios</a> para obtener un acceso completo."
   }
 ];
 
 export const faqs = [
   {
-    "q": "¿Cómo guardar archivos de Telegram online?",
-    "a": "Copia el enlace de la publicación, pégalo en la barra de búsqueda superior y haz clic en Descargar para guardar los archivos directo a tu dispositivo."
+    "q": "¿Cómo generar una biografía para Telegram?",
+    "a": "Introduce tu nicho o palabras clave principales, selecciona el tono de voz y haz clic en generar para recibir opciones exclusivas de bios."
   },
   {
-    "q": "¿Hay límites de velocidad para las descargas?",
-    "a": "No. Nuestros servidores entregan la velocidad máxima permitida para que bajes tus archivos en un abrir y cerrar de ojos."
-  },
-  {
-    "q": "¿Este descargador funciona para cualquier archivo público de Telegram?",
-    "a": "Sí, es compatible con materia pública disponibles en la plataforma."
-  },
-  {
-    "q": "¿Existe algún límite de velocidad al descargar archivos?",
-    "a": "No, SavClip ofrece la conexión directa y rápida de nuestros servidores a tu dispositivo."
+    "q": "¿El generador de bios por IA es gratuito?",
+    "a": "Sí, SavClip ofrece este asistente de IA totalmente gratis para todos los creadores."
   }
 ];
 
 export const meta = {
-  title: "Generador de Biografías Telegram Guardar Média - SavClip",
-  description: "Descarga y convierte archivos de Telegram de forma rápida y segura. Sin instalar extensiones."
+  title: "Generador de Biografías Telegram IA Gratis - SavClip",
+  description: "Genera bios profesionales para Telegram usando inteligencia artificial de forma rápida y sencilla. Destaca tu perfil."
 };
 
 export const header = {
   title: "Generador de Biografías",
-  title1: "Guardar",
+  title1: "Generar",
   title2: "Telegram Biografías",
-  title3: "Medios en HD",
-  subtitle: "Guarda contenidos públicos de Telegram con total privacidad y sin complicaciones."
+  title3: "Optimizado",
+  subtitle: "Crea una presentación atractiva para tu perfil de Telegram gratis."
 };

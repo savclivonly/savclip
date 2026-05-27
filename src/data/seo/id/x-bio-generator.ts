@@ -2,51 +2,34 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Bagaimana SavClip mempermudah proses Pembuat Bio X (Twitter)"
+    "content": "Mengapa menggunakan Pembuat Bio X (Twitter)?"
   },
   {
     "type": "paragraph",
-    "content": "Kami merancang antarmuka ringkas agar proses unduhan berjalan lancar. SavClip fokus pada kecepatan dan kemudahan akses. Jika Anda ingin mencoba fitur lain, Anda juga dapat menggunakan <a href=\"/x-video-downloader\">Pengunduh Video</a> kami atau memeriksa <a href=\"/x-gif-downloader\">Pengunduh GIF</a> untuk akses lengkap."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Kompatibel di semua jenis browser"
-  },
-  {
-    "type": "paragraph",
-    "content": "Kami membaca link terstruktur publik untuk memanggil file media asli tanpa merusak kualitas visual, memastikan kualitas terbaik yang tersedia."
+    "content": "Biografi yang menarik adalah kunci untuk mengubah pengunjung profil menjadi pengikut. Gunakan AI kami untuk menghasilkan teks bios yang kreatif dan sesuai dengan kebutuhan profil X (Twitter) Anda. Jika Anda ingin mencoba fitur lain, Anda juga dapat menggunakan <a href=\"/x-video-downloader\">Pengunduh Video</a> kami atau memeriksa <a href=\"/x-gif-downloader\">Pengunduh GIF</a> untuk akses lengkap."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Bagaimana cara menyimpan file dari X (Twitter) online?",
-    "a": "Salin link postingan, tempel di kolom pencarian atas kami, lalu klik Unduh untuk menyimpan file langsung ke penyimpanan Anda."
+    "q": "Bagaimana cara membuat bio untuk X (Twitter)?",
+    "a": "Masukkan kata kunci utama Anda, pilih gaya bahasa, lalu klik buat untuk menerima berbagai opsi bios unik."
   },
   {
-    "q": "Apakah ada batasan kecepatan unduhan?",
-    "a": "Tidak ada. Server kami menyalurkan bandwidth ultra cepat agar file terunduh hanya dalam hitungan detik."
-  },
-  {
-    "q": "Apakah alat ini berfungsi untuk semua jenis file publik di X (Twitter)?",
-    "a": "Ya, alat kami mendukung penyimpanan media terbuka yang ada pada platform tersebut."
-  },
-  {
-    "q": "Apakah ada batasan kecepatan unduhan?",
-    "a": "Tidak ada. Server kami menyalurkan kecepatan penuh agar file selesai diunduh secara instan."
+    "q": "Apakah pembuat bio AI ini gratis?",
+    "a": "Ya, SavClip menyediakan asisten bio kecerdasan buatan ini 100% gratis untuk semua pengguna."
   }
 ];
 
 export const meta = {
-  title: "Pembuat Bio X (Twitter) Simpan Media - SavClip",
-  description: "Unduh dan konversi file dari X (Twitter) secara cepat dan aman. Tanpa pasang aplikasi tambahan."
+  title: "Pembuat Bio X (Twitter) AI Gratis - SavClip",
+  description: "Hasilkan bio profesional untuk X (Twitter) menggunakan kecerdasan buatan secara cepat dan mudah. Soroti profil Anda."
 };
 
 export const header = {
   title: "Pembuat Bio",
-  title1: "Simpan",
+  title1: "Hasilkan",
   title2: "X (Twitter) Bio",
-  title3: "Media Kualitas HD",
-  subtitle: "Simpan konten publik X (Twitter) dengan privasi penuh dan tanpa kendala."
+  title3: "Optimal",
+  subtitle: "Buat teks perkenalan profil X (Twitter) yang unik secara gratis."
 };

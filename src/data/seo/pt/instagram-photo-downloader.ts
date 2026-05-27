@@ -2,7 +2,7 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Por que usar o SavClip para a Baixador de Fotos do Instagram?"
+    "content": "Por que usar o SavClip para o Baixador de Fotos do Instagram?"
   },
   {
     "type": "paragraph",

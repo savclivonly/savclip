@@ -2,34 +2,34 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "أفضل برنامج استخراج صوت ومساحات لمنصة X (Twitter)"
+    "content": "O melhor extrator de áudio e Spaces do X (Twitter)"
   },
   {
     "type": "paragraph",
-    "content": "مع موقع SavClip، يمكنك تحميل المساحات الصوتية المسجلة بالكامل وتحويلها مباشرة إلى صيغة MP3 عالية الجودة (320kbps) للاستماع إليها أينما كنت دون اتصال. Se você quiser experimentar outros recursos, também poderá usar nosso <a href=\"/x-media-downloader\">Baixador de Mídia</a> ou verificar o <a href=\"/x-thread-downloader\">Baixador de Threads</a> para acesso completo."
+    "content": "Com o SavClip, você pode baixar transmissões de áudio completas do X (Twitter) convertidas diretamente para o formato MP3 de alta taxa de bits (320kbps), perfeito para escutar offline. Se você quiser experimentar outros recursos, também poderá usar nosso <a href=\"/x-media-downloader\">Baixador de Mídia</a> ou verificar o <a href=\"/x-thread-downloader\">Baixador de Threads</a> para acesso completo."
   }
 ];
 
 export const faqs = [
   {
-    "q": "كيف أحمل صوت مساحة (Space) من X (Twitter)؟",
-    "a": "انسخ رابط المساحة الصوتية أو التسجيل، وضعه في موقعنا واضغط على تحميل لاستخراج ملف MP3."
+    "q": "Como baixar o áudio de um Space do X (Twitter)?",
+    "a": "Copie a URL da gravação ou Space ativo, cole em nosso site e clique no botão de download para obter a faixa MP3."
   },
   {
-    "q": "هل يدعم الموقع جودة الصوت العالية؟",
-    "a": "نعم، نقوم باستخراج الصوت الخام لضمان أفضل معدل بت وبدون أي ضغط يقلل من نقاء الصوت."
+    "q": "É possível converter o áudio em alta qualidade?",
+    "a": "Sim, extraímos o fluxo bruto do áudio garantindo bitrates excelentes sem compressão prejudicial."
   }
 ];
 
 export const meta = {
-  title: "Baixador de Spaces X (Twitter) تحميل MP3 - SavClip",
-  description: "حمل تسجيلات المساحات الصوتية من X (Twitter) بجودة MP3 عالية. حول البث الصوتي للاستماع دون اتصال."
+  title: "Baixador de Spaces X (Twitter) Download MP3 - SavClip",
+  description: "Baixe gravações de audio e Spaces do X (Twitter) em alta qualidade MP3. Converta transmissões ao vivo para ouvir offline."
 };
 
 export const header = {
   title: "Baixador de Spaces",
-  title1: "تحميل",
+  title1: "Baixar",
   title2: "X (Twitter) Spaces",
-  title3: "MP3 عالي الدقة",
-  subtitle: "احفظ المساحات الصوتية وبث X (Twitter) بصيغة MP3 عالية الدقة."
+  title3: "MP3 HD",
+  subtitle: "Salve transmissões de áudio e Spaces do X (Twitter) em MP3 de alta fidelidade."
 };

@@ -63,7 +63,8 @@ export function Navbar({ locale, dict }: { locale?: string; dict: any }) {
     if (targetLoc === 'en') {
       return cleanPath === '' ? '/' : (cleanPath.startsWith('/') ? cleanPath : '/' + cleanPath);
     } else {
-      return `/${targetLoc}${cleanPath.startsWith('/') ? cleanPath : '/' + cleanPath}`;
+      const pathWithSlash = cleanPath.startsWith('/') ? cleanPath : '/' + cleanPath;
+      return pathWithSlash === '/' ? `/${targetLoc}` : `/${targetLoc}${pathWithSlash}`;
     }
   }, [pathname]);
 

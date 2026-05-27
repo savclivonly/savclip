@@ -2,51 +2,34 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Cómo SavClip optimiza el uso de Buscador de Canales de Tendencia de Telegram"
+    "content": "Encuentra los canales más populares de Telegram"
   },
   {
     "type": "paragraph",
-    "content": "Diseñamos nuestra interfaz para darte la mayor comodidad de descarga. SavClip te ofrece una experiencia limpia, rápida y enfocada en lo que necesitas. Si deseas probar otras funciones, también puedes usar nuestro <a href=\"/telegram-channel-link-generator\">Generador de Enlaces de Canal</a> o consultar el <a href=\"/telegram-video-compressor\">Compresor de Video</a> para obtener un acceso completo."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Compatibilidad en celulares y PC"
-  },
-  {
-    "type": "paragraph",
-    "content": "Nos conectamos con los enlaces estructurados públicos para traerte el archivo original sin alteraciones de bitrate, garantizando la máxima calidad disponible."
+    "content": "Nuestro directorio automatizado te ayuda a rastrear y encontrar canales, perfiles o grupos en ascenso en Telegram clasificados por temas y alcance real. Si deseas probar otras funciones, también puedes usar nuestro <a href=\"/telegram-channel-link-generator\">Generador de Enlaces de Canal</a> o consultar el <a href=\"/telegram-video-compressor\">Compresor de Video</a> para obtener un acceso completo."
   }
 ];
 
 export const faqs = [
   {
-    "q": "¿Cómo guardar archivos de Telegram online?",
-    "a": "Copia el enlace de la publicación, pégalo en la barra de búsqueda superior y haz clic en Descargar para guardar los archivos directo a tu dispositivo."
+    "q": "¿Cómo descubrir canales en tendencia en Telegram?",
+    "a": "Navega por nuestro panel de categorías para visualizar canales y grupos ordenados por relevancia y crecimiento."
   },
   {
-    "q": "¿Hay límites de velocidad para las descargas?",
-    "a": "No. Nuestros servidores entregan la velocidad máxima permitida para que bajes tus archivos en un abrir y cerrar de ojos."
-  },
-  {
-    "q": "¿Este descargador funciona para cualquier archivo público de Telegram?",
-    "a": "Sí, es compatible con materia pública disponibles en la plataforma."
-  },
-  {
-    "q": "¿Existe algún límite de velocidad al descargar archivos?",
-    "a": "No, SavClip ofrece la conexión directa y rápida de nuestros servidores a tu dispositivo."
+    "q": "¿La lista de comunidades de Telegram se encuentra actualizada?",
+    "a": "Sí, actualizamos nuestra base regularmente para reflejar las nuevas tendencias de audiencia en Telegram."
   }
 ];
 
 export const meta = {
-  title: "Buscador de Canales de Tendencia Telegram Guardar Média - SavClip",
-  description: "Descarga y convierte archivos de Telegram de forma gratis. Sin instalar extensiones."
+  title: "Buscador de Canales de Tendencia Telegram Populares - SavClip",
+  description: "Encuentra grupos destacados en Telegram por categoría. Explora nuevos recursos y comunidades online."
 };
 
 export const header = {
   title: "Buscador de Canales de Tendencia",
-  title1: "Guardar",
+  title1: "Descubrir",
   title2: "Telegram Canales de Tendencia",
-  title3: "Medios en HD",
-  subtitle: "Guarda contenidos públicos de Telegram con total privacidad y sin complicaciones."
+  title3: "Comunidades",
+  subtitle: "Descubre las comunidades más populares de Telegram divididas por nicho."
 };

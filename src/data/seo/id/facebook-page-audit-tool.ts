@@ -2,51 +2,34 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Bagaimana SavClip mempermudah proses Alat Audit Halaman Facebook"
+    "content": "Audit profil atau saluran Facebook Anda"
   },
   {
     "type": "paragraph",
-    "content": "Menyimpan foto atau video favorit Anda dari Facebook tidak perlu menggunakan cara rumit. SavClip fokus pada kecepatan dan kemudahan akses. Jika Anda ingin mencoba fitur lain, Anda juga dapat menggunakan <a href=\"/facebook-video-downloader\">Pengunduh Video</a> kami atau memeriksa <a href=\"/facebook-reels-downloader\">Pengunduh Reels</a> untuk akses lengkap."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Ekstraksi media berbasis API publik"
-  },
-  {
-    "type": "paragraph",
-    "content": "Kami membaca link terstruktur publik untuk memanggil file media asli tanpa merusak kualitas visual, memastikan warna tajam dan audio asli."
+    "content": "Alat audit kami menganalisis tag, deskripsi, dan metadata halaman Facebook serta menyarankan perbaikan penting untuk meningkatkan jangkauan organik Anda. Jika Anda ingin mencoba fitur lain, Anda juga dapat menggunakan <a href=\"/facebook-video-downloader\">Pengunduh Video</a> kami atau memeriksa <a href=\"/facebook-reels-downloader\">Pengunduh Reels</a> untuk akses lengkap."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Bagaimana cara menyimpan file dari Facebook online?",
-    "a": "Salin link postingan, tempel di kolom pencarian atas kami, lalu klik Unduh untuk menyimpan file langsung ke penyimpanan Anda."
+    "q": "Bagaimana cara mengaudit saluran Facebook?",
+    "a": "Masukkan tautan atau nama saluran di kotak pencarian, klik analisis dan dapatkan laporan optimasi SEO yang mendetail."
   },
   {
-    "q": "Apakah ada batasan kecepatan unduhan?",
-    "a": "Tidak ada. Server kami menyalurkan kecepatan transfer maksimal agar file terunduh hanya dalam hitungan detik."
-  },
-  {
-    "q": "Apakah alat ini berfungsi untuk semua jenis file publik di Facebook?",
-    "a": "Ya, alat kami mendukung penyimpanan seluruh file publik yang ada pada platform tersebut."
-  },
-  {
-    "q": "Apakah ada batasan kecepatan unduhan?",
-    "a": "Tidak ada. Server kami menyalurkan kecepatan unduh maksimal agar file selesai diunduh secara instan."
+    "q": "Apakah saya perlu memberikan akses akun untuk audit?",
+    "a": "Tidak. Kami hanya membaca data publik Facebook, tanpa memerlukan kata sandi atau hak istimewa admin."
   }
 ];
 
 export const meta = {
-  title: "Alat Audit Halaman Facebook Mudah & Aman - SavClip",
-  description: "Layanan online terbaik untuk menyimpan media dari Facebook secara cepat dan aman. Tanpa pasang aplikasi tambahan."
+  title: "Alat Audit Halaman Facebook Audit Saluran - SavClip",
+  description: "Audit saluran dan halaman untuk Facebook secara online dengan gratis dan transparan. Dapatkan laporan optimasi instan."
 };
 
 export const header = {
   title: "Alat Audit Halaman",
-  title1: "Unduh",
+  title1: "Audit",
   title2: "Facebook Audit Halaman",
-  title3: "Cepat & Gratis",
-  subtitle: "Unduh file dan kelola media dari Facebook dengan sangat mudah."
+  title3: "SEO Gratis",
+  subtitle: "Lakukan audit SEO dan analisis metrik halaman Facebook secara gratis."
 };

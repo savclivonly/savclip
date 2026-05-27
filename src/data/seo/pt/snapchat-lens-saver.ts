@@ -2,34 +2,34 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "كيفية حفظ عدسات وفلاتر Snapchat؟"
+    "content": "Como salvar Lentes e Filtros do Snapchat?"
   },
   {
     "type": "paragraph",
-    "content": "تم تصميم أداة Salvador de Lentes لتوفير حفظ سريع لعدسات وفلاتر Snapchat. انسخ رابط الفلتر أو العدسة، ثم الصقه في شريط البحث بالأعلى وحمل الملفات في ثوانٍ معدودة مجاناً. Se você quiser experimentar outros recursos, também poderá usar nosso <a href=\"/snapchat-private-story-downloader\">Baixador de Stories Privados</a> ou verificar o <a href=\"/snapchat-video-compressor\">Compressor de Vídeos</a> para acesso completo."
+    "content": "Nosso Salvador de Lentes foi projetado para oferecer o salvamento rápido de lentes do Snapchat. Copie o link do filtro ou lente, cole na barra superior e baixe os arquivos em poucos segundos de forma gratuita. Se você quiser experimentar outros recursos, também poderá usar nosso <a href=\"/snapchat-private-story-downloader\">Baixador de Stories Privados</a> ou verificar o <a href=\"/snapchat-video-compressor\">Compressor de Vídeos</a> para acesso completo."
   }
 ];
 
 export const faqs = [
   {
-    "q": "كيف أحمل عدسات وفلاتر Snapchat؟",
-    "a": "الصق رابط العدسة في صندوق البحث واضغط على زر تحميل لنقل ملفات التأثيرات إلى جهازك فوراً."
+    "q": "Como baixar lentes do Snapchat?",
+    "a": "Cole a URL da lente na caixa de pesquisa e clique em baixar para transferir os arquivos de efeito para o seu dispositivo."
   },
   {
-    "q": "هل تحميل فلاتر Snapchat آمن؟",
-    "a": "نعم، نقوم بجلب الملفات مباشرة من خوادم المنصة الرسمية دون المساس بأمان حسابك أو الحاجة لأدوات إضافية."
+    "q": "É seguro baixar filtros do Snapchat?",
+    "a": "Sim, processamos o download direto dos servidores oficiais sem expor sua conta ou requerer downloads adicionais."
   }
 ];
 
 export const meta = {
-  title: "Salvador de Lentes Snapchat حفظ عدسات - SavClip",
-  description: "تحميل وتحويل ملفات Snapchat بشكل مجاني. بدون تنزيل برامج أو إضافات."
+  title: "Salvador de Lentes Snapchat Salvar Lentes - SavClip",
+  description: "Baixe e converta arquivos do Snapchat de forma gratuita. Sem downloads de apps ou extensões."
 };
 
 export const header = {
   title: "Salvador de Lentes",
-  title1: "حفظ",
+  title1: "Salvar",
   title2: "Snapchat Salvador de Lentes",
-  title3: "عدسات مجانية",
-  subtitle: "احصل على تأثيرات وعدسات Snapchat مباشرة على جهازك."
+  title3: "Lentes Grátis",
+  subtitle: "Obtenha efeitos e lentes do Snapchat diretamente no seu aparelho."
 };

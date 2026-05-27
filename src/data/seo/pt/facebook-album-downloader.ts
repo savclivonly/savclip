@@ -2,7 +2,7 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Por que usar o SavClip para a Baixador de Álbuns do Facebook?"
+    "content": "Por que usar o SavClip para o Baixador de Álbuns do Facebook?"
   },
   {
     "type": "paragraph",
