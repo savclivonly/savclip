@@ -29,6 +29,7 @@ import { ScrollToTop } from "@/components/shared/ScrollToTop";
 import { Analytics } from "@/components/shared/Analytics";
 import { GlobalPlatformNav } from "@/components/layout/GlobalPlatformNav";
 import { getSeoAlternates } from "@/lib/seo";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 
 
@@ -268,6 +269,7 @@ export default async function RootLayout(props: { children: React.ReactNode; par
             </main>
             <Footer locale={locale} dict={layoutDict} />
           </div>
+          <SpeedInsights />
         </ThemeProvider>
       </body>
     </html>
