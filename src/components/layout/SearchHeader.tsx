@@ -13,8 +13,6 @@ import { useDownloadHistory } from "@/hooks/useDownloadHistory";
 import { LoadingBar } from "@/components/ui/LoadingBar";
 import { locales, type Locale } from "@/i18n";
 import { translateToolName } from "@/utils/translate-tool";
-import { RatingWidget } from "@/components/shared/RatingWidget";
-import { TOOL_CONFIGS } from "@/lib/tool-configs";
 
 
 const DownloadPreview = dynamic(
@@ -129,10 +127,6 @@ function SearchHeaderContent({
     return pathname.replace(/^\/[a-z]{2}(?=\/|$)/, "").replace(/^\//, "") || "general";
   }, [pathname]);
 
-  const toolConfig = TOOL_CONFIGS[toolKey];
-  const defaultRating = toolConfig ? parseFloat(toolConfig.ratingValue) : 4.9;
-  const defaultReviewCount = toolConfig ? parseInt(toolConfig.reviewCount.replace(/[^0-9]/g, ""), 10) : 12840;
-
   const tabs = getPlatformTabs(title, pathname);
 
 
@@ -232,7 +226,6 @@ function SearchHeaderContent({
           <p className="text-xs sm:text-sm md:text-lg text-white/90 mb-5 font-medium drop-shadow-sm text-center w-full max-w-2xl px-4 leading-relaxed">
             {subtitle}
           </p>
-          <RatingWidget toolKey={toolKey} defaultRating={defaultRating} defaultReviewCount={defaultReviewCount} locale={locale} />
 
         </div>
         {!hideSearchBar && (

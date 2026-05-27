@@ -1,6 +1,7 @@
 import { translateToolName } from "@/utils/translate-tool";
 import { SearchHeader } from "@/components/layout/SearchHeader";
 import { getSeoAlternates } from "@/lib/seo";
+import { RatingWidget } from "@/components/shared/RatingWidget";
 import type { Metadata } from "next";
 import { FeaturesSection } from "@/components/layout/FeaturesSection";
 import { FAQSection } from "@/components/layout/FAQSection";
@@ -214,6 +215,16 @@ export default async function Page(props: { params: Promise<{ locale: string; to
           </div>
         </section>
       )}
+
+      {/* Rating Section */}
+      <div className="flex flex-col items-center justify-center py-10 bg-slate-50 dark:bg-neutral-900/10 border-t border-b border-neutral-100 dark:border-neutral-800">
+        <RatingWidget 
+          toolKey={tool} 
+          defaultRating={parseFloat(config.ratingValue) || 4.9} 
+          defaultReviewCount={parseInt(config.reviewCount.replace(/[^0-9]/g, ""), 10) || 12840} 
+          locale={locale} 
+        />
+      </div>
 
       <CategoryCards />
 

@@ -166,7 +166,6 @@ function HomeViewContent({ locale, dict }: { locale: Locale; dict: any }) {
             <p className="text-sm md:text-xl font-medium text-white/90 text-center px-4 max-w-3xl drop-shadow-md">
               {dict.home?.hero?.subtitle || "Download HD videos, Reels, Shorts, and Photos from any social platform. Fast, secure, and completely free—with absolutely no watermarks."}
             </p>
-            <RatingWidget toolKey="home" defaultRating={4.9} defaultReviewCount={25420} locale={locale} />
 
           </motion.div>
 
@@ -420,6 +419,11 @@ function HomeViewContent({ locale, dict }: { locale: Locale; dict: any }) {
           </button>
         </div>
       </section>
+
+      {/* RATING WIDGET */}
+      <div className="flex flex-col items-center justify-center py-12 bg-neutral-50 dark:bg-neutral-900/10 border-t border-b border-neutral-100 dark:border-neutral-800">
+        <RatingWidget toolKey="home" defaultRating={4.9} defaultReviewCount={25420} locale={locale} />
+      </div>
 
       <ChromeExtensionBanner dict={dict} />
     </div>
