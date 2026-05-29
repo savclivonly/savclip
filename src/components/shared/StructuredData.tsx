@@ -104,33 +104,7 @@ export function StructuredData({ type, data, locale = 'en' }: StructuredDataProp
       ]
     };
 
-    const productSchema = {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": localizedTitle,
-      "image": "https://savclip.com/icon.png",
-      "description": data.description || translateToolName("Free online social media downloader for videos, reels, and stories.", locale),
-      "brand": {
-        "@type": "Brand",
-        "name": "SavClip"
-      },
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": data.ratingValue || "4.9",
-        "ratingCount": data.reviewCount || "12840",
-        "reviewCount": data.reviewCount || "12840",
-        "bestRating": "5",
-        "worstRating": "1"
-      }
-    };
-
-    schema = [appSchema, productSchema, howToSchema];
+    schema = [appSchema, howToSchema];
   }
 
   if (type === "HowTo") {
