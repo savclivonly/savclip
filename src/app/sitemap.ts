@@ -145,8 +145,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const cleanRoute = route.startsWith('/') ? route.slice(1) : route;
     
     const languages: Record<string, string> = {
-      'x-default': cleanRoute ? `${SITE_URL}/${cleanRoute}` : `${SITE_URL}/`,
-      'en': cleanRoute ? `${SITE_URL}/${cleanRoute}` : `${SITE_URL}/`,
+      'x-default': cleanRoute ? `${SITE_URL}/${cleanRoute}` : `${SITE_URL}`,
+      'en': cleanRoute ? `${SITE_URL}/${cleanRoute}` : `${SITE_URL}`,
       'pt': cleanRoute ? `${SITE_URL}/pt/${cleanRoute}` : `${SITE_URL}/pt`,
       'es': cleanRoute ? `${SITE_URL}/es/${cleanRoute}` : `${SITE_URL}/es`,
       'id': cleanRoute ? `${SITE_URL}/id/${cleanRoute}` : `${SITE_URL}/id`,

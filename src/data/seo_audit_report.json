@@ -104,17 +104,22 @@
       "shortTitles": [],
       "longTitles": [
         {
+          "slug": "facebook-page-audit-tool",
+          "title": "Ferramenta de Auditoria de Páginas Facebook Auditoria de Canal - SavClip",
+          "len": 72
+        },
+        {
           "slug": "x-trending-hashtag-finder",
           "title": "Localizador de Hashtags Populares X (Twitter) Bios e Legendas - SavClip",
+          "len": 71
+        },
+        {
+          "slug": "youtube-region-restriction-checker",
+          "title": "Verificador de Restrição Regional YouTube Verificar Bloqueios - SavClip",
           "len": 71
         }
       ],
       "shortDescs": [
-        {
-          "slug": "facebook-page-audit-tool",
-          "desc": "دقق القنوات والصفحات لمنصة Facebook أون لاين بشكل مجاني وشفاف. احصل على تقارير تحسين الأداء فوراً.",
-          "len": 98
-        },
         {
           "slug": "facebook-video-compressor",
           "desc": "Comprima e corte vídeos do Facebook sem perder qualidade visual. Ferramenta grátis e super rápida.",
@@ -127,8 +132,8 @@
         },
         {
           "slug": "snapchat-lens-saver",
-          "desc": "تحميل وتحويل ملفات Snapchat بشكل مجاني. بدون تنزيل برامج أو إضافات.",
-          "len": 67
+          "desc": "Baixe e converta arquivos do Snapchat de forma gratuita. Sem downloads de apps ou extensões.",
+          "len": 92
         },
         {
           "slug": "snapchat-map-downloader",
@@ -139,16 +144,6 @@
           "slug": "snapchat-video-compressor",
           "desc": "Comprima e corte vídeos do Snapchat sem perder qualidade visual. Ferramenta grátis e super rápida.",
           "len": 98
-        },
-        {
-          "slug": "telegram-bio-generator",
-          "desc": "ولد بيو مميز لمنصة Telegram باستخدام الذكاء الاصطناعي مجاناً وبسرعة. اجعل ملفك الشخصي فريداً.",
-          "len": 93
-        },
-        {
-          "slug": "telegram-channel-link-generator",
-          "desc": "مولد روابط لمنصة Telegram بشكل سريع وسهل. حسّن تحويل المشتركين وتتبع الروابط.",
-          "len": 77
         },
         {
           "slug": "telegram-file-downloader",
@@ -162,8 +157,8 @@
         },
         {
           "slug": "telegram-trending-channel-finder",
-          "desc": "ابحث عن مجتمعات مميزة على Telegram حسب المجال. استكشف مصادر ومجموعات جديدة فوراً.",
-          "len": 81
+          "desc": "Encontre grupos em destaque no Telegram por categoria. Explore novos recursos e comunidades online.",
+          "len": 99
         },
         {
           "slug": "tiktok-video-compressor",
@@ -171,29 +166,9 @@
           "len": 96
         },
         {
-          "slug": "x-bio-generator",
-          "desc": "ولد بيو مميز لمنصة X (Twitter) باستخدام الذكاء الاصطناعي مجاناً وبسرعة. اجعل ملفك الشخصي فريداً.",
-          "len": 96
-        },
-        {
-          "slug": "x-space-downloader",
-          "desc": "حمل تسجيلات المساحات الصوتية من X (Twitter) بجودة MP3 عالية. حول البث الصوتي للاستماع دون اتصال.",
-          "len": 96
-        },
-        {
-          "slug": "youtube-channel-audit-tool",
-          "desc": "حلل مقاييس السيو لمنصة YouTube أون لاين بشكل مجاني وشفاف. احصل على تقارير تحسين الأداء فوراً.",
-          "len": 93
-        },
-        {
           "slug": "youtube-playlist-downloader",
           "desc": "Baixe e converta arquivos do YouTube de forma rápida e segura. Sem downloads de apps ou extensões.",
           "len": 98
-        },
-        {
-          "slug": "youtube-region-restriction-checker",
-          "desc": "تحقق من توفر الفيديوهات على YouTube في الوقت الفعلي. اكتشف ما إذا كان الفيديو محظوراً في أي بلد.",
-          "len": 96
         }
       ],
       "longDescs": [],
@@ -231,6 +206,8 @@
         "snapchat-stories-downloader",
         "snapchat-video-downloader",
         "telegram-audio-downloader",
+        "telegram-bio-generator",
+        "telegram-channel-link-generator",
         "telegram-dp-downloader",
         "telegram-photo-downloader",
         "telegram-private-video-downloader",
@@ -251,13 +228,16 @@
         "x-analytics-viewer",
         "x-audio-downloader",
         "x-banner-downloader",
+        "x-bio-generator",
         "x-gif-downloader",
         "x-media-downloader",
         "x-private-video-downloader",
         "x-profile-picture-downloader",
+        "x-space-downloader",
         "x-thread-downloader",
         "x-video-compressor",
         "x-video-downloader",
+        "youtube-channel-audit-tool",
         "youtube-comment-picker",
         "youtube-description-generator",
         "youtube-shorts-downloader",
@@ -275,6 +255,11 @@
       "emptyMeta": [],
       "shortTitles": [],
       "longTitles": [
+        {
+          "slug": "facebook-page-audit-tool",
+          "title": "Herramienta de Auditoría de Páginas Facebook Auditoría de Canal - SavClip",
+          "len": 73
+        },
         {
           "slug": "facebook-private-video-downloader",
           "title": "Descargador de videos privados de Facebook HD sin marca de agua - SavClip",
@@ -297,8 +282,8 @@
         },
         {
           "slug": "youtube-region-restriction-checker",
-          "title": "Verificador de Restricciones Regionales YouTube Guardar Média - SavClip",
-          "len": 71
+          "title": "Verificador de Restricciones Regionales YouTube Verificar Bloqueos - SavClip",
+          "len": 76
         }
       ],
       "shortDescs": [
@@ -309,8 +294,8 @@
         },
         {
           "slug": "snapchat-lens-saver",
-          "desc": "Descarga y convierte archivos de Snapchat de forma gratis. Sin instalar extensiones.",
-          "len": 84
+          "desc": "Descarga y convierte archivos de Snapchat de forma gratuita. Sin descargas de apps o extensiones.",
+          "len": 97
         },
         {
           "slug": "snapchat-map-downloader",
@@ -328,16 +313,6 @@
           "len": 98
         },
         {
-          "slug": "telegram-bio-generator",
-          "desc": "Descarga y convierte archivos de Telegram de forma rápida y segura. Sin instalar extensiones.",
-          "len": 93
-        },
-        {
-          "slug": "telegram-channel-link-generator",
-          "desc": "Descarga y convierte archivos de Telegram de forma rápida y segura. Sin instalar extensiones.",
-          "len": 93
-        },
-        {
           "slug": "telegram-file-downloader",
           "desc": "Descarga y convierte archivos de Telegram de forma gratis. Sin instalar extensiones.",
           "len": 84
@@ -348,24 +323,9 @@
           "len": 84
         },
         {
-          "slug": "telegram-trending-channel-finder",
-          "desc": "Descarga y convierte archivos de Telegram de forma gratis. Sin instalar extensiones.",
-          "len": 84
-        },
-        {
           "slug": "tiktok-story-saver",
           "desc": "Guarda stories de TikTok de forma 100% secreta. El visor privado garantiza que no dejes rastros.",
           "len": 96
-        },
-        {
-          "slug": "x-bio-generator",
-          "desc": "Descarga y convierte archivos de X (Twitter) de forma rápida y segura. Sin instalar extensiones.",
-          "len": 96
-        },
-        {
-          "slug": "youtube-channel-audit-tool",
-          "desc": "Descarga y convierte archivos de YouTube de forma rápida y segura. Sin instalar extensiones.",
-          "len": 92
         },
         {
           "slug": "youtube-comment-picker",
@@ -376,11 +336,6 @@
           "slug": "youtube-playlist-downloader",
           "desc": "Descarga y convierte archivos de YouTube de forma rápida y segura. Sin instalar extensiones.",
           "len": 92
-        },
-        {
-          "slug": "youtube-region-restriction-checker",
-          "desc": "Descarga y convierte archivos de YouTube de forma gratis. Sin instalar extensiones.",
-          "len": 83
         }
       ],
       "longDescs": [],
@@ -392,7 +347,6 @@
         "facebook-dp-downloader",
         "facebook-group-video-downloader",
         "facebook-live-video-downloader",
-        "facebook-page-audit-tool",
         "facebook-photo-downloader",
         "facebook-profile-viewer",
         "facebook-reels-downloader",
@@ -417,10 +371,13 @@
         "snapchat-video-compressor",
         "snapchat-video-downloader",
         "telegram-audio-downloader",
+        "telegram-bio-generator",
+        "telegram-channel-link-generator",
         "telegram-dp-downloader",
         "telegram-photo-downloader",
         "telegram-private-video-downloader",
         "telegram-story-saver",
+        "telegram-trending-channel-finder",
         "telegram-video-compressor",
         "telegram-video-downloader",
         "tiktok-caption-generator",
@@ -436,6 +393,7 @@
         "x-analytics-viewer",
         "x-audio-downloader",
         "x-banner-downloader",
+        "x-bio-generator",
         "x-gif-downloader",
         "x-media-downloader",
         "x-private-video-downloader",
@@ -444,6 +402,7 @@
         "x-thread-downloader",
         "x-video-compressor",
         "x-video-downloader",
+        "youtube-channel-audit-tool",
         "youtube-description-generator",
         "youtube-shorts-downloader",
         "youtube-subtitle-downloader",
@@ -492,16 +451,6 @@
           "len": 96
         },
         {
-          "slug": "telegram-bio-generator",
-          "desc": "Unduh dan konversi file dari Telegram secara cepat dan aman. Tanpa pasang aplikasi tambahan.",
-          "len": 92
-        },
-        {
-          "slug": "telegram-channel-link-generator",
-          "desc": "Unduh dan konversi file dari Telegram secara cepat dan aman. Tanpa pasang aplikasi tambahan.",
-          "len": 92
-        },
-        {
           "slug": "telegram-file-downloader",
           "desc": "Unduh dan konversi file dari Telegram secara gratis. Tanpa pasang aplikasi tambahan.",
           "len": 84
@@ -512,21 +461,6 @@
           "len": 84
         },
         {
-          "slug": "telegram-trending-channel-finder",
-          "desc": "Unduh dan konversi file dari Telegram secara gratis. Tanpa pasang aplikasi tambahan.",
-          "len": 84
-        },
-        {
-          "slug": "x-bio-generator",
-          "desc": "Unduh dan konversi file dari X (Twitter) secara cepat dan aman. Tanpa pasang aplikasi tambahan.",
-          "len": 95
-        },
-        {
-          "slug": "youtube-channel-audit-tool",
-          "desc": "Unduh dan konversi file dari YouTube secara cepat dan aman. Tanpa pasang aplikasi tambahan.",
-          "len": 91
-        },
-        {
           "slug": "youtube-comment-picker",
           "desc": "Audit akun dan cek batasan wilayah di YouTube secara adil dan gratis. Alat online tepercaya.",
           "len": 92
@@ -535,11 +469,6 @@
           "slug": "youtube-playlist-downloader",
           "desc": "Unduh dan konversi file dari YouTube secara cepat dan aman. Tanpa pasang aplikasi tambahan.",
           "len": 91
-        },
-        {
-          "slug": "youtube-region-restriction-checker",
-          "desc": "Unduh dan konversi file dari YouTube secara gratis. Tanpa pasang aplikasi tambahan.",
-          "len": 83
         }
       ],
       "longDescs": [],
@@ -577,11 +506,14 @@
         "snapchat-video-compressor",
         "snapchat-video-downloader",
         "telegram-audio-downloader",
+        "telegram-bio-generator",
+        "telegram-channel-link-generator",
         "telegram-dp-downloader",
         "telegram-photo-downloader",
         "telegram-private-video-downloader",
         "telegram-restricted-content-downloader",
         "telegram-story-saver",
+        "telegram-trending-channel-finder",
         "telegram-video-compressor",
         "telegram-video-downloader",
         "tiktok-caption-generator",
@@ -598,6 +530,7 @@
         "x-analytics-viewer",
         "x-audio-downloader",
         "x-banner-downloader",
+        "x-bio-generator",
         "x-gif-downloader",
         "x-media-downloader",
         "x-private-video-downloader",
@@ -607,7 +540,9 @@
         "x-trending-hashtag-finder",
         "x-video-compressor",
         "x-video-downloader",
+        "youtube-channel-audit-tool",
         "youtube-description-generator",
+        "youtube-region-restriction-checker",
         "youtube-shorts-downloader",
         "youtube-subtitle-downloader",
         "youtube-tag-generator",
@@ -657,8 +592,8 @@
         },
         {
           "slug": "facebook-page-audit-tool",
-          "desc": "أفضل موقع أون لاين لحفظ وتحميل وسائط فيسبوك بشكل سريع وآمن. بدون تنزيل برامج أو إضافات.",
-          "len": 87
+          "desc": "دقق القنوات والصفحات لمنصة فيسبوك أون لاين بشكل مجاني وشفاف. احصل على تقارير تحسين الأداء فوراً.",
+          "len": 96
         },
         {
           "slug": "facebook-photo-downloader",
@@ -777,13 +712,13 @@
         },
         {
           "slug": "telegram-bio-generator",
-          "desc": "تحميل وتحويل ملفات تليجرام بشكل سريع وآمن. بدون تنزيل برامج أو إضافات.",
-          "len": 70
+          "desc": "ولد بيو مميز لمنصة تليجرام باستخدام الذكاء الاصطناعي مجاناً وبسرعة. اجعل ملفك الشخصي فريداً.",
+          "len": 92
         },
         {
           "slug": "telegram-channel-link-generator",
-          "desc": "تحميل وتحويل ملفات تليجرام بشكل سريع وآمن. بدون تنزيل برامج أو إضافات.",
-          "len": 70
+          "desc": "مولد روابط لمنصة تليجرام بشكل سريع وسهل. حسّن تحويل المشتركين وتتبع الروابط.",
+          "len": 76
         },
         {
           "slug": "telegram-dp-downloader",
@@ -822,8 +757,8 @@
         },
         {
           "slug": "telegram-trending-channel-finder",
-          "desc": "تحميل وتحويل ملفات تليجرام بشكل مجاني. بدون تنزيل برامج أو إضافات.",
-          "len": 66
+          "desc": "ابحث عن مجتمعات مميزة على تليجرام حسب المجال. استكشف مصادر ومجموعات جديدة فوراً.",
+          "len": 80
         },
         {
           "slug": "telegram-video-compressor",
@@ -882,8 +817,8 @@
         },
         {
           "slug": "x-bio-generator",
-          "desc": "تحميل وتحويل ملفات إكس (تويتر) بشكل سريع وآمن. بدون تنزيل برامج أو إضافات.",
-          "len": 74
+          "desc": "ولد بيو مميز لمنصة إكس (تويتر) باستخدام الذكاء الاصطناعي مجاناً وبسرعة. اجعل ملفك الشخصي فريداً.",
+          "len": 96
         },
         {
           "slug": "x-gif-downloader",
@@ -902,8 +837,8 @@
         },
         {
           "slug": "x-space-downloader",
-          "desc": "أفضل موقع أون لاين لحفظ وتحميل وسائط إكس (تويتر) بشكل سريع وآمن. بدون تنزيل برامج أو إضافات.",
-          "len": 92
+          "desc": "حمل تسجيلات المساحات الصوتية من إكس (تويتر) بجودة MP3 عالية. حول البث الصوتي للاستماع دون اتصال.",
+          "len": 96
         },
         {
           "slug": "x-trending-hashtag-finder",
@@ -922,8 +857,8 @@
         },
         {
           "slug": "youtube-channel-audit-tool",
-          "desc": "تحميل وتحويل ملفات يوتيوب بشكل سريع وآمن. بدون تنزيل برامج أو إضافات.",
-          "len": 69
+          "desc": "حلل مقاييس السيو لمنصة يوتيوب أون لاين بشكل مجاني وشفاف. احصل على تقارير تحسين الأداء فوراً.",
+          "len": 92
         },
         {
           "slug": "youtube-comment-picker",
@@ -942,8 +877,8 @@
         },
         {
           "slug": "youtube-region-restriction-checker",
-          "desc": "تحميل وتحويل ملفات يوتيوب بشكل مجاني. بدون تنزيل برامج أو إضافات.",
-          "len": 65
+          "desc": "تحقق من توفر الفيديوهات على يوتيوب في الوقت الفعلي. اكتشف ما إذا كان الفيديو محظوراً في أي بلد.",
+          "len": 95
         },
         {
           "slug": "youtube-shorts-downloader",

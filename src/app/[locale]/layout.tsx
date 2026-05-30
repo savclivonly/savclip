@@ -93,9 +93,7 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
     applicationName: "SavClip",
     other: {
       "apple-mobile-web-app-title": "SavClip",
-      ...(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ? {
-        "google-site-verification": process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
-      } : {})
+      "google-site-verification": process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "w01_GZKkE1q5zTf-h3b_4Oc17uK2UF0Q_AMRphOkHW0"
     }
   };
 }

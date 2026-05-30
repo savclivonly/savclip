@@ -17,14 +17,12 @@ export function getSeoAlternates(path: string, currentLocale: string = 'en') {
   }
   if (cleanPath) {
     canonicalUrl += `/${cleanPath}`;
-  } else if (currentLocale === 'en') {
-    canonicalUrl += '/';
   }
 
   // Language alternates (hreflangs) for the 5 target languages plus x-default
   const languages: Record<string, string> = {
-    'x-default': cleanPath ? `${SITE_URL}/${cleanPath}` : `${SITE_URL}/`,
-    'en': cleanPath ? `${SITE_URL}/${cleanPath}` : `${SITE_URL}/`,
+    'x-default': cleanPath ? `${SITE_URL}/${cleanPath}` : `${SITE_URL}`,
+    'en': cleanPath ? `${SITE_URL}/${cleanPath}` : `${SITE_URL}`,
   };
 
   languages['pt'] = cleanPath ? `${SITE_URL}/pt/${cleanPath}` : `${SITE_URL}/pt`;

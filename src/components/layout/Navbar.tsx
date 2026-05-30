@@ -141,6 +141,7 @@ export function Navbar({ locale, dict }: { locale?: string; dict: any }) {
                   alt="SavClip Logo - All-in-One Social Media Downloader" 
                   width={40} 
                   height={40} 
+                  priority
                   className="object-contain relative z-10 dark:brightness-125 dark:drop-shadow-[0_0_8_rgba(59,130,246,0.5)]"
                 />
               </div>
