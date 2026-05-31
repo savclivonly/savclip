@@ -2,34 +2,69 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Audit profil atau saluran YouTube Anda"
+    "content": "Cara SavClip Menyederhanakan Pengunduhan YouTube"
   },
   {
     "type": "paragraph",
-    "content": "Alat audit kami menganalisis tag, deskripsi, dan metadata halaman YouTube serta menyarankan perbaikan penting untuk meningkatkan jangkauan organik Anda. Jika Anda ingin mencoba fitur lain, Anda juga dapat menggunakan <a href=\"/youtube-tag-generator\">Pembuat Tag</a> kami atau memeriksa <a href=\"/youtube-description-generator\">Pembuat Deskripsi</a> untuk akses lengkap."
+    "content": "Menyimpan konten kesukaan Anda kini tidak perlu ribet lagi. SavClip menghadirkan antarmuka sederhana yang fokus pada kecepatan dan kemudahan akses file tanpa iklan berlebihan yang mengganggu."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Akses Langsung ke File Asli"
+  },
+  {
+    "type": "paragraph",
+    "content": "Kami tidak merekam layar atau menggunakan metode analog. Kami membaca metadata asli dari link yang Anda tempel, memberikan file unduhan orisinal dengan warna asli yang tajam serta audio yang jernih."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Dapat Diakses dari HP dan Komputer"
+  },
+  {
+    "type": "paragraph",
+    "content": "Platform web kami dirancang agar kompatibel dengan berbagai browser populer seperti Chrome, Safari, Firefox, dan Edge. Baik menggunakan Windows, macOS, Android, maupun iOS, Anda akan mendapatkan kecepatan unduhan yang sama."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Unduhan Aman dan Menjaga Privasi"
+  },
+  {
+    "type": "paragraph",
+    "content": "Semua permintaan unduhan dilindungi dengan enkripsi SSL. Kami berkomitmen untuk menjaga privasi dengan tidak merekam riwayat unduhan Anda atau meminta pendaftaran akun. Dapatkan file Anda secara aman dan etis."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Bagaimana cara mengaudit saluran YouTube?",
-    "a": "Masukkan tautan atau nama saluran di kotak pencarian, klik analisis dan dapatkan laporan optimasi SEO yang mendetail."
+    "q": "Bagaimana cara mengunduh konten YouTube secara online?",
+    "a": "Cukup salin link postingan dari YouTube, buka SavClip, tempel to kolom di atas, lalu klik tombol unduh."
   },
   {
-    "q": "Apakah saya perlu memberikan akses akun untuk audit?",
-    "a": "Tidak. Kami hanya membaca data publik YouTube, tanpa memerlukan kata sandi atau hak istimewa admin."
+    "q": "Apakah ada batas pengunduhan harian untuk YouTube?",
+    "a": "Tidak ada batasan harian. Anda bebas mengunduh konten sebanyak apa pun tanpa biaya."
+  },
+  {
+    "q": "Apakah aman menggunakan SavClip di komputer atau HP saya?",
+    "a": "Sangat aman. SavClip bekerja secara online di browser tanpa perlu menginstal aplikasi tambahan yang berpotensi membawa virus."
+  },
+  {
+    "q": "Dalam format apa file media diunduh?",
+    "a": "Video akan disimpan dalam format MP4 dan gambar dalam format JPG untuk memastikan kecocokan dengan semua perangkat."
   }
 ];
 
 export const meta = {
-  title: "Alat Audit Saluran YouTube SEO Gratis - SavClip",
-  description: "Analisis metrik dan SEO untuk YouTube secara online dengan gratis dan transparan. Dapatkan laporan optimasi instan."
+  title: "Alat Audit Saluran YouTube gratis online - SavClip",
+  description: "Download video, foto, dan musik dari YouTube gratis dengan kualitas terbaik. Layanan cepat, aman, dan tanpa iklan yang mengganggu."
 };
 
 export const header = {
   title: "Alat Audit Saluran",
-  title1: "Analisis",
-  title2: "YouTube Audit Saluran",
-  title3: "Wawasan",
-  subtitle: "Dapatkan wawasan dan laporan performa untuk mengoptimalkan profil YouTube Anda."
+  title1: "Download",
+  title2: "YouTube Saluran",
+  title3: "Online Gratis",
+  subtitle: "Unduh konten YouTube dalam kualitas HD asli dengan cara yang sederhana dan aman."
 };

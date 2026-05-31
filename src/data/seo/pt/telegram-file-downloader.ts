@@ -2,51 +2,69 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Como o SavClip simplifica o uso de Baixador de Arquivos do Telegram"
+    "content": "Como o SavClip Simplifica os Downloads do Telegram"
   },
   {
     "type": "paragraph",
-    "content": "Nossa plataforma foi construída para encurtar o download de arquivos. O SavClip oferece uma interface limpa, focada em velocidade e usabilidade. Se você quiser experimentar outros recursos, também poderá usar nosso <a href=\"/telegram-gif-downloader\">Baixador de GIFs</a> ou verificar o <a href=\"/telegram-trending-channel-finder\">Localizador de Canais Populares</a> para acesso completo."
+    "content": "Salvar fotos ou vídeos do Telegram não precisa ser difícil. O SavClip oferece uma página simples e rápida, focada em entregar sua mídia no melhor formato disponível em poucos segundos."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Compatibilidade em todos os navegadores"
+    "content": "Extração Avançada de Metadados"
   },
   {
     "type": "paragraph",
-    "content": "Interagimos diretamente com a estrutura pública dos arquivos da plataforma, entregando mídias limpas com cores e fidelidade de som originais sem qualquer complicação."
+    "content": "Em vez de apenas gravar a tela ou tirar capturas, nosso sistema lê as informações brutas do post do Telegram. Isso significa que você baixa a mídia original com máxima fidelidade de cores e som estéreo integrado."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Acesso em Qualquer Celular, Tablet ou Computador"
+  },
+  {
+    "type": "paragraph",
+    "content": "O site é responsivo e otimizado para rodar em qualquer sistema (iOS, Android, Windows e Mac) e navegador (Chrome, Safari, Firefox e Edge). Você terá a mesma velocidade de download em qualquer tela."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Navegação Segura e Totalmente Anônima"
+  },
+  {
+    "type": "paragraph",
+    "content": "A privacidade dos usuários é o nosso foco. Criptografamos todas as conexões via SSL e não salvamos históricos de downloads ou pedimos cadastros de contas. Salve mídias de forma segura e ética sempre."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Como salvar mídias do Telegram online?",
-    "a": "Copie o link da postagem, cole na nossa caixa de pesquisa no topo da página e clique em baixar para transferir os arquivos para o seu dispositivo."
+    "q": "Como baixar conteúdos do Telegram online?",
+    "a": "Copie o link do post do Telegram, cole no campo de pesquisa acima e clique em 'Download' para gerar os links de download direto."
   },
   {
-    "q": "Existe limite de velocidade para download?",
-    "a": "Nenhum. Nossos servidores oferecem banda larga total para baixar seus arquivos em segundos."
+    "q": "Existe limite de velocidade ou arquivos para baixar?",
+    "a": "Nenhum. Nossa ferramenta oferece velocidade máxima do servidor e você pode salvar quantas mídias desejar por dia."
   },
   {
-    "q": "Esta ferramenta funciona para qualquer arquivo público do Telegram?",
-    "a": "Sim, ela é compatível com mídias abertas disponibilizadas na plataforma."
+    "q": "É seguro usar o SavClip para salvar arquivos?",
+    "a": "Sim. Como o SavClip roda direto na web, seu aparelho fica livre de vírus, sem a necessidade de baixar ou instalar aplicativos."
   },
   {
-    "q": "Existe algum limite de velocidade de download?",
-    "a": "Não, o SavClip disponibiliza a banda larga total para que você salve arquivos rapidamente."
+    "q": "Qual é o formato de arquivo gerado pelo site?",
+    "a": "Geralmente, os vídeos são salvos no formato universal MP4 e as imagens são baixadas em JPG de alta resolução."
   }
 ];
 
 export const meta = {
-  title: "Baixador de Arquivos Telegram Salvar Mídias - SavClip",
-  description: "Baixe e converta arquivos do Telegram de forma gratuita. Sem downloads de apps ou extensões."
+  title: "Baixador de Arquivos Telegram Sem Marca d'Água - SavClip",
+  description: "O principal destino grátis para baixar mídias do Telegram em alta qualidade. Nosso serviço é rápido, estável e com total privacidade."
 };
 
 export const header = {
   title: "Baixador de Arquivos",
-  title1: "Salvar",
+  title1: "Download",
   title2: "Telegram Arquivos",
-  title3: "Mídia HD",
-  subtitle: "Salve mídias públicas do Telegram com total segurança e privacidade."
+  title3: "Online Grátis",
+  subtitle: "Baixe conteúdos do Telegram em qualidade HD original de forma simples e segura."
 };

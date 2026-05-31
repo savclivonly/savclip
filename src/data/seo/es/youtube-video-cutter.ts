@@ -2,51 +2,69 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "¿Por qué utilizar el compresor y cortador de video del YouTube?"
+    "content": "Cómo SavClip Simplifica las Descargas de YouTube"
   },
   {
     "type": "paragraph",
-    "content": "Los archivos de video en HD y 4K pueden ocupar demasiado espacio o ser difíciles de compartir. Eliminamos datos innecesarios ajustando los bitrates de salida. Si deseas probar otras funciones, también puedes usar nuestro <a href=\"/youtube-comment-picker\">Selector de Comentarios</a> o consultar el <a href=\"/youtube-video-downloader\">Descargador de Video</a> para obtener un acceso completo."
+    "content": "Guardar fotos o videos de YouTube no tiene por qué ser complicado. SavClip te ofrece una interfaz limpia y libre de publicidad molesta, enfocada en darte el archivo en el formato ideal en solo unos segundos."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Compresión avanzada sin pérdida de nitidez de imagen"
+    "content": "Acceso al Archivo Original sin Filtros"
   },
   {
     "type": "paragraph",
-    "content": "Utilizamos codificación inteligente para reducir el peso de los archivos en hasta un 80% sin generar bixelación ni distorsiones molestas en el video."
+    "content": "No grabamos la pantalla ni usamos capturas analógicas. Nuestro sistema lee directamente los metadados de la publicación en YouTube para entregarte la versión original del archivo, manteniendo la nitidez de imagen y el sonido estéreo intactos."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Compatible con Todos tus Dispositivos"
+  },
+  {
+    "type": "paragraph",
+    "content": "Nuestra plataforma web está desarrollada con estándares de diseño responsivo. Funciona de manera idéntica en computadoras de escritorio (Windows o Mac), tablets y teléfonos móviles (iOS o Android) sin pedir instalaciones de software."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Descargas Privadas y Conexión SSL"
+  },
+  {
+    "type": "paragraph",
+    "content": "Todas las descargas se procesan mediante conexiones seguras cifradas con SSL. No guardamos registros de lo que descargas ni te pediremos crear cuentas o contraseñas. Disfruta de un servicio rápido y respetuoso con la privacidad."
   }
 ];
 
 export const faqs = [
   {
-    "q": "¿Cómo comprimir un video de YouTube online?",
-    "a": "Carga tu archivo de video, elige el nivel de compresión deseado y haz clic en procesar para descargar la versión optimizada en segundos."
+    "q": "¿Cómo descargar contenidos de YouTube en línea?",
+    "a": "Solo copia el enlace de la publicación, accede a SavClip, pégalo en la barra de búsqueda y presiona el botón de descarga."
   },
   {
-    "q": "¿Puedo cortar partes del video?",
-    "a": "Sí, nuestra herramienta te permite definir los tiempos exactos de inicio y fin para descargar únicamente el fragmento de video que necesitas."
+    "q": "¿Existe algún límite diario para las descargas?",
+    "a": "No, puedes usar nuestro descargador tantas veces como quieras. Es completamente gratis y sin límites."
   },
   {
-    "q": "¿Qué formatos de video son compatibles con el compresor?",
-    "a": "Soportamos los formatos más utilizados como MP4, WebM, MOV y AVI."
+    "q": "¿Es seguro usar SavClip en mi teléfono o PC?",
+    "a": "Sí, es completamente seguro. Funciona directamente en la web desde tu navegador, por lo que tu dispositivo queda a salvo de virus o aplicaciones maliciosas."
   },
   {
-    "q": "¿Se guardan mis videos en los servidores del sitio?",
-    "a": "No, tu privacidad es nuestra prioridad. Los archivos temporales se eliminan automáticamente tras finalizar la compresión."
+    "q": "¿En qué formatos se descargan los archivos?",
+    "a": "Los videos se guardan en el formato MP4 estándar y las imágenes se descargan en formato JPG para garantizar compatibilidad con cualquier dispositivo."
   }
 ];
 
 export const meta = {
-  title: "Cortador de Video YouTube Comprimir Vídeo - SavClip",
-  description: "Reduce el tamaño de archivos de video de YouTube en línea. Mantén la calidad de imagen excelente y sin pérdidas de forma gratis."
+  title: "Cortador de Video YouTube gratis online - SavClip",
+  description: "Descarga videos, fotos y audios de YouTube en alta calidad gratis. El servicio de descarga online más rápido, seguro y privado."
 };
 
 export const header = {
   title: "Cortador de Video",
-  title1: "Comprimir",
-  title2: "YouTube Cortador de Video",
-  title3: "Reducir MP4",
-  subtitle: "Comprime y reduce el tamaño de tus videos de YouTube manteniendo una gran calidad visual."
+  title1: "Download",
+  title2: "YouTube Video",
+  title3: "Online Gratis",
+  subtitle: "Guarda contenidos de YouTube en calidad original de forma sencilla y segura."
 };

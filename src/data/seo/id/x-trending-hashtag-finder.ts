@@ -2,51 +2,69 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Tingkatkan jangkauan X (Twitter) Anda dengan Pencari Hashtag Populer"
+    "content": "Cara SavClip Menyederhanakan Pengunduhan X (Twitter)"
   },
   {
     "type": "paragraph",
-    "content": "SavClip hadir dengan generator cerdas berbasis AI untuk mempercepat pembuatan konten Anda. Tingkatkan potensi video Anda muncul di beranda penonton baru. Jika Anda ingin mencoba fitur lain, Anda juga dapat menggunakan <a href=\"/x-analytics-viewer\">Penonton Analisis</a> kami atau memeriksa <a href=\"/x-video-compressor\">Kompresor Video</a> untuk akses lengkap."
+    "content": "Menyimpan konten kesukaan Anda kini tidak perlu ribet lagi. SavClip menghadirkan antarmuka sederhana yang fokus pada kecepatan dan kemudahan akses file tanpa iklan berlebihan yang mengganggu."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Keterangan & bio yang menarik audiens"
+    "content": "Akses Langsung ke File Asli"
   },
   {
     "type": "paragraph",
-    "content": "Kami memetakan kata kunci pencarian populer di X (Twitter) untuk menyarankan tag dan hashtag yang relevan dengan topik Anda, meningkatkan indeks pencarian postingan."
+    "content": "Kami tidak merekam layar atau menggunakan metode analog. Kami membaca metadata asli dari link yang Anda tempel, memberikan file unduhan orisinal dengan warna asli yang tajam serta audio yang jernih."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Dapat Diakses dari HP dan Komputer"
+  },
+  {
+    "type": "paragraph",
+    "content": "Platform web kami dirancang agar kompatibel dengan berbagai browser populer seperti Chrome, Safari, Firefox, dan Edge. Baik menggunakan Windows, macOS, Android, maupun iOS, Anda akan mendapatkan kecepatan unduhan yang sama."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Unduhan Aman dan Menjaga Privasi"
+  },
+  {
+    "type": "paragraph",
+    "content": "Semua permintaan unduhan dilindungi dengan enkripsi SSL. Kami berkomitmen untuk menjaga privasi dengan tidak merekam riwayat unduhan Anda atau meminta pendaftaran akun. Dapatkan file Anda secara aman dan etis."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Bagaimana cara membuat hashtag atau tag untuk X (Twitter)?",
-    "a": "Masukkan topik utama video atau profil Anda di kolom atas, lalu klik buat untuk menerima rekomendasi tag pintar secara instan."
+    "q": "Bagaimana cara mengunduh konten X (Twitter) secara online?",
+    "a": "Cukup salin link postingan dari X (Twitter), buka SavClip, tempel to kolom di atas, lalu klik tombol unduh."
   },
   {
-    "q": "Apakah alat pembuat konten AI ini gratis?",
-    "a": "Ya, semua generator tag, caption, bio, dan hashtag kami dapat digunakan sepenuhnya gratis."
+    "q": "Apakah ada batas pengunduhan harian untuk X (Twitter)?",
+    "a": "Tidak ada batasan harian. Anda bebas mengunduh konten sebanyak apa pun tanpa biaya."
   },
   {
-    "q": "Apakah tag yang dihasilkan oleh AI ini unik?",
-    "a": "Ya, AI kami merekomendasikan tag yang unik sesuai dengan topik utama yang Anda masukkan."
+    "q": "Apakah aman menggunakan SavClip di komputer atau HP saya?",
+    "a": "Sangat aman. SavClip bekerja secara online di browser tanpa perlu menginstal aplikasi tambahan yang berpotensi membawa virus."
   },
   {
-    "q": "Apakah ada batasan penggunaan harian untuk alat AI ini?",
-    "a": "Tidak, Anda bebas membuat judul, tag, bio, dan caption secara unlimited gratis."
+    "q": "Dalam format apa file media diunduh?",
+    "a": "Video akan disimpan dalam format MP4 dan gambar dalam format JPG untuk memastikan kecocokan dengan semua perangkat."
   }
 ];
 
 export const meta = {
-  title: "Pencari Hashtag Populer X (Twitter) Buat Bio & Keterangan - SavClip",
-  description: "Buat hashtag dan caption untuk X (Twitter) menggunakan kecerdasan buatan (AI) gratis. Tingkatkan jangkauan organik postingan Anda."
+  title: "Pencari Hashtag Populer X (Twitter) gratis online - SavClip",
+  description: "Download video, foto, dan musik dari X (Twitter) gratis dengan kualitas terbaik. Layanan cepat, aman, dan tanpa iklan yang mengganggu."
 };
 
 export const header = {
   title: "Pencari Hashtag Populer",
-  title1: "Buat",
-  title2: "X (Twitter) Hashtag Populer",
-  title3: "Jangkauan Organik",
-  subtitle: "Otimalkan SEO konten X (Twitter) Anda dengan asisten kecerdasan buatan gratis."
+  title1: "Download",
+  title2: "X (Twitter) Populer",
+  title3: "Online Gratis",
+  subtitle: "Unduh konten X (Twitter) dalam kualitas HD asli dengan cara yang sederhana dan aman."
 };

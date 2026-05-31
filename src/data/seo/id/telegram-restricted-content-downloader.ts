@@ -2,51 +2,69 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Bagaimana cara kerja Pengunduh Konten Terbatas Telegram?"
+    "content": "Cara SavClip Menyederhanakan Pengunduhan Telegram"
   },
   {
     "type": "paragraph",
-    "content": "Saat Anda perlu menyimpan video dari grup atau profil yang Anda ikuti namun tidak bisa diunduh secara biasa, SavClip membantu mengekstrak kode secara etis dan aman. Jika Anda ingin mencoba fitur lain, Anda juga dapat menggunakan <a href=\"/telegram-photo-downloader\">Pengunduh Foto</a> kami atau memeriksa <a href=\"/telegram-audio-downloader\">Pengunduh Audio</a> untuk akses lengkap."
+    "content": "Menyimpan konten kesukaan Anda kini tidak perlu ribet lagi. SavClip menghadirkan antarmuka sederhana yang fokus pada kecepatan dan kemudahan akses file tanpa iklan berlebihan yang mengganggu."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Tanpa meminta data login Anda"
+    "content": "Akses Langsung ke File Asli"
   },
   {
     "type": "paragraph",
-    "content": "Alat kami menganalisis kode HTML halaman yang Anda tempelkan untuk encontrar link unduhan langsung video di server Telegram, menjamin proses 100% lokal dan rahasia."
+    "content": "Kami tidak merekam layar atau menggunakan metode analog. Kami membaca metadata asli dari link yang Anda tempel, memberikan file unduhan orisinal dengan warna asli yang tajam serta audio yang jernih."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Dapat Diakses dari HP dan Komputer"
+  },
+  {
+    "type": "paragraph",
+    "content": "Platform web kami dirancang agar kompatibel dengan berbagai browser populer seperti Chrome, Safari, Firefox, dan Edge. Baik menggunakan Windows, macOS, Android, maupun iOS, Anda akan mendapatkan kecepatan unduhan yang sama."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Unduhan Aman dan Menjaga Privasi"
+  },
+  {
+    "type": "paragraph",
+    "content": "Semua permintaan unduhan dilindungi dengan enkripsi SSL. Kami berkomitmen untuk menjaga privasi dengan tidak merekam riwayat unduhan Anda atau meminta pendaftaran akun. Dapatkan file Anda secara aman dan etis."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Bagaimana cara download video privat dari Telegram?",
-    "a": "Ikuti langkah-langkah di halaman pengunduh privat: salin kode sumber halaman video, tempel di kolom yang tersedia, dan dapatkan link download-nya."
+    "q": "Bagaimana cara mengunduh konten Telegram secara online?",
+    "a": "Cukup salin link postingan dari Telegram, buka SavClip, tempel to kolom di atas, lalu klik tombol unduh."
   },
   {
-    "q": "Apakah SavClip menyimpan sandi atau riwayat saya?",
-    "a": "Tidak. Proses analisis kode sumber berjalan secara lokal, sehingga kerahasiaan Anda terjaga penuh."
+    "q": "Apakah ada batas pengunduhan harian untuk Telegram?",
+    "a": "Tidak ada batasan harian. Anda bebas mengunduh konten sebanyak apa pun tanpa biaya."
   },
   {
-    "q": "Apakah saya harus memasukkan kata sandi Telegram untuk mengunduh media privat?",
-    "a": "Sama sekali tidak! SavClip sangat aman tanpa login, kami hanya memproses kode HTML halaman."
+    "q": "Apakah aman menggunakan SavClip di komputer atau HP saya?",
+    "a": "Sangat aman. SavClip bekerja secara online di browser tanpa perlu menginstal aplikasi tambahan yang berpotensi membawa virus."
   },
   {
-    "q": "Apakah cara ini berfungsi untuk stories privat?",
-    "a": "Ya, selama Anda memiliki akses untuk melihat story tersebut di browser Anda dan bisa menyalin kode sumber halamannya secara lengkap."
+    "q": "Dalam format apa file media diunduh?",
+    "a": "Video akan disimpan dalam format MP4 dan gambar dalam format JPG untuk memastikan kecocokan dengan semua perangkat."
   }
 ];
 
 export const meta = {
-  title: "Pengunduh Konten Terbatas Telegram Pengunduh Privat - SavClip",
-  description: "Simpan konten terbatas dan grup dari Telegram secara aman melalui browser. Tanpa perlu memasukkan sandi atau login."
+  title: "Pengunduh Konten Terbatas Telegram gratis online - SavClip",
+  description: "Download video, foto, dan musik dari Telegram gratis dengan kualitas terbaik. Layanan cepat, aman, dan tanpa iklan yang mengganggu."
 };
 
 export const header = {
   title: "Pengunduh Konten Terbatas",
-  title1: "Ekstrak",
-  title2: "Telegram Konten Terbatas",
-  title3: "Aman & Nyaman",
-  subtitle: "Simpan video privat Telegram langsung ke penyimpanan Anda."
+  title1: "Download",
+  title2: "Telegram Terbatas",
+  title3: "Online Gratis",
+  subtitle: "Unduh konten Telegram dalam kualitas HD asli dengan cara yang sederhana dan aman."
 };

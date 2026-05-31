@@ -41,14 +41,7 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
 
 export default async function HomePage(props: { params: Promise<{ locale: string }> }) {
   const locale = (await props.params).locale || 'en';
-  const fullDict = await getDictionary(locale);
-  const { platforms, ...rest } = fullDict;
-  const dict = {
-    ...rest,
-    platforms: {
-      instagram: platforms?.instagram
-    }
-  };
+  const dict = await getDictionary(locale);
 
   const faqList = [
     { q: translateToolName("How to download videos online for free?", locale), a: translateToolName("Simply copy the link of the video from Instagram, TikTok, YouTube, or Facebook, and paste it into the search box on SavClip. Click 'Download' to save the HD video instantly.", locale) },

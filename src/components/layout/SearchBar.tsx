@@ -9,7 +9,7 @@ import { getPlatformFromUrl, getLocalizedRoute, getPlatformFromPath, isAnyPlatfo
 import { toast } from "react-hot-toast"
 import { locales } from "@/i18n"
 import { useCurrentLocale } from "@/hooks/useCurrentLocale"
-import { getDictionary } from "@/dictionaries/client"
+import { useClientDictionary } from "@/dictionaries/client"
 import { translateToolName } from "@/utils/translate-tool"
 
 interface SearchBarProps {
@@ -45,7 +45,7 @@ function SearchBarInner({
   className
 }: SearchBarProps) {
   const locale = useCurrentLocale()
-  const clientDict = getDictionary(locale)
+  const clientDict = useClientDictionary(locale)
   const dict = propDict || clientDict
 
   const [url, setUrl] = React.useState(initialValue)

@@ -2,60 +2,69 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Mengapa SavClip adalah Pengunduh Media X (Twitter) Terbaik?"
+    "content": "Cara SavClip Menyederhanakan Pengunduhan X (Twitter)"
   },
   {
     "type": "paragraph",
-    "content": "Menonton video dengan kualitas gambar yang tajam secara offline sangat menyenangkan. Pengunduh Media X (Twitter) kami dirancang untuk memberikan kecepatan unduhan maksimal. Kami menjamin ekstraksi video dengan kualitas warna asli langsung dari server X (Twitter). Jika Anda ingin mencoba fitur lain, Anda juga dapat menggunakan <a href=\"/x-thread-downloader\">Pengunduh Thread</a> kami atau memeriksa <a href=\"/x-audio-downloader\">Pengunduh Audio</a> untuk akses lengkap."
+    "content": "Menyimpan konten kesukaan Anda kini tidak perlu ribet lagi. SavClip menghadirkan antarmuka sederhana yang fokus pada kecepatan dan kemudahan akses file tanpa iklan berlebihan yang mengganggu."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Unduhan langsung tanpa kompresi"
+    "content": "Akses Langsung ke File Asli"
   },
   {
     "type": "paragraph",
-    "content": "Tidak seperti situs lain yang mengompres video demi hemat server, SavClip menjaga resolusi asli. Kami mengambil file mentah dari server sumber agar video tetap bersih dan detail saat diputar."
+    "content": "Kami tidak merekam layar atau menggunakan metode analog. Kami membaca metadata asli dari link yang Anda tempel, memberikan file unduhan orisinal dengan warna asli yang tajam serta audio yang jernih."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Kompatibilitas universal tanpa pasang aplikasi"
+    "content": "Dapat Diakses dari HP dan Komputer"
   },
   {
     "type": "paragraph",
-    "content": "Anda tidak perlu memasang aplikasi mencurigakan. SavClip dapat digunakan langsung di browser web melalui Android, iPhone, tablet, hingga PC Mac atau Windows."
+    "content": "Platform web kami dirancang agar kompatibel dengan berbagai browser populer seperti Chrome, Safari, Firefox, dan Edge. Baik menggunakan Windows, macOS, Android, maupun iOS, Anda akan mendapatkan kecepatan unduhan yang sama."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Unduhan Aman dan Menjaga Privasi"
+  },
+  {
+    "type": "paragraph",
+    "content": "Semua permintaan unduhan dilindungi dengan enkripsi SSL. Kami berkomitmen untuk menjaga privasi dengan tidak merekam riwayat unduhan Anda atau meminta pendaftaran akun. Dapatkan file Anda secara aman dan etis."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Bagaimana cara mengunduh video X (Twitter) dengan kualitas tinggi?",
-    "a": "Salin link video X (Twitter), tempel di kolom pencarian di bagian atas halaman ini, lalu klik tombol Unduh untuk memilih resolusi HD atau 4K."
+    "q": "Bagaimana cara mengunduh konten X (Twitter) secara online?",
+    "a": "Cukup salin link postingan dari X (Twitter), buka SavClip, tempel to kolom di atas, lalu klik tombol unduh."
   },
   {
-    "q": "Apakah layanan download video X (Twitter) ini gratis?",
-    "a": "Ya, SavClip adalah layanan yang 100% gratis dan Anda dapat mengunduh video secara tanpa batas."
+    "q": "Apakah ada batas pengunduhan harian untuk X (Twitter)?",
+    "a": "Tidak ada batasan harian. Anda bebas mengunduh konten sebanyak apa pun tanpa biaya."
   },
   {
-    "q": "Apakah saya harus mendaftar akun atau login?",
-    "a": "Tidak. Kami sangat menjaga privasi Anda. Anda tidak perlu memasukkan kata sandi, email, atau pendaftaran."
+    "q": "Apakah aman menggunakan SavClip di komputer atau HP saya?",
+    "a": "Sangat aman. SavClip bekerja secara online di browser tanpa perlu menginstal aplikasi tambahan yang berpotensi membawa virus."
   },
   {
-    "q": "Bagaimana cara menyimpan video di iPhone ou Android?",
-    "a": "Di Android, file akan langsung masuk ke folder Unduhan atau Galeri. Di iPhone, gunakan browser Safari untuk mengunduh lalu temukan file di aplikasi Files bawaan."
+    "q": "Dalam format apa file media diunduh?",
+    "a": "Video akan disimpan dalam format MP4 dan gambar dalam format JPG untuk memastikan kecocokan dengan semua perangkat."
   }
 ];
 
 export const meta = {
-  title: "Pengunduh Media X (Twitter) Unduh MP4 HD - SavClip",
-  description: "Simpan video dari X (Twitter) dengan kualitas HD dan 4K secara gratis. Pengonversi online kami menawarkan unduhan instan tanpa pendaftaran."
+  title: "Pengunduh Media X (Twitter) gratis online - SavClip",
+  description: "Download video, foto, dan musik dari X (Twitter) gratis dengan kualitas terbaik. Layanan cepat, aman, dan tanpa iklan yang mengganggu."
 };
 
 export const header = {
   title: "Pengunduh Media",
-  title1: "Unduh",
+  title1: "Download",
   title2: "X (Twitter) Media",
-  title3: "Gratis Kualitas HD",
-  subtitle: "Simpan video X (Twitter) favorit Anda dalam format MP4 kualitas HD langsung ke galeri HP atau PC."
+  title3: "Online Gratis",
+  subtitle: "Unduh konten X (Twitter) dalam kualitas HD asli dengan cara yang sederhana dan aman."
 };

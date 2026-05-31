@@ -2,51 +2,69 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Mengapa memilih kompresor dan pemotong video YouTube kami?"
+    "content": "Cara SavClip Menyederhanakan Pengunduhan YouTube"
   },
   {
     "type": "paragraph",
-    "content": "File video resolusi tinggi dapat menghabiskan ruang penyimpanan dan lambat saat dibagikan. Kami memangkas metadata berlebih dengan menyesuaikan bitrate secara cerdas. Jika Anda ingin mencoba fitur lain, Anda juga dapat menggunakan <a href=\"/youtube-comment-picker\">Pemilih Komentar</a> kami atau memeriksa <a href=\"/youtube-video-downloader\">Pengunduh Video</a> untuk akses lengkap."
+    "content": "Menyimpan konten kesukaan Anda kini tidak perlu ribet lagi. SavClip menghadirkan antarmuka sederhana yang fokus pada kecepatan dan kemudahan akses file tanpa iklan berlebihan yang mengganggu."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Kompresi cerdas tanpa membuat gambar buram"
+    "content": "Akses Langsung ke File Asli"
   },
   {
     "type": "paragraph",
-    "content": "Kompresor kami menggunakan codec canggih untuk memperkecil ukuran file hingga 80% tanpa menimbulkan pikselasi atau blur yang mengganggu mata."
+    "content": "Kami tidak merekam layar atau menggunakan metode analog. Kami membaca metadata asli dari link yang Anda tempel, memberikan file unduhan orisinal dengan warna asli yang tajam serta audio yang jernih."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Dapat Diakses dari HP dan Komputer"
+  },
+  {
+    "type": "paragraph",
+    "content": "Platform web kami dirancang agar kompatibel dengan berbagai browser populer seperti Chrome, Safari, Firefox, dan Edge. Baik menggunakan Windows, macOS, Android, maupun iOS, Anda akan mendapatkan kecepatan unduhan yang sama."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Unduhan Aman dan Menjaga Privasi"
+  },
+  {
+    "type": "paragraph",
+    "content": "Semua permintaan unduhan dilindungi dengan enkripsi SSL. Kami berkomitmen untuk menjaga privasi dengan tidak merekam riwayat unduhan Anda atau meminta pendaftaran akun. Dapatkan file Anda secara aman dan etis."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Bagaimana cara mengecilkan ukuran video YouTube?",
-    "a": "Unggah file video Anda, pilih tingkat kompresi yang diinginkan, dan klik proses untuk mengunduh versi ringkasnya."
+    "q": "Bagaimana cara mengunduh konten YouTube secara online?",
+    "a": "Cukup salin link postingan dari YouTube, buka SavClip, tempel to kolom di atas, lalu klik tombol unduh."
   },
   {
-    "q": "Apakah alat ini bisa memotong durasi video?",
-    "a": "Ya, alat pemotong kami memungkinkan Anda memilih waktu awal dan akhir secara presisi untuk mengambil bagian video yang penting saja."
+    "q": "Apakah ada batas pengunduhan harian untuk YouTube?",
+    "a": "Tidak ada batasan harian. Anda bebas mengunduh konten sebanyak apa pun tanpa biaya."
   },
   {
-    "q": "Format video apa saja yang didukung oleh alat kompresi ini?",
-    "a": "Kami mendukung format video populer seperti MP4, WebM, MOV, dan AVI."
+    "q": "Apakah aman menggunakan SavClip di komputer atau HP saya?",
+    "a": "Sangat aman. SavClip bekerja secara online di browser tanpa perlu menginstal aplikasi tambahan yang berpotensi membawa virus."
   },
   {
-    "q": "Apakah video saya disimpan di server situs?",
-    "a": "Tidak, privasi Anda aman. File video yang diunggah akan dihapus secara otomatis setelah proses kompresi selesai."
+    "q": "Dalam format apa file media diunduh?",
+    "a": "Video akan disimpan dalam format MP4 dan gambar dalam format JPG untuk memastikan kecocokan dengan semua perangkat."
   }
 ];
 
 export const meta = {
-  title: "Pemotong Video YouTube Kompres Video - SavClip",
-  description: "Kurangi ukuran file video dari YouTube online gratis. Jaga kualitas visual tetap tajam dengan beberapa klik mudah."
+  title: "Pemotong Video YouTube gratis online - SavClip",
+  description: "Download video, foto, dan musik dari YouTube gratis dengan kualitas terbaik. Layanan cepat, aman, dan tanpa iklan yang mengganggu."
 };
 
 export const header = {
   title: "Pemotong Video",
-  title1: "Kompres",
-  title2: "YouTube Pemotong Video",
-  title3: "Kurangi Ukuran MP4",
-  subtitle: "Kompres dan perkecil ukuran video YouTube Anda tanpa merusak kualitas visual."
+  title1: "Download",
+  title2: "YouTube Media",
+  title3: "Online Gratis",
+  subtitle: "Unduh konten YouTube dalam kualitas HD asli dengan cara yang sederhana dan aman."
 };

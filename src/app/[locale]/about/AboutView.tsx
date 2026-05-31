@@ -4,15 +4,15 @@ import * as React from "react"
 import { motion } from "framer-motion"
 import { Camera, ShieldCheck, Zap, Globe, Mail, Rocket, Target, Award } from "lucide-react"
 import { useCurrentLocale } from "@/hooks/useCurrentLocale"
-import { dictionaries } from "@/dictionaries/client"
+import { useClientDictionary } from "@/dictionaries/client"
 import Image from "next/image"
 import { CategoryCards } from "@/components/layout/CategoryCards"
 import { translateToolName } from "@/utils/translate-tool"
 
 export default function AboutView() {
   const locale = useCurrentLocale()
-  const dict = (dictionaries as Record<string, any>)[locale] || dictionaries.en
-  const content = (dict.about_page || dictionaries.en.about_page) as any
+  const dict = useClientDictionary(locale)
+  const content = (dict.about_page) as any
 
 
   return (

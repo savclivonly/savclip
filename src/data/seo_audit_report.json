@@ -104,250 +104,28 @@
       "shortTitles": [],
       "longTitles": [
         {
-          "slug": "facebook-page-audit-tool",
-          "title": "Ferramenta de Auditoria de Páginas Facebook Auditoria de Canal - SavClip",
-          "len": 72
+          "slug": "anonymous-tiktok-viewer",
+          "title": "Visualizador Anônimo do TikTok Redes Sociais Sem Marca d'Água - SavClip",
+          "len": 71
         },
         {
           "slug": "x-trending-hashtag-finder",
-          "title": "Localizador de Hashtags Populares X (Twitter) Bios e Legendas - SavClip",
-          "len": 71
-        },
-        {
-          "slug": "youtube-region-restriction-checker",
-          "title": "Verificador de Restrição Regional YouTube Verificar Bloqueios - SavClip",
-          "len": 71
+          "title": "Localizador de Hashtags Populares X (Twitter) Sem Marca d'Água - SavClip",
+          "len": 72
         }
       ],
-      "shortDescs": [
-        {
-          "slug": "facebook-video-compressor",
-          "desc": "Comprima e corte vídeos do Facebook sem perder qualidade visual. Ferramenta grátis e super rápida.",
-          "len": 98
-        },
-        {
-          "slug": "instagram-video-compressor",
-          "desc": "Comprima e corte vídeos do Instagram sem perder qualidade visual. Ferramenta grátis e super rápida.",
-          "len": 99
-        },
-        {
-          "slug": "snapchat-lens-saver",
-          "desc": "Baixe e converta arquivos do Snapchat de forma gratuita. Sem downloads de apps ou extensões.",
-          "len": 92
-        },
-        {
-          "slug": "snapchat-map-downloader",
-          "desc": "Baixe e converta arquivos do Snapchat de forma gratuita. Sem downloads de apps ou extensões.",
-          "len": 92
-        },
-        {
-          "slug": "snapchat-video-compressor",
-          "desc": "Comprima e corte vídeos do Snapchat sem perder qualidade visual. Ferramenta grátis e super rápida.",
-          "len": 98
-        },
-        {
-          "slug": "telegram-file-downloader",
-          "desc": "Baixe e converta arquivos do Telegram de forma gratuita. Sem downloads de apps ou extensões.",
-          "len": 92
-        },
-        {
-          "slug": "telegram-gif-downloader",
-          "desc": "Baixe e converta arquivos do Telegram de forma gratuita. Sem downloads de apps ou extensões.",
-          "len": 92
-        },
-        {
-          "slug": "telegram-trending-channel-finder",
-          "desc": "Encontre grupos em destaque no Telegram por categoria. Explore novos recursos e comunidades online.",
-          "len": 99
-        },
-        {
-          "slug": "tiktok-video-compressor",
-          "desc": "Comprima e corte vídeos do TikTok sem perder qualidade visual. Ferramenta grátis e super rápida.",
-          "len": 96
-        },
-        {
-          "slug": "youtube-playlist-downloader",
-          "desc": "Baixe e converta arquivos do YouTube de forma rápida e segura. Sem downloads de apps ou extensões.",
-          "len": 98
-        }
-      ],
+      "shortDescs": [],
       "longDescs": [],
       "untranslated": [],
       "ok": [
-        "anonymous-tiktok-viewer",
         "facebook-album-downloader",
         "facebook-audio-downloader",
         "facebook-dp-downloader",
         "facebook-group-video-downloader",
         "facebook-live-video-downloader",
+        "facebook-page-audit-tool",
         "facebook-photo-downloader",
         "facebook-private-video-downloader",
-        "facebook-profile-viewer",
-        "facebook-reels-downloader",
-        "facebook-story-saver",
-        "facebook-video-downloader",
-        "instagram-audio-downloader",
-        "instagram-carousel-downloader",
-        "instagram-dp-downloader",
-        "instagram-highlights-downloader",
-        "instagram-photo-downloader",
-        "instagram-private-downloader",
-        "instagram-profile-viewer",
-        "instagram-reels-downloader",
-        "instagram-story-viewer",
-        "instagram-video-downloader",
-        "snapchat-audio-downloader",
-        "snapchat-dp-downloader",
-        "snapchat-memories-downloader",
-        "snapchat-photo-downloader",
-        "snapchat-private-story-downloader",
-        "snapchat-profile-viewer",
-        "snapchat-spotlight-downloader",
-        "snapchat-stories-downloader",
-        "snapchat-video-downloader",
-        "telegram-audio-downloader",
-        "telegram-bio-generator",
-        "telegram-channel-link-generator",
-        "telegram-dp-downloader",
-        "telegram-photo-downloader",
-        "telegram-private-video-downloader",
-        "telegram-restricted-content-downloader",
-        "telegram-story-saver",
-        "telegram-video-compressor",
-        "telegram-video-downloader",
-        "tiktok-caption-generator",
-        "tiktok-dp-downloader",
-        "tiktok-mp3-downloader",
-        "tiktok-photo-downloader",
-        "tiktok-private-video-downloader",
-        "tiktok-shorts-downloader",
-        "tiktok-song-finder",
-        "tiktok-story-saver",
-        "tiktok-trending-hashtag-generator",
-        "tiktok-video-downloader",
-        "x-analytics-viewer",
-        "x-audio-downloader",
-        "x-banner-downloader",
-        "x-bio-generator",
-        "x-gif-downloader",
-        "x-media-downloader",
-        "x-private-video-downloader",
-        "x-profile-picture-downloader",
-        "x-space-downloader",
-        "x-thread-downloader",
-        "x-video-compressor",
-        "x-video-downloader",
-        "youtube-channel-audit-tool",
-        "youtube-comment-picker",
-        "youtube-description-generator",
-        "youtube-shorts-downloader",
-        "youtube-subtitle-downloader",
-        "youtube-tag-generator",
-        "youtube-thumbnail-downloader",
-        "youtube-title-generator",
-        "youtube-to-mp3-converter",
-        "youtube-video-cutter",
-        "youtube-video-downloader"
-      ]
-    },
-    "es": {
-      "missingFiles": [],
-      "emptyMeta": [],
-      "shortTitles": [],
-      "longTitles": [
-        {
-          "slug": "facebook-page-audit-tool",
-          "title": "Herramienta de Auditoría de Páginas Facebook Auditoría de Canal - SavClip",
-          "len": 73
-        },
-        {
-          "slug": "facebook-private-video-downloader",
-          "title": "Descargador de videos privados de Facebook HD sin marca de agua - SavClip",
-          "len": 73
-        },
-        {
-          "slug": "instagram-private-downloader",
-          "title": "Descargador privado de Instagram - Guardar fotos y videos privados en línea | SavClip",
-          "len": 85
-        },
-        {
-          "slug": "telegram-restricted-content-downloader",
-          "title": "Descargador de Contenido Restringido Telegram Descargar Privado - SavClip",
-          "len": 73
-        },
-        {
-          "slug": "x-trending-hashtag-finder",
-          "title": "Buscador de Hashtags de Tendencia X (Twitter) Generar Bios y Títulos - SavClip",
-          "len": 78
-        },
-        {
-          "slug": "youtube-region-restriction-checker",
-          "title": "Verificador de Restricciones Regionales YouTube Verificar Bloqueos - SavClip",
-          "len": 76
-        }
-      ],
-      "shortDescs": [
-        {
-          "slug": "instagram-story-viewer",
-          "desc": "Guarda stories de Instagram de forma 100% secreta. El visor privado garantiza que no dejes rastros.",
-          "len": 99
-        },
-        {
-          "slug": "snapchat-lens-saver",
-          "desc": "Descarga y convierte archivos de Snapchat de forma gratuita. Sin descargas de apps o extensiones.",
-          "len": 97
-        },
-        {
-          "slug": "snapchat-map-downloader",
-          "desc": "Descarga y convierte archivos de Snapchat de forma gratis. Sin instalar extensiones.",
-          "len": 84
-        },
-        {
-          "slug": "snapchat-spotlight-downloader",
-          "desc": "Guarda stories de Snapchat de forma 100% secreta. El visor privado garantiza que no dejes rastros.",
-          "len": 98
-        },
-        {
-          "slug": "snapchat-stories-downloader",
-          "desc": "Guarda stories de Snapchat de forma 100% secreta. El visor privado garantiza que no dejes rastros.",
-          "len": 98
-        },
-        {
-          "slug": "telegram-file-downloader",
-          "desc": "Descarga y convierte archivos de Telegram de forma gratis. Sin instalar extensiones.",
-          "len": 84
-        },
-        {
-          "slug": "telegram-gif-downloader",
-          "desc": "Descarga y convierte archivos de Telegram de forma gratis. Sin instalar extensiones.",
-          "len": 84
-        },
-        {
-          "slug": "tiktok-story-saver",
-          "desc": "Guarda stories de TikTok de forma 100% secreta. El visor privado garantiza que no dejes rastros.",
-          "len": 96
-        },
-        {
-          "slug": "youtube-comment-picker",
-          "desc": "Audita canales y revisa restricciones en YouTube de forma transparente y gratis en línea.",
-          "len": 89
-        },
-        {
-          "slug": "youtube-playlist-downloader",
-          "desc": "Descarga y convierte archivos de YouTube de forma rápida y segura. Sin instalar extensiones.",
-          "len": 92
-        }
-      ],
-      "longDescs": [],
-      "untranslated": [],
-      "ok": [
-        "anonymous-tiktok-viewer",
-        "facebook-album-downloader",
-        "facebook-audio-downloader",
-        "facebook-dp-downloader",
-        "facebook-group-video-downloader",
-        "facebook-live-video-downloader",
-        "facebook-photo-downloader",
         "facebook-profile-viewer",
         "facebook-reels-downloader",
         "facebook-story-saver",
@@ -358,24 +136,33 @@
         "instagram-dp-downloader",
         "instagram-highlights-downloader",
         "instagram-photo-downloader",
+        "instagram-private-downloader",
         "instagram-profile-viewer",
         "instagram-reels-downloader",
+        "instagram-story-viewer",
         "instagram-video-compressor",
         "instagram-video-downloader",
         "snapchat-audio-downloader",
         "snapchat-dp-downloader",
+        "snapchat-lens-saver",
+        "snapchat-map-downloader",
         "snapchat-memories-downloader",
         "snapchat-photo-downloader",
         "snapchat-private-story-downloader",
         "snapchat-profile-viewer",
+        "snapchat-spotlight-downloader",
+        "snapchat-stories-downloader",
         "snapchat-video-compressor",
         "snapchat-video-downloader",
         "telegram-audio-downloader",
         "telegram-bio-generator",
         "telegram-channel-link-generator",
         "telegram-dp-downloader",
+        "telegram-file-downloader",
+        "telegram-gif-downloader",
         "telegram-photo-downloader",
         "telegram-private-video-downloader",
+        "telegram-restricted-content-downloader",
         "telegram-story-saver",
         "telegram-trending-channel-finder",
         "telegram-video-compressor",
@@ -387,6 +174,7 @@
         "tiktok-private-video-downloader",
         "tiktok-shorts-downloader",
         "tiktok-song-finder",
+        "tiktok-story-saver",
         "tiktok-trending-hashtag-generator",
         "tiktok-video-compressor",
         "tiktok-video-downloader",
@@ -403,7 +191,132 @@
         "x-video-compressor",
         "x-video-downloader",
         "youtube-channel-audit-tool",
+        "youtube-comment-picker",
         "youtube-description-generator",
+        "youtube-playlist-downloader",
+        "youtube-region-restriction-checker",
+        "youtube-shorts-downloader",
+        "youtube-subtitle-downloader",
+        "youtube-tag-generator",
+        "youtube-thumbnail-downloader",
+        "youtube-title-generator",
+        "youtube-to-mp3-converter",
+        "youtube-video-cutter",
+        "youtube-video-downloader"
+      ]
+    },
+    "es": {
+      "missingFiles": [],
+      "emptyMeta": [],
+      "shortTitles": [],
+      "longTitles": [
+        {
+          "slug": "youtube-region-restriction-checker",
+          "title": "Verificador de Restricciones Regionales YouTube gratis online - SavClip",
+          "len": 71
+        }
+      ],
+      "shortDescs": [],
+      "longDescs": [],
+      "untranslated": [
+        {
+          "slug": "facebook-private-video-downloader",
+          "titleSame": true,
+          "descSame": true,
+          "title": "Facebook Private Video Downloader HD Without Watermark - SavClip",
+          "desc": "Extract and download private Facebook videos safely via source code. Access restricted FB content securely and save it in premium MP4 format."
+        },
+        {
+          "slug": "instagram-private-downloader",
+          "titleSame": false,
+          "descSame": true,
+          "title": "Instagram Descargador Privado - Save Private Media Online | SavClip",
+          "desc": "Download videos, reels, and photos from private Instagram accounts. Secure web tool to save private profile content without any login."
+        },
+        {
+          "slug": "tiktok-video-downloader",
+          "titleSame": false,
+          "descSame": true,
+          "title": "TikTok Descargador de Video HD Without Watermark - SavClip",
+          "desc": "Download public TikTok videos online without watermarks. Get original crisp source video files in MP4 format with lightning-fast speed."
+        }
+      ],
+      "ok": [
+        "anonymous-tiktok-viewer",
+        "facebook-album-downloader",
+        "facebook-audio-downloader",
+        "facebook-dp-downloader",
+        "facebook-group-video-downloader",
+        "facebook-live-video-downloader",
+        "facebook-page-audit-tool",
+        "facebook-photo-downloader",
+        "facebook-profile-viewer",
+        "facebook-reels-downloader",
+        "facebook-story-saver",
+        "facebook-video-compressor",
+        "facebook-video-downloader",
+        "instagram-audio-downloader",
+        "instagram-carousel-downloader",
+        "instagram-dp-downloader",
+        "instagram-highlights-downloader",
+        "instagram-photo-downloader",
+        "instagram-profile-viewer",
+        "instagram-reels-downloader",
+        "instagram-story-viewer",
+        "instagram-video-compressor",
+        "instagram-video-downloader",
+        "snapchat-audio-downloader",
+        "snapchat-dp-downloader",
+        "snapchat-lens-saver",
+        "snapchat-map-downloader",
+        "snapchat-memories-downloader",
+        "snapchat-photo-downloader",
+        "snapchat-private-story-downloader",
+        "snapchat-profile-viewer",
+        "snapchat-spotlight-downloader",
+        "snapchat-stories-downloader",
+        "snapchat-video-compressor",
+        "snapchat-video-downloader",
+        "telegram-audio-downloader",
+        "telegram-bio-generator",
+        "telegram-channel-link-generator",
+        "telegram-dp-downloader",
+        "telegram-file-downloader",
+        "telegram-gif-downloader",
+        "telegram-photo-downloader",
+        "telegram-private-video-downloader",
+        "telegram-restricted-content-downloader",
+        "telegram-story-saver",
+        "telegram-trending-channel-finder",
+        "telegram-video-compressor",
+        "telegram-video-downloader",
+        "tiktok-caption-generator",
+        "tiktok-dp-downloader",
+        "tiktok-mp3-downloader",
+        "tiktok-photo-downloader",
+        "tiktok-private-video-downloader",
+        "tiktok-shorts-downloader",
+        "tiktok-song-finder",
+        "tiktok-story-saver",
+        "tiktok-trending-hashtag-generator",
+        "tiktok-video-compressor",
+        "x-analytics-viewer",
+        "x-audio-downloader",
+        "x-banner-downloader",
+        "x-bio-generator",
+        "x-gif-downloader",
+        "x-media-downloader",
+        "x-private-video-downloader",
+        "x-profile-picture-downloader",
+        "x-space-downloader",
+        "x-thread-downloader",
+        "x-trending-hashtag-finder",
+        "x-video-compressor",
+        "x-video-downloader",
+        "youtube-channel-audit-tool",
+        "youtube-comment-picker",
+        "youtube-description-generator",
+        "youtube-playlist-downloader",
         "youtube-shorts-downloader",
         "youtube-subtitle-downloader",
         "youtube-tag-generator",
@@ -419,61 +332,33 @@
       "emptyMeta": [],
       "shortTitles": [],
       "longTitles": [],
-      "shortDescs": [
+      "shortDescs": [],
+      "longDescs": [],
+      "untranslated": [
         {
-          "slug": "anonymous-tiktok-viewer",
-          "desc": "Analisis akun dan bio di Media Sosial tanpa masuk akun. Tanpa pendaftaran dan tanpa jejak.",
-          "len": 90
+          "slug": "facebook-private-video-downloader",
+          "titleSame": true,
+          "descSame": true,
+          "title": "Facebook Private Video Downloader HD Without Watermark - SavClip",
+          "desc": "Extract and download private Facebook videos safely via source code. Access restricted FB content securely and save it in premium MP4 format."
         },
         {
-          "slug": "facebook-story-saver",
-          "desc": "Simpan stories dari Facebook secara anonim. Pemilik akun tidak akan pernah tahu Anda melihatnya.",
-          "len": 96
+          "slug": "instagram-private-downloader",
+          "titleSame": false,
+          "descSame": true,
+          "title": "Instagram Pengunduh Privat - Save Private Media Online | SavClip",
+          "desc": "Download videos, reels, and photos from private Instagram accounts. Secure web tool to save private profile content without any login."
         },
         {
-          "slug": "instagram-profile-viewer",
-          "desc": "Analisis akun dan bio di Instagram tanpa masuk akun. Tanpa pendaftaran dan tanpa jejak.",
-          "len": 87
-        },
-        {
-          "slug": "snapchat-lens-saver",
-          "desc": "Unduh dan konversi file dari Snapchat secara gratis. Tanpa pasang aplikasi tambahan.",
-          "len": 84
-        },
-        {
-          "slug": "snapchat-map-downloader",
-          "desc": "Unduh dan konversi file dari Snapchat secara gratis. Tanpa pasang aplikasi tambahan.",
-          "len": 84
-        },
-        {
-          "slug": "snapchat-memories-downloader",
-          "desc": "Simpan stories dari Snapchat secara anonim. Pemilik akun tidak akan pernah tahu Anda melihatnya.",
-          "len": 96
-        },
-        {
-          "slug": "telegram-file-downloader",
-          "desc": "Unduh dan konversi file dari Telegram secara gratis. Tanpa pasang aplikasi tambahan.",
-          "len": 84
-        },
-        {
-          "slug": "telegram-gif-downloader",
-          "desc": "Unduh dan konversi file dari Telegram secara gratis. Tanpa pasang aplikasi tambahan.",
-          "len": 84
-        },
-        {
-          "slug": "youtube-comment-picker",
-          "desc": "Audit akun dan cek batasan wilayah di YouTube secara adil dan gratis. Alat online tepercaya.",
-          "len": 92
-        },
-        {
-          "slug": "youtube-playlist-downloader",
-          "desc": "Unduh dan konversi file dari YouTube secara cepat dan aman. Tanpa pasang aplikasi tambahan.",
-          "len": 91
+          "slug": "tiktok-video-downloader",
+          "titleSame": false,
+          "descSame": true,
+          "title": "TikTok Pengunduh Video HD Without Watermark - SavClip",
+          "desc": "Download public TikTok videos online without watermarks. Get original crisp source video files in MP4 format with lightning-fast speed."
         }
       ],
-      "longDescs": [],
-      "untranslated": [],
       "ok": [
+        "anonymous-tiktok-viewer",
         "facebook-album-downloader",
         "facebook-audio-downloader",
         "facebook-dp-downloader",
@@ -481,9 +366,9 @@
         "facebook-live-video-downloader",
         "facebook-page-audit-tool",
         "facebook-photo-downloader",
-        "facebook-private-video-downloader",
         "facebook-profile-viewer",
         "facebook-reels-downloader",
+        "facebook-story-saver",
         "facebook-video-compressor",
         "facebook-video-downloader",
         "instagram-audio-downloader",
@@ -491,13 +376,16 @@
         "instagram-dp-downloader",
         "instagram-highlights-downloader",
         "instagram-photo-downloader",
-        "instagram-private-downloader",
+        "instagram-profile-viewer",
         "instagram-reels-downloader",
         "instagram-story-viewer",
         "instagram-video-compressor",
         "instagram-video-downloader",
         "snapchat-audio-downloader",
         "snapchat-dp-downloader",
+        "snapchat-lens-saver",
+        "snapchat-map-downloader",
+        "snapchat-memories-downloader",
         "snapchat-photo-downloader",
         "snapchat-private-story-downloader",
         "snapchat-profile-viewer",
@@ -509,6 +397,105 @@
         "telegram-bio-generator",
         "telegram-channel-link-generator",
         "telegram-dp-downloader",
+        "telegram-file-downloader",
+        "telegram-gif-downloader",
+        "telegram-photo-downloader",
+        "telegram-private-video-downloader",
+        "telegram-restricted-content-downloader",
+        "telegram-story-saver",
+        "telegram-trending-channel-finder",
+        "telegram-video-compressor",
+        "telegram-video-downloader",
+        "tiktok-caption-generator",
+        "tiktok-dp-downloader",
+        "tiktok-mp3-downloader",
+        "tiktok-photo-downloader",
+        "tiktok-private-video-downloader",
+        "tiktok-shorts-downloader",
+        "tiktok-song-finder",
+        "tiktok-story-saver",
+        "tiktok-trending-hashtag-generator",
+        "tiktok-video-compressor",
+        "x-analytics-viewer",
+        "x-audio-downloader",
+        "x-banner-downloader",
+        "x-bio-generator",
+        "x-gif-downloader",
+        "x-media-downloader",
+        "x-private-video-downloader",
+        "x-profile-picture-downloader",
+        "x-space-downloader",
+        "x-thread-downloader",
+        "x-trending-hashtag-finder",
+        "x-video-compressor",
+        "x-video-downloader",
+        "youtube-channel-audit-tool",
+        "youtube-comment-picker",
+        "youtube-description-generator",
+        "youtube-playlist-downloader",
+        "youtube-region-restriction-checker",
+        "youtube-shorts-downloader",
+        "youtube-subtitle-downloader",
+        "youtube-tag-generator",
+        "youtube-thumbnail-downloader",
+        "youtube-title-generator",
+        "youtube-to-mp3-converter",
+        "youtube-video-cutter",
+        "youtube-video-downloader"
+      ]
+    },
+    "ar": {
+      "missingFiles": [],
+      "emptyMeta": [],
+      "shortTitles": [],
+      "longTitles": [],
+      "shortDescs": [],
+      "longDescs": [],
+      "untranslated": [],
+      "ok": [
+        "anonymous-tiktok-viewer",
+        "facebook-album-downloader",
+        "facebook-audio-downloader",
+        "facebook-dp-downloader",
+        "facebook-group-video-downloader",
+        "facebook-live-video-downloader",
+        "facebook-page-audit-tool",
+        "facebook-photo-downloader",
+        "facebook-private-video-downloader",
+        "facebook-profile-viewer",
+        "facebook-reels-downloader",
+        "facebook-story-saver",
+        "facebook-video-compressor",
+        "facebook-video-downloader",
+        "instagram-audio-downloader",
+        "instagram-carousel-downloader",
+        "instagram-dp-downloader",
+        "instagram-highlights-downloader",
+        "instagram-photo-downloader",
+        "instagram-private-downloader",
+        "instagram-profile-viewer",
+        "instagram-reels-downloader",
+        "instagram-story-viewer",
+        "instagram-video-compressor",
+        "instagram-video-downloader",
+        "snapchat-audio-downloader",
+        "snapchat-dp-downloader",
+        "snapchat-lens-saver",
+        "snapchat-map-downloader",
+        "snapchat-memories-downloader",
+        "snapchat-photo-downloader",
+        "snapchat-private-story-downloader",
+        "snapchat-profile-viewer",
+        "snapchat-spotlight-downloader",
+        "snapchat-stories-downloader",
+        "snapchat-video-compressor",
+        "snapchat-video-downloader",
+        "telegram-audio-downloader",
+        "telegram-bio-generator",
+        "telegram-channel-link-generator",
+        "telegram-dp-downloader",
+        "telegram-file-downloader",
+        "telegram-gif-downloader",
         "telegram-photo-downloader",
         "telegram-private-video-downloader",
         "telegram-restricted-content-downloader",
@@ -541,7 +528,9 @@
         "x-video-compressor",
         "x-video-downloader",
         "youtube-channel-audit-tool",
+        "youtube-comment-picker",
         "youtube-description-generator",
+        "youtube-playlist-downloader",
         "youtube-region-restriction-checker",
         "youtube-shorts-downloader",
         "youtube-subtitle-downloader",
@@ -550,387 +539,6 @@
         "youtube-title-generator",
         "youtube-to-mp3-converter",
         "youtube-video-cutter",
-        "youtube-video-downloader"
-      ]
-    },
-    "ar": {
-      "missingFiles": [],
-      "emptyMeta": [],
-      "shortTitles": [],
-      "longTitles": [
-        {
-          "slug": "tiktok-trending-hashtag-generator",
-          "title": "مولد الهاشتاقات الرائجة تيك توك مولد كلمات دلالية بالذكاء الاصطناعي - SavClip",
-          "len": 77
-        }
-      ],
-      "shortDescs": [
-        {
-          "slug": "anonymous-tiktok-viewer",
-          "desc": "دقق الحسابات والبيو في شبكات التواصل الاجتماعي بدون حساب ومجهول تماماً. دون ترك أي أثر في النظام.",
-          "len": 97
-        },
-        {
-          "slug": "facebook-album-downloader",
-          "desc": "تنزيل صور ولقطات من فيسبوك بالدقة الأصلية الكاملة. أداة سريعة، مجانية وأون لاين.",
-          "len": 80
-        },
-        {
-          "slug": "facebook-dp-downloader",
-          "desc": "حمل صوراً وألبومات وصور حسابات من فيسبوك بالدقة الأصلية الكاملة. أداة سريعة، مجانية وأون لاين.",
-          "len": 94
-        },
-        {
-          "slug": "facebook-group-video-downloader",
-          "desc": "احفظ محتوى المجموعات والمنشورات المقيدة من فيسبوك بأمان أون لاين. دون الحاجة لكلمات مرور أو تسجيل.",
-          "len": 98
-        },
-        {
-          "slug": "facebook-live-video-downloader",
-          "desc": "حفظ مقاطع فيديو فيسبوك بدقة عالية (1080p, 4K) بشكل سهل وسريع. توفر أداتنا تنزيل مباشر وبجودة عالية.",
-          "len": 99
-        },
-        {
-          "slug": "facebook-page-audit-tool",
-          "desc": "دقق القنوات والصفحات لمنصة فيسبوك أون لاين بشكل مجاني وشفاف. احصل على تقارير تحسين الأداء فوراً.",
-          "len": 96
-        },
-        {
-          "slug": "facebook-photo-downloader",
-          "desc": "حمل صوراً وألبومات وصور حسابات من فيسبوك بالدقة الأصلية الكاملة. أداة سريعة، مجانية وأون لاين.",
-          "len": 94
-        },
-        {
-          "slug": "facebook-profile-viewer",
-          "desc": "شاهد الملفات الشخصية والإحصائيات في فيسبوك بدون حساب ومجهول تماماً. دون ترك أي أثر في النظام.",
-          "len": 93
-        },
-        {
-          "slug": "facebook-story-saver",
-          "desc": "تنزيل ستوري وهايلايت فيسبوك بشكل مجهول تماماً. يضمن لك عارض القصص الخاص بنا عدم ترك أي أثر.",
-          "len": 91
-        },
-        {
-          "slug": "facebook-video-compressor",
-          "desc": "اضغط وقص مقاطع الفيديو من فيسبوك أون لاين مجاناً. حافظ على جودة الصورة نقية بضغطة زر واحدة.",
-          "len": 91
-        },
-        {
-          "slug": "facebook-video-downloader",
-          "desc": "حفظ مقاطع فيديو فيسبوك بدقة عالية (1080p, 4K) بشكل سهل وسريع. توفر أداتنا تنزيل مباشر وبجودة عالية.",
-          "len": 99
-        },
-        {
-          "slug": "instagram-carousel-downloader",
-          "desc": "حمل صوراً وألبومات وصور حسابات من إنستغرام بالدقة الأصلية الكاملة. أداة سريعة، مجانية وأون لاين.",
-          "len": 96
-        },
-        {
-          "slug": "instagram-dp-downloader",
-          "desc": "تنزيل صور ولقطات من إنستغرام بالدقة الأصلية الكاملة. أداة سريعة، مجانية وأون لاين.",
-          "len": 82
-        },
-        {
-          "slug": "instagram-highlights-downloader",
-          "desc": "حمل وحفظ قصص إنستغرام بشكل سري وآمن. يضمن لك عارض القصص الخاص بنا عدم ترك أي أثر.",
-          "len": 81
-        },
-        {
-          "slug": "instagram-photo-downloader",
-          "desc": "تنزيل صور ولقطات من إنستغرام بالدقة الأصلية الكاملة. أداة سريعة، مجانية وأون لاين.",
-          "len": 82
-        },
-        {
-          "slug": "instagram-profile-viewer",
-          "desc": "دقق الحسابات والبيو في إنستغرام بدون حساب ومجهول تماماً. دون ترك أي أثر في النظام.",
-          "len": 82
-        },
-        {
-          "slug": "instagram-story-viewer",
-          "desc": "تنزيل ستوري وهايلايت إنستغرام بشكل سري وآمن. يضمن لك عارض القصص الخاص بنا عدم ترك أي أثر.",
-          "len": 89
-        },
-        {
-          "slug": "instagram-video-compressor",
-          "desc": "اضغط وقص مقاطع الفيديو من إنستغرام أون لاين مجاناً. حافظ على جودة الصورة نقية بضغطة زر واحدة.",
-          "len": 93
-        },
-        {
-          "slug": "snapchat-dp-downloader",
-          "desc": "تنزيل صور ولقطات من سناب شات بالدقة الأصلية الكاملة. أداة سريعة، مجانية وأون لاين.",
-          "len": 82
-        },
-        {
-          "slug": "snapchat-lens-saver",
-          "desc": "تحميل وتحويل ملفات سناب شات بشكل مجاني. بدون تنزيل برامج أو إضافات.",
-          "len": 67
-        },
-        {
-          "slug": "snapchat-map-downloader",
-          "desc": "تحميل وتحويل ملفات سناب شات بشكل مجاني. بدون تنزيل برامج أو إضافات.",
-          "len": 67
-        },
-        {
-          "slug": "snapchat-memories-downloader",
-          "desc": "تنزيل ستوري وهايلايت سناب شات بشكل مجهول تماماً. يضمن لك عارض القصص الخاص بنا عدم ترك أي أثر.",
-          "len": 93
-        },
-        {
-          "slug": "snapchat-photo-downloader",
-          "desc": "تنزيل صور ولقطات من سناب شات بالدقة الأصلية الكاملة. أداة سريعة، مجانية وأون لاين.",
-          "len": 82
-        },
-        {
-          "slug": "snapchat-private-story-downloader",
-          "desc": "حمل مقاطع فيديو خاصة وميديا من سناب شات بأمان أون لاين. دون الحاجة لكلمات مرور أو تسجيل.",
-          "len": 88
-        },
-        {
-          "slug": "snapchat-profile-viewer",
-          "desc": "شاهد الملفات الشخصية والإحصائيات في سناب شات بدون حساب ومجهول تماماً. دون ترك أي أثر في النظام.",
-          "len": 95
-        },
-        {
-          "slug": "snapchat-spotlight-downloader",
-          "desc": "تنزيل ستوري وهايلايت سناب شات بشكل سري وآمن. يضمن لك عارض القصص الخاص بنا عدم ترك أي أثر.",
-          "len": 89
-        },
-        {
-          "slug": "snapchat-stories-downloader",
-          "desc": "تنزيل ستوري وهايلايت سناب شات بشكل سري وآمن. يضمن لك عارض القصص الخاص بنا عدم ترك أي أثر.",
-          "len": 89
-        },
-        {
-          "slug": "snapchat-video-compressor",
-          "desc": "اضغط وقص مقاطع الفيديو من سناب شات أون لاين مجاناً. حافظ على جودة الصورة نقية بضغطة زر واحدة.",
-          "len": 93
-        },
-        {
-          "slug": "snapchat-video-downloader",
-          "desc": "تحميل مقاطع فيديو سناب شات بدقة HD/4K بشكل مجاني بالكامل. توفر أداتنا تنزيل آمن وفوري بدون تسجيل.",
-          "len": 97
-        },
-        {
-          "slug": "telegram-bio-generator",
-          "desc": "ولد بيو مميز لمنصة تليجرام باستخدام الذكاء الاصطناعي مجاناً وبسرعة. اجعل ملفك الشخصي فريداً.",
-          "len": 92
-        },
-        {
-          "slug": "telegram-channel-link-generator",
-          "desc": "مولد روابط لمنصة تليجرام بشكل سريع وسهل. حسّن تحويل المشتركين وتتبع الروابط.",
-          "len": 76
-        },
-        {
-          "slug": "telegram-dp-downloader",
-          "desc": "تنزيل صور ولقطات من تليجرام بالدقة الأصلية الكاملة. أداة سريعة، مجانية وأون لاين.",
-          "len": 81
-        },
-        {
-          "slug": "telegram-file-downloader",
-          "desc": "تحميل وتحويل ملفات تليجرام بشكل مجاني. بدون تنزيل برامج أو إضافات.",
-          "len": 66
-        },
-        {
-          "slug": "telegram-gif-downloader",
-          "desc": "تحميل وتحويل ملفات تليجرام بشكل مجاني. بدون تنزيل برامج أو إضافات.",
-          "len": 66
-        },
-        {
-          "slug": "telegram-photo-downloader",
-          "desc": "حمل صوراً وألبومات وصور حسابات من تليجرام بالدقة الأصلية الكاملة. أداة سريعة، مجانية وأون لاين.",
-          "len": 95
-        },
-        {
-          "slug": "telegram-private-video-downloader",
-          "desc": "احفظ محتوى المجموعات والمنشورات المقيدة من تليجرام بأمان أون لاين. دون الحاجة لكلمات مرور أو تسجيل.",
-          "len": 99
-        },
-        {
-          "slug": "telegram-restricted-content-downloader",
-          "desc": "احفظ محتوى المجموعات والمنشورات المقيدة من تليجرام بأمان أون لاين. دون الحاجة لكلمات مرور أو تسجيل.",
-          "len": 99
-        },
-        {
-          "slug": "telegram-story-saver",
-          "desc": "حمل وحفظ قصص تليجرام بشكل سري وآمن. يضمن لك عارض القصص الخاص بنا عدم ترك أي أثر.",
-          "len": 80
-        },
-        {
-          "slug": "telegram-trending-channel-finder",
-          "desc": "ابحث عن مجتمعات مميزة على تليجرام حسب المجال. استكشف مصادر ومجموعات جديدة فوراً.",
-          "len": 80
-        },
-        {
-          "slug": "telegram-video-compressor",
-          "desc": "قلل حجم ملفات الفيديو من تليجرام أون لاين مجاناً. حافظ على جودة الصورة نقية بضغطة زر واحدة.",
-          "len": 91
-        },
-        {
-          "slug": "tiktok-caption-generator",
-          "desc": "أنشئ هاشتاقات وتفاصيل لمنصة تيك توك باستخدام الذكاء الاصطناعي مجاناً. ضاعف انتشار منشوراتك.",
-          "len": 91
-        },
-        {
-          "slug": "tiktok-dp-downloader",
-          "desc": "تنزيل صور ولقطات من تيك توك بالدقة الأصلية الكاملة. أداة سريعة، مجانية وأون لاين.",
-          "len": 81
-        },
-        {
-          "slug": "tiktok-photo-downloader",
-          "desc": "حمل صوراً وألبومات وصور حسابات من تيك توك بالدقة الأصلية الكاملة. أداة سريعة، مجانية وأون لاين.",
-          "len": 95
-        },
-        {
-          "slug": "tiktok-private-video-downloader",
-          "desc": "حمل مقاطع فيديو خاصة وميديا من تيك توك بأمان أون لاين. دون الحاجة لكلمات مرور أو تسجيل.",
-          "len": 87
-        },
-        {
-          "slug": "tiktok-shorts-downloader",
-          "desc": "تنزيل مقاطع فيديو تيك توك بدقة HD/4K بشكل سهل وسريع. توفر أداتنا تنزيل آمن وفوري بدون تسجيل.",
-          "len": 92
-        },
-        {
-          "slug": "tiktok-story-saver",
-          "desc": "تنزيل ستوري وهايلايت تيك توك بشكل سري وآمن. يضمن لك عارض القصص الخاص بنا عدم ترك أي أثر.",
-          "len": 88
-        },
-        {
-          "slug": "tiktok-trending-hashtag-generator",
-          "desc": "ولد كلمات دلالية وعناوين ووصف لمنصة تيك توك باستخدام الذكاء الاصطناعي مجاناً. ضاعف انتشار منشوراتك.",
-          "len": 99
-        },
-        {
-          "slug": "tiktok-video-compressor",
-          "desc": "اضغط وقص مقاطع الفيديو من تيك توك أون لاين مجاناً. حافظ على جودة الصورة نقية بضغطة زر واحدة.",
-          "len": 92
-        },
-        {
-          "slug": "x-analytics-viewer",
-          "desc": "شاهد الملفات الشخصية والإحصائيات في إكس (تويتر) بدون حساب ومجهول تماماً. دون ترك أي أثر في النظام.",
-          "len": 98
-        },
-        {
-          "slug": "x-banner-downloader",
-          "desc": "تنزيل صور ولقطات من إكس (تويتر) بالدقة الأصلية الكاملة. أداة سريعة، مجانية وأون لاين.",
-          "len": 85
-        },
-        {
-          "slug": "x-bio-generator",
-          "desc": "ولد بيو مميز لمنصة إكس (تويتر) باستخدام الذكاء الاصطناعي مجاناً وبسرعة. اجعل ملفك الشخصي فريداً.",
-          "len": 96
-        },
-        {
-          "slug": "x-gif-downloader",
-          "desc": "أفضل موقع أون لاين لحفظ وتحميل وسائط إكس (تويتر) بشكل سريع وآمن. بدون تنزيل برامج أو إضافات.",
-          "len": 92
-        },
-        {
-          "slug": "x-private-video-downloader",
-          "desc": "حمل مقاطع فيديو خاصة وميديا من إكس (تويتر) بأمان أون لاين. دون الحاجة لكلمات مرور أو تسجيل.",
-          "len": 91
-        },
-        {
-          "slug": "x-profile-picture-downloader",
-          "desc": "تنزيل صور ولقطات من إكس (تويتر) بالدقة الأصلية الكاملة. أداة سريعة، مجانية وأون لاين.",
-          "len": 85
-        },
-        {
-          "slug": "x-space-downloader",
-          "desc": "حمل تسجيلات المساحات الصوتية من إكس (تويتر) بجودة MP3 عالية. حول البث الصوتي للاستماع دون اتصال.",
-          "len": 96
-        },
-        {
-          "slug": "x-trending-hashtag-finder",
-          "desc": "أنشئ هاشتاقات وتفاصيل لمنصة إكس (تويتر) باستخدام الذكاء الاصطناعي مجاناً. ضاعف انتشار منشوراتك.",
-          "len": 95
-        },
-        {
-          "slug": "x-video-compressor",
-          "desc": "قلل حجم ملفات الفيديو من إكس (تويتر) أون لاين مجاناً. حافظ على جودة الصورة نقية بضغطة زر واحدة.",
-          "len": 95
-        },
-        {
-          "slug": "x-video-downloader",
-          "desc": "حفظ مقاطع فيديو إكس (تويتر) بدقة HD/4K بشكل مجاني بالكامل. توفر أداتنا تنزيل مباشر وبجودة عالية.",
-          "len": 96
-        },
-        {
-          "slug": "youtube-channel-audit-tool",
-          "desc": "حلل مقاييس السيو لمنصة يوتيوب أون لاين بشكل مجاني وشفاف. احصل على تقارير تحسين الأداء فوراً.",
-          "len": 92
-        },
-        {
-          "slug": "youtube-comment-picker",
-          "desc": "دقق إحصائيات وفحص حظر يوتيوب أون لاين مجاناً وبشفافية كاملة.",
-          "len": 60
-        },
-        {
-          "slug": "youtube-description-generator",
-          "desc": "أنشئ هاشتاقات وتفاصيل لمنصة يوتيوب باستخدام الذكاء الاصطناعي مجاناً. ضاعف انتشار منشوراتك.",
-          "len": 90
-        },
-        {
-          "slug": "youtube-playlist-downloader",
-          "desc": "تحميل وتحويل ملفات يوتيوب بشكل سريع وآمن. بدون تنزيل برامج أو إضافات.",
-          "len": 69
-        },
-        {
-          "slug": "youtube-region-restriction-checker",
-          "desc": "تحقق من توفر الفيديوهات على يوتيوب في الوقت الفعلي. اكتشف ما إذا كان الفيديو محظوراً في أي بلد.",
-          "len": 95
-        },
-        {
-          "slug": "youtube-shorts-downloader",
-          "desc": "تحميل مقاطع فيديو يوتيوب بدقة HD/4K بشكل سهل وسريع. توفر أداتنا تنزيل مباشر وبجودة عالية.",
-          "len": 89
-        },
-        {
-          "slug": "youtube-subtitle-downloader",
-          "desc": "أفضل موقع أون لاين لحفظ وتحميل وسائط يوتيوب بشكل مجاني. بدون تنزيل برامج أو إضافات.",
-          "len": 83
-        },
-        {
-          "slug": "youtube-tag-generator",
-          "desc": "أنشئ هاشتاقات وتفاصيل لمنصة يوتيوب باستخدام الذكاء الاصطناعي مجاناً. ضاعف انتشار منشوراتك.",
-          "len": 90
-        },
-        {
-          "slug": "youtube-thumbnail-downloader",
-          "desc": "تنزيل صور ولقطات من يوتيوب بالدقة الأصلية الكاملة. أداة سريعة، مجانية وأون لاين.",
-          "len": 80
-        },
-        {
-          "slug": "youtube-title-generator",
-          "desc": "ولد كلمات دلالية وعناوين ووصف لمنصة يوتيوب باستخدام الذكاء الاصطناعي مجاناً. ضاعف انتشار منشوراتك.",
-          "len": 98
-        },
-        {
-          "slug": "youtube-video-cutter",
-          "desc": "قلل حجم ملفات الفيديو من يوتيوب أون لاين مجاناً. حافظ على جودة الصورة نقية بضغطة زر واحدة.",
-          "len": 90
-        }
-      ],
-      "longDescs": [],
-      "untranslated": [],
-      "ok": [
-        "facebook-audio-downloader",
-        "facebook-private-video-downloader",
-        "facebook-reels-downloader",
-        "instagram-audio-downloader",
-        "instagram-private-downloader",
-        "instagram-reels-downloader",
-        "instagram-video-downloader",
-        "snapchat-audio-downloader",
-        "telegram-audio-downloader",
-        "telegram-video-downloader",
-        "tiktok-mp3-downloader",
-        "tiktok-song-finder",
-        "tiktok-video-downloader",
-        "x-audio-downloader",
-        "x-media-downloader",
-        "x-thread-downloader",
-        "youtube-to-mp3-converter",
         "youtube-video-downloader"
       ]
     }

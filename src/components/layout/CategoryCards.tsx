@@ -6,7 +6,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { cn } from "@/utils/cn"
 import { Film, PlaySquare, StopCircle, Music as MusicIcon, Camera, ImageIcon, Send, Ghost, Hash, ShieldCheck, Compass, Zap, TrendingUp, Layers } from "lucide-react"
-import { dictionaries } from "@/dictionaries/client"
+import { useClientDictionary } from "@/dictionaries/client"
 import { useCurrentLocale } from "@/hooks/useCurrentLocale"
 
 interface CategoryCardsProps {
@@ -21,7 +21,7 @@ export function CategoryCards({
   hoverBg = "from-pink-500/0 to-pink-500/5"
 }: CategoryCardsProps = {}) {
   const locale = useCurrentLocale()
-  const dict = (dictionaries as any)[locale] || dictionaries.en
+  const dict = useClientDictionary(locale)
 
   const getLocalizedHref = (path: string) => {
     const cleanPath = path.startsWith('/') ? path : `/${path}`

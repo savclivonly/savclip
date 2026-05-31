@@ -3,7 +3,7 @@
 import * as React from "react"
 import { motion } from "framer-motion"
 import { usePathname } from "next/navigation"
-import { getDictionary } from "@/dictionaries/client"
+import { useClientDictionary } from "@/dictionaries/client"
 
 interface TrendingBarProps {
   accentColor?: string
@@ -26,7 +26,7 @@ export function TrendingBar({ accentColor = "bg-pink-600" }: TrendingBarProps) {
     const segment = pathname.split('/')[1];
     return locales.includes(segment as Locale) ? (segment as Locale) : 'en';
   }, [pathname]);
-  const dict = getDictionary(locale)
+  const dict = useClientDictionary(locale)
   
   const [items, setItems] = React.useState<string[]>([])
   

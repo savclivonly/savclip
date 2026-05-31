@@ -2,51 +2,69 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Use o Baixador de Spotlight do Snapchat com segurança absoluta"
+    "content": "Como o SavClip Simplifica os Downloads do Snapchat"
   },
   {
     "type": "paragraph",
-    "content": "Nosso visualizador e baixador de stories do Snapchat oferece total privacidade. Salve fotos e vídeos temporários diretamente no seu dispositivo sem deixar nenhum rastro. Se você quiser experimentar outros recursos, também poderá usar nosso <a href=\"/snapchat-stories-downloader\">Baixador de Stories</a> ou verificar o <a href=\"/snapchat-photo-downloader\">Baixador de Fotos</a> para acesso completo."
+    "content": "Salvar fotos ou vídeos do Snapchat não precisa ser difícil. O SavClip oferece uma página simples e rápida, focada em entregar sua mídia no melhor formato disponível em poucos segundos."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Visualização de perfil sem logins ou rastros"
+    "content": "Extração Avançada de Metadados"
   },
   {
     "type": "paragraph",
-    "content": "SavClip serve como uma ponte de privacidade segura. Nosso sistema baixa a mídia dos servidores e exibe para você de forma externa, garantindo que seu perfil nunca apareça na lista de visualizações."
+    "content": "Em vez de apenas gravar a tela ou tirar capturas, nosso sistema lê as informações brutas do post do Snapchat. Isso significa que você baixa a mídia original com máxima fidelidade de cores e som estéreo integrado."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Acesso em Qualquer Celular, Tablet ou Computador"
+  },
+  {
+    "type": "paragraph",
+    "content": "O site é responsivo e otimizado para rodar em qualquer sistema (iOS, Android, Windows e Mac) e navegador (Chrome, Safari, Firefox e Edge). Você terá a mesma velocidade de download em qualquer tela."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Navegação Segura e Totalmente Anônima"
+  },
+  {
+    "type": "paragraph",
+    "content": "A privacidade dos usuários é o nosso foco. Criptografamos todas as conexões via SSL e não salvamos históricos de downloads ou pedimos cadastros de contas. Salve mídias de forma segura e ética sempre."
   }
 ];
 
 export const faqs = [
   {
-    "q": "O criador do perfil saberá que eu salvei o story do Snapchat?",
-    "a": "Não. O processo é totalmente anônimo. O dono da conta nunca será notificado de que você visualizou ou salvou o story."
+    "q": "Como baixar conteúdos do Snapchat online?",
+    "a": "Copie o link do post do Snapchat, cole no campo de pesquisa acima e clique em 'Download' para gerar os links de download direto."
   },
   {
-    "q": "Consigo salvar stories de perfis privados do Snapchat?",
-    "a": "Não, respeitamos as diretrizes de privacidade de dados e apenas permitimos baixar mídias de perfis abertos."
+    "q": "Existe limite de velocidade ou arquivos para baixar?",
+    "a": "Nenhum. Nossa ferramenta oferece velocidade máxima do servidor e você pode salvar quantas mídias desejar por dia."
   },
   {
-    "q": "As stories salvas expiram após 24 horas?",
-    "a": "Não, uma vez baixadas no seu dispositivo, as stories ficam salvas para sempre para você assistir quando quiser."
+    "q": "É seguro usar o SavClip para salvar arquivos?",
+    "a": "Sim. Como o SavClip roda direto na web, seu aparelho fica livre de vírus, sem a necessidade de baixar ou instalar aplicativos."
   },
   {
-    "q": "As stories são baixadas em alta definição?",
-    "a": "Sim, o SavClip baixa a mídia na qualidade máxima de exibição disponível no Snapchat."
+    "q": "Qual é o formato de arquivo gerado pelo site?",
+    "a": "Geralmente, os vídeos são salvos no formato universal MP4 e as imagens são baixadas em JPG de alta resolução."
   }
 ];
 
 export const meta = {
-  title: "Baixador de Spotlight Snapchat Grátis - SavClip",
-  description: "Salve destaques e stories do Snapchat de forma 100% invisível. O criador da conta nunca saberá que você viu."
+  title: "Baixador de Spotlight Snapchat Sem Marca d'Água - SavClip",
+  description: "O principal destino grátis para baixar mídias do Snapchat em alta qualidade. Nosso serviço é rápido, estável e com total privacidade."
 };
 
 export const header = {
   title: "Baixador de Spotlight",
-  title1: "Salvar",
+  title1: "Download",
   title2: "Snapchat Spotlight",
-  title3: "Stories HD",
-  subtitle: "Guarde conteúdos efêmeros do Snapchat antes que desapareçam."
+  title3: "Online Grátis",
+  subtitle: "Baixe conteúdos do Snapchat em qualidade HD original de forma simples e segura."
 };

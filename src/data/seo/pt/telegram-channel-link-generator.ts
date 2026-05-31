@@ -2,34 +2,69 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Por que usar o Gerador de Links do Telegram?"
+    "content": "Como o SavClip Simplifica os Downloads do Telegram"
   },
   {
     "type": "paragraph",
-    "content": "Criar links de redirecionamento direto ajuda a abrir o aplicativo do Telegram imediatamente no celular do usuário, evitando desistências e aumentando sua taxa de conversão de inscritos de forma orgânica. Se você quiser experimentar outros recursos, também poderá usar nosso <a href=\"/telegram-video-compressor\">Compressor de Vídeos</a> ou verificar o <a href=\"/telegram-bio-generator\">Gerador de Bios</a> para acesso completo."
+    "content": "Salvar fotos ou vídeos do Telegram não precisa ser difícil. O SavClip oferece uma página simples e rápida, focada em entregar sua mídia no melhor formato disponível em poucos segundos."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Extração Avançada de Metadados"
+  },
+  {
+    "type": "paragraph",
+    "content": "Em vez de apenas gravar a tela ou tirar capturas, nosso sistema lê as informações brutas do post do Telegram. Isso significa que você baixa a mídia original com máxima fidelidade de cores e som estéreo integrado."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Acesso em Qualquer Celular, Tablet ou Computador"
+  },
+  {
+    "type": "paragraph",
+    "content": "O site é responsivo e otimizado para rodar em qualquer sistema (iOS, Android, Windows e Mac) e navegador (Chrome, Safari, Firefox e Edge). Você terá a mesma velocidade de download em qualquer tela."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Navegação Segura e Totalmente Anônima"
+  },
+  {
+    "type": "paragraph",
+    "content": "A privacidade dos usuários é o nosso foco. Criptografamos todas as conexões via SSL e não salvamos históricos de downloads ou pedimos cadastros de contas. Salve mídias de forma segura e ética sempre."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Como gerar link de convite do Telegram?",
-    "a": "Insira o nome de usuário ou código do canal no formulário superior, clique em gerar e copie a nova URL de redirecionamento."
+    "q": "Como baixar conteúdos do Telegram online?",
+    "a": "Copie o link do post do Telegram, cole no campo de pesquisa acima e clique em 'Download' para gerar os links de download direto."
   },
   {
-    "q": "Esta ferramenta de link é gratuita?",
-    "a": "Sim, é um utilitário de link totalmente grátis e sem limites de geração diária."
+    "q": "Existe limite de velocidade ou arquivos para baixar?",
+    "a": "Nenhum. Nossa ferramenta oferece velocidade máxima do servidor e você pode salvar quantas mídias desejar por dia."
+  },
+  {
+    "q": "É seguro usar o SavClip para salvar arquivos?",
+    "a": "Sim. Como o SavClip roda direto na web, seu aparelho fica livre de vírus, sem a necessidade de baixar ou instalar aplicativos."
+  },
+  {
+    "q": "Qual é o formato de arquivo gerado pelo site?",
+    "a": "Geralmente, os vídeos são salvos no formato universal MP4 e as imagens são baixadas em JPG de alta resolução."
   }
 ];
 
 export const meta = {
-  title: "Gerador de Links de Canais Telegram Gerar URL - SavClip",
-  description: "Gerador de links para Telegram de forma rápida e simples. Melhore a conversão de inscritos e o rastreamento de URLs."
+  title: "Gerador de Links de Canais Telegram Sem Marca d'Água - SavClip",
+  description: "O principal destino grátis para baixar mídias do Telegram em alta qualidade. Nosso serviço é rápido, estável e com total privacidade."
 };
 
 export const header = {
   title: "Gerador de Links de Canais",
-  title1: "Gerar",
+  title1: "Download",
   title2: "Telegram Links de Canais",
-  title3: "Crescimento",
-  subtitle: "Crie URLs de redirecionamento otimizados para o Telegram."
+  title3: "Online Grátis",
+  subtitle: "Baixe conteúdos do Telegram em qualidade HD original de forma simples e segura."
 };

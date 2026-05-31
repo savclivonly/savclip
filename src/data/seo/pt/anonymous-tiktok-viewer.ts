@@ -2,51 +2,69 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Visualizador Anônimo e Auditor de Perfis do Redes Sociais"
+    "content": "Como o SavClip Simplifica os Downloads do Redes Sociais"
   },
   {
     "type": "paragraph",
-    "content": "Para quem quer analisar perfis com total privacidade, nossa ferramenta pública de visualização de perfis do Redes Sociais garante anonimato e segurança completa. Se você quiser experimentar outros recursos, também poderá usar nosso <a href=\"/tiktok-private-video-downloader\">Baixador de Mídia</a> ou verificar o <a href=\"/tiktok-trending-hashtag-generator\">Gerador de Hashtags Populares</a> para acesso completo."
+    "content": "Salvar fotos ou vídeos do Redes Sociais não precisa ser difícil. O SavClip oferece uma página simples e rápida, focada em entregar sua mídia no melhor formato disponível em poucos segundos."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Painel de análise simplificado"
+    "content": "Extração Avançada de Metadados"
   },
   {
     "type": "paragraph",
-    "content": "Buscamos apenas os dados disponíveis publicamente no Redes Sociais e estruturamos as informações de forma amigável, permitindo visualizar fotos de perfil e biografias sem comprometer sua privacidade."
+    "content": "Em vez de apenas gravar a tela ou tirar capturas, nosso sistema lê as informações brutas do post do Redes Sociais. Isso significa que você baixa a mídia original com máxima fidelidade de cores e som estéreo integrado."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Acesso em Qualquer Celular, Tablet ou Computador"
+  },
+  {
+    "type": "paragraph",
+    "content": "O site é responsivo e otimizado para rodar em qualquer sistema (iOS, Android, Windows e Mac) e navegador (Chrome, Safari, Firefox e Edge). Você terá a mesma velocidade de download em qualquer tela."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Navegação Segura e Totalmente Anônima"
+  },
+  {
+    "type": "paragraph",
+    "content": "A privacidade dos usuários é o nosso foco. Criptografamos todas as conexões via SSL e não salvamos históricos de downloads ou pedimos cadastros de contas. Salve mídias de forma segura e ética sempre."
   }
 ];
 
 export const faqs = [
   {
-    "q": "O dono do perfil saberá que visualizei sua conta?",
-    "a": "De forma alguma. Nosso sistema não envia nenhum dado seu aos servidores do Redes Sociais, mantendo você invisível."
+    "q": "Como baixar conteúdos do Redes Sociais online?",
+    "a": "Copie o link do post do Redes Sociais, cole no campo de pesquisa acima e clique em 'Download' para gerar os links de download direto."
   },
   {
-    "q": "Preciso instalar alguma extensão de navegador?",
-    "a": "Não, a ferramenta funciona 100% online a partir de qualquer navegador web no celular ou PC."
+    "q": "Existe limite de velocidade ou arquivos para baixar?",
+    "a": "Nenhum. Nossa ferramenta oferece velocidade máxima do servidor e você pode salvar quantas mídias desejar por dia."
   },
   {
-    "q": "Preciso de uma conta no Redes Sociais para usar?",
-    "a": "Não, você pode visualizar e analisar perfis públicos sem ter cadastro na rede."
+    "q": "É seguro usar o SavClip para salvar arquivos?",
+    "a": "Sim. Como o SavClip roda direto na web, seu aparelho fica livre de vírus, sem a necessidade de baixar ou instalar aplicativos."
   },
   {
-    "q": "Posso ver perfis privados de forma anônima?",
-    "a": "Não, por razões de privacidade de dados, apenas exibimos informações de contas abertas."
+    "q": "Qual é o formato de arquivo gerado pelo site?",
+    "a": "Geralmente, os vídeos são salvos no formato universal MP4 e as imagens são baixadas em JPG de alta resolução."
   }
 ];
 
 export const meta = {
-  title: "Baixador de Mídia Redes Sociais Estatísticas - SavClip",
-  description: "Acesse perfis anonimamente do Redes Sociais sem precisar fazer login. Monitore contas sem deixar rastros."
+  title: "Visualizador Anônimo do TikTok Redes Sociais Sem Marca d'Água - SavClip",
+  description: "O principal destino grátis para baixar mídias do Redes Sociais em alta qualidade. Nosso serviço é rápido, estável e com total privacidade."
 };
 
 export const header = {
-  title: "Baixador de Mídia",
-  title1: "Analisar",
-  title2: "Redes Sociais Mídia",
-  title3: "Estatísticas HD",
-  subtitle: "Monitore contas públicas do Redes Sociais sem se registrar e sem ser visto."
+  title: "Visualizador Anônimo do TikTok",
+  title1: "Download",
+  title2: "Redes Sociais do TikTok",
+  title3: "Online Grátis",
+  subtitle: "Baixe conteúdos do Redes Sociais em qualidade HD original de forma simples e segura."
 };

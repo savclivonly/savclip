@@ -1,6 +1,6 @@
 import { translateToolName } from "@/utils/translate-tool";
 
-import { BLOG_POSTS } from "@/lib/blog-data";
+import { getBlogPosts } from "@/lib/blog-data";
 import Link from "next/link";
 import Image from "next/image";
 import { Calendar, User, ArrowRight } from "lucide-react";
@@ -43,9 +43,19 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
 }
 
 
-export default async function BlogListPage(props: { params: Promise<{ locale: Locale }> }) {
+export default async function BlogListPage(props: { 
+  params: Promise<{ locale: Locale }>,
+  searchParams: Promise<{ category?: string }>
+}) {
   const params = await props.params;
-  const locale = (await props.params).locale || 'en';
+  const searchParams = await props.searchParams;
+  const locale = params.locale || 'en';
+  const selectedCategory = searchParams.category || 'All';
+
+  const allPosts = getBlogPosts(locale);
+  const posts = selectedCategory === 'All'
+    ? allPosts
+    : allPosts.filter(post => post.category === selectedCategory);
 
   const categories = ["All", "Instagram Tips", "TikTok Tips", "YouTube Shorts", "Viral Reels", "Creator Growth"];
 
@@ -69,15 +79,28 @@ export default async function BlogListPage(props: { params: Promise<{ locale: Lo
 
         {/* Categories Bar */}
         <div className="flex flex-wrap justify-center gap-3 mb-16">
-          {categories.map((cat, i) => (
-            <span key={i} className={`px-5 py-2.5 rounded-full text-sm font-bold uppercase tracking-wider cursor-pointer border ${i === 0 ? 'bg-neutral-900 text-white dark:bg-white dark:text-black border-transparent' : 'bg-white dark:bg-neutral-900 text-neutral-600 dark:text-neutral-400 border-neutral-200 dark:border-neutral-800 hover:border-pink-500 hover:text-pink-600 transition-colors shadow-sm'}`}>
-              {translateToolName(cat, locale)}
-            </span>
-          ))}
+          {categories.map((cat) => {
+            const isActive = selectedCategory === cat;
+            const query = cat === "All" ? "" : `?category=${encodeURIComponent(cat)}`;
+            const href = locale === 'en' ? `/blog${query}` : `/${locale}/blog${query}`;
+            return (
+              <Link
+                key={cat}
+                href={href}
+                className={`px-5 py-2.5 rounded-full text-sm font-bold uppercase tracking-wider border transition-all ${
+                  isActive
+                    ? 'bg-neutral-900 text-white dark:bg-white dark:text-black border-transparent'
+                    : 'bg-white dark:bg-neutral-900 text-neutral-600 dark:text-neutral-400 border-neutral-200 dark:border-neutral-800 hover:border-pink-500 hover:text-pink-600 shadow-sm'
+                }`}
+              >
+                {translateToolName(cat, locale)}
+              </Link>
+            );
+          })}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {BLOG_POSTS.map((post) => (
+          {posts.map((post) => (
             <article key={post.slug} className="group flex flex-col bg-white dark:bg-neutral-900 rounded-4xl border border-neutral-100 dark:border-neutral-800 overflow-hidden hover:shadow-2xl transition-all hover:-translate-y-2">
               <div className="aspect-video bg-neutral-200 dark:bg-neutral-800 relative overflow-hidden">
                 <Image

@@ -2,51 +2,69 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "¿Por qué usar SavClip para el Descargador de Banners de X (Twitter)?"
+    "content": "Cómo SavClip Simplifica las Descargas de X (Twitter)"
   },
   {
     "type": "paragraph",
-    "content": "Nuestra herramienta extrae la imagen directa desde los servidores. Con SavClip puedes guardar fotos originales con la nitidez y colores de origen. Si deseas probar otras funciones, también puedes usar nuestro <a href=\"/x-trending-hashtag-finder\">Buscador de Hashtags de Tendencia</a> o consultar el <a href=\"/x-analytics-viewer\">Visor de Estadísticas</a> para obtener un acceso completo."
+    "content": "Guardar fotos o videos de X (Twitter) no tiene por qué ser complicado. SavClip te ofrece una interfaz limpia y libre de publicidad molesta, enfocada en darte el archivo en el formato ideal en solo unos segundos."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Sin compresión de píxeles"
+    "content": "Acceso al Archivo Original sin Filtros"
   },
   {
     "type": "paragraph",
-    "content": "Accedemos al enlace real del archivo de imagen en los servidores de X (Twitter), lo que garantiza que la foto se conserve tal como fue subida por el creador."
+    "content": "No grabamos la pantalla ni usamos capturas analógicas. Nuestro sistema lee directamente los metadados de la publicación en X (Twitter) para entregarte la versión original del archivo, manteniendo la nitidez de imagen y el sonido estéreo intactos."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Compatible con Todos tus Dispositivos"
+  },
+  {
+    "type": "paragraph",
+    "content": "Nuestra plataforma web está desarrollada con estándares de diseño responsivo. Funciona de manera idéntica en computadoras de escritorio (Windows o Mac), tablets y teléfonos móviles (iOS o Android) sin pedir instalaciones de software."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Descargas Privadas y Conexión SSL"
+  },
+  {
+    "type": "paragraph",
+    "content": "Todas las descargas se procesan mediante conexiones seguras cifradas con SSL. No guardamos registros de lo que descargas ni te pediremos crear cuentas o contraseñas. Disfruta de un servicio rápido y respetuoso con la privacidad."
   }
 ];
 
 export const faqs = [
   {
-    "q": "¿Cómo descargar fotos de X (Twitter) en resolución original?",
-    "a": "Copia la URL de la publicación o perfil, pégala en la caja de búsqueda superior y haz clic en descargar para obtener la foto en alta calidad."
+    "q": "¿Cómo descargar contenidos de X (Twitter) en línea?",
+    "a": "Solo copia el enlace de la publicación, accede a SavClip, pégalo en la barra de búsqueda y presiona el botón de descarga."
   },
   {
-    "q": "¿Es posible guardar posts de carrusel con múltiples imágenes?",
-    "a": "Sí, nuestra herramienta procesa los carruseles y te permite descargar cada foto o video de forma organizada."
+    "q": "¿Existe algún límite diario para las descargas?",
+    "a": "No, puedes usar nuestro descargador tantas veces como quieras. Es completamente gratis y sin límites."
   },
   {
-    "q": "¿Hay algún costo por bajar fotos de X (Twitter)?",
-    "a": "No, nuestro descargador de imágenes es 100% gratis y libre de cargos para todos los usuarios."
+    "q": "¿Es seguro usar SavClip en mi teléfono o PC?",
+    "a": "Sí, es completamente seguro. Funciona directamente en la web desde tu navegador, por lo que tu dispositivo queda a salvo de virus o aplicaciones maliciosas."
   },
   {
-    "q": "¿Cómo descargo fotos de perfil en mi celular?",
-    "a": "Pega el enlace del perfil en SavClip, haz clic en buscar y luego presiona guardar para archivarlo en tu galería."
+    "q": "¿En qué formatos se descargan los archivos?",
+    "a": "Los videos se guardan en el formato MP4 estándar y las imágenes se descargan en formato JPG para garantizar compatibilidad con cualquier dispositivo."
   }
 ];
 
 export const meta = {
-  title: "Descargador de Banners X (Twitter) Fotos HD - SavClip",
-  description: "Guarda fotos de perfil y carruseles de X (Twitter) en calidad original. Servicio rápido, gratis y en línea."
+  title: "Descargador de Banners X (Twitter) gratis online - SavClip",
+  description: "Descarga videos, fotos y audios de X (Twitter) en alta calidad gratis. El servicio de descarga online más rápido, seguro y privado."
 };
 
 export const header = {
   title: "Descargador de Banners",
-  title1: "Guardar",
+  title1: "Download",
   title2: "X (Twitter) Banners",
-  title3: "Imagen Original",
-  subtitle: "Descarga fotos de perfil y publicaciones en alta definición gratis."
+  title3: "Online Gratis",
+  subtitle: "Guarda contenidos de X (Twitter) en calidad original de forma sencilla y segura."
 };

@@ -5,7 +5,7 @@ import Link from "next/link"
 import { cn } from "@/utils/cn"
 import { motion } from "framer-motion"
 import { useCurrentLocale } from "@/hooks/useCurrentLocale"
-import { getDictionary } from "@/dictionaries/client"
+import { useClientDictionary } from "@/dictionaries/client"
 import { translateToolName } from "@/utils/translate-tool"
 
 export interface TabItem {
@@ -28,7 +28,7 @@ interface PlatformTabsProps {
 export function PlatformTabs({ items, activeId, activeColor = "text-pink-600", tabs: propTabs, className, locale: propLocale, indicatorColor = "bg-white" }: PlatformTabsProps) {
   const currentLocale = useCurrentLocale()
   const locale = propLocale || currentLocale
-  const clientDict = getDictionary(locale)
+  const clientDict = useClientDictionary(locale)
   const tabs = propTabs || clientDict?.tabs
 
   return (

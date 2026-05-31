@@ -2,51 +2,69 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Use o Salvador de Stories do TikTok com segurança absoluta"
+    "content": "Baixador de Stories do TikTok com Total Anonimato"
   },
   {
     "type": "paragraph",
-    "content": "Nosso visualizador e baixador de stories do TikTok oferece total privacidade. Salve fotos e vídeos temporários diretamente no seu dispositivo sem deixar nenhum rastro. Se você quiser experimentar outros recursos, também poderá usar nosso <a href=\"/tiktok-shorts-downloader\">Baixador de Shorts</a> ou verificar o <a href=\"/tiktok-photo-downloader\">Baixador de Fotos</a> para acesso completo."
+    "content": "Os stories desaparecem após 24 horas, mas muitos momentos valem a pena ser guardados. Nosso baixador de stories do TikTok oferece uma maneira fácil de salvar fotos e vídeos temporários sem deixar rastros."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Visualização de perfil sem logins ou rastros"
+    "content": "Como Funciona o Download Anônimo"
   },
   {
     "type": "paragraph",
-    "content": "SavClip serve como uma ponte de privacidade segura. Nosso sistema baixa a mídia dos servidores e exibe para você de forma externa, garantindo que seu perfil nunca apareça na lista de visualizações."
+    "content": "Ao visualizar stories pelo aplicativo, o criador é notificado. O SavClip serve como uma ponte segura: nosso sistema acessa a mídia e a exibe para você sem revelar seu perfil. Assim, você pode salvar e visualizar stories com total discrição."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Salve Fotos e Vídeos na Resolução Original"
+  },
+  {
+    "type": "paragraph",
+    "content": "Evite capturas ou gravações de tela que estragam a qualidade visual das imagens. Nossa ferramenta acessa o arquivo original dos servidores do TikTok, permitindo salvar fotos em JPG e vídeos em MP4 com alta definição."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Perfeito para Criadores e Profissionais"
+  },
+  {
+    "type": "paragraph",
+    "content": "Produtores de conteúdo e agências de redes sociais usam o SavClip para analisar a concorrência e salvar inspirações de forma segura. Com o download em um clique, você monta sua pasta de referências em segundos."
   }
 ];
 
 export const faqs = [
   {
-    "q": "O criador do perfil saberá que eu salvei o story do TikTok?",
+    "q": "O dono do perfil saberá que eu baixei o story do TikTok?",
     "a": "Não. O processo é totalmente anônimo. O dono da conta nunca será notificado de que você visualizou ou salvou o story."
   },
   {
-    "q": "Consigo salvar stories de perfis privados do TikTok?",
-    "a": "Não, respeitamos as diretrizes de privacidade de dados e apenas permitimos baixar mídias de perfis abertos."
+    "q": "Consigo baixar stories de contas privadas no TikTok?",
+    "a": "Não, respeitamos as diretrizes de privacidade e apenas baixamos mídias de perfis públicos."
   },
   {
-    "q": "As stories salvas expiram após 24 horas?",
-    "a": "Não, uma vez baixadas no seu dispositivo, as stories ficam salvas para sempre para você assistir quando quiser."
+    "q": "Existe limite de downloads para stories?",
+    "a": "De forma alguma. O nosso serviço de download de stories é gratuito, ilimitado e pode ser usado sempre que você precisar."
   },
   {
-    "q": "As stories são baixadas em alta definição?",
-    "a": "Sim, o SavClip baixa a mídia na qualidade máxima de exibição disponível no TikTok."
+    "q": "Em quais formatos os stories são salvos?",
+    "a": "Stories de foto são baixados no formato padrão JPG, enquanto stories de vídeo são salvos no formato de alta qualidade MP4."
   }
 ];
 
 export const meta = {
-  title: "Salvador de Stories TikTok Salvar Stories - SavClip",
-  description: "Salve destaques e stories do TikTok de forma 100% invisível. O criador da conta nunca saberá que você viu."
+  title: "Salvador de Stories TikTok Sem Marca d'Água - SavClip",
+  description: "Baixe stories e destaques do TikTok de forma anônima. Nosso sistema garante que o criador do conteúdo nunca saiba que você salvou os vídeos."
 };
 
 export const header = {
   title: "Salvador de Stories",
-  title1: "Salvar",
-  title2: "TikTok Salvador de Stories",
-  title3: "Stories HD",
-  subtitle: "Guarde conteúdos efêmeros do TikTok antes que desapareçam."
+  title1: "Download",
+  title2: "TikTok Stories",
+  title3: "Online Grátis",
+  subtitle: "Salve stories, fotos e destaques do TikTok de forma rápida e anônima."
 };

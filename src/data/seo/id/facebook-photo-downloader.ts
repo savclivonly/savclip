@@ -2,51 +2,69 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Mengapa menggunakan SavClip untuk proses Pengunduh Foto Facebook?"
+    "content": "Cara SavClip Menyederhanakan Pengunduhan Facebook"
   },
   {
     "type": "paragraph",
-    "content": "Jangan andalkan tangkapan layar (screenshot) yang menurunkan ketajaman foto. Dengan SavClip, Anda dapat menyimpan foto profil, foto postingan, dan korsel dengan kejernihan maksimal. Jika Anda ingin mencoba fitur lain, Anda juga dapat menggunakan <a href=\"/facebook-album-downloader\">Pengunduh Album</a> kami atau memeriksa <a href=\"/facebook-live-video-downloader\">Pengunduh Video Langsung</a> untuk akses lengkap."
+    "content": "Menyimpan konten kesukaan Anda kini tidak perlu ribet lagi. SavClip menghadirkan antarmuka sederhana yang fokus pada kecepatan dan kemudahan akses file tanpa iklan berlebihan yang mengganggu."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Ekstraksi file gambar mentah langsung dari server"
+    "content": "Akses Langsung ke File Asli"
   },
   {
     "type": "paragraph",
-    "content": "Kami mendeteksi link asli file gambar di server Facebook, memastikan detail foto dan akurasi warna tetap terjaga."
+    "content": "Kami tidak merekam layar atau menggunakan metode analog. Kami membaca metadata asli dari link yang Anda tempel, memberikan file unduhan orisinal dengan warna asli yang tajam serta audio yang jernih."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Dapat Diakses dari HP dan Komputer"
+  },
+  {
+    "type": "paragraph",
+    "content": "Platform web kami dirancang agar kompatibel dengan berbagai browser populer seperti Chrome, Safari, Firefox, dan Edge. Baik menggunakan Windows, macOS, Android, maupun iOS, Anda akan mendapatkan kecepatan unduhan yang sama."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Unduhan Aman dan Menjaga Privasi"
+  },
+  {
+    "type": "paragraph",
+    "content": "Semua permintaan unduhan dilindungi dengan enkripsi SSL. Kami berkomitmen untuk menjaga privasi dengan tidak merekam riwayat unduhan Anda atau meminta pendaftaran akun. Dapatkan file Anda secara aman dan etis."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Bagaimana cara menyimpan foto dari Facebook dengan kualitas asli?",
-    "a": "Salin URL postingan atau profil publik, tempel di kolom atas pencarian, lalu unduh gambar dengan kualitas HD."
+    "q": "Bagaimana cara mengunduh konten Facebook secara online?",
+    "a": "Cukup salin link postingan dari Facebook, buka SavClip, tempel to kolom di atas, lalu klik tombol unduh."
   },
   {
-    "q": "Apakah saya bisa menyimpan postingan korsel dengan banyak gambar?",
-    "a": "Tentu saja. Sistem kami mendeteksi seluruh gambar dalam korsel dan menyediakan link unduhan untuk setiap foto secara terpisah."
+    "q": "Apakah ada batas pengunduhan harian untuk Facebook?",
+    "a": "Tidak ada batasan harian. Anda bebas mengunduh konten sebanyak apa pun tanpa biaya."
   },
   {
-    "q": "Apakah ada biaya untuk mengunduh foto dari Facebook?",
-    "a": "Tidak, alat unduh gambar kami 100% gratis dan bebas digunakan tanpa batas oleh siapa saja."
+    "q": "Apakah aman menggunakan SavClip di komputer atau HP saya?",
+    "a": "Sangat aman. SavClip bekerja secara online di browser tanpa perlu menginstal aplikasi tambahan yang berpotensi membawa virus."
   },
   {
-    "q": "Bagaimana cara menyimpan foto profil di HP?",
-    "a": "Tempel link profil, klik cari, lalu tekan tombol unduh untuk menyimpannya langsung ke galeri HP."
+    "q": "Dalam format apa file media diunduh?",
+    "a": "Video akan disimpan dalam format MP4 dan gambar dalam format JPG untuk memastikan kecocokan dengan semua perangkat."
   }
 ];
 
 export const meta = {
-  title: "Pengunduh Foto Facebook Resolusi Asli - SavClip",
-  description: "Unduh foto, gambar, dan thumbnail dari Facebook dengan resolusi asli maksimal. Alat gratis, cepat, dan online."
+  title: "Pengunduh Foto Facebook gratis online - SavClip",
+  description: "Download video, foto, dan musik dari Facebook gratis dengan kualitas terbaik. Layanan cepat, aman, dan tanpa iklan yang mengganggu."
 };
 
 export const header = {
   title: "Pengunduh Foto",
-  title1: "Unduh",
-  title2: "Facebook Foto",
-  title3: "Foto Kualitas HD",
-  subtitle: "Ambil foto dan gambar dari Facebook dalam resolusi asli tanpa kompresi."
+  title1: "Download",
+  title2: "Facebook Media",
+  title3: "Online Gratis",
+  subtitle: "Unduh konten Facebook dalam kualitas HD asli dengan cara yang sederhana dan aman."
 };

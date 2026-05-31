@@ -2,60 +2,69 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Por que o SavClip é o principal Baixador de Mídia do X (Twitter)?"
+    "content": "Como o SavClip Simplifica os Downloads do X (Twitter)"
   },
   {
     "type": "paragraph",
-    "content": "Hoje em dia, assistir a vídeos com excelente qualidade offline é essencial. Nosso Baixador de Mídia do X (Twitter) foi projetado para oferecer um processo de download super rápido. Garantimos a extração de cada vídeo com a máxima fidelidade de cores diretamente dos servidores do X (Twitter). Se você quiser experimentar outros recursos, também poderá usar nosso <a href=\"/x-thread-downloader\">Baixador de Threads</a> ou verificar o <a href=\"/x-audio-downloader\">Baixador de Áudio</a> para acesso completo."
+    "content": "Salvar fotos ou vídeos do X (Twitter) não precisa ser difícil. O SavClip oferece uma página simples e rápida, focada em entregar sua mídia no melhor formato disponível em poucos segundos."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Download direto sem perdas ou compressão"
+    "content": "Extração Avançada de Metadados"
   },
   {
     "type": "paragraph",
-    "content": "Ao contrário de outros sites que compactam os vídeos para economizar largura de banda, o SavClip mantém a imagem original. Buscamos a mídia em sua fonte bruta, preservando a resolução de origem de forma limpa e fiel."
+    "content": "Em vez de apenas gravar a tela ou tirar capturas, nosso sistema lê as informações brutas do post do X (Twitter). Isso significa que você baixa a mídia original com máxima fidelidade de cores e som estéreo integrado."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Compatibilidade universal e sem instalar nada"
+    "content": "Acesso em Qualquer Celular, Tablet ou Computador"
   },
   {
     "type": "paragraph",
-    "content": "Não é necessário instalar aplicativos suspeitos no seu dispositivo. Nossa ferramenta funciona diretamente no navegador de internet em qualquer sistema como Android, iPhone, Windows ou Mac."
+    "content": "O site é responsivo e otimizado para rodar em qualquer sistema (iOS, Android, Windows e Mac) e navegador (Chrome, Safari, Firefox e Edge). Você terá a mesma velocidade de download em qualquer tela."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Navegação Segura e Totalmente Anônima"
+  },
+  {
+    "type": "paragraph",
+    "content": "A privacidade dos usuários é o nosso foco. Criptografamos todas as conexões via SSL e não salvamos históricos de downloads ou pedimos cadastros de contas. Salve mídias de forma segura e ética sempre."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Como baixar vídeos do X (Twitter) em alta qualidade?",
-    "a": "Copie o link do vídeo do X (Twitter), cole na barra de pesquisa no topo desta página e clique no botão de download para gerar os links de salvamento."
+    "q": "Como baixar conteúdos do X (Twitter) online?",
+    "a": "Copie o link do post do X (Twitter), cole no campo de pesquisa acima e clique em 'Download' para gerar os links de download direto."
   },
   {
-    "q": "O serviço de download do X (Twitter) é gratuito?",
-    "a": "Sim, o SavClip é um serviço 100% gratuito e você pode realizar downloads ilimitados todos os dias."
+    "q": "Existe limite de velocidade ou arquivos para baixar?",
+    "a": "Nenhum. Nossa ferramenta oferece velocidade máxima do servidor e você pode salvar quantas mídias desejar por dia."
   },
   {
-    "q": "Preciso fazer login ou cadastrar minha conta?",
-    "a": "Não, prezamos pelo anonimato completo. Você não precisa de senhas, e-mails ou logins."
+    "q": "É seguro usar o SavClip para salvar arquivos?",
+    "a": "Sim. Como o SavClip roda direto na web, seu aparelho fica livre de vírus, sem a necessidade de baixar ou instalar aplicativos."
   },
   {
-    "q": "Como salvar vídeos no iPhone ou Android?",
-    "a": "No Android, os arquivos são salvos na pasta de downloads ou galeria. No iPhone, use o navegador Safari e encontre os arquivos no app 'Arquivos' do sistema."
+    "q": "Qual é o formato de arquivo gerado pelo site?",
+    "a": "Geralmente, os vídeos são salvos no formato universal MP4 e as imagens são baixadas em JPG de alta resolução."
   }
 ];
 
 export const meta = {
-  title: "Baixador de Mídia X (Twitter) Online HD - SavClip",
-  description: "Salve vídeos do X (Twitter) em alta definição (1080p, 4K) de forma totalmente gratuita. Nossa ferramenta online oferece a extração direta sem anúncios intrusivos."
+  title: "Baixador de Mídia X (Twitter) Sem Marca d'Água - SavClip",
+  description: "O principal destino grátis para baixar mídias do X (Twitter) em alta qualidade. Nosso serviço é rápido, estável e com total privacidade."
 };
 
 export const header = {
   title: "Baixador de Mídia",
-  title1: "Baixar",
+  title1: "Download",
   title2: "X (Twitter) Mídia",
-  title3: "Grátis em HD",
-  subtitle: "Salve seus vídeos favoritos do X (Twitter) em MP4 de alta resolução diretamente no seu aparelho."
+  title3: "Online Grátis",
+  subtitle: "Baixe conteúdos do X (Twitter) em qualidade HD original de forma simples e segura."
 };

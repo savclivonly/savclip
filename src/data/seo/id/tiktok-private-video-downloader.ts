@@ -2,51 +2,69 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Bagaimana cara kerja Pengunduh Media TikTok?"
+    "content": "Pengunduh Video TikTok Tanpa Watermark"
   },
   {
     "type": "paragraph",
-    "content": "Beberapa konten dibatasi penontonnya karena pengaturan akun privat. SavClip membantu mengekstrak kode secara etis dan aman. Jika Anda ingin mencoba fitur lain, Anda juga dapat menggunakan <a href=\"/tiktok-trending-hashtag-generator\">Pembuat Hashtag Populer</a> kami atau memeriksa <a href=\"/tiktok-caption-generator\">Pembuat Keterangan</a> untuk akses lengkap."
+    "content": "Video bersih tanpa logo sangat penting bagi kreator konten dan editor video profesional. SavClip memberikan solusi termudah untuk mendapatkan video dari TikTok tanpa gangguan watermark."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Ekstraksi file media dari kode sumber halaman"
+    "content": "Teknologi Penghapusan Logo Pintar"
   },
   {
     "type": "paragraph",
-    "content": "Alat kami menganalisis kode HTML halaman yang Anda tempelkan untuk encontrar link unduhan langsung video di server TikTok, menjamin keamanan akun Anda."
+    "content": "Banyak situs pengunduh lain hanya memburamkan atau memotong bagian tepi video untuk menutupi logo. SavClip mengakses file asli dari server TikTok sebelum watermark tersebut ditempelkan. Hasilnya adalah video MP4 yang benar-benar bersih."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Sangat Cocok untuk Publikasi Ulang Konten"
+  },
+  {
+    "type": "paragraph",
+    "content": "Membagikan ulang video buatan Anda sendiri ke platform lain sangatlah penting. Mengunduh versi bersih tanpa watermark aplikasi lain membantu agar postingan Anda tidak dibatasi oleh algoritma. Audio dan video Anda akan tetap jernih."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Layanan Online Gratis dan Praktis"
+  },
+  {
+    "type": "paragraph",
+    "content": "SavClip bekerja sepenuhnya secara online di browser Anda. Anda tidak perlu memasang ekstensi atau aplikasi asing yang bisa membahayakan perangkat Anda. Seluruh proses dijamin aman dan terlindungi."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Bagaimana cara download video privat dari TikTok?",
-    "a": "Ikuti langkah-langkah di halaman pengunduh privat: salin kode sumber halaman video, tempel di kolom yang tersedia, dan dapatkan link download-nya."
+    "q": "Bagaimana cara menyimpan video TikTok tanpa watermark?",
+    "a": "Salin link video dari TikTok, tempel ke kolom pencarian di atas, lalu klik 'Unduh'. Sistem kami akan otomatis menghapus logo atau watermark."
   },
   {
-    "q": "Apakah SavClip menyimpan sandi atau riwayat saya?",
-    "a": "Tidak. Proses analisis kode sumber berjalan langsung di browser Anda, sehingga kerahasiaan Anda terjaga penuh."
+    "q": "Apakah proses penghapusan logo memengaruhi suara atau kualitas?",
+    "a": "Tidak. Kualitas gambar tetap jernih dan audio stereo bawaan tidak akan berubah."
   },
   {
-    "q": "Apakah saya harus memasukkan kata sandi TikTok untuk mengunduh media privat?",
-    "a": "Sama sekali tidak! SavClip tidak meminta sandi, kami hanya memproses kode HTML halaman."
+    "q": "Apakah penghapusan watermark di SavClip gratis?",
+    "a": "Ya, layanan penghapusan watermark dan pengunduhan video di SavClip 100% gratis dan dapat digunakan tanpa batas."
   },
   {
-    "q": "Apakah cara ini berfungsi untuk stories privat?",
-    "a": "Ya, selama Anda memiliki akses untuk melihat story tersebut di browser Anda dan bisa menyalin kode sumber halamannya secara lengkap."
+    "q": "Bisakah saya menyimpan video tanpa watermark di iPhone?",
+    "a": "Ya. Buka Safari di iPhone, akses SavClip, tempel link video, lalu unduh. File akan langsung tersimpan di folder unduhan perangkat Anda."
   }
 ];
 
 export const meta = {
-  title: "Pengunduh Media TikTok Aman - SavClip",
-  description: "Unduh video privat dan media dari TikTok secara aman melalui browser. Tanpa perlu memasukkan sandi atau login."
+  title: "Pengunduh Media TikTok gratis online - SavClip",
+  description: "Unduh video TikTok tanpa watermark atau logo. Alat cerdas kami menghapus tanda untuk menyediakan file video bersih yang profesional."
 };
 
 export const header = {
   title: "Pengunduh Media",
-  title1: "Unduh",
+  title1: "Download",
   title2: "TikTok Media",
-  title3: "Konten Privat",
-  subtitle: "Ambil media dari akun privat atau grup terbatas di TikTok secara aman."
+  title3: "Online Gratis",
+  subtitle: "Simpan video TikTok dengan bersih, tanpa logo dan dengan audio bawaan."
 };

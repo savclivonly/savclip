@@ -2,51 +2,69 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Pencari Lagu TikTok Paling Cepat Online"
+    "content": "Cara SavClip Menyederhanakan Pengunduhan TikTok"
   },
   {
     "type": "paragraph",
-    "content": "Bagi kreator konten yang membutuhkan audio berkualitas tinggi, alat ekstrak audio TikTok kami memberikan suara yang sangat detail tanpa noise. Jika Anda ingin mencoba fitur lain, Anda juga dapat menggunakan <a href=\"/tiktok-video-downloader\">Pengunduh Video</a> kami atau memeriksa <a href=\"/tiktok-mp3-downloader\">Pengunduh MP3</a> untuk akses lengkap."
+    "content": "Menyimpan konten kesukaan Anda kini tidak perlu ribet lagi. SavClip menghadirkan antarmuka sederhana yang fokus pada kecepatan dan kemudahan akses file tanpa iklan berlebihan yang mengganggu."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Bitrate audio hingga 320kbps tanpa kompresi"
+    "content": "Akses Langsung ke File Asli"
   },
   {
     "type": "paragraph",
-    "content": "SavClip melakukan ekstraksi langsung dari server TikTok. Hal ini menjaga trek audio asli dengan bitrate tinggi hingga 320kbps untuk koleksi musik pribadi."
+    "content": "Kami tidak merekam layar atau menggunakan metode analog. Kami membaca metadata asli dari link yang Anda tempel, memberikan file unduhan orisinal dengan warna asli yang tajam serta audio yang jernih."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Dapat Diakses dari HP dan Komputer"
+  },
+  {
+    "type": "paragraph",
+    "content": "Platform web kami dirancang agar kompatibel dengan berbagai browser populer seperti Chrome, Safari, Firefox, dan Edge. Baik menggunakan Windows, macOS, Android, maupun iOS, Anda akan mendapatkan kecepatan unduhan yang sama."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Unduhan Aman dan Menjaga Privasi"
+  },
+  {
+    "type": "paragraph",
+    "content": "Semua permintaan unduhan dilindungi dengan enkripsi SSL. Kami berkomitmen untuk menjaga privasi dengan tidak merekam riwayat unduhan Anda atau meminta pendaftaran akun. Dapatkan file Anda secara aman dan etis."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Bagaimana cara mengekstrak audio dari video TikTok?",
-    "a": "Salin link video TikTok, tempel di bilah pencarian atas, dan pilih opsi unduhan format audio untuk langsung menyimpannya."
+    "q": "Bagaimana cara mengunduh konten TikTok secara online?",
+    "a": "Cukup salin link postingan dari TikTok, buka SavClip, tempel to kolom di atas, lalu klik tombol unduh."
   },
   {
-    "q": "Apakah layanan konversi TikTok ke MP3 ini berbayar?",
-    "a": "Tidak, layanan ini sepenuhnya gratis dan Anda bebas mengonversi file kapan saja tanpa batas."
+    "q": "Apakah ada batas pengunduhan harian untuk TikTok?",
+    "a": "Tidak ada batasan harian. Anda bebas mengunduh konten sebanyak apa pun tanpa biaya."
   },
   {
-    "q": "Apakah aman mengonversi audio di SavClip?",
-    "a": "Ya, layanan ini sangat aman. Kami tidak menyimpan file audio Anda di server."
+    "q": "Apakah aman menggunakan SavClip di komputer atau HP saya?",
+    "a": "Sangat aman. SavClip bekerja secara online di browser tanpa perlu menginstal aplikasi tambahan yang berpotensi membawa virus."
   },
   {
-    "q": "Apakah file MP3 bisa diputar tanpa internet?",
-    "a": "Tentu saja! Setelah file MP3 disimpan di perangkat Anda, Anda bisa memutarnya tanpa koneksi internet."
+    "q": "Dalam format apa file media diunduh?",
+    "a": "Video akan disimpan dalam format MP4 dan gambar dalam format JPG untuk memastikan kecocokan dengan semua perangkat."
   }
 ];
 
 export const meta = {
-  title: "Pencari Lagu TikTok Ekstrak Audio HD - SavClip",
-  description: "Konversi video ke MP3 dari TikTok secara cepat. Pengonversi MP3 kami menjaga kualitas suara asli tanpa penurunan."
+  title: "Pencari Lagu TikTok gratis online - SavClip",
+  description: "Download video, foto, dan musik dari TikTok gratis dengan kualitas terbaik. Layanan cepat, aman, dan tanpa iklan yang mengganggu."
 };
 
 export const header = {
   title: "Pencari Lagu",
-  title1: "Ekstrak",
-  title2: "TikTok Lagu",
-  title3: "Audio HD",
-  subtitle: "Konversi video TikTok ke MP3 dengan cepat dan aman."
+  title1: "Download",
+  title2: "TikTok Media",
+  title3: "Online Gratis",
+  subtitle: "Unduh konten TikTok dalam kualitas HD asli dengan cara yang sederhana dan aman."
 };

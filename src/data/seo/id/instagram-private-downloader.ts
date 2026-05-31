@@ -2,103 +2,103 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Mengapa SavClip adalah Pengunduh Privat Instagram Terbaik"
+    "content": "Mengapa SavClip adalah yang Terbaik Instagram Pengunduh Privat"
   },
   {
     "type": "paragraph",
-    "content": "Selamat datang di SavClip, tujuan paling tepercaya dan canggih di dunia untuk menyimpan konten privat Instagram dengan keamanan mutlak dan kualitas profesional. Kami memahami bahwa beberapa media paling berarti di Instagram dibagikan di dalam lingkaran privat. Baik Anda ingin menyimpan Reels privat teman, foto eksklusif anggota keluarga, atau kiriman video terbatas yang Anda miliki aksesnya, Penghemat Privat Instagram premium kami dirancang untuk memberikan hasil yang aman dan berkinerja tinggi. SavClip menyediakan solusi yang efisien dan sepenuhnya gratis untuk menyimpan konten privat IG langsung ke perangkat Anda. Jika Anda ingin mencoba fitur lain, Anda juga dapat menggunakan <a href=\"/instagram-video-compressor\">Kompresor Video</a> kami atau memeriksa <a href=\"/instagram-carousel-downloader\">Pengunduh Korsel</a> untuk akses lengkap."
+    "content": "Selamat datang di SavClip, platform terbaik untuk world's most trusted and sophisticated destination for saving private Instagram content with absolute security and professional quality. We understand that some of the most meaningful media on Instagram is shared within private circles. Whether you're looking to save a friend's private Reel, a family member's exclusive photo, or a restricted video post that you have access to, our premium Instagram Private Saver is engineered to deliver high-performance, secure results. SavClip provides a streamlined and entirely free solution to save private IG content directly to your device. If you want to try other features, you can also use our <a href=\"/Instagram-video-compressor\">Instagram Video Compressor</a> or check out the <a href=\"/Instagram-carousel-downloader\">Instagram Carousel Downloader</a> for complete access."
   },
   {
     "type": "paragraph",
-    "content": "Teknologi pengunduhan tingkat lanjut kami dibuat dengan fokus pada privasi dan kecepatan, memastikan bahwa setiap penyimpanan video privat Instagram mempertahankan kualitas Full HD aslinya. Tidak seperti alat lain yang mungkin membahayakan keamanan Anda, SavClip beroperasi sebagai pemroses sisi klien, yang berarti kredensial dan data privat Anda tidak pernah meninggalkan browser Anda. Dari pengguna seluler di iPhone dan Android hingga kreator desktop di PC dan Mac, penghemat privat online kami yang serbaguna bekerja dengan sempurna di semua platform. Bergabunglah dengan ribuan pengguna di seluruh dunia yang mempercayai SavClip untuk pengalaman menyimpan media privat Instagram yang paling aman dan andal saat ini."
+    "content": "Our advanced downloading technology is built with a focus on privacy and speed, ensuring that every private Instagram video save maintains its original Full HD quality. Unlike other tools that might compromise your security, SavClip operates as a client-side processor, meaning your credentials and private data never leave your browser. From mobile users on iPhone and Android to desktop creators on PC and Mac, our versatile online private saver works flawlessly across all platforms. Join thousands of users worldwide who trust SavClip for the most secure and reliable Instagram private media saving experience today."
   },
   {
     "type": "heading",
     "level": 2,
-    "content": "Cara Mengunduh Video Privat Instagram"
+    "content": "Cara Mengunduh Private Instagram Videos"
   },
   {
     "type": "paragraph",
-    "content": "Mengunduh konten privat memerlukan proses yang sedikit berbeda dari kiriman publik untuk memastikan keamanan. Ikuti langkah-langkah berikut untuk mendapatkan file MP4 privat Anda:"
+    "content": "Downloading private content requires a slightly different process than public posts to ensure security. Follow these steps to Dapatkan file Anda dalam private MP4 files:"
   },
   {
     "type": "list",
     "items": [
-      "Buka Kiriman Privat: Masuk ke Instagram di browser Anda dan buka video atau foto privat yang ingin Anda unduh.",
-      "Dapatkan Kode Sumber: Klik kanan pada halaman dan pilih 'Lihat Sumber Halaman' (atau tekan Ctrl+U / Cmd+Option+U). Salin seluruh kode sumber.",
-      "Tempel & Unduh: Kunjungi Penghemat Privat SavClip, tempel kode sumber yang disalin ke kotak yang disediakan, dan klik 'Unduh'. Media Anda akan diekstraksi secara instan."
+      "Open Private Post: Log into Instagram in your browser and open the private video or photo you wish to download.",
+      "Get Source Code: Right-click on the page and select 'View Page Source' (or press Ctrl+U / Cmd+Option+U). Copy the entire source code.",
+      "Paste & Download: Visit SavClip's Private Saver, paste the copied source code into the provided box, and click 'Download'. Your media will be extracted instantly."
     ]
   },
   {
     "type": "heading",
     "level": 2,
-    "content": "Pengunduh Video Privat Instagram yang Aman"
+    "content": "Secure Instagram Private Video Downloader"
   },
   {
     "type": "paragraph",
-    "content": "Keamanan adalah prioritas kami. SavClip adalah utilitas privat aman khusus yang menggunakan pemrosesan ujung ke ujung. Kami tidak menyimpan tautan privat Anda atau konten yang Anda simpan di server kami. Dengan menggunakan metode sumber halaman, Anda secara efektif menggunakan akses Anda sendiri untuk mengambil media, menjadikan SavClip penghemat video privat IG teraman yang tersedia secara online. Tidak diperlukan aplikasi pihak ketiga atau ekstensi berisiko."
+    "content": "Safety is our priority. SavClip is a specialized secure private utility that uses end-to-end processing. We do not store your private links or the content you save on our servers. By using the page source method, you are effectively using your own access to fetch the media, making SavClip the safest IG private video saver available online. No third-party apps or risky extensions are ever required."
   },
   {
     "type": "heading",
     "level": 2,
-    "content": "Unduh Foto Privat Instagram dalam Kualitas HD"
+    "content": "Download Private Instagram Photos in HD"
   },
   {
     "type": "paragraph",
-    "content": "Jangan puas dengan tangkapan layar beresolusi rendah. SavClip adalah pengunduh foto privat Instagram elit yang mengambil gambar resolusi tinggi asli dari kiriman terbatas. Baik itu satu gambar atau galeri privat, alat kami mempertahankan setiap piksel, memberikan hasil ekstraksi gambar privat IG kualitas terbaik yang memungkinkan. Rasakan kejelasan konten privat persis seperti yang seharusnya dilihat."
+    "content": "Don't settle for low-resolution screenshots. SavClip is an elite private Instagram photo downloader that fetches the original high-resolution images from restricted posts. Whether it's a single picture or a private gallery, our tool preserves every pixel, giving you the best quality private IG image extractor results possible. Experience the clarity of private content exactly as it was meant to be seen."
   },
   {
     "type": "heading",
     "level": 2,
-    "content": "Pengunduh Privat Instagram Online & Gratis"
+    "content": "Instagram Pengunduh Privat Online & Free"
   },
   {
     "type": "paragraph",
-    "content": "SavClip menonjol dengan menawarkan layanan online penghemat privat Instagram yang 100% gratis tanpa biaya tersembunyi. Sementara banyak pesaing mengenakan biaya untuk akses privat, kami percaya dalam menyediakan pengalaman pengekspor privat gratis dan cepat untuk semua orang. Alat kami dioptimalkan untuk pengunduhan berkecepatan tinggi, memastikan Anda menghabiskan lebih sedikit waktu menunggu dan lebih banyak waktu menikmati media privat yang Anda simpan."
+    "content": "SavClip stands out by offering a 100% free Instagram private saver online service with no hidden costs. While many competitors charge for private access, we believe in providing a free, fast private exporter experience for everyone. Our tool is optimized for high-speed downloads, ensuring you spend less time waiting and more time enjoying your saved private media."
   },
   {
     "type": "heading",
     "level": 2,
-    "content": "Simpan Konten Privat Instagram di Ponsel dan Desktop"
+    "content": "Save Private Instagram Content on Mobile and Desktop"
   },
   {
     "type": "paragraph",
-    "content": "Baik Anda menggunakan antarmuka seluler penghemat privat di iPhone atau Android, atau menggunakan versi desktop penghemat privat kami di PC, SavClip memberikan pengalaman premium yang konsistent. Desain responsif kami memastikan bahwa proses teknis pengambilan kode sumber privat semudah di ponsel seperti halnya di komputer. Ini adalah penghemat privat Instagram paling serbaguna di web."
+    "content": "Whether you're using a private saver mobile interface on iPhone or Android, or using our private saver desktop version on a PC, SavClip provides a consistent, premium experience. Our responsive design ensures that the technical process of fetching private source code is as easy on a phone as it is on a computer. It's the most versatile private Instagram saver on the web."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Apakah aman menyimpan video privat Instagram dengan SavClip?",
-    "a": "Ya, SavClip 100% aman. Kami memproses semuanya di browser Anda, yang berarti kami tidak pernah melihat kredensial masuk Anda atau menyimpan konten privat Anda."
+    "q": "Is it safe to save private Instagram videos with SavClip?",
+    "a": "Yes, SavClip is 100% secure. We process everything in your browser, meaning we never see your login credentials or store your private content."
   },
   {
-    "q": "Apakah saya harus mengikuti akun tersebut untuk mengunduh konten privat mereka?",
-    "a": "Ya, Anda harus memiliki akses ke akun privat tersebut di Instagram Anda sendiri untuk mengambil kode sumber yang diperlukan untuk menyimpan."
+    "q": "Do I need to follow the account to download their private content?",
+    "a": "Yes, you must have access to the private account on your own Instagram to fetch the source code required for saving."
   },
   {
-    "q": "Apakah penghemat privat SavClip gratis untuk digunakan?",
-    "a": "Tentu saja! SavClip adalah penghemat privat online gratis tanpa batasan jumlah video atau foto privat yang dapat Anda simpan."
+    "q": "Is SavClip's private saver free to use?",
+    "a": "Absolutely! SavClip is a free online private saver with no limits on how many private videos or photos you can save."
   },
   {
-    "q": "Bisakah saya mengunduh Cerita privat Instagram?",
-    "a": "Ya, dengan menggunakan metode kode sumber yang sama, Anda dapat menggunakan SavClip sebagai penyimpan cerita privat Instagram untuk menyimpan cerita dari akun yang Anda ikuti."
+    "q": "Can I download private Instagram Stories?",
+    "a": "Yes, by using the same source code method, you can use SavClip as a private Instagram story saver to keep stories from accounts you follow."
   },
   {
-    "q": "Apakah ini berfungsi di iPhone dan Android?",
-    "a": "Ya, SavClip sepenuhnya dioptimalkan untuk perangkat seluler. Anda dapat menggunakannya sebagai penghemat privat untuk iPhone dan Android secara langsung di browser seluler Anda."
+    "q": "Does it work on iPhone and Android?",
+    "a": "Yes, SavClip is fully optimized for mobile. You can use it as a private saver for iPhone and Android directly in your mobile browser."
   }
 ];
 
 export const meta = {
-  "title": "Pengunduh Privat Instagram - Simpan Media Privat Online | SavClip",
-  "description": "Unduh video, reels, dan foto dari akun Instagram privat. Alat web aman untuk menyimpan konten profil privat tanpa masuk."
+  "title": "Instagram Pengunduh Privat - Save Private Media Online | SavClip",
+  "description": "Download videos, reels, and photos from private Instagram accounts. Secure web tool to save private profile content without any login."
 };
 
 export const header = {
-  "title": "Pengunduh Privat Instagram",
-  "title1": "Unduh",
-  "title2": "Media Privat",
-  "title3": "100% Aman & HD",
-  "subtitle": "Unduh foto, video, dan Reels Instagram privat yang Anda miliki aksesnya."
+  "title": "Instagram Pengunduh Privat",
+  "title1": "Download",
+  "title2": "Private Media",
+  "title3": "100% Secure & HD",
+  "subtitle": "Download private Instagram photos, videos, and Reels that you have access to."
 };

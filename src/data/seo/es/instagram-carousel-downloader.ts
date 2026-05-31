@@ -2,51 +2,69 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "¿Por qué usar SavClip para el Descargador de Carruseles de Instagram?"
+    "content": "Cómo SavClip Simplifica las Descargas de Instagram"
   },
   {
     "type": "paragraph",
-    "content": "Evita capturas de pantalla de baja calidad que pixelan la imagen. Con SavClip puedes guardar fotos de perfil, publicaciones y álbumes carrusel con la nitidez y colores de origen. Si deseas probar otras funciones, también puedes usar nuestro <a href=\"/instagram-dp-downloader\">Descargador de Foto de Perfil</a> o consultar el <a href=\"/instagram-profile-viewer\">Visor de Perfiles</a> para obtener un acceso completo."
+    "content": "Guardar fotos o videos de Instagram no tiene por qué ser complicado. SavClip te ofrece una interfaz limpia y libre de publicidad molesta, enfocada en darte el archivo en el formato ideal en solo unos segundos."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Extracción directa del archivo de imagen original"
+    "content": "Acceso al Archivo Original sin Filtros"
   },
   {
     "type": "paragraph",
-    "content": "Accedemos al enlace real del archivo de imagen en los servidores de Instagram, lo que garantiza que no haya pérdidas de color o detalle."
+    "content": "No grabamos la pantalla ni usamos capturas analógicas. Nuestro sistema lee directamente los metadados de la publicación en Instagram para entregarte la versión original del archivo, manteniendo la nitidez de imagen y el sonido estéreo intactos."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Compatible con Todos tus Dispositivos"
+  },
+  {
+    "type": "paragraph",
+    "content": "Nuestra plataforma web está desarrollada con estándares de diseño responsivo. Funciona de manera idéntica en computadoras de escritorio (Windows o Mac), tablets y teléfonos móviles (iOS o Android) sin pedir instalaciones de software."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Descargas Privadas y Conexión SSL"
+  },
+  {
+    "type": "paragraph",
+    "content": "Todas las descargas se procesan mediante conexiones seguras cifradas con SSL. No guardamos registros de lo que descargas ni te pediremos crear cuentas o contraseñas. Disfruta de un servicio rápido y respetuoso con la privacidad."
   }
 ];
 
 export const faqs = [
   {
-    "q": "¿Cómo descargar fotos de Instagram en resolución original?",
-    "a": "Copia la URL de la publicación o perfil, pégala en la caja de búsqueda superior y haz clic en descargar para obtener la foto en alta calidad."
+    "q": "¿Cómo descargar contenidos de Instagram en línea?",
+    "a": "Solo copia el enlace de la publicación, accede a SavClip, pégalo en la barra de búsqueda y presiona el botón de descarga."
   },
   {
-    "q": "¿Es posible guardar posts de carrusel con múltiples imágenes?",
-    "a": "Sí, nuestra herramienta procesa los carruseles y te permite descargar cada foto o video de manera individual y sencilla."
+    "q": "¿Existe algún límite diario para las descargas?",
+    "a": "No, puedes usar nuestro descargador tantas veces como quieras. Es completamente gratis y sin límites."
   },
   {
-    "q": "¿Hay algún costo por bajar fotos de Instagram?",
-    "a": "No, nuestro descargador de imágenes es completamente gratuito y libre de cargos para todos los usuarios."
+    "q": "¿Es seguro usar SavClip en mi teléfono o PC?",
+    "a": "Sí, es completamente seguro. Funciona directamente en la web desde tu navegador, por lo que tu dispositivo queda a salvo de virus o aplicaciones maliciosas."
   },
   {
-    "q": "¿Cómo descargo fotos de perfil en mi celular?",
-    "a": "Pega el enlace del perfil en SavClip, haz clic en buscar y luego presiona el botón de descarga directa en tu galería."
+    "q": "¿En qué formatos se descargan los archivos?",
+    "a": "Los videos se guardan en el formato MP4 estándar y las imágenes se descargan en formato JPG para garantizar compatibilidad con cualquier dispositivo."
   }
 ];
 
 export const meta = {
-  title: "Descargador de Carruseles Instagram Resolución Máxima - SavClip",
-  description: "Descarga fotos, imágenes y miniaturas de Instagram en calidad original. Servicio rápido, gratis y en línea."
+  title: "Descargador de Carruseles Instagram gratis online - SavClip",
+  description: "Descarga videos, fotos y audios de Instagram en alta calidad gratis. El servicio de descarga online más rápido, seguro y privado."
 };
 
 export const header = {
   title: "Descargador de Carruseles",
-  title1: "Descarga",
+  title1: "Download",
   title2: "Instagram Carruseles",
-  title3: "Fotos en HD",
-  subtitle: "Obtén imágenes de Instagram en resolución original y sin comprimir."
+  title3: "Online Gratis",
+  subtitle: "Guarda contenidos de Instagram en calidad original de forma sencilla y segura."
 };

@@ -2,103 +2,103 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Mengapa SavClip adalah Pengunduh Video Privat Facebook Terbaik"
+    "content": "Mengapa SavClip adalah yang Terbaik Facebook Private Video Downloader"
   },
   {
     "type": "paragraph",
-    "content": "Selamat datang di SavClip, tujuan paling tepercaya dan canggih di dunia untuk menyimpan video privat Facebook dengan keamanan mutlak dan kualitas profesional. Kami memahami bahwa beberapa konten paling berharga di Facebook dibagikan di dalam grup privat atau lingkaran terbatas. Baik Anda ingin menyimpan video privat teman, memori eksklusif anggota keluarga, atau kiriman grup terbatas yang Anda miliki aksesnya, Penghemat Video Privat Facebook premium kami dirancang untuk memberikan hasil yang aman dan berkinerja tinggi. SavClip menyediakan solusi yang efisien dan sepenuhnya gratis untuk mengekstrak video privat FB langsung ke perangkat Anda. Jika Anda ingin mencoba fitur lain, Anda juga dapat menggunakan <a href=\"/facebook-story-saver\">Penyimpan Cerita</a> kami atau memeriksa <a href=\"/facebook-photo-downloader\">Pengunduh Foto</a> untuk akses lengkap."
+    "content": "Selamat datang di SavClip, platform terbaik untuk world's most trusted and sophisticated destination for saving private Facebook videos with absolute security and professional quality. We understand that some of the most meaningful content on Facebook is shared within private groups or restricted circles. Whether you're looking to save a friend's private video, a family member's exclusive memory, or a restricted group post that you have access to, our premium Facebook Private Video Saver is engineered to deliver high-performance, secure results. SavClip provides a streamlined and entirely free solution to extract private FB videos directly to your device. If you want to try other features, you can also use our <a href=\"/Facebook-story-saver\">Facebook Story Downloader</a> or check out the <a href=\"/Facebook-photo-downloader\">Facebook Photo Downloader</a> for complete access."
   },
   {
     "type": "paragraph",
-    "content": "Teknologi pengunduhan tingkat lanjut kami dibuat dengan fokus pada privasi dan kecepatan, memastikan bahwa setiap penyimpanan video privat Facebook mempertahankan kualitas Full HD aslinya. Tidak seperti alat lain yang mungkin membahayakan keamanan Anda, SavClip beroperasi sebagai jembatan yang aman, memungkinkan Anda mengambil konten menggunakan hak akses Anda sendiri. Dari pengguna seluler di iPhone dan Android hingga kreator desktop di PC dan Mac, penghemat privat online kami yang serbaguna bekerja dengan sempurna di semua platform. Bergabunglah dengan ribuan pengguna di seluruh dunia yang mempercayai SavClip untuk pengalaman menyimpan media privat Facebook yang paling aman dan andal saat ini."
+    "content": "Our advanced downloading technology is built with a focus on privacy and speed, ensuring that every private Facebook video save maintains its original Full HD quality. Unlike other tools that might compromise your security, SavClip operates as a secure bridge, allowing you to fetch content using your own access rights. From mobile users on iPhone and Android to desktop creators on PC and Mac, our versatile online private saver works flawlessly across all platforms. Join thousands of users worldwide who trust SavClip for the most secure and reliable Facebook private media saving experience today."
   },
   {
     "type": "heading",
     "level": 2,
-    "content": "Cara Mengunduh Video Privat Facebook"
+    "content": "Cara Mengunduh Private Facebook Videos"
   },
   {
     "type": "paragraph",
-    "content": "Mengunduh konten privat memerlukan proses khusus untuk memastikan keamanan dan akses. Ikuti langkah-langkah berikut untuk menyimpan video privat FB Anda:"
+    "content": "Downloading private content requires a specialized process to ensure security and access. Follow these steps to save your private FB videos:"
   },
   {
     "type": "list",
     "items": [
-      "Buka Video Privat: Masuk ke Facebook di browser Anda dan buka kiriman video privat yang ingin Anda unduh.",
-      "Salin Tautan: Salin URL video dari bilah alamat atau menu bagikan.",
-      "Tempel & Proses: Kunjungi Penghemat Privat Facebook SavClip, tempel tautan, dan ikuti petunjuk di layar untuk mengambil sumber video untuk pengunduhan instan."
+      "Open Private Video: Log into Facebook in your browser and open the private video post you wish to download.",
+      "Copy Link: Copy the video URL from the address bar or the share menu.",
+      "Paste & Process: Visit SavClip's Facebook Private Saver, paste the link, and follow the on-screen instructions to fetch the video source for instant download."
     ]
   },
   {
     "type": "heading",
     "level": 2,
-    "content": "Pengunduh Video Privat Facebook Online & Aman"
+    "content": "Facebook Private Video Downloader Online & Secure"
   },
   {
     "type": "paragraph",
-    "content": "Keamanan adalah prioritas kami. SavClip adalah alat utilitas video privat aman khusus yang menggunakan pemrosesan sisi klien. Kami tidak menyimpan tautan privat Anda atau konten yang Anda simpan di server kami. Dengan menggunakan alat kami, Anda secara efektif menggunakan akses Anda sendiri untuk mengambil media, menjadikan SavClip penghemat video privat FB teraman yang tersedia secara online. Tidak diperlukan aplikasi pihak ketiga atau ekstensi berisiko."
+    "content": "Safety is our priority. SavClip is a specialized secure private video utility that uses client-side processing. We do not store your private links or the content you save on our servers. By using our tool, you are effectively using your own access to fetch the media, making SavClip the safest FB private video saver available online. No third-party apps or risky extensions are ever required."
   },
   {
     "type": "heading",
     "level": 2,
-    "content": "Unduh Video Facebook Terkunci dalam Kualitas HD"
+    "content": "Download Locked Facebook Videos in HD"
   },
   {
     "type": "paragraph",
-    "content": "Jangan puas dengan rekaman layar yang buram. SavClip adalah eksportir privat FB elit yang mengambil file resolusi tinggi asli dari kiriman terkunci. Baik itu klip 720p atau video 1080p Full HD, alat kami mempertahankan setiap bingkai, memberi Anda hasil penyimpanan video privat Facebook dengan kualitas terbaik yang memungkinkan. Rasakan kejelasan konten privat persis seperti yang seharusnya dilihat, secara offline dan di mana saja."
+    "content": "Don't settle for grainy screen recordings. SavClip is an elite private FB exporter that fetches the original high-resolution files from locked posts. Whether it's a 720p clip or a 1080p Full HD video, our tool preserves every frame, giving you the best quality private Facebook video preservation results possible. Experience the clarity of private content exactly as it was meant to be seen, offline and anywhere."
   },
   {
     "type": "heading",
     "level": 2,
-    "content": "Pengunduh Reels Privat Facebook"
+    "content": "Private Facebook Reels Downloader"
   },
   {
     "type": "paragraph",
-    "content": "Ingin menyimpan Reels privat dari akun terbatas? SavClip adalah penghemat Reels privat Facebook yang didedikasikan. Kami dapat mengekstrak Reels viral dari profil privat yang Anda ikuti, memberi Anda file MP4 yang bersih dan bebas tanda air dalam hitungan detik. Ini adalah alat terbaik untuk mengarsipkan konten privat berdurasi pendek dengan kecepatan profesional."
+    "content": "Looking to save a private Reel from a restricted account? SavClip is a dedicated private Facebook Reels saver. We can extract viral Reels from private profiles that you follow, giving you a clean, watermark-free MP4 file in seconds. It's the ultimate tool for archiving short-form private content with professional speed."
   },
   {
     "type": "heading",
     "level": 2,
-    "content": "Simpan Konten Privat Facebook di Ponsel dan Desktop"
+    "content": "Save Private Facebook Content on Mobile and Desktop"
   },
   {
     "type": "paragraph",
-    "content": "Baik Anda menggunakan antarmuka seluler penghemat privat di iPhone atau Android, atau menggunakan versi desktop penghemat privat kami di PC atau Mac, SavClip memberikan pengalaman premium yang konsistent. Desain responsif kami memastikan bahwa proses teknis pengambilan konten privat semudah di ponsel seperti halnya di komputer. Ini adalah penghemat media privat Facebook paling serbaguna di web."
+    "content": "Whether you're using a private saver mobile interface on iPhone or Android, or using our private saver desktop version on a PC or Mac, SavClip provides a consistent, premium experience. Our responsive design ensures that the technical process of fetching private content is as easy on a phone as it is on a computer. It's the most versatile private Facebook media saver on the web."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Apakah aman menyimpan video privat Facebook dengan SavClip?",
-    "a": "Ya, SavClip 100% aman. Kami memproses semuanya secara lokal di browser Anda, yang berarti kami tidak pernah melihat kredensial masuk Anda atau menyimpan konten privat Anda."
+    "q": "Is it safe to save private Facebook videos with SavClip?",
+    "a": "Yes, SavClip is 100% secure. We process everything locally in your browser, meaning we never see your login credentials or store your private content."
   },
   {
-    "q": "Apakah saya harus mengikuti akun tersebut untuk menyimpan video privat mereka?",
-    "a": "Ya, Anda harus memiliki akses sah ke video privat tersebut di akun Facebook Anda sendiri untuk mengambil data yang diperlukan untuk menyimpan."
+    "q": "Do I need to follow the account to save their private videos?",
+    "a": "Yes, you must have legitimate access to the private video on your own Facebook account to fetch the data required for saving."
   },
   {
-    "q": "Apakah penghemat privat SavClip gratis untuk digunakan?",
-    "a": "Tentu saja! SavClip adalah penghemat privat online gratis tanpa batasan jumlah video atau reels privat yang dapat Anda simpan."
+    "q": "Is SavClip's private saver free to use?",
+    "a": "Absolutely! SavClip is a free online private saver with no limits on how many private videos or reels you can save."
   },
   {
-    "q": "Bisakah saya mengunduh Reels privat Facebook?",
-    "a": "Ya, SavClip bekerja dengan sempurna sebagai penghemat Reels privat Facebook. Prosesnya sama seperti untuk video privat standar."
+    "q": "Can I download private Facebook Reels?",
+    "a": "Yes, SavClip works perfectly as a private Facebook Reels saver. The process is the same as for standard private videos."
   },
   {
-    "q": "Apakah ini berfungsi di iPhone dan Android?",
-    "a": "Ya, SavClip sepenuhnya dioptimalkan untuk perangkat seluler. Anda dapat menggunakannya sebagai penghemat privat untuk iPhone dan Android secara langsung di browser seluler Anda."
+    "q": "Does it work on iPhone and Android?",
+    "a": "Yes, SavClip is fully optimized for mobile. You can use it as a private saver for iPhone and Android directly in your mobile browser."
   }
 ];
 
 export const meta = {
-  "title": "Pengunduh Video Privat Facebook HD Tanpa Watermark - SavClip",
-  "description": "Ekstrak dan unduh video privat Facebook secara aman melalui kode sumber. Akses konten FB yang dibatasi dengan aman dan simpan dalam format MP4 berkualitas tinggi."
+  "title": "Facebook Private Video Downloader HD Without Watermark - SavClip",
+  "description": "Extract and download private Facebook videos safely via source code. Access restricted FB content securely and save it in premium MP4 format."
 };
 
 export const header = {
-  "title": "Pengunduh Video Privat Facebook",
-  "title1": "Unduh",
-  "title2": "Video Privat FB",
-  "title3": "100% Aman & HD",
-  "subtitle": "Unduh video Facebook privat atau terbatas menggunakan ekstraksi kode sumber secara aman."
+  "title": "Facebook Private Video Downloader",
+  "title1": "Download",
+  "title2": "Private FB Videos",
+  "title3": "100% Secure & HD",
+  "subtitle": "Download private or restricted Facebook videos using source code extraction securely."
 };

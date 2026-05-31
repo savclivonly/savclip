@@ -2,103 +2,103 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "¿Por qué SavClip es el mejor descargador privado de Instagram?"
+    "content": "Por qué SavClip es el Mejor Instagram Descargador Privado"
   },
   {
     "type": "paragraph",
-    "content": "Bienvenido a SavClip, el destino más confiable y sofisticado del mundo para guardar contenido privado de Instagram con absoluta seguridad y calidad profesional. Entendemos que algunos de los medios más significativos de Instagram se comparten dentro de círculos privados. Ya sea que busques guardar un Reel privado de un amigo, una foto exclusiva de un familiar o una publicación de video restringida a la que tienes acceso, nuestro guardador premium privado de Instagram está diseñado para ofrecer resultados seguros y de alto rendimiento. SavClip ofrece una solución simplificada y completamente gratuita para guardar contenido privado de IG directamente en tu dispositivo. Si deseas probar otras funciones, también puedes usar nuestro <a href=\"/instagram-video-compressor\">Compresor de Video</a> o consultar el <a href=\"/instagram-carousel-downloader\">Descargador de Carruseles</a> para obtener un acceso completo."
+    "content": "Bienvenido a SavClip, la plataforma definitiva para world's most trusted and sophisticated destination for saving private Instagram content with absolute security and professional quality. We understand that some of the most meaningful media on Instagram is shared within private circles. Whether you're looking to save a friend's private Reel, a family member's exclusive photo, or a restricted video post that you have access to, our premium Instagram Private Saver is engineered to deliver high-performance, secure results. SavClip provides a streamlined and entirely free solution to save private IG content directly to your device. If you want to try other features, you can also use our <a href=\"/Instagram-video-compressor\">Instagram Video Compressor</a> or check out the <a href=\"/Instagram-carousel-downloader\">Instagram Carousel Downloader</a> for complete access."
   },
   {
     "type": "paragraph",
-    "content": "Nuestra tecnología de descarga avanzada está diseñada enfocándose en la privacidad y la velocidad, garantizando que cada guardado de video privado de Instagram mantenga su calidad original Full HD. A diferencia de otras herramientas que podrían comprometer tu seguridad, SavClip funciona como un procesador del lado del cliente, lo que significa que tus credenciales y datos privados nunca salen de tu navegador. Desde usuarios móviles en iPhone and Android hasta creadores de escritorio en PC y Mac, nuestro versátil guardador privado en línea funciona perfectamente en todas las plataformas. Únete a los miles de usuarios en todo el mundo que confían en SavClip para disfrutar hoy de la experiencia de guardado de medios privados de Instagram más segura y confiable."
+    "content": "Our advanced downloading technology is built with a focus on privacy and speed, ensuring that every private Instagram video save maintains its original Full HD quality. Unlike other tools that might compromise your security, SavClip operates as a client-side processor, meaning your credentials and private data never leave your browser. From mobile users on iPhone and Android to desktop creators on PC and Mac, our versatile online private saver works flawlessly across all platforms. Join thousands of users worldwide who trust SavClip for the most secure and reliable Instagram private media saving experience today."
   },
   {
     "type": "heading",
     "level": 2,
-    "content": "Cómo descargar videos privados de Instagram"
+    "content": "Cómo Descargar Private Instagram Videos"
   },
   {
     "type": "paragraph",
-    "content": "La descarga de contenido privado requiere un proceso ligeramente diferente al de las publicaciones públicas para garantizar la seguridad. Sigue estos pasos para obtener tus archivos MP4 privados:"
+    "content": "Downloading private content requires a slightly different process than public posts to ensure security. Follow these steps to Obtén tus archivos en private MP4 files:"
   },
   {
     "type": "list",
     "items": [
-      "Abrir publicación privada: Inicia sesión en Instagram en tu navegador y abre la publicación de video o foto privada que deseas descargar.",
-      "Obtener código fuente: Haz clic derecho en la página y selecciona 'Ver código fuente de la página' (o presiona Ctrl+U / Cmd+Option+U). Copia todo el código fuente.",
-      "Pegar y descargar: Visita el guardador privado de SavClip, pega el código fuente copiado en la casilla proporcionada y haz clic en 'Descargar'. Tus archivos multimedia se extraerán al instante."
+      "Open Private Post: Log into Instagram in your browser and open the private video or photo you wish to download.",
+      "Get Source Code: Right-click on the page and select 'View Page Source' (or press Ctrl+U / Cmd+Option+U). Copy the entire source code.",
+      "Paste & Download: Visit SavClip's Private Saver, paste the copied source code into the provided box, and click 'Download'. Your media will be extracted instantly."
     ]
   },
   {
     "type": "heading",
     "level": 2,
-    "content": "Descargador seguro de videos privados de Instagram"
+    "content": "Secure Instagram Private Video Downloader"
   },
   {
     "type": "paragraph",
-    "content": "La seguridad es nuestra prioridad. SavClip es una utilidad privada especializada y segura que utiliza procesamiento de extremo a extremo. No almacenamos tus enlaces privados ni el contenido que guardas en nuestros servidores. Al utilizar el método del código fuente de la página, utilizas efectivamente tu propio acceso para obtener los archivos multimedia, lo que convierte a SavClip en el guardador de videos privados de IG más seguro disponible en línea. Nunca se requieren aplicaciones de terceros ni extensiones de riesgo."
+    "content": "Safety is our priority. SavClip is a specialized secure private utility that uses end-to-end processing. We do not store your private links or the content you save on our servers. By using the page source method, you are effectively using your own access to fetch the media, making SavClip the safest IG private video saver available online. No third-party apps or risky extensions are ever required."
   },
   {
     "type": "heading",
     "level": 2,
-    "content": "Descargar fotos privadas de Instagram en HD"
+    "content": "Download Private Instagram Photos in HD"
   },
   {
     "type": "paragraph",
-    "content": "No te conformes con capturas de pantalla de baja resolución. SavClip es un descargador de fotos privadas de Instagram de élite que obtiene las imágenes originales en alta resolución de publicaciones restringidas. Ya sea una sola imagen o una galería privada, nuestra herramienta conserva cada píxel, ofreciéndote los mejores resultados posibles de extracción de imágenes privadas de IG. Experimenta la claridad del contenido privado exactamente como debía verse."
+    "content": "Don't settle for low-resolution screenshots. SavClip is an elite private Instagram photo downloader that fetches the original high-resolution images from restricted posts. Whether it's a single picture or a private gallery, our tool preserves every pixel, giving you the best quality private IG image extractor results possible. Experience the clarity of private content exactly as it was meant to be seen."
   },
   {
     "type": "heading",
     "level": 2,
-    "content": "Descargador privado de Instagram en línea y gratuito"
+    "content": "Instagram Descargador Privado Online & Free"
   },
   {
     "type": "paragraph",
-    "content": "SavClip se destaca al ofrecer un servicio en línea de guardado privado de Instagram 100% gratuito sin costos ocultos. Mientras que muchos competidores cobran por el acceso privado, creemos en brindar una experiencia de exportador privado rápida y gratuita para todos. Nuestra herramienta está optimizada para descargas de alta velocidad, lo que garantiza que pases menos tiempo esperando y más tiempo disfrutando de tus medios privados guardados."
+    "content": "SavClip stands out by offering a 100% free Instagram private saver online service with no hidden costs. While many competitors charge for private access, we believe in providing a free, fast private exporter experience for everyone. Our tool is optimized for high-speed downloads, ensuring you spend less time waiting and more time enjoying your saved private media."
   },
   {
     "type": "heading",
     "level": 2,
-    "content": "Guardar contenido privado de Instagram en dispositivos móviles y computadoras"
+    "content": "Save Private Instagram Content on Mobile and Desktop"
   },
   {
     "type": "paragraph",
-    "content": "Ya sea que utilices una interfaz móvil para guardar contenido privado en iPhone o Android, o uses nuestra versión de escritorio en PC, SavClip ofrece una experiencia premium y consistente. Nuestro diseño receptivo garantiza que el proceso técnico de obtención del código fuente privado sea tan fácil en un teléfono como en una computadora. Es el guardador privado de Instagram más versátil de la web."
+    "content": "Whether you're using a private saver mobile interface on iPhone or Android, or using our private saver desktop version on a PC, SavClip provides a consistent, premium experience. Our responsive design ensures that the technical process of fetching private source code is as easy on a phone as it is on a computer. It's the most versatile private Instagram saver on the web."
   }
 ];
 
 export const faqs = [
   {
-    "q": "¿Es seguro guardar videos privados de Instagram con SavClip?",
-    "a": "Sí, SavClip es 100% seguro. Procesamos todo en tu navegador, lo que significa que nunca vemos tus credenciales de inicio de sesión ni almacenamos tu contenido privado."
+    "q": "Is it safe to save private Instagram videos with SavClip?",
+    "a": "Yes, SavClip is 100% secure. We process everything in your browser, meaning we never see your login credentials or store your private content."
   },
   {
-    "q": "¿Necesito seguir a la cuenta para descargar su contenido privado?",
-    "a": "Sí, debes tener acceso a la cuenta privada en tu propia cuenta de Instagram para obtener el código fuente necesario para guardarlo."
+    "q": "Do I need to follow the account to download their private content?",
+    "a": "Yes, you must have access to the private account on your own Instagram to fetch the source code required for saving."
   },
   {
-    "q": "¿El guardador privado de SavClip es de uso gratuito?",
-    "a": "¡Absolutamente! SavClip es un guardador privado en línea gratuito sin límites en la cantidad de videos o fotos privados que puedes guardar."
+    "q": "Is SavClip's private saver free to use?",
+    "a": "Absolutely! SavClip is a free online private saver with no limits on how many private videos or photos you can save."
   },
   {
-    "q": "¿Can I download private Instagram Stories?",
-    "a": "Sí, al utilizar el mismo método de código fuente, puedes usar SavClip como un guardador de historias privadas de Instagram para conservar las historias de las cuentas que sigues."
+    "q": "Can I download private Instagram Stories?",
+    "a": "Yes, by using the same source code method, you can use SavClip as a private Instagram story saver to keep stories from accounts you follow."
   },
   {
-    "q": "¿Funciona en iPhone y Android?",
-    "a": "Sí, SavClip está completamente optimizado para dispositivos móviles. Puedes usarlo como guardador privado para iPhone y Android directamente en tu navegador móvil."
+    "q": "Does it work on iPhone and Android?",
+    "a": "Yes, SavClip is fully optimized for mobile. You can use it as a private saver for iPhone and Android directly in your mobile browser."
   }
 ];
 
 export const meta = {
-  "title": "Descargador privado de Instagram - Guardar fotos y videos privados en línea | SavClip",
-  "description": "Descarga videos, reels y fotos de cuentas privadas de Instagram de forma segura. Herramienta web segura para guardar contenido de perfiles privados sin iniciar sesión."
+  "title": "Instagram Descargador Privado - Save Private Media Online | SavClip",
+  "description": "Download videos, reels, and photos from private Instagram accounts. Secure web tool to save private profile content without any login."
 };
 
 export const header = {
-  "title": "Descargador privado de Instagram",
-  "title1": "Descargar",
-  "title2": "Medios privados",
-  "title3": "100% seguro y HD",
-  "subtitle": "Descarga fotos, videos y Reels privados de Instagram a los que tienes acceso."
+  "title": "Instagram Descargador Privado",
+  "title1": "Download",
+  "title2": "Private Media",
+  "title3": "100% Secure & HD",
+  "subtitle": "Download private Instagram photos, videos, and Reels that you have access to."
 };

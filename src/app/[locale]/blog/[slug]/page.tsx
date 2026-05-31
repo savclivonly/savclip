@@ -9,7 +9,7 @@ export async function generateStaticParams() {
   });
   return params;
 }
-import { BLOG_POSTS } from "@/lib/blog-data";
+import { BLOG_POSTS, getBlogPosts } from "@/lib/blog-data";
 import { notFound } from "next/navigation";
 import { Calendar, User, ChevronLeft } from "lucide-react";
 import Link from "next/link";
@@ -25,7 +25,8 @@ const RichArticle = dynamic(() => import("@/components/shared/RichArticle").then
 export async function generateMetadata(props: { params: Promise<{ locale: Locale, slug: string }> }): Promise<Metadata> {
   const params = await props.params;
   const { locale, slug } = params;
-  const post = BLOG_POSTS.find((p) => p.slug === slug);
+  const posts = getBlogPosts(locale);
+  const post = posts.find((p) => p.slug === slug);
 
   if (!post) {
     return {
@@ -72,7 +73,8 @@ export async function generateMetadata(props: { params: Promise<{ locale: Locale
 export default async function BlogPostPage(props: { params: Promise<{ locale: Locale, slug: string }> }) {
   const params = await props.params;
   const { locale, slug } = params;
-  const post = BLOG_POSTS.find((p) => p.slug === slug);
+  const posts = getBlogPosts(locale);
+  const post = posts.find((p) => p.slug === slug);
 
   if (!post) notFound();
 
@@ -106,18 +108,7 @@ export default async function BlogPostPage(props: { params: Promise<{ locale: Lo
         </div>
 
         <div className="prose prose-neutral dark:prose-invert max-w-none">
-          <RichArticle 
-            sections={[
-              { type: "paragraph", content: translateToolName(post.content, locale) },
-              { type: "heading", level: 2, content: translateToolName("Mastering the Art of Content Extraction", locale) },
-              { type: "paragraph", content: translateToolName("Using tools like SavClip allows you to preserve the high-quality resolution of the original post without compromises. In today's social media landscape, archiving your favorite moments or business assets is crucial.", locale) },
-              { type: "list", items: [
-                translateToolName("Copy the URL of any social media post.", locale),
-                translateToolName("Paste it into the SavClip search bar.", locale),
-                translateToolName("Download in Full HD or 4K instantly.", locale)
-              ]}
-            ]}
-          />
+          <RichArticle sections={post.sections} />
         </div>
 
         {post.relatedTools && post.relatedTools.length > 0 && (

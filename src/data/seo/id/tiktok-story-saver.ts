@@ -2,51 +2,69 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Gunakan Penyimpan Cerita TikTok dengan Keamanan Anonim"
+    "content": "Pengunduh Cerita TikTok dengan Anonimitas Total"
   },
   {
     "type": "paragraph",
-    "content": "Viewer dan pengunduh story TikTok kami menjaga privasi Anda. Simpan foto dan video cerita sementara langsung ke galeri Anda secara rahasia. Jika Anda ingin mencoba fitur lain, Anda juga dapat menggunakan <a href=\"/tiktok-shorts-downloader\">Pengunduh Shorts</a> kami atau memeriksa <a href=\"/tiktok-photo-downloader\">Pengunduh Foto</a> untuk akses lengkap."
+    "content": "Story akan hilang setelah 24 jam, tetapi ada momen atau ide konten menarik yang ingin Anda simpan selamanya. Alat pengunduh TikTok kami memudahkan Anda menyimpan foto dan video secara instan dan aman."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Bagaimana SavClip menjaga agar Anda tetap anonim?"
+    "content": "Cara Kerja Fitur Anonim di SavClip"
   },
   {
     "type": "paragraph",
-    "content": "SavClip bekerja sebagai perantara yang aman. Sistem kami mengambil file media tersebut secara eksternal sehingga nama Anda tidak akan pernah muncul di daftar penonton."
+    "content": "Menonton langsung lewat aplikasi resmi akan memberi tahu pemilik bahwa Anda melihat story mereka. SavClip bertindak sebagai perantara yang aman: server kami mengunduh media secara langsung dan menampilkannya kepada Anda, menjaga akun Anda tetap rahasia tanpa meninggalkan jejak."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Kualitas Foto dan Video Asli"
+  },
+  {
+    "type": "paragraph",
+    "content": "Hindari screenshot buram yang merusak kualitas gambar. Alat kami mengakses file asli dari server TikTok agar Anda mendapatkan file JPG (untuk foto) dan MP4 (untuk video) dengan resolusi dan ketajaman warna asli."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Sangat Berguna untuk Riset dan Kreator"
+  },
+  {
+    "type": "paragraph",
+    "content": "Banyak kreator dan pengelola media sosial menggunakan pengunduh story kami untuk riset kompetitor atau mencari inspirasi. Cukup dengan sekali klik, Anda bisa menyimpan konten inspiratif secara cepat dan aman."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Apakah pemilik akun tahu jika saya mengunduh story TikTok?",
-    "a": "Tidak, sama sekali tidak. Proses ini sepenuhnya rahasia. Pemilik akun tidak akan menerima notifikasi apa pun."
+    "q": "Apakah pemilik cerita akan tahu jika saya mengunduhnya?",
+    "a": "Tidak. SavClip menjaga privasi Anda secara penuh. Pemilik akun tidak akan pernah tahu jika story mereka telah dilihat atau diunduh oleh Anda."
   },
   {
-    "q": "Dapatkah saya mengunduh story dari akun TikTok privat?",
-    "a": "Tidak, untuk menghargai privasi pengguna, alat kami hanya dapat mengakses konten dari profil terbuka."
+    "q": "Bisakah saya mengunduh cerita dari akun privat?",
+    "a": "Tidak, demi menghormati privasi pengguna, alat kami hanya bisa mengunduh konten dari akun TikTok publik."
   },
   {
-    "q": "Apakah story yang diunduh akan terhapus setelah 24 jam?",
-    "a": "Tidak, setelah disimpan di perangkat Anda, story akan tersimpan secara selamanya dan bisa dilihat kapan saja."
+    "q": "Apakah pengunduhan cerita dibatasi atau berbayar?",
+    "a": "Layanan pengunduhan story kami 100% gratis dan tidak terbatas. Anda bisa menyimpan story sebanyak apa pun kapan saja."
   },
   {
-    "q": "Apakah stories disimpan dalam kualitas HD?",
-    "a": "Ya, kami mengambil file media dengan kualitas asli dari server TikTok."
+    "q": "Format file apa yang digunakan untuk menyimpan cerita?",
+    "a": "Story foto disimpan dalam format JPG, sedangkan story video diunduh dalam format MP4."
   }
 ];
 
 export const meta = {
-  title: "Penyimpan Cerita TikTok Simpan Story Gratis - SavClip",
-  description: "Simpan stories dari TikTok secara 100% rahasia. Pemilik akun tidak akan pernah tahu Anda melihatnya."
+  title: "Penyimpan Cerita TikTok gratis online - SavClip",
+  description: "Lihat dan unduh cerita serta sorotan TikTok secara anonim. Pemilik akun tidak akan pernah tahu Anda menyimpan foto atau video mereka."
 };
 
 export const header = {
   title: "Penyimpan Cerita",
-  title1: "Unduh",
-  title2: "TikTok Penyimpan Cerita",
-  title3: "Story Kualitas HD",
-  subtitle: "Unduh stories TikTok secara rahasia sebelum terhapus."
+  title1: "Download",
+  title2: "TikTok Media",
+  title3: "Online Gratis",
+  subtitle: "Simpan cerita, foto, dan sorotan sementara TikTok secara cepat dan anonim."
 };
