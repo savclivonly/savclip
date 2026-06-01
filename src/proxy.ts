@@ -29,7 +29,10 @@ export function proxy(request: NextRequest) {
     request.nextUrl.searchParams.forEach((val, key) => {
       url.searchParams.set(key, val)
     })
-    return NextResponse.redirect(url, 301)
+    
+    const response = NextResponse.redirect(url, 301)
+    response.headers.set('X-Robots-Tag', 'noindex, follow')
+    return response
   }
 
   // 2. Check if the pathname starts with another supported locale (e.g. /es, /pt)
