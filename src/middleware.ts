@@ -3,7 +3,7 @@ import type { NextRequest } from 'next/server'
 
 const locales = ['en', 'pt', 'es', 'id', 'ar']
 
-export function proxy(request: NextRequest) {
+export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
 
   // Skip internal next requests, static assets, APIs, and file-like paths
