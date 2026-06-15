@@ -2,69 +2,51 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Baixador de Stories do Facebook com Total Anonimato"
+    "content": "Use o Salvador de Stories do Facebook com segurança absoluta"
   },
   {
     "type": "paragraph",
-    "content": "Os stories desaparecem após 24 horas, mas muitos momentos valem a pena ser guardados. Nosso baixador de stories do Facebook oferece uma maneira fácil de salvar fotos e vídeos temporários sem deixar rastros."
+    "content": "Nosso visualizador e baixador de stories do Facebook oferece total privacidade. Salve fotos e vídeos temporários diretamente no seu dispositivo sem deixar nenhum rastro. Se você quiser experimentar outros recursos, também poderá usar nosso <a href=\"/facebook-photo-downloader\">Baixador de Fotos</a> ou verificar o <a href=\"/facebook-album-downloader\">Baixador de Álbuns</a> para acesso completo."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Como Funciona o Download Anônimo"
+    "content": "Visualização de perfil sem logins ou rastros"
   },
   {
     "type": "paragraph",
-    "content": "Ao visualizar stories pelo aplicativo, o criador é notificado. O SavClip serve como uma ponte segura: nosso sistema acessa a mídia e a exibe para você sem revelar seu perfil. Assim, você pode salvar e visualizar stories com total discrição."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Salve Fotos e Vídeos na Resolução Original"
-  },
-  {
-    "type": "paragraph",
-    "content": "Evite capturas ou gravações de tela que estragam a qualidade visual das imagens. Nossa ferramenta acessa o arquivo original dos servidores do Facebook, permitindo salvar fotos em JPG e vídeos em MP4 com alta definição."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Perfeito para Criadores e Profissionais"
-  },
-  {
-    "type": "paragraph",
-    "content": "Produtores de conteúdo e agências de redes sociais usam o SavClip para analisar a concorrência e salvar inspirações de forma segura. Com o download em um clique, você monta sua pasta de referências em segundos."
+    "content": "SavClip serve como uma ponte de privacidade segura. Nosso sistema baixa a mídia dos servidores e exibe para você de forma externa, garantindo que seu perfil fique 100% oculto."
   }
 ];
 
 export const faqs = [
   {
-    "q": "O dono do perfil saberá que eu baixei o story do Facebook?",
+    "q": "O criador do perfil saberá que eu salvei o story do Facebook?",
     "a": "Não. O processo é totalmente anônimo. O dono da conta nunca será notificado de que você visualizou ou salvou o story."
   },
   {
-    "q": "Consigo baixar stories de contas privadas no Facebook?",
-    "a": "Não, respeitamos as diretrizes de privacidade e apenas baixamos mídias de perfis públicos."
+    "q": "Consigo salvar stories de perfis privados do Facebook?",
+    "a": "Não, respeitamos as diretrizes de privacidade de dados e apenas permitimos baixar mídias de perfis abertos."
   },
   {
-    "q": "Existe limite de downloads para stories?",
-    "a": "De forma alguma. O nosso serviço de download de stories é gratuito, ilimitado e pode ser usado sempre que você precisar."
+    "q": "As stories salvas expiram após 24 horas?",
+    "a": "Não, uma vez baixadas no seu dispositivo, as stories ficam salvas para sempre para você assistir quando quiser."
   },
   {
-    "q": "Em quais formatos os stories são salvos?",
-    "a": "Stories de foto são baixados no formato padrão JPG, enquanto stories de vídeo são salvos no formato de alta qualidade MP4."
+    "q": "As stories são baixadas em alta definição?",
+    "a": "Sim, o SavClip baixa a mídia na qualidade máxima de exibição disponível no Facebook."
   }
 ];
 
 export const meta = {
-  title: "Salvador de Stories Facebook Sem Marca d'Água - SavClip",
-  description: "Baixe stories e destaques do Facebook de forma anônima. Nosso sistema garante que o criador do conteúdo nunca saiba que você salvou os vídeos."
+  title: "Salvador de Stories Facebook Salvar Stories - SavClip",
+  description: "Salve destaques e stories do Facebook de forma totalmente anônima. O criador da conta nunca saberá que você viu."
 };
 
 export const header = {
   title: "Salvador de Stories",
-  title1: "Download",
-  title2: "Facebook Stories",
-  title3: "Online Grátis",
-  subtitle: "Salve stories, fotos e destaques do Facebook de forma rápida e anônima."
+  title1: "Salvar",
+  title2: "Facebook Salvador de Stories",
+  title3: "Stories HD",
+  subtitle: "Guarde conteúdos efêmeros do Facebook antes que desapareçam."
 };

@@ -2,69 +2,34 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Cara SavClip Menyederhanakan Pengunduhan Telegram"
+    "content": "Mengapa menggunakan Pembuat Bio Telegram?"
   },
   {
     "type": "paragraph",
-    "content": "Menyimpan konten kesukaan Anda kini tidak perlu ribet lagi. SavClip menghadirkan antarmuka sederhana yang fokus pada kecepatan dan kemudahan akses file tanpa iklan berlebihan yang mengganggu."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Akses Langsung ke File Asli"
-  },
-  {
-    "type": "paragraph",
-    "content": "Kami tidak merekam layar atau menggunakan metode analog. Kami membaca metadata asli dari link yang Anda tempel, memberikan file unduhan orisinal dengan warna asli yang tajam serta audio yang jernih."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Dapat Diakses dari HP dan Komputer"
-  },
-  {
-    "type": "paragraph",
-    "content": "Platform web kami dirancang agar kompatibel dengan berbagai browser populer seperti Chrome, Safari, Firefox, dan Edge. Baik menggunakan Windows, macOS, Android, maupun iOS, Anda akan mendapatkan kecepatan unduhan yang sama."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Unduhan Aman dan Menjaga Privasi"
-  },
-  {
-    "type": "paragraph",
-    "content": "Semua permintaan unduhan dilindungi dengan enkripsi SSL. Kami berkomitmen untuk menjaga privasi dengan tidak merekam riwayat unduhan Anda atau meminta pendaftaran akun. Dapatkan file Anda secara aman dan etis."
+    "content": "Biografi yang menarik adalah kunci untuk mengubah pengunjung profil menjadi pengikut. Gunakan AI kami untuk menghasilkan teks bios yang kreatif dan sesuai dengan kebutuhan profil Telegram Anda. Jika Anda ingin mencoba fitur lain, Anda juga dapat menggunakan <a href=\"/telegram-video-downloader\">Pengunduh Video</a> kami atau memeriksa <a href=\"/telegram-private-video-downloader\">Pengunduh Media</a> untuk akses lengkap."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Bagaimana cara mengunduh konten Telegram secara online?",
-    "a": "Cukup salin link postingan dari Telegram, buka SavClip, tempel to kolom di atas, lalu klik tombol unduh."
+    "q": "Bagaimana cara membuat bio untuk Telegram?",
+    "a": "Masukkan kata kunci utama Anda, pilih gaya bahasa, lalu klik buat untuk menerima berbagai opsi bios unik."
   },
   {
-    "q": "Apakah ada batas pengunduhan harian untuk Telegram?",
-    "a": "Tidak ada batasan harian. Anda bebas mengunduh konten sebanyak apa pun tanpa biaya."
-  },
-  {
-    "q": "Apakah aman menggunakan SavClip di komputer atau HP saya?",
-    "a": "Sangat aman. SavClip bekerja secara online di browser tanpa perlu menginstal aplikasi tambahan yang berpotensi membawa virus."
-  },
-  {
-    "q": "Dalam format apa file media diunduh?",
-    "a": "Video akan disimpan dalam format MP4 dan gambar dalam format JPG untuk memastikan kecocokan dengan semua perangkat."
+    "q": "Apakah pembuat bio AI ini gratis?",
+    "a": "Ya, SavClip menyediakan asisten bio kecerdasan buatan ini 100% gratis untuk semua pengguna."
   }
 ];
 
 export const meta = {
-  title: "Pembuat Bio Telegram gratis online - SavClip",
-  description: "Download video, foto, dan musik dari Telegram gratis dengan kualitas terbaik. Layanan cepat, aman, dan tanpa iklan yang mengganggu."
+  title: "Pembuat Bio Telegram AI Gratis - SavClip",
+  description: "Hasilkan bio profesional untuk Telegram menggunakan kecerdasan buatan secara cepat dan mudah. Soroti profil Anda."
 };
 
 export const header = {
   title: "Pembuat Bio",
-  title1: "Download",
-  title2: "Telegram Media",
-  title3: "Online Gratis",
-  subtitle: "Unduh konten Telegram dalam kualitas HD asli dengan cara yang sederhana dan aman."
+  title1: "Hasilkan",
+  title2: "Telegram Bio",
+  title3: "Optimal",
+  subtitle: "Buat teks perkenalan profil Telegram yang unik secara gratis."
 };

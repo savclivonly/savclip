@@ -2,69 +2,51 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Pengunduh Video Facebook Tanpa Watermark"
+    "content": "Bagaimana cara kerja Pengunduh Video Grup Facebook?"
   },
   {
     "type": "paragraph",
-    "content": "Video bersih tanpa logo sangat penting bagi kreator konten dan editor video profesional. SavClip memberikan solusi termudah untuk mendapatkan video dari Facebook tanpa gangguan watermark."
+    "content": "Saat Anda perlu menyimpan video dari grup atau profil yang Anda ikuti namun tidak bisa diunduh secara biasa, SavClip membantu mengekstrak kode secara etis dan aman. Jika Anda ingin mencoba fitur lain, Anda juga dapat menggunakan <a href=\"/facebook-audio-downloader\">Pengunduh Audio</a> kami atau memeriksa <a href=\"/facebook-profile-viewer\">Penonton Profil</a> untuk akses lengkap."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Teknologi Penghapusan Logo Pintar"
+    "content": "Tanpa meminta data login Anda"
   },
   {
     "type": "paragraph",
-    "content": "Banyak situs pengunduh lain hanya memburamkan atau memotong bagian tepi video untuk menutupi logo. SavClip mengakses file asli dari server Facebook sebelum watermark tersebut ditempelkan. Hasilnya adalah video MP4 yang benar-benar bersih."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Sangat Cocok untuk Publikasi Ulang Konten"
-  },
-  {
-    "type": "paragraph",
-    "content": "Membagikan ulang video buatan Anda sendiri ke platform lain sangatlah penting. Mengunduh versi bersih tanpa watermark aplikasi lain membantu agar postingan Anda tidak dibatasi oleh algoritma. Audio dan video Anda akan tetap jernih."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Layanan Online Gratis dan Praktis"
-  },
-  {
-    "type": "paragraph",
-    "content": "SavClip bekerja sepenuhnya secara online di browser Anda. Anda tidak perlu memasang ekstensi atau aplikasi asing yang bisa membahayakan perangkat Anda. Seluruh proses dijamin aman dan terlindungi."
+    "content": "Alat kami menganalisis kode HTML halaman yang Anda tempelkan untuk encontrar link unduhan langsung video di server Facebook, menjamin proses 100% lokal dan rahasia."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Bagaimana cara menyimpan video Facebook tanpa watermark?",
-    "a": "Salin link video dari Facebook, tempel ke kolom pencarian di atas, lalu klik 'Unduh'. Sistem kami akan otomatis menghapus logo atau watermark."
+    "q": "Bagaimana cara download video privat dari Facebook?",
+    "a": "Ikuti langkah-langkah di halaman pengunduh privat: salin kode sumber halaman video, tempel di kolom yang tersedia, dan dapatkan link download-nya."
   },
   {
-    "q": "Apakah proses penghapusan logo memengaruhi suara atau kualitas?",
-    "a": "Tidak. Kualitas gambar tetap jernih dan audio stereo bawaan tidak akan berubah."
+    "q": "Apakah SavClip menyimpan sandi atau riwayat saya?",
+    "a": "Tidak. Proses analisis kode sumber berjalan secara lokal, sehingga kerahasiaan Anda terjaga penuh."
   },
   {
-    "q": "Apakah penghapusan watermark di SavClip gratis?",
-    "a": "Ya, layanan penghapusan watermark dan pengunduhan video di SavClip 100% gratis dan dapat digunakan tanpa batas."
+    "q": "Apakah saya harus memasukkan kata sandi Facebook untuk mengunduh media privat?",
+    "a": "Sama sekali tidak! SavClip sangat aman tanpa login, kami hanya memproses kode HTML halaman."
   },
   {
-    "q": "Bisakah saya menyimpan video tanpa watermark di iPhone?",
-    "a": "Ya. Buka Safari di iPhone, akses SavClip, tempel link video, lalu unduh. File akan langsung tersimpan di folder unduhan perangkat Anda."
+    "q": "Apakah cara ini berfungsi untuk stories privat?",
+    "a": "Ya, selama Anda memiliki akses untuk melihat story tersebut di browser Anda dan bisa menyalin kode sumber halamannya secara lengkap."
   }
 ];
 
 export const meta = {
-  title: "Pengunduh Video Grup Facebook gratis online - SavClip",
-  description: "Unduh video Facebook tanpa watermark atau logo. Alat cerdas kami menghapus tanda untuk menyediakan file video bersih yang profesional."
+  title: "Pengunduh Video Grup Facebook Pengunduh Privat - SavClip",
+  description: "Simpan konten terbatas dan grup dari Facebook secara aman melalui browser. Tanpa perlu memasukkan sandi atau login."
 };
 
 export const header = {
   title: "Pengunduh Video Grup",
-  title1: "Download",
-  title2: "Facebook Grup",
-  title3: "Online Gratis",
-  subtitle: "Simpan video Facebook dengan bersih, tanpa logo dan dengan audio bawaan."
+  title1: "Ekstrak",
+  title2: "Facebook Video Grup",
+  title3: "Aman & Nyaman",
+  subtitle: "Simpan video privat Facebook langsung ke penyimpanan Anda."
 };

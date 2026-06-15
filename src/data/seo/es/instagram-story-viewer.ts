@@ -2,69 +2,51 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Descargador de Historias de Instagram con Anonimato Total"
+    "content": "Usa el Visor de Historias de Instagram con máxima privacidad"
   },
   {
     "type": "paragraph",
-    "content": "Las historias son efímeras y desaparecen después de 24 horas, pero hay momentos e ideas que vale la pena guardar. Nuestro descargador de Instagram te permite guardar fotos y videos en tu dispositivo de forma segura y discreta."
+    "content": "Nuestra herramienta de visualización de historias públicas te da control total. Guarda fotos y videos temporales en tu dispositivo de forma segura y discreta. Si deseas probar otras funciones, también puedes usar nuestro <a href=\"/instagram-video-downloader\">Descargador de Video</a> o consultar el <a href=\"/instagram-reels-downloader\">Descargador de Reels</a> para obtener un acceso completo."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Cómo Funciona el Anonimato en SavClip"
+    "content": "¿Cómo funciona el anonimato en SavClip?"
   },
   {
     "type": "paragraph",
-    "content": "Cuando ves una historia desde la aplicación oficial, el creador recibe una notificación. SavClip actúa como un puente privado: nuestro sistema accede al archivo y te lo muestra de manera segura, manteniendo tu cuenta totalmente anónima para que puedas ver y guardar historias sin dejar rastros."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Guarda Fotos y Videos en Alta Definición"
-  },
-  {
-    "type": "paragraph",
-    "content": "Evita las capturas o grabaciones de pantalla de baja calidad que estropean la imagen. Nuestra herramienta accede al archivo original en los servidores de Instagram, lo que te permite descargar fotos en JPG y videos en MP4 con su resolución y nitidez originales."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Ideal para Creadores de Contenido y Profesionales"
-  },
-  {
-    "type": "paragraph",
-    "content": "Muchos profesionales de redes sociales utilizan SavClip para analizar la competencia y guardar ideas de inspiración de manera discreta. Con nuestro guardado rápido en un clic, puedes crear tu propia biblioteca de referencias en segundos."
+    "content": "SavClip funciona como un intermediario seguro. Nuestro sistema accede al archivo y te lo muestra de manera externa, por lo que permaneces 100% invisible para el autor del post."
   }
 ];
 
 export const faqs = [
   {
     "q": "¿El creador de la historia sabrá que la descargué con SavClip?",
-    "a": "No, para nada. El proceso es 100% anónimo. El autor de la publicación nunca sabrá que visualizaste o guardaste sus historias."
+    "a": "No, para nada. El proceso es 100% privado. El autor nunca sabrá que visualizaste o guardaste sus historias."
   },
   {
     "q": "¿Puedo descargar historias de cuentas privadas de Instagram?",
-    "a": "No, por respeto a la privacidad de los usuarios, nuestra herramienta solo permite realizar descargas desde cuentas públicas."
+    "a": "No, por respeto a las políticas de privacidad de los usuarios, nuestra herramienta solo permite descargas desde cuentas abiertas."
   },
   {
-    "q": "¿Tiene algún costo o límite la descarga de historias?",
-    "a": "Nuestro servicio es completamente gratuito e ilimitado. Puedes ver y guardar historias tantas veces como lo necesites."
+    "q": "¿Las historias guardadas expiran después de 24 horas?",
+    "a": "No, una vez que descargas la historia en tu dispositivo, se guarda de forma definitiva para verla cuando quieras."
   },
   {
-    "q": "¿En qué formatos se guardan las historias?",
-    "a": "Las historias de image se guardan en el formato JPG y las historias de video se descargan en formato MP4 compatible con cualquier reproductor."
+    "q": "¿Se descargan las historias en alta definición (HD)?",
+    "a": "Sí, SavClip obtiene el archivo con la calidad original de imagen de los servidores de Instagram."
   }
 ];
 
 export const meta = {
-  title: "Visor de Historias Instagram gratis online - SavClip",
-  description: "Descarga historias de Instagram en anónimo. Nuestro visor privado garantiza que el creador nunca sabrá que guardaste sus fotos o videos."
+  title: "Visor de Historias Instagram Ver Stories Gratis - SavClip",
+  description: "Guarda stories de Instagram de forma 100% secreta. El visor privado garantiza que no dejes rastros."
 };
 
 export const header = {
   title: "Visor de Historias",
-  title1: "Download",
+  title1: "Descargar",
   title2: "Instagram Historias",
-  title3: "Online Gratis",
-  subtitle: "Guarda historias, fotos y destacados de Instagram de forma rápida y anónima."
+  title3: "Stories HD",
+  subtitle: "Visualiza historias de Instagram en secreto y guárdalas antes de que expiren."
 };

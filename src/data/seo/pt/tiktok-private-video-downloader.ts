@@ -2,69 +2,51 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Baixador de Vídeos do TikTok Sem Marca d'Água"
+    "content": "Como funciona o Baixador de Mídia do TikTok?"
   },
   {
     "type": "paragraph",
-    "content": "Vídeos limpos e sem logos são indispensáveis para criadores de conteúdo e profissionais de edição. Nosso baixador do TikTok oferece a melhor solução para salvar mídias na qualidade original e sem marca d'água."
+    "content": "Algumas publicações possuem restrições de exibição devido às regras de privacidade da conta. o SavClip ajuda a processar o código de forma ética e segura. Se você quiser experimentar outros recursos, também poderá usar nosso <a href=\"/tiktok-trending-hashtag-generator\">Gerador de Hashtags Populares</a> ou verificar o <a href=\"/tiktok-caption-generator\">Gerador de Legendas</a> para acesso completo."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Remoção Inteligente e Limpeza de Logotipos"
+    "content": "Extração segura direto do código fonte da página"
   },
   {
     "type": "paragraph",
-    "content": "Muitos sites apenas borram os cantos dos vídeos para esconder as marcas, o que estraga a imagem. O SavClip acessa o fluxo bruto original antes da aplicação do logotipo, entregando um arquivo de vídeo MP4 100% limpo e de qualidade profissional."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Ideal para Repostagens e Edições Rápidas"
-  },
-  {
-    "type": "paragraph",
-    "content": "No marketing digital e criação de conteúdo, compartilhar vídeos em várias redes é fundamental. Ter arquivos sem marcas d'água de concorrentes melhora o alcance orgânico dos seus posts. O site garante cores vivas e som perfeito."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Download Direto e Sem Programas no Navegador"
-  },
-  {
-    "type": "paragraph",
-    "content": "O SavClip funciona 100% no navegador. Você não precisa baixar programas ou instalar extensões suspeitas no seu aparelho. O processo é seguro, anônimo e protegido com criptografia SSL do começo ao fim."
+    "content": "Nosso sistema analisa o código HTML da página que você colar para encontrar o arquivo de vídeo original. Isso garante um download limpo e seguro, livre de ameaças digitais ou logins invasivos."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Como salvar vídeos do TikTok sem marca d'água?",
-    "a": "Copie a URL do vídeo, cole no campo de pesquisa acima e clique em 'Download'. Nosso sistema removerá a marca d'água de forma automática."
+    "q": "Como extrair mídias privadas do TikTok?",
+    "a": "Siga o passo a passo na página do downloader privado: copie o código fonte da página do vídeo, cole na caixa de entrada e gere o link direto de download."
   },
   {
-    "q": "Remover a marca d'água afeta a qualidade do som ou imagem?",
-    "a": "Não. A qualidade original em alta definição e o áudio estéreo integrado são mantidos exatamente como foram enviados para o TikTok."
+    "q": "O SavClip guarda meus acessos ao baixar vídeos privados?",
+    "a": "Não, toda a extração de dados ocorre no seu navegador, e nós não armazenamos nenhum conteúdo ou histórico de acessos."
   },
   {
-    "q": "O serviço de remoção de marca d'água tem custos?",
-    "a": "Não, a remoção de logotipos e o download de mídias no SavClip são totalmente gratuitos e ilimitados."
+    "q": "Preciso fornecer minha senha do TikTok para baixar mídias privadas?",
+    "a": "Nunca! O SavClip não solicita senhas, processando tudo de forma local pelo código HTML da página."
   },
   {
-    "q": "Consigo salvar vídeos sem marca d'água no iPhone?",
-    "a": "Sim. Abra o Safari no iPhone, acesse o SavClip, cole o link e faça o download. O arquivo será salvo diretamente na pasta de downloads."
+    "q": "Esta ferramenta funciona para stories privadas?",
+    "a": "Sim, desde que você tenha permissão para visualizar o conteúdo no seu navegador e copie o código fonte da respectiva página."
   }
 ];
 
 export const meta = {
-  title: "Baixador de Mídia TikTok Sem Marca d'Água - SavClip",
-  description: "Baixe vídeos do TikTok sem marca d'água ou logotipos. Nossa ferramenta inteligente remove as marcas para fornecer um arquivo de vídeo limpo."
+  title: "Baixador de Mídia TikTok Seguro - SavClip",
+  description: "Baixe vídeos privados e mídias do TikTok de forma segura através do navegador. Sem expor suas credenciais de login."
 };
 
 export const header = {
   title: "Baixador de Mídia",
-  title1: "Download",
+  title1: "Baixar",
   title2: "TikTok Mídia",
-  title3: "Online Grátis",
-  subtitle: "Salve vídeos do TikTok de forma limpa, sem logotipos e com áudio integrado."
+  title3: "Conteúdo Privado",
+  subtitle: "Extraia mídias de contas privadas ou grupos restritos do TikTok de forma segura."
 };

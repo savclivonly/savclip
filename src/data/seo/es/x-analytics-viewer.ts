@@ -2,69 +2,51 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Cómo SavClip Simplifica las Descargas de X (Twitter)"
+    "content": "Visor y Visor de Estadísticas de X (Twitter)"
   },
   {
     "type": "paragraph",
-    "content": "Guardar fotos o videos de X (Twitter) no tiene por qué ser complicado. SavClip te ofrece una interfaz limpia y libre de publicidad molesta, enfocada en darte el archivo en el formato ideal en solo unos segundos."
+    "content": "Para investigadores de mercado, creadores de contenido o consultas privadas, nuestro visor público de perfiles de X (Twitter) es la solución más segura y anónima. Si deseas probar otras funciones, también puedes usar nuestro <a href=\"/x-video-compressor\">Compresor de Video</a> o consultar el <a href=\"/x-bio-generator\">Generador de Biografías</a> para obtener un acceso completo."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Acceso al Archivo Original sin Filtros"
+    "content": "Revisión de estadísticas y bios sin iniciar sesión"
   },
   {
     "type": "paragraph",
-    "content": "No grabamos la pantalla ni usamos capturas analógicas. Nuestro sistema lee directamente los metadados de la publicación en X (Twitter) para entregarte la versión original del archivo, manteniendo la nitidez de imagen y el sonido estéreo intactos."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Compatible con Todos tus Dispositivos"
-  },
-  {
-    "type": "paragraph",
-    "content": "Nuestra plataforma web está desarrollada con estándares de diseño responsivo. Funciona de manera idéntica en computadoras de escritorio (Windows o Mac), tablets y teléfonos móviles (iOS o Android) sin pedir instalaciones de software."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Descargas Privadas y Conexión SSL"
-  },
-  {
-    "type": "paragraph",
-    "content": "Todas las descargas se procesan mediante conexiones seguras cifradas con SSL. No guardamos registros de lo que descargas ni te pediremos crear cuentas o contraseñas. Disfruta de un servicio rápido y respetuoso con la privacidad."
+    "content": "Extraemos la información pública provista por el X (Twitter) y la ordenamos en un panel interactivo para que puedas ver fotos de perfil y estadísticas sin comprometer tu cuenta."
   }
 ];
 
 export const faqs = [
   {
-    "q": "¿Cómo descargar contenidos de X (Twitter) en línea?",
-    "a": "Solo copia el enlace de la publicación, accede a SavClip, pégalo en la barra de búsqueda y presiona el botón de descarga."
+    "q": "¿Necesito loguearme para ver un perfil de X (Twitter)?",
+    "a": "No, no necesitas iniciar sesión con tu cuenta ni ingresar datos privados. Toda la información es pública y se obtiene de forma externa."
   },
   {
-    "q": "¿Existe algún límite diario para las descargas?",
-    "a": "No, puedes usar nuestro descargador tantas veces como quieras. Es completamente gratis y sin límites."
+    "q": "¿El dueño de la cuenta sabrá que vi sus estadísticas?",
+    "a": "No, para nada. La consulta se realiza de forma externa y 100% anónima, por lo que el autor nunca recibirá alertas."
   },
   {
-    "q": "¿Es seguro usar SavClip en mi teléfono o PC?",
-    "a": "Sí, es completamente seguro. Funciona directamente en la web desde tu navegador, por lo que tu dispositivo queda a salvo de virus o aplicaciones maliciosas."
+    "q": "¿Necesito una cuenta activa en X (Twitter) para hacer análisis?",
+    "a": "No, puedes visualizar y analizar métricas de perfiles públicos sin tener perfil registrado."
   },
   {
-    "q": "¿En qué formatos se descargan los archivos?",
-    "a": "Los videos se guardan en el formato MP4 estándar y las imágenes se descargan en formato JPG para garantizar compatibilidad con cualquier dispositivo."
+    "q": "¿Es posible ver perfiles privados de forma anónima?",
+    "a": "No, por seguridad y privacidad de los usuarios, la herramienta solo accede a perfiles públicos."
   }
 ];
 
 export const meta = {
-  title: "Visor de Estadísticas X (Twitter) gratis online - SavClip",
-  description: "Descarga videos, fotos y audios de X (Twitter) en alta calidad gratis. El servicio de descarga online más rápido, seguro y privado."
+  title: "Visor de Estadísticas X (Twitter) Ver Perfil Anónimo - SavClip",
+  description: "Visualiza perfiles y estadísticas de X (Twitter) sin iniciar sesión y en anónimo. Sin registros ni huellas en el sistema."
 };
 
 export const header = {
   title: "Visor de Estadísticas",
-  title1: "Download",
+  title1: "Visualizar",
   title2: "X (Twitter) Estadísticas",
-  title3: "Online Gratis",
-  subtitle: "Guarda contenidos de X (Twitter) en calidad original de forma sencilla y segura."
+  title3: "100% Anónimo",
+  subtitle: "Acede a estadísticas de perfiles públicos de X (Twitter) con total privacidad."
 };

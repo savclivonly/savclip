@@ -2,69 +2,51 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Mengapa SavClip adalah X (Twitter) Pengunduh Audio Terbaik"
+    "content": "Pengunduh Audio X (Twitter) Terbaik Online"
   },
   {
     "type": "paragraph",
-    "content": "Di era digital saat ini, audio yang jernih sangat penting untuk kenyamanan menikmati konten video. Alat ekstraksi audio X (Twitter) kami dirancang untuk memberikan kualitas suara terbaik tanpa kompresi yang merusak suara asli."
+    "content": "Jika Anda ingin mengambil lagu atau suara latar dari video X (Twitter), SavClip adalah alat terbaik. alat ekstrak audio X (Twitter) kami memberikan suara yang jernih dan profesional. Jika Anda ingin mencoba fitur lain, Anda juga dapat menggunakan <a href=\"/x-profile-picture-downloader\">Pengunduh Foto Profil</a> kami atau memeriksa <a href=\"/x-private-video-downloader\">Pengunduh Media</a> untuk akses lengkap."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Kualitas Suara Asli dan Jernih"
+    "content": "Kualitas suara asli terjaga"
   },
   {
     "type": "paragraph",
-    "content": "Banyak situs pengunduh online menurunkan kualitas audio agar ukuran file lebih kecil. SavClip terhubung langsung dengan server X (Twitter) untuk mengambil file audio asli hingga 320kbps. Dapatkan musik atau efek suara berkualitas studio secara offline."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Mudah Digunakan di Semua Perangkat"
-  },
-  {
-    "type": "paragraph",
-    "content": "Situs web kami sepenuhnya responsif dan dapat diakses dengan cepat dari perangkat apa pun. Anda dapat mengunduh audio X (Twitter) melalui HP Android, iPhone, tablet, atau komputer. Cukup buka browser favorit Anda tanpa perlu memasang aplikasi tambahan."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Privasi Aman Tanpa Perlu Login"
-  },
-  {
-    "type": "paragraph",
-    "content": "Keamanan digital Anda adalah hal utama bagi kami. Kami tidak pernah meminta data pribadi atau informasi login akun X (Twitter) Anda. Semua proses pengunduhan berjalan secara aman dan rahasia melalui server cepat kami."
+    "content": "Banyak pengonversi online merusak kualitas suara akibat kompresi ulang. Hal ini menjaga trek audio asli dengan bitrate tinggi hingga 320kbps untuk kebutuhan offline Anda."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Bagaimana cara mengekstrak audio dari video X (Twitter) dalam kualitas tinggi?",
-    "a": "Salin link video X (Twitter), tempel di kolom pencarian di bagian atas halaman ini, lalu pilih format MP3 untuk mulai mengunduh."
+    "q": "Bagaimana cara mengekstrak audio dari video X (Twitter)?",
+    "a": "Salin link video X (Twitter), tempel di bilah pencarian atas, dan pilih opsi unduhan format MP3 untuk langsung menyimpannya."
   },
   {
-    "q": "Apakah gratis untuk mengonversi video X (Twitter) ke MP3 dengan SavClip?",
-    "a": "Ya, SavClip 100% gratis tanpa biaya tersembunyi, tanpa registrasi, dan tanpa batasan harian."
+    "q": "Apakah layanan konversi X (Twitter) ke MP3 ini berbayar?",
+    "a": "Tidak, layanan ini 100% gratis dan Anda bebas mengonversi file tanpa batasan."
   },
   {
-    "q": "Apakah saya perlu menginstal perangkat lunak atau ekstensi browser?",
-    "a": "Tidak perlu. Pengunduh kami berbasis web dan bisa diakses langsung melalui browser di HP atau komputer."
+    "q": "Apakah aman mengonversi audio di SavClip?",
+    "a": "Ya, layanan ini 100% aman dan privat. Kami tidak menyimpan riwayat unduhan Anda di server."
   },
   {
-    "q": "Berapa bitrate audio yang disediakan oleh konverter?",
-    "a": "Kami mengunduh kualitas suara terbaik yang tersedia dari server X (Twitter), biasanya dalam format MP3 hingga 320kbps."
+    "q": "Apakah file MP3 bisa diputar tanpa internet?",
+    "a": "Tentu saja! Setelah file MP3 disimpan di HP atau laptop Anda, Anda bisa memutarnya kapan saja secara offline."
   }
 ];
 
 export const meta = {
-  title: "Pengunduh Audio X (Twitter) gratis online - SavClip",
-  description: "Ekstrak audio berkualitas tinggi dari video X (Twitter) secara instan. Konverter MP3 kami menjaga kualitas suara asli tanpa kompresi."
+  title: "Pengunduh Audio X (Twitter) Ekstrak Audio HD - SavClip",
+  description: "Ekstrak audio dari video dari X (Twitter) secara instan. Pengonversi MP3 kami menjaga kualitas suara tinggi tanpa kompresi."
 };
 
 export const header = {
   title: "Pengunduh Audio",
-  title1: "Download",
-  title2: "X (Twitter) Media",
-  title3: "Online Gratis",
-  subtitle: "Ekstrak dan simpan audio berkualitas tinggi dari video dan reels X (Twitter) dalam format MP3."
+  title1: "Unduh",
+  title2: "X (Twitter) Audio",
+  title3: "MP3 Kualitas Tinggi",
+  subtitle: "Simpan lagu dan trek suara dari video X (Twitter) ke format MP3 kualitas tinggi."
 };

@@ -2,69 +2,51 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Cara SavClip Menyederhanakan Pengunduhan Facebook"
+    "content": "Viewer dan Penonton Profil Facebook"
   },
   {
     "type": "paragraph",
-    "content": "Menyimpan konten kesukaan Anda kini tidak perlu ribet lagi. SavClip menghadirkan antarmuka sederhana yang fokus pada kecepatan dan kemudahan akses file tanpa iklan berlebihan yang mengganggu."
+    "content": "Untuk analisis pasar, riset kompetitor, atau sekadar melihat akun secara privat, alat penonton profil publik Facebook kami adalah solusi terbaik dan paling aman. Jika Anda ingin mencoba fitur lain, Anda juga dapat menggunakan <a href=\"/facebook-video-compressor\">Kompresor Video</a> kami atau memeriksa <a href=\"/facebook-page-audit-tool\">Alat Audit Halaman</a> untuk akses lengkap."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Akses Langsung ke File Asli"
+    "content": "Pantau statistik dan bio tanpa harus login"
   },
   {
     "type": "paragraph",
-    "content": "Kami tidak merekam layar atau menggunakan metode analog. Kami membaca metadata asli dari link yang Anda tempel, memberikan file unduhan orisinal dengan warna asli yang tajam serta audio yang jernih."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Dapat Diakses dari HP dan Komputer"
-  },
-  {
-    "type": "paragraph",
-    "content": "Platform web kami dirancang agar kompatibel dengan berbagai browser populer seperti Chrome, Safari, Firefox, dan Edge. Baik menggunakan Windows, macOS, Android, maupun iOS, Anda akan mendapatkan kecepatan unduhan yang sama."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Unduhan Aman dan Menjaga Privasi"
-  },
-  {
-    "type": "paragraph",
-    "content": "Semua permintaan unduhan dilindungi dengan enkripsi SSL. Kami berkomitmen untuk menjaga privasi dengan tidak merekam riwayat unduhan Anda atau meminta pendaftaran akun. Dapatkan file Anda secara aman dan etis."
+    "content": "Kami mengumpulkan data publik dari Facebook dan menampilkannya di dasbor yang mudah dipahami, sehingga Anda bisa melihat foto profil dan bio secara aman."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Bagaimana cara mengunduh konten Facebook secara online?",
-    "a": "Cukup salin link postingan dari Facebook, buka SavClip, tempel to kolom di atas, lalu klik tombol unduh."
+    "q": "Apakah saya perlu login ke akun Facebook untuk menggunakan alat ini?",
+    "a": "Tidak, alat ini bekerja secara eksternal untuk membaca data publik. Anda tidak perlu login atau memiliki akun di jaringan tersebut."
   },
   {
-    "q": "Apakah ada batas pengunduhan harian untuk Facebook?",
-    "a": "Tidak ada batasan harian. Anda bebas mengunduh konten sebanyak apa pun tanpa biaya."
+    "q": "Apakah pemilik akun tahu jika saya melihat statistiknya?",
+    "a": "Tidak. Proses pencarian data berjalan secara eksternal dan 100% anonim. Pemilik akun tidak akan menerima pemberitahuan."
   },
   {
-    "q": "Apakah aman menggunakan SavClip di komputer atau HP saya?",
-    "a": "Sangat aman. SavClip bekerja secara online di browser tanpa perlu menginstal aplikasi tambahan yang berpotensi membawa virus."
+    "q": "Apakah saya memerlukan akun Facebook aktif untuk melihat statistik?",
+    "a": "Tidak, Anda bisa menganalisis profil publik tanpa memiliki akun atau login."
   },
   {
-    "q": "Dalam format apa file media diunduh?",
-    "a": "Video akan disimpan dalam format MP4 dan gambar dalam format JPG untuk memastikan kecocokan dengan semua perangkat."
+    "q": "Dapatkah saya melihat profil privat secara anonim?",
+    "a": "Tidak, demi privasi pengguna, kami hanya menampilkan data dari akun publik."
   }
 ];
 
 export const meta = {
-  title: "Penonton Profil Facebook gratis online - SavClip",
-  description: "Download video, foto, dan musik dari Facebook gratis dengan kualitas terbaik. Layanan cepat, aman, dan tanpa iklan yang mengganggu."
+  title: "Penonton Profil Facebook Lihat Profil Anonim - SavClip",
+  description: "Lihat profil dan statistik secara anonim di Facebook tanpa masuk akun. Tanpa pendaftaran dan tanpa jejak."
 };
 
 export const header = {
   title: "Penonton Profil",
-  title1: "Download",
-  title2: "Facebook Media",
-  title3: "Online Gratis",
-  subtitle: "Unduh konten Facebook dalam kualitas HD asli dengan cara yang sederhana dan aman."
+  title1: "Lihat",
+  title2: "Facebook Profil",
+  title3: "100% Anonim",
+  subtitle: "Akses statistik profil publik Facebook dengan privasi penuh."
 };

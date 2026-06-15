@@ -2,69 +2,51 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Como o SavClip Simplifica os Downloads do Telegram"
+    "content": "Como funciona o Baixador de Conteúdo Restrito do Telegram?"
   },
   {
     "type": "paragraph",
-    "content": "Salvar fotos ou vídeos do Telegram não precisa ser difícil. O SavClip oferece uma página simples e rápida, focada em entregar sua mídia no melhor formato disponível em poucos segundos."
+    "content": "Quando você precisa salvar vídeos de grupos ou perfis privados aos quais tem acesso, o SavClip ajuda a processar o código de forma ética e segura. Se você quiser experimentar outros recursos, também poderá usar nosso <a href=\"/telegram-photo-downloader\">Baixador de Fotos</a> ou verificar o <a href=\"/telegram-audio-downloader\">Baixador de Áudio</a> para acesso completo."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Extração Avançada de Metadados"
+    "content": "Sem fornecer logins ou senhas"
   },
   {
     "type": "paragraph",
-    "content": "Em vez de apenas gravar a tela ou tirar capturas, nosso sistema lê as informações brutas do post do Telegram. Isso significa que você baixa a mídia original com máxima fidelidade de cores e som estéreo integrado."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Acesso em Qualquer Celular, Tablet ou Computador"
-  },
-  {
-    "type": "paragraph",
-    "content": "O site é responsivo e otimizado para rodar em qualquer sistema (iOS, Android, Windows e Mac) e navegador (Chrome, Safari, Firefox e Edge). Você terá a mesma velocidade de download em qualquer tela."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Navegação Segura e Totalmente Anônima"
-  },
-  {
-    "type": "paragraph",
-    "content": "A privacidade dos usuários é o nosso foco. Criptografamos todas as conexões via SSL e não salvamos históricos de downloads ou pedimos cadastros de contas. Salve mídias de forma segura e ética sempre."
+    "content": "Nosso sistema analisa o código HTML da página que você colar para encontrar o arquivo de vídeo original. Isso garante um salvamento totalmente local, livre de ameaças digitais ou logins invasivos."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Como baixar conteúdos do Telegram online?",
-    "a": "Copie o link do post do Telegram, cole no campo de pesquisa acima e clique em 'Download' para gerar os links de download direto."
+    "q": "Como extrair mídias privadas do Telegram?",
+    "a": "Siga o passo a passo na página do downloader privado: copie o código fonte da página do vídeo, cole na caixa de entrada e gere o link direto de download."
   },
   {
-    "q": "Existe limite de velocidade ou arquivos para baixar?",
-    "a": "Nenhum. Nossa ferramenta oferece velocidade máxima do servidor e você pode salvar quantas mídias desejar por dia."
+    "q": "O SavClip guarda meus acessos ao baixar vídeos privados?",
+    "a": "Não, toda a extração de dados ocorre no seu navegador, e nós não armazenamos nenhum conteúdo ou histórico de acessos."
   },
   {
-    "q": "É seguro usar o SavClip para salvar arquivos?",
-    "a": "Sim. Como o SavClip roda direto na web, seu aparelho fica livre de vírus, sem a necessidade de baixar ou instalar aplicativos."
+    "q": "Preciso fornecer minha senha do Telegram para baixar mídias privadas?",
+    "a": "Nunca! O SavClip é seguro e sem login, processando tudo de forma local pelo código HTML da página."
   },
   {
-    "q": "Qual é o formato de arquivo gerado pelo site?",
-    "a": "Geralmente, os vídeos são salvos no formato universal MP4 e as imagens são baixadas em JPG de alta resolução."
+    "q": "Esta ferramenta funciona para stories privadas?",
+    "a": "Sim, desde que você tenha permissão para visualizar o conteúdo no seu navegador e copie o código fonte da respectiva página."
   }
 ];
 
 export const meta = {
-  title: "Baixador de Conteúdo Restrito Telegram Sem Marca d'Água - SavClip",
-  description: "O principal destino grátis para baixar mídias do Telegram em alta qualidade. Nosso serviço é rápido, estável e com total privacidade."
+  title: "Baixador de Conteúdo Restrito Telegram Vídeos Privados - SavClip",
+  description: "Salvar conteúdo de grupo restrito do Telegram de forma segura através do navegador. Sem expor suas credenciais de login."
 };
 
 export const header = {
   title: "Baixador de Conteúdo Restrito",
-  title1: "Download",
+  title1: "Extrair",
   title2: "Telegram Conteúdo Restrito",
-  title3: "Online Grátis",
-  subtitle: "Baixe conteúdos do Telegram em qualidade HD original de forma simples e segura."
+  title3: "Seguro",
+  subtitle: "Salve mídias privadas do Telegram diretamente no seu dispositivo."
 };

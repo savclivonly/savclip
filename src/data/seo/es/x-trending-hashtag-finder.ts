@@ -2,69 +2,51 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Cómo SavClip Simplifica las Descargas de X (Twitter)"
+    "content": "Optimiza tu presencia en X (Twitter) con Buscador de Hashtags de Tendencia"
   },
   {
     "type": "paragraph",
-    "content": "Guardar fotos o videos de X (Twitter) no tiene por qué ser complicado. SavClip te ofrece una interfaz limpia y libre de publicidad molesta, enfocada en darte el archivo en el formato ideal en solo unos segundos."
+    "content": "SavClip te ayuda a acelerar la creación de tus metadatos con herramientas IA. Incrementa tus posibilidades de aparecer en las recomendaciones de los usuarios. Si deseas probar otras funciones, también puedes usar nuestro <a href=\"/x-analytics-viewer\">Visor de Estadísticas</a> o consultar el <a href=\"/x-video-compressor\">Compresor de Video</a> para obtener un acceso completo."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Acceso al Archivo Original sin Filtros"
+    "content": "Títulos y bios de alto impacto"
   },
   {
     "type": "paragraph",
-    "content": "No grabamos la pantalla ni usamos capturas analógicas. Nuestro sistema lee directamente los metadados de la publicación en X (Twitter) para entregarte la versión original del archivo, manteniendo la nitidez de imagen y el sonido estéreo intactos."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Compatible con Todos tus Dispositivos"
-  },
-  {
-    "type": "paragraph",
-    "content": "Nuestra plataforma web está desarrollada con estándares de diseño responsivo. Funciona de manera idéntica en computadoras de escritorio (Windows o Mac), tablets y teléfonos móviles (iOS o Android) sin pedir instalaciones de software."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Descargas Privadas y Conexión SSL"
-  },
-  {
-    "type": "paragraph",
-    "content": "Todas las descargas se procesan mediante conexiones seguras cifradas con SSL. No guardamos registros de lo que descargas ni te pediremos crear cuentas o contraseñas. Disfruta de un servicio rápido y respetuoso con la privacidad."
+    "content": "Analizamos las búsquedas populares del X (Twitter) en tiempo real para recomendarte términos que se adapten a tu nicho y potencien la indexación de tus posts."
   }
 ];
 
 export const faqs = [
   {
-    "q": "¿Cómo descargar contenidos de X (Twitter) en línea?",
-    "a": "Solo copia el enlace de la publicación, accede a SavClip, pégalo en la barra de búsqueda y presiona el botón de descarga."
+    "q": "¿Cómo generar hashtags o tags para X (Twitter)?",
+    "a": "Ingresa el tema principal o palabras clave en el cuadro de arriba, selecciona tu idioma y haz clic en generar para obtener ideas instantáneas de alto rendimiento."
   },
   {
-    "q": "¿Existe algún límite diario para las descargas?",
-    "a": "No, puedes usar nuestro descargador tantas veces como quieras. Es completamente gratis y sin límites."
+    "q": "¿El asistente de contenido de IA es gratuito?",
+    "a": "Sí, todos los generadores de hashtags, descripciones, bios y títulos son 100% gratuitos."
   },
   {
-    "q": "¿Es seguro usar SavClip en mi teléfono o PC?",
-    "a": "Sí, es completamente seguro. Funciona directamente en la web desde tu navegador, por lo que tu dispositivo queda a salvo de virus o aplicaciones maliciosas."
+    "q": "¿Las etiquetas generadas son únicas?",
+    "a": "Sí, el motor de inteligencia artificial genera sugerencias únicas basadas en el tema específico que proporciones."
   },
   {
-    "q": "¿En qué formatos se descargan los archivos?",
-    "a": "Los videos se guardan en el formato MP4 estándar y las imágenes se descargan en formato JPG para garantizar compatibilidad con cualquier dispositivo."
+    "q": "¿Hay un límite de uso diario para la herramienta de IA?",
+    "a": "No, puedes generar descripciones, hashtags, bios y títulos todas las veces que necesites gratuitamente."
   }
 ];
 
 export const meta = {
-  title: "Buscador de Hashtags de Tendencia X (Twitter) gratis online - SavClip",
-  description: "Descarga videos, fotos y audios de X (Twitter) en alta calidad gratis. El servicio de descarga online más rápido, seguro y privado."
+  title: "Buscador de Hashtags de Tendencia X (Twitter) Generar Bios y Títulos - SavClip",
+  description: "Crea hashtags y descripciones para el X (Twitter) con inteligencia artificial. Aumenta el alcance de tus posts gratis."
 };
 
 export const header = {
   title: "Buscador de Hashtags de Tendencia",
-  title1: "Download",
+  title1: "Crear",
   title2: "X (Twitter) Hashtags de Tendencia",
-  title3: "Online Gratis",
-  subtitle: "Guarda contenidos de X (Twitter) en calidad original de forma sencilla y segura."
+  title3: "Alcance Orgánico",
+  subtitle: "Optimiza el SEO de tu canal de X (Twitter) con nuestro asistente de IA gratis."
 };

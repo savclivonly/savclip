@@ -2,69 +2,51 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Cara SavClip Menyederhanakan Pengunduhan YouTube"
+    "content": "Tingkatkan jangkauan YouTube Anda dengan Pembuat Deskripsi"
   },
   {
     "type": "paragraph",
-    "content": "Menyimpan konten kesukaan Anda kini tidak perlu ribet lagi. SavClip menghadirkan antarmuka sederhana yang fokus pada kecepatan dan kemudahan akses file tanpa iklan berlebihan yang mengganggu."
+    "content": "SavClip hadir dengan generator cerdas berbasis AI untuk mempercepat pembuatan konten Anda. Tingkatkan potensi video Anda muncul di beranda penonton baru. Jika Anda ingin mencoba fitur lain, Anda juga dapat menggunakan <a href=\"/youtube-title-generator\">Pembuat Judul</a> kami atau memeriksa <a href=\"/youtube-region-restriction-checker\">Pemeriksa Pembatasan Wilayah</a> untuk akses lengkap."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Akses Langsung ke File Asli"
+    "content": "Keterangan & bio yang menarik audiens"
   },
   {
     "type": "paragraph",
-    "content": "Kami tidak merekam layar atau menggunakan metode analog. Kami membaca metadata asli dari link yang Anda tempel, memberikan file unduhan orisinal dengan warna asli yang tajam serta audio yang jernih."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Dapat Diakses dari HP dan Komputer"
-  },
-  {
-    "type": "paragraph",
-    "content": "Platform web kami dirancang agar kompatibel dengan berbagai browser populer seperti Chrome, Safari, Firefox, dan Edge. Baik menggunakan Windows, macOS, Android, maupun iOS, Anda akan mendapatkan kecepatan unduhan yang sama."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Unduhan Aman dan Menjaga Privasi"
-  },
-  {
-    "type": "paragraph",
-    "content": "Semua permintaan unduhan dilindungi dengan enkripsi SSL. Kami berkomitmen untuk menjaga privasi dengan tidak merekam riwayat unduhan Anda atau meminta pendaftaran akun. Dapatkan file Anda secara aman dan etis."
+    "content": "Kami memetakan kata kunci pencarian populer di YouTube untuk menyarankan tag dan hashtag yang relevan dengan topik Anda, meningkatkan indeks pencarian postingan."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Bagaimana cara mengunduh konten YouTube secara online?",
-    "a": "Cukup salin link postingan dari YouTube, buka SavClip, tempel to kolom di atas, lalu klik tombol unduh."
+    "q": "Bagaimana cara membuat hashtag atau tag untuk YouTube?",
+    "a": "Masukkan topik utama video atau profil Anda di kolom atas, lalu klik buat untuk menerima rekomendasi tag pintar secara instan."
   },
   {
-    "q": "Apakah ada batas pengunduhan harian untuk YouTube?",
-    "a": "Tidak ada batasan harian. Anda bebas mengunduh konten sebanyak apa pun tanpa biaya."
+    "q": "Apakah alat pembuat konten AI ini gratis?",
+    "a": "Ya, semua generator tag, caption, bio, dan hashtag kami dapat digunakan sepenuhnya gratis."
   },
   {
-    "q": "Apakah aman menggunakan SavClip di komputer atau HP saya?",
-    "a": "Sangat aman. SavClip bekerja secara online di browser tanpa perlu menginstal aplikasi tambahan yang berpotensi membawa virus."
+    "q": "Apakah tag yang dihasilkan oleh AI ini unik?",
+    "a": "Ya, AI kami merekomendasikan tag yang unik sesuai dengan topik utama yang Anda masukkan."
   },
   {
-    "q": "Dalam format apa file media diunduh?",
-    "a": "Video akan disimpan dalam format MP4 dan gambar dalam format JPG untuk memastikan kecocokan dengan semua perangkat."
+    "q": "Apakah ada batasan penggunaan harian untuk alat AI ini?",
+    "a": "Tidak, Anda bebas membuat judul, tag, bio, dan caption secara unlimited gratis."
   }
 ];
 
 export const meta = {
-  title: "Pembuat Deskripsi YouTube gratis online - SavClip",
-  description: "Download video, foto, dan musik dari YouTube gratis dengan kualitas terbaik. Layanan cepat, aman, dan tanpa iklan yang mengganggu."
+  title: "Pembuat Deskripsi YouTube Buat Bio & Keterangan - SavClip",
+  description: "Buat hashtag dan caption untuk YouTube menggunakan kecerdasan buatan (AI) gratis. Tingkatkan jangkauan organik postingan Anda."
 };
 
 export const header = {
   title: "Pembuat Deskripsi",
-  title1: "Download",
-  title2: "YouTube Media",
-  title3: "Online Gratis",
-  subtitle: "Unduh konten YouTube dalam kualitas HD asli dengan cara yang sederhana dan aman."
+  title1: "Buat",
+  title2: "YouTube Deskripsi",
+  title3: "Jangkauan Organik",
+  subtitle: "Otimalkan SEO konten YouTube Anda dengan asisten kecerdasan buatan gratis."
 };

@@ -2,69 +2,51 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Cómo SavClip Simplifica las Descargas de TikTok"
+    "content": "El más rápido Buscador de Canciones de TikTok online"
   },
   {
     "type": "paragraph",
-    "content": "Guardar fotos o videos de TikTok no tiene por qué ser complicado. SavClip te ofrece una interfaz limpia y libre de publicidad molesta, enfocada en darte el archivo en el formato ideal en solo unos segundos."
+    "content": "Para editores y creadores que buscan construir una biblioteca de sonido limpia, nuestro extrator de audio de TikTok garantiza un sonido fiel al archivo original. Si deseas probar otras funciones, también puedes usar nuestro <a href=\"/tiktok-video-downloader\">Descargador de Video</a> o consultar el <a href=\"/tiktok-mp3-downloader\">Descargador de MP3</a> para obtener un acceso completo."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Acceso al Archivo Original sin Filtros"
+    "content": "Bitrate de audio de hasta 320kbps sin distorsión"
   },
   {
     "type": "paragraph",
-    "content": "No grabamos la pantalla ni usamos capturas analógicas. Nuestro sistema lee directamente los metadados de la publicación en TikTok para entregarte la versión original del archivo, manteniendo la nitidez de imagen y el sonido estéreo intactos."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Compatible con Todos tus Dispositivos"
-  },
-  {
-    "type": "paragraph",
-    "content": "Nuestra plataforma web está desarrollada con estándares de diseño responsivo. Funciona de manera idéntica en computadoras de escritorio (Windows o Mac), tablets y teléfonos móviles (iOS o Android) sin pedir instalaciones de software."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Descargas Privadas y Conexión SSL"
-  },
-  {
-    "type": "paragraph",
-    "content": "Todas las descargas se procesan mediante conexiones seguras cifradas con SSL. No guardamos registros de lo que descargas ni te pediremos crear cuentas o contraseñas. Disfruta de un servicio rápido y respetuoso con la privacidad."
+    "content": "SavClip realiza una extracción directa desde el servidor de TikTok. Esto conserva la pista de audio original con un bitrate de hasta 320kbps, ideal para escuchar música sin internet."
   }
 ];
 
 export const faqs = [
   {
-    "q": "¿Cómo descargar contenidos de TikTok en línea?",
-    "a": "Solo copia el enlace de la publicación, accede a SavClip, pégalo en la barra de búsqueda y presiona el botón de descarga."
+    "q": "¿Cómo extraer audio de videos de TikTok?",
+    "a": "Copia el enlace del video, pégalo en la barra superior de búsqueda de SavClip y selecciona la opción de descargar en formato audio."
   },
   {
-    "q": "¿Existe algún límite diario para las descargas?",
-    "a": "No, puedes usar nuestro descargador tantas veces como quieras. Es completamente gratis y sin límites."
+    "q": "¿Es gratis convertir videos de TikTok a MP3?",
+    "a": "Sí, es totalmente gratis y puedes realizar conversiones de forma libre y sin topes diarios."
   },
   {
-    "q": "¿Es seguro usar SavClip en mi teléfono o PC?",
-    "a": "Sí, es completamente seguro. Funciona directamente en la web desde tu navegador, por lo que tu dispositivo queda a salvo de virus o aplicaciones maliciosas."
+    "q": "¿Es seguro extraer audio con SavClip?",
+    "a": "Sí, es totalmente seguro. No almacenamos tus búsquedas y la conexión es cifrada mediante protocolos SSL."
   },
   {
-    "q": "¿En qué formatos se descargan los archivos?",
-    "a": "Los videos se guardan en el formato MP4 estándar y las imágenes se descargan en formato JPG para garantizar compatibilidad con cualquier dispositivo."
+    "q": "¿Puedo escuchar los archivos MP3 descargados sin internet?",
+    "a": "¡Claro que sí! Una vez que bajas el archivo MP3, se guarda en tu dispositivo para reproducirlo offline."
   }
 ];
 
 export const meta = {
-  title: "Buscador de Canciones TikTok gratis online - SavClip",
-  description: "Descarga videos, fotos y audios de TikTok en alta calidad gratis. El servicio de descarga online más rápido, seguro y privado."
+  title: "Buscador de Canciones TikTok Extraer Audio HD - SavClip",
+  description: "Convierte videos a MP3 de TikTok en segundos. Nuestro convertidor de MP3 conserva el sonido original libre de pérdidas."
 };
 
 export const header = {
   title: "Buscador de Canciones",
-  title1: "Download",
+  title1: "Extraer",
   title2: "TikTok Canciones",
-  title3: "Online Gratis",
-  subtitle: "Guarda contenidos de TikTok en calidad original de forma sencilla y segura."
+  title3: "Audio HD",
+  subtitle: "Convierte videos de TikTok a MP3 sin complicaciones de forma rápida."
 };

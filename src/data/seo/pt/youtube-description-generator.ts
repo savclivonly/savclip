@@ -2,69 +2,51 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Como o SavClip Simplifica os Downloads do YouTube"
+    "content": "Impulsione o alcance do seu YouTube com Gerador de Descrições"
   },
   {
     "type": "paragraph",
-    "content": "Salvar fotos ou vídeos do YouTube não precisa ser difícil. O SavClip oferece uma página simples e rápida, focada em entregar sua mídia no melhor formato disponível em poucos segundos."
+    "content": "O SavClip oferece geradores inteligentes para acelerar sua criação de conteúdo. Aumente as chances de aparecer no feed de novos usuários. Se você quiser experimentar outros recursos, também poderá usar nosso <a href=\"/youtube-title-generator\">Gerador de Títulos</a> ou verificar o <a href=\"/youtube-region-restriction-checker\">Verificador de Restrição Regional</a> para acesso completo."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Extração Avançada de Metadados"
+    "content": "Legendas e bios de alto engajamento"
   },
   {
     "type": "paragraph",
-    "content": "Em vez de apenas gravar a tela ou tirar capturas, nosso sistema lê as informações brutas do post do YouTube. Isso significa que você baixa a mídia original com máxima fidelidade de cores e som estéreo integrado."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Acesso em Qualquer Celular, Tablet ou Computador"
-  },
-  {
-    "type": "paragraph",
-    "content": "O site é responsivo e otimizado para rodar em qualquer sistema (iOS, Android, Windows e Mac) e navegador (Chrome, Safari, Firefox e Edge). Você terá a mesma velocidade de download em qualquer tela."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Navegação Segura e Totalmente Anônima"
-  },
-  {
-    "type": "paragraph",
-    "content": "A privacidade dos usuários é o nosso foco. Criptografamos todas as conexões via SSL e não salvamos históricos de downloads ou pedimos cadastros de contas. Salve mídias de forma segura e ética sempre."
+    "content": "Analisamos os tópicos mais relevantes e tendências do YouTube para sugerir termos que combinem com o seu nicho, melhorando a relevância do seu perfil nos algoritmos de busca."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Como baixar conteúdos do YouTube online?",
-    "a": "Copie o link do post do YouTube, cole no campo de pesquisa acima e clique em 'Download' para gerar os links de download direto."
+    "q": "Como gerar tags ou hashtags para o YouTube?",
+    "a": "Digite o tema principal do seu vídeo ou canal no campo acima, selecione o idioma e clique no botão para obter dezenas de sugestões inteligentes."
   },
   {
-    "q": "Existe limite de velocidade ou arquivos para baixar?",
-    "a": "Nenhum. Nossa ferramenta oferece velocidade máxima do servidor e você pode salvar quantas mídias desejar por dia."
+    "q": "O uso da ferramenta de IA tem custo?",
+    "a": "Não, nossos geradores inteligentes de tags, títulos e legendas são totalmente gratuitos para todos os criadores."
   },
   {
-    "q": "É seguro usar o SavClip para salvar arquivos?",
-    "a": "Sim. Como o SavClip roda direto na web, seu aparelho fica livre de vírus, sem a necessidade de baixar ou instalar aplicativos."
+    "q": "As tags geradas pela IA são exclusivas?",
+    "a": "Sim, a IA gera sugestões exclusivas com base nas palavras-chave e tópicos que você fornecer."
   },
   {
-    "q": "Qual é o formato de arquivo gerado pelo site?",
-    "a": "Geralmente, os vídeos são salvos no formato universal MP4 e as imagens são baixadas em JPG de alta resolução."
+    "q": "Existe algum limite diário de uso do gerador?",
+    "a": "Não, você pode usar os geradores de tags, títulos, captions e bios de forma ilimitada de graça."
   }
 ];
 
 export const meta = {
-  title: "Gerador de Descrições YouTube Sem Marca d'Água - SavClip",
-  description: "O principal destino grátis para baixar mídias do YouTube em alta qualidade. Nosso serviço é rápido, estável e com total privacidade."
+  title: "Gerador de Descrições YouTube Bios e Legendas - SavClip",
+  description: "Crie hashtags inteligentes para o YouTube com inteligência artificial. Melhore o alcance do seu canal gratis."
 };
 
 export const header = {
   title: "Gerador de Descrições",
-  title1: "Download",
+  title1: "Criar",
   title2: "YouTube Descrições",
-  title3: "Online Grátis",
-  subtitle: "Baixe conteúdos do YouTube em qualidade HD original de forma simples e segura."
+  title3: "Alcance Orgânico",
+  subtitle: "Gere ideias inteligentes de conteúdo para o YouTube com nossa IA grátis."
 };

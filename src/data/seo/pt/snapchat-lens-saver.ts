@@ -2,69 +2,34 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Baixador de Stories do Snapchat com Total Anonimato"
+    "content": "Como salvar Lentes e Filtros do Snapchat?"
   },
   {
     "type": "paragraph",
-    "content": "Os stories desaparecem após 24 horas, mas muitos momentos valem a pena ser guardados. Nosso baixador de stories do Snapchat oferece uma maneira fácil de salvar fotos e vídeos temporários sem deixar rastros."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Como Funciona o Download Anônimo"
-  },
-  {
-    "type": "paragraph",
-    "content": "Ao visualizar stories pelo aplicativo, o criador é notificado. O SavClip serve como uma ponte segura: nosso sistema acessa a mídia e a exibe para você sem revelar seu perfil. Assim, você pode salvar e visualizar stories com total discrição."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Salve Fotos e Vídeos na Resolução Original"
-  },
-  {
-    "type": "paragraph",
-    "content": "Evite capturas ou gravações de tela que estragam a qualidade visual das imagens. Nossa ferramenta acessa o arquivo original dos servidores do Snapchat, permitindo salvar fotos em JPG e vídeos em MP4 com alta definição."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Perfeito para Criadores e Profissionais"
-  },
-  {
-    "type": "paragraph",
-    "content": "Produtores de conteúdo e agências de redes sociais usam o SavClip para analisar a concorrência e salvar inspirações de forma segura. Com o download em um clique, você monta sua pasta de referências em segundos."
+    "content": "Nosso Salvador de Lentes foi projetado para oferecer o salvamento rápido de lentes do Snapchat. Copie o link do filtro ou lente, cole na barra superior e baixe os arquivos em poucos segundos de forma gratuita. Se você quiser experimentar outros recursos, também poderá usar nosso <a href=\"/snapchat-private-story-downloader\">Baixador de Stories Privados</a> ou verificar o <a href=\"/snapchat-video-compressor\">Compressor de Vídeos</a> para acesso completo."
   }
 ];
 
 export const faqs = [
   {
-    "q": "O dono do perfil saberá que eu baixei o story do Snapchat?",
-    "a": "Não. O processo é totalmente anônimo. O dono da conta nunca será notificado de que você visualizou ou salvou o story."
+    "q": "Como baixar lentes do Snapchat?",
+    "a": "Cole a URL da lente na caixa de pesquisa e clique em baixar para transferir os arquivos de efeito para o seu dispositivo."
   },
   {
-    "q": "Consigo baixar stories de contas privadas no Snapchat?",
-    "a": "Não, respeitamos as diretrizes de privacidade e apenas baixamos mídias de perfis públicos."
-  },
-  {
-    "q": "Existe limite de downloads para stories?",
-    "a": "De forma alguma. O nosso serviço de download de stories é gratuito, ilimitado e pode ser usado sempre que você precisar."
-  },
-  {
-    "q": "Em quais formatos os stories são salvos?",
-    "a": "Stories de foto são baixados no formato padrão JPG, enquanto stories de vídeo são salvos no formato de alta qualidade MP4."
+    "q": "É seguro baixar filtros do Snapchat?",
+    "a": "Sim, processamos o download direto dos servidores oficiais sem expor sua conta ou requerer downloads adicionais."
   }
 ];
 
 export const meta = {
-  title: "Salvador de Lentes Snapchat Sem Marca d'Água - SavClip",
-  description: "Baixe stories e destaques do Snapchat de forma anônima. Nosso sistema garante que o criador do conteúdo nunca saiba que você salvou os vídeos."
+  title: "Salvador de Lentes Snapchat Salvar Lentes - SavClip",
+  description: "Baixe e converta arquivos do Snapchat de forma gratuita. Sem downloads de apps ou extensões."
 };
 
 export const header = {
   title: "Salvador de Lentes",
-  title1: "Download",
-  title2: "Snapchat Lentes",
-  title3: "Online Grátis",
-  subtitle: "Salve stories, fotos e destaques do Snapchat de forma rápida e anônima."
+  title1: "Salvar",
+  title2: "Snapchat Salvador de Lentes",
+  title3: "Lentes Grátis",
+  subtitle: "Obtenha efeitos e lentes do Snapchat diretamente no seu aparelho."
 };

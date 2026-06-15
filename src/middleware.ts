@@ -31,7 +31,6 @@ export function middleware(request: NextRequest) {
     })
     
     const response = NextResponse.redirect(url, 301)
-    response.headers.set('X-Robots-Tag', 'noindex, follow')
     return response
   }
 

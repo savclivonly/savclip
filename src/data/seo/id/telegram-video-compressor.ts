@@ -2,69 +2,51 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Mengapa Menggunakan Pengunduh Video Telegram HD dari SavClip"
+    "content": "Mengapa memilih kompresor dan pemotong video Telegram kami?"
   },
   {
     "type": "paragraph",
-    "content": "Menonton video berkualitas rendah di layar modern tentu tidak menyenangkan. Alat ini membantu Anda mengunduh video Telegram dengan kualitas tertinggi agar tetap jernih saat ditonton offline di layar besar tanpa kehilangan detail gambar."
+    "content": "File video resolusi tinggi dapat menghabiskan ruang penyimpanan dan lambat saat dibagikan. Kami memangkas metadata berlebih dengan menyesuaikan bitrate secara cerdas. Jika Anda ingin mencoba fitur lain, Anda juga dapat menggunakan <a href=\"/telegram-bio-generator\">Pembuat Bio</a> kami atau memeriksa <a href=\"/telegram-video-downloader\">Pengunduh Video</a> untuk akses lengkap."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Unduh Video Tanpa Kompresi"
+    "content": "Kompresi cerdas tanpa membuat gambar buram"
   },
   {
     "type": "paragraph",
-    "content": "Ketika situs pengunduh lain mengompres file video agar ukurannya mengecil yang membuat gambar pecah, SavClip mengambil data mentah dari server Telegram. Ini memastikan warna asli, detail piksel, dan kecerahan tetap terjaga sempurna."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Proses Pengunduhan Instan"
-  },
-  {
-    "type": "paragraph",
-    "content": "Anda tidak perlu menunggu lama untuk memproses video. Server kami menangani konversi di latar belakang secara instan, lalu memberikan link unduhan langsung yang siap disimpan di browser Anda dalam beberapa detik."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Keamanan dan Enkripsi SSL Terjamin"
-  },
-  {
-    "type": "paragraph",
-    "content": "Situs web kami menggunakan enkripsi SSL untuk menjamin keamanan perangkat Anda. Kami tidak memerlukan data login atau registrasi. Download video favorit Anda secara aman, cepat, dan tanpa risiko."
+    "content": "Kompresor kami menggunakan codec canggih untuk memperkecil ukuran file hingga 80% tanpa menimbulkan pikselasi atau blur yang mengganggu mata."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Bagaimana cara mengunduh video Telegram dengan resolusi maksimum?",
-    "a": "Tempel link video pada kolom di atas, klik tombol 'Unduh', dan pilih resolusi tertinggi yang tersedia (seperti HD, 1080p, atau 4K)."
+    "q": "Bagaimana cara mengecilkan ukuran video Telegram?",
+    "a": "Unggah file video Anda, pilih tingkat kompresi yang diinginkan, dan klik proses untuk mengunduh versi ringkasnya."
   },
   {
-    "q": "Apakah ada biaya untuk mengunduh video berukuran besar?",
-    "a": "Tidak ada. Layanan kami gratis untuk ukuran file video berapa pun, tanpa batasan bandwidth harian."
+    "q": "Apakah alat ini bisa memotong durasi video?",
+    "a": "Ya, alat pemotong kami memungkinkan Anda memilih waktu awal dan akhir secara presisi untuk mengambil bagian video yang penting saja."
   },
   {
-    "q": "Apakah ini bekerja dengan baik di HP?",
-    "a": "Tentu saja. SavClip berjalan lancar di browser HP (seperti Safari di iOS dan Chrome di Android) untuk langsung menyimpan video ke galeri."
+    "q": "Format video apa saja yang didukung oleh alat kompresi ini?",
+    "a": "Kami mendukung format video populer seperti MP4, WebM, MOV, dan AVI."
   },
   {
-    "q": "Berapa resolusi maksimum yang didukung oleh pengunduh?",
-    "a": "Kami mengambil resolusi asli terbaik yang tersedia dari server Telegram, mulai dari HD, 1080p, hingga 4K."
+    "q": "Apakah video saya disimpan di server situs?",
+    "a": "Tidak, privasi Anda aman. File video yang diunggah akan dihapus secara otomatis setelah proses kompresi selesai."
   }
 ];
 
 export const meta = {
-  title: "Kompresor Video Telegram gratis online - SavClip",
-  description: "Unduh video Telegram dengan resolusi Full HD atau 4K gratis. Mesin media elit kami mempertahankan kualitas asli tanpa kompresi gambar."
+  title: "Kompresor Video Telegram Kompres Video - SavClip",
+  description: "Kurangi ukuran file video dari Telegram online gratis. Jaga kualitas visual tetap tajam dengan beberapa klik mudah."
 };
 
 export const header = {
   title: "Kompresor Video",
-  title1: "Download",
-  title2: "Telegram Media",
-  title3: "Online Gratis",
-  subtitle: "Download video dan reels Telegram dengan resolusi asli tertinggi."
+  title1: "Kompres",
+  title2: "Telegram Kompresor Video",
+  title3: "Kurangi Ukuran MP4",
+  subtitle: "Kompres dan perkecil ukuran video Telegram Anda tanpa merusak kualitas visual."
 };

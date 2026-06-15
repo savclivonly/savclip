@@ -2,69 +2,51 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Cara SavClip Menyederhanakan Pengunduhan X (Twitter)"
+    "content": "Mengapa menggunakan SavClip untuk proses Pengunduh Foto Profil X (Twitter)?"
   },
   {
     "type": "paragraph",
-    "content": "Menyimpan konten kesukaan Anda kini tidak perlu ribet lagi. SavClip menghadirkan antarmuka sederhana yang fokus pada kecepatan dan kemudahan akses file tanpa iklan berlebihan yang mengganggu."
+    "content": "Alat kami mengambil file gambar resolusi tinggi langsung dari server. Dengan SavClip, Anda dapat menyimpan foto profil, foto postingan, dan korsel dengan kejernihan maksimal. Jika Anda ingin mencoba fitur lain, Anda juga dapat menggunakan <a href=\"/x-private-video-downloader\">Pengunduh Media</a> kami atau memeriksa <a href=\"/x-banner-downloader\">Pengunduh Banner</a> untuk akses lengkap."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Akses Langsung ke File Asli"
+    "content": "Tanpa kompresi piksel"
   },
   {
     "type": "paragraph",
-    "content": "Kami tidak merekam layar atau menggunakan metode analog. Kami membaca metadata asli dari link yang Anda tempel, memberikan file unduhan orisinal dengan warna asli yang tajam serta audio yang jernih."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Dapat Diakses dari HP dan Komputer"
-  },
-  {
-    "type": "paragraph",
-    "content": "Platform web kami dirancang agar kompatibel dengan berbagai browser populer seperti Chrome, Safari, Firefox, dan Edge. Baik menggunakan Windows, macOS, Android, maupun iOS, Anda akan mendapatkan kecepatan unduhan yang sama."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Unduhan Aman dan Menjaga Privasi"
-  },
-  {
-    "type": "paragraph",
-    "content": "Semua permintaan unduhan dilindungi dengan enkripsi SSL. Kami berkomitmen untuk menjaga privasi dengan tidak merekam riwayat unduhan Anda atau meminta pendaftaran akun. Dapatkan file Anda secara aman dan etis."
+    "content": "Kami mendeteksi link asli file gambar di server X (Twitter), memastikan foto yang disimpan persis seperti yang diunggah pembuatnya."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Bagaimana cara mengunduh konten X (Twitter) secara online?",
-    "a": "Cukup salin link postingan dari X (Twitter), buka SavClip, tempel to kolom di atas, lalu klik tombol unduh."
+    "q": "Bagaimana cara menyimpan foto dari X (Twitter) dengan kualitas asli?",
+    "a": "Salin URL postingan atau profil publik, tempel di kolom atas pencarian, lalu unduh gambar dengan kualitas HD."
   },
   {
-    "q": "Apakah ada batas pengunduhan harian untuk X (Twitter)?",
-    "a": "Tidak ada batasan harian. Anda bebas mengunduh konten sebanyak apa pun tanpa biaya."
+    "q": "Apakah saya bisa menyimpan postingan korsel dengan banyak gambar?",
+    "a": "Tentu saja. Sistem kami mendeteksi seluruh gambar dalam korsel dan menyediakan link unduhan dengan rapi."
   },
   {
-    "q": "Apakah aman menggunakan SavClip di komputer atau HP saya?",
-    "a": "Sangat aman. SavClip bekerja secara online di browser tanpa perlu menginstal aplikasi tambahan yang berpotensi membawa virus."
+    "q": "Apakah ada biaya untuk mengunduh foto dari X (Twitter)?",
+    "a": "Tidak, alat unduh gambar kami sepenuhnya gratis dan bebas digunakan tanpa batas oleh siapa saja."
   },
   {
-    "q": "Dalam format apa file media diunduh?",
-    "a": "Video akan disimpan dalam format MP4 dan gambar dalam format JPG untuk memastikan kecocokan dengan semua perangkat."
+    "q": "Bagaimana cara menyimpan foto profil di HP?",
+    "a": "Tempel link profil, klik cari, lalu tekan simpan gambar untuk menyimpannya langsung ke galeri HP."
   }
 ];
 
 export const meta = {
-  title: "Pengunduh Foto Profil X (Twitter) gratis online - SavClip",
-  description: "Download video, foto, dan musik dari X (Twitter) gratis dengan kualitas terbaik. Layanan cepat, aman, dan tanpa iklan yang mengganggu."
+  title: "Pengunduh Foto Profil X (Twitter) Foto HD - SavClip",
+  description: "Simpan foto profil dan korsel dari X (Twitter) dengan resolusi asli maksimal. Alat gratis, cepat, dan online."
 };
 
 export const header = {
   title: "Pengunduh Foto Profil",
-  title1: "Download",
-  title2: "X (Twitter) Profil",
-  title3: "Online Gratis",
-  subtitle: "Unduh konten X (Twitter) dalam kualitas HD asli dengan cara yang sederhana dan aman."
+  title1: "Simpan",
+  title2: "X (Twitter) Foto Profil",
+  title3: "Resolusi Asli",
+  subtitle: "Unduh foto profil dan galeri X (Twitter) kualitas HD secara gratis."
 };

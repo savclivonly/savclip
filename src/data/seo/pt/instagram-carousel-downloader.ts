@@ -2,69 +2,51 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Como o SavClip Simplifica os Downloads do Instagram"
+    "content": "Por que usar o SavClip para o Baixador de Carrossel do Instagram?"
   },
   {
     "type": "paragraph",
-    "content": "Salvar fotos ou vídeos do Instagram não precisa ser difícil. O SavClip oferece uma página simples e rápida, focada em entregar sua mídia no melhor formato disponível em poucos segundos."
+    "content": "Evite tirar capturas de tela (prints) que estragam a nitidez das fotos. Com o SavClip, você salva fotos de perfil, postagens e carrosséis na resolução máxima de envio. Se você quiser experimentar outros recursos, também poderá usar nosso <a href=\"/instagram-dp-downloader\">Baixador de Foto de Perfil</a> ou verificar o <a href=\"/instagram-profile-viewer\">Visualizador de Perfis</a> para acesso completo."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Extração Avançada de Metadados"
+    "content": "Extração de fotos sem compressão de imagem"
   },
   {
     "type": "paragraph",
-    "content": "Em vez de apenas gravar a tela ou tirar capturas, nosso sistema lê as informações brutas do post do Instagram. Isso significa que você baixa a mídia original com máxima fidelidade de cores e som estéreo integrado."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Acesso em Qualquer Celular, Tablet ou Computador"
-  },
-  {
-    "type": "paragraph",
-    "content": "O site é responsivo e otimizado para rodar em qualquer sistema (iOS, Android, Windows e Mac) e navegador (Chrome, Safari, Firefox e Edge). Você terá a mesma velocidade de download em qualquer tela."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Navegação Segura e Totalmente Anônima"
-  },
-  {
-    "type": "paragraph",
-    "content": "A privacidade dos usuários é o nosso foco. Criptografamos todas as conexões via SSL e não salvamos históricos de downloads ou pedimos cadastros de contas. Salve mídias de forma segura e ética sempre."
+    "content": "Nosso extrator localiza o link direto do arquivo bruto da foto no código do Instagram. Isso significa que não há perdas de cores ou nitidez, perfeita para arquivamento profissional ou pessoal."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Como baixar conteúdos do Instagram online?",
-    "a": "Copie o link do post do Instagram, cole no campo de pesquisa acima e clique em 'Download' para gerar os links de download direto."
+    "q": "Como salvar fotos do Instagram em qualidade máxima?",
+    "a": "Copie o link do post ou perfil público, cole no campo superior de pesquisa e clique em baixar para obter a imagem HD."
   },
   {
-    "q": "Existe limite de velocidade ou arquivos para baixar?",
-    "a": "Nenhum. Nossa ferramenta oferece velocidade máxima do servidor e você pode salvar quantas mídias desejar por dia."
+    "q": "É possível baixar posts de carrossel com múltiplas fotos?",
+    "a": "Sim, nossa ferramenta detecta todos os elementos do post e disponibiliza links de download para cada imagem individualmente."
   },
   {
-    "q": "É seguro usar o SavClip para salvar arquivos?",
-    "a": "Sim. Como o SavClip roda direto na web, seu aparelho fica livre de vírus, sem a necessidade de baixar ou instalar aplicativos."
+    "q": "Existe alguma taxa para salvar fotos do Instagram?",
+    "a": "Não, nosso extrator de imagens é 100% gratuito e livre para todos os usuários do site."
   },
   {
-    "q": "Qual é o formato de arquivo gerado pelo site?",
-    "a": "Geralmente, os vídeos são salvos no formato universal MP4 e as imagens são baixadas em JPG de alta resolução."
+    "q": "Como salvar fotos de perfil no celular?",
+    "a": "Cole o link do perfil, clique em buscar e depois segure na foto para salvar direto na galeria."
   }
 ];
 
 export const meta = {
-  title: "Baixador de Carrossel Instagram Sem Marca d'Água - SavClip",
-  description: "O principal destino grátis para baixar mídias do Instagram em alta qualidade. Nosso serviço é rápido, estável e com total privacidade."
+  title: "Baixador de Carrossel Instagram Resolução Máxima - SavClip",
+  description: "Baixe fotos, imagens e miniaturas do Instagram na resolução máxima original. Ferramenta grátis, rápida e online."
 };
 
 export const header = {
   title: "Baixador de Carrossel",
-  title1: "Download",
+  title1: "Baixar",
   title2: "Instagram Carrossel",
-  title3: "Online Grátis",
-  subtitle: "Baixe conteúdos do Instagram em qualidade HD original de forma simples e segura."
+  title3: "Fotos em HD",
+  subtitle: "Obtenha imagens e fotos do Instagram em alta definição e sem marcas d'água."
 };

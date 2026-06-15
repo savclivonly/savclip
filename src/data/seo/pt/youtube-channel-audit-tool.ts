@@ -2,69 +2,34 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Como o SavClip Simplifica os Downloads do YouTube"
+    "content": "Audite seu perfil ou canal no YouTube"
   },
   {
     "type": "paragraph",
-    "content": "Salvar fotos ou vídeos do YouTube não precisa ser difícil. O SavClip oferece uma página simples e rápida, focada em entregar sua mídia no melhor formato disponível em poucos segundos."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Extração Avançada de Metadados"
-  },
-  {
-    "type": "paragraph",
-    "content": "Em vez de apenas gravar a tela ou tirar capturas, nosso sistema lê as informações brutas do post do YouTube. Isso significa que você baixa a mídia original com máxima fidelidade de cores e som estéreo integrado."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Acesso em Qualquer Celular, Tablet ou Computador"
-  },
-  {
-    "type": "paragraph",
-    "content": "O site é responsivo e otimizado para rodar em qualquer sistema (iOS, Android, Windows e Mac) e navegador (Chrome, Safari, Firefox e Edge). Você terá a mesma velocidade de download em qualquer tela."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Navegação Segura e Totalmente Anônima"
-  },
-  {
-    "type": "paragraph",
-    "content": "A privacidade dos usuários é o nosso foco. Criptografamos todas as conexões via SSL e não salvamos históricos de downloads ou pedimos cadastros de contas. Salve mídias de forma segura e ética sempre."
+    "content": "Nossa ferramenta de auditoria analisa tags, descrições e metadados de páginas do YouTube sugerindo melhorias essenciais para impulsionar seu alcance e tráfego orgânico. Se você quiser experimentar outros recursos, também poderá usar nosso <a href=\"/youtube-tag-generator\">Gerador de Tags</a> ou verificar o <a href=\"/youtube-description-generator\">Gerador de Descrições</a> para acesso completo."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Como baixar conteúdos do YouTube online?",
-    "a": "Copie o link do post do YouTube, cole no campo de pesquisa acima e clique em 'Download' para gerar os links de download direto."
+    "q": "Como auditar um canal do YouTube?",
+    "a": "Digite o link ou nome do canal no buscador, clique em analisar e receba o relatório de otimização de SEO detalhado."
   },
   {
-    "q": "Existe limite de velocidade ou arquivos para baixar?",
-    "a": "Nenhum. Nossa ferramenta oferece velocidade máxima do servidor e você pode salvar quantas mídias desejar por dia."
-  },
-  {
-    "q": "É seguro usar o SavClip para salvar arquivos?",
-    "a": "Sim. Como o SavClip roda direto na web, seu aparelho fica livre de vírus, sem a necessidade de baixar ou instalar aplicativos."
-  },
-  {
-    "q": "Qual é o formato de arquivo gerado pelo site?",
-    "a": "Geralmente, os vídeos são salvos no formato universal MP4 e as imagens são baixadas em JPG de alta resolução."
+    "q": "Preciso conceder acesso à minha conta para a auditoria?",
+    "a": "Não. Lemos exclusivamente dados públicos do YouTube, sem necessidade de login ou privilégios de administrador."
   }
 ];
 
 export const meta = {
-  title: "Ferramenta de Auditoria de Canais YouTube Sem Marca d'Água - SavClip",
-  description: "O principal destino grátis para baixar mídias do YouTube em alta qualidade. Nosso serviço é rápido, estável e com total privacidade."
+  title: "Ferramenta de Auditoria de Canais YouTube SEO Grátis - SavClip",
+  description: "Analise métricas e SEO do YouTube online de forma gratuita e transparente. Obtenha relatórios de otimização instantâneos."
 };
 
 export const header = {
   title: "Ferramenta de Auditoria de Canais",
-  title1: "Download",
+  title1: "Analisar",
   title2: "YouTube Auditoria de Canais",
-  title3: "Online Grátis",
-  subtitle: "Baixe conteúdos do YouTube em qualidade HD original de forma simples e segura."
+  title3: "Insights",
+  subtitle: "Obtenha insights e relatórios de desempenho para otimizar seu perfil no YouTube."
 };

@@ -2,69 +2,51 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Cara SavClip Menyederhanakan Pengunduhan Instagram"
+    "content": "Viewer dan Penonton Profil Instagram"
   },
   {
     "type": "paragraph",
-    "content": "Menyimpan konten kesukaan Anda kini tidak perlu ribet lagi. SavClip menghadirkan antarmuka sederhana yang fokus pada kecepatan dan kemudahan akses file tanpa iklan berlebihan yang mengganggu."
+    "content": "Jika Anda ingin memantau performa akun tanpa diketahui pemiliknya, alat penonton profil publik Instagram kami adalah solusi terbaik dan paling aman. Jika Anda ingin mencoba fitur lain, Anda juga dapat menggunakan <a href=\"/instagram-story-viewer\">Penonton Cerita</a> kami atau memeriksa <a href=\"/instagram-video-downloader\">Pengunduh Video</a> untuk akses lengkap."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Akses Langsung ke File Asli"
+    "content": "Tampilan data yang rapi dan informatif"
   },
   {
     "type": "paragraph",
-    "content": "Kami tidak merekam layar atau menggunakan metode analog. Kami membaca metadata asli dari link yang Anda tempel, memberikan file unduhan orisinal dengan warna asli yang tajam serta audio yang jernih."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Dapat Diakses dari HP dan Komputer"
-  },
-  {
-    "type": "paragraph",
-    "content": "Platform web kami dirancang agar kompatibel dengan berbagai browser populer seperti Chrome, Safari, Firefox, dan Edge. Baik menggunakan Windows, macOS, Android, maupun iOS, Anda akan mendapatkan kecepatan unduhan yang sama."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Unduhan Aman dan Menjaga Privasi"
-  },
-  {
-    "type": "paragraph",
-    "content": "Semua permintaan unduhan dilindungi dengan enkripsi SSL. Kami berkomitmen untuk menjaga privasi dengan tidak merekam riwayat unduhan Anda atau meminta pendaftaran akun. Dapatkan file Anda secara aman dan etis."
+    "content": "Kami mengumpulkan data publik dari Instagram dan menampilkannya di dasbor yang mudah dipahami, sehingga Anda bisa melihat foto profil dan bio secara aman."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Bagaimana cara mengunduh konten Instagram secara online?",
-    "a": "Cukup salin link postingan dari Instagram, buka SavClip, tempel to kolom di atas, lalu klik tombol unduh."
+    "q": "Apakah saya perlu login ke akun Instagram untuk menggunakan alat ini?",
+    "a": "Tidak, alat ini bekerja secara eksternal untuk membaca data publik. Anda tidak perlu login atau memiliki akun di jaringan tersebut."
   },
   {
-    "q": "Apakah ada batas pengunduhan harian untuk Instagram?",
-    "a": "Tidak ada batasan harian. Anda bebas mengunduh konten sebanyak apa pun tanpa biaya."
+    "q": "Apakah pemilik akun tahu jika saya melihat statistiknya?",
+    "a": "Tidak. Proses pencarian data berjalan secara eksternal dan rahasia. Pemilik akun tidak akan menerima pemberitahuan."
   },
   {
-    "q": "Apakah aman menggunakan SavClip di komputer atau HP saya?",
-    "a": "Sangat aman. SavClip bekerja secara online di browser tanpa perlu menginstal aplikasi tambahan yang berpotensi membawa virus."
+    "q": "Apakah saya memerlukan akun Instagram aktif untuk melihat statistik?",
+    "a": "Tidak, Anda bisa menganalisis profil publik tanpa memiliki pendaftaran di media sosial tersebut."
   },
   {
-    "q": "Dalam format apa file media diunduh?",
-    "a": "Video akan disimpan dalam format MP4 dan gambar dalam format JPG untuk memastikan kecocokan dengan semua perangkat."
+    "q": "Dapatkah saya melihat profil privat secara anonim?",
+    "a": "Tidak, demi privasi pengguna, kami hanya menampilkan data dari profil terbuka."
   }
 ];
 
 export const meta = {
-  title: "Penonton Profil Instagram gratis online - SavClip",
-  description: "Download video, foto, dan musik dari Instagram gratis dengan kualitas terbaik. Layanan cepat, aman, dan tanpa iklan yang mengganggu."
+  title: "Penonton Profil Instagram Statistik - SavClip",
+  description: "Analisis akun dan bio di Instagram tanpa masuk akun. Tanpa pendaftaran dan tanpa jejak."
 };
 
 export const header = {
   title: "Penonton Profil",
-  title1: "Download",
-  title2: "Instagram Media",
-  title3: "Online Gratis",
-  subtitle: "Unduh konten Instagram dalam kualitas HD asli dengan cara yang sederhana dan aman."
+  title1: "Analisis",
+  title2: "Instagram Profil",
+  title3: "Métricas HD",
+  subtitle: "Cek bio dan data akun publik di Instagram secara gratis tanpa registrasi."
 };

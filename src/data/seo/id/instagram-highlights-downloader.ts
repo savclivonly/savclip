@@ -2,69 +2,51 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Pengunduh Cerita Instagram dengan Anonimitas Total"
+    "content": "Gunakan Pengunduh Sorotan Instagram dengan Privasi Penuh"
   },
   {
     "type": "paragraph",
-    "content": "Story akan hilang setelah 24 jam, tetapi ada momen atau ide konten menarik yang ingin Anda simpan selamanya. Alat pengunduh Instagram kami memudahkan Anda menyimpan foto dan video secara instan dan aman."
+    "content": "Stories akan hilang dalam 24 jam, tetapi momen penting layak disimpan. Simpan foto dan video cerita sementara langsung ke galeri Anda secara rahasia. Jika Anda ingin mencoba fitur lain, Anda juga dapat menggunakan <a href=\"/instagram-audio-downloader\">Pengunduh Audio</a> kami atau memeriksa <a href=\"/instagram-private-downloader\">Pengunduh Privat</a> untuk akses lengkap."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Cara Kerja Fitur Anonim di SavClip"
+    "content": "Bagaimana SavClip menjaga agar Anda tetap anonim?"
   },
   {
     "type": "paragraph",
-    "content": "Menonton langsung lewat aplikasi resmi akan memberi tahu pemilik bahwa Anda melihat story mereka. SavClip bertindak sebagai perantara yang aman: server kami mengunduh media secara langsung dan menampilkannya kepada Anda, menjaga akun Anda tetap rahasia tanpa meninggalkan jejak."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Kualitas Foto dan Video Asli"
-  },
-  {
-    "type": "paragraph",
-    "content": "Hindari screenshot buram yang merusak kualitas gambar. Alat kami mengakses file asli dari server Instagram agar Anda mendapatkan file JPG (untuk foto) dan MP4 (untuk video) dengan resolusi dan ketajaman warna asli."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Sangat Berguna untuk Riset dan Kreator"
-  },
-  {
-    "type": "paragraph",
-    "content": "Banyak kreator dan pengelola media sosial menggunakan pengunduh story kami untuk riset kompetitor atau mencari inspirasi. Cukup dengan sekali klik, Anda bisa menyimpan konten inspiratif secara cepat dan aman."
+    "content": "Saat Anda melihat cerita dari aplikasi resmi, pembuatnya akan mengetahuinya. Sistem kami mengambil file media tersebut secara eksternal sehingga nama Anda tidak akan pernah muncul di daftar penonton."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Apakah pemilik cerita akan tahu jika saya mengunduhnya?",
-    "a": "Tidak. SavClip menjaga privasi Anda secara penuh. Pemilik akun tidak akan pernah tahu jika story mereka telah dilihat atau diunduh oleh Anda."
+    "q": "Apakah pemilik akun tahu jika saya mengunduh story Instagram?",
+    "a": "Tidak, sama sekali tidak. Proses ini 100% anonim. Pemilik akun tidak akan menerima notifikasi apa pun."
   },
   {
-    "q": "Bisakah saya mengunduh cerita dari akun privat?",
-    "a": "Tidak, demi menghormati privasi pengguna, alat kami hanya bisa mengunduh konten dari akun Instagram publik."
+    "q": "Dapatkah saya mengunduh story dari akun Instagram privat?",
+    "a": "Tidak, untuk menghargai privasi pengguna, alat kami hanya dapat mengakses konten dari akun publik."
   },
   {
-    "q": "Apakah pengunduhan cerita dibatasi atau berbayar?",
-    "a": "Layanan pengunduhan story kami 100% gratis dan tidak terbatas. Anda bisa menyimpan story sebanyak apa pun kapan saja."
+    "q": "Apakah story yang diunduh akan terhapus setelah 24 jam?",
+    "a": "Tidak, setelah disimpan di perangkat Anda, story akan tersimpan secara permanen dan bisa dilihat kapan saja."
   },
   {
-    "q": "Format file apa yang digunakan untuk menyimpan cerita?",
-    "a": "Story foto disimpan dalam format JPG, sedangkan story video diunduh dalam format MP4."
+    "q": "Apakah stories disimpan dalam kualitas HD?",
+    "a": "Ya, kami mengambil file media dengan resolusi tertinggi yang tersedia dari server Instagram."
   }
 ];
 
 export const meta = {
-  title: "Pengunduh Sorotan Instagram gratis online - SavClip",
-  description: "Lihat dan unduh cerita serta sorotan Instagram secara anonim. Pemilik akun tidak akan pernah tahu Anda menyimpan foto atau video mereka."
+  title: "Pengunduh Sorotan Instagram Anonim - SavClip",
+  description: "Unduh cerita dan sorotan dari Instagram secara 100% rahasia. Pemilik akun tidak akan pernah tahu Anda melihatnya."
 };
 
 export const header = {
   title: "Pengunduh Sorotan",
-  title1: "Download",
-  title2: "Instagram Media",
-  title3: "Online Gratis",
-  subtitle: "Simpan cerita, foto, dan sorotan sementara Instagram secara cepat dan anonim."
+  title1: "Lihat",
+  title2: "Instagram Sorotan",
+  title3: "100% Anonim",
+  subtitle: "Simpan story, foto, dan sorotan Instagram secara cepat dan anonim."
 };

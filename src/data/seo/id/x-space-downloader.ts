@@ -2,69 +2,34 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Cara SavClip Menyederhanakan Pengunduhan X (Twitter)"
+    "content": "Ekstraktor audio dan Spaces X (Twitter) terbaik"
   },
   {
     "type": "paragraph",
-    "content": "Menyimpan konten kesukaan Anda kini tidak perlu ribet lagi. SavClip menghadirkan antarmuka sederhana yang fokus pada kecepatan dan kemudahan akses file tanpa iklan berlebihan yang mengganggu."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Akses Langsung ke File Asli"
-  },
-  {
-    "type": "paragraph",
-    "content": "Kami tidak merekam layar atau menggunakan metode analog. Kami membaca metadata asli dari link yang Anda tempel, memberikan file unduhan orisinal dengan warna asli yang tajam serta audio yang jernih."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Dapat Diakses dari HP dan Komputer"
-  },
-  {
-    "type": "paragraph",
-    "content": "Platform web kami dirancang agar kompatibel dengan berbagai browser populer seperti Chrome, Safari, Firefox, dan Edge. Baik menggunakan Windows, macOS, Android, maupun iOS, Anda akan mendapatkan kecepatan unduhan yang sama."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Unduhan Aman dan Menjaga Privasi"
-  },
-  {
-    "type": "paragraph",
-    "content": "Semua permintaan unduhan dilindungi dengan enkripsi SSL. Kami berkomitmen untuk menjaga privasi dengan tidak merekam riwayat unduhan Anda atau meminta pendaftaran akun. Dapatkan file Anda secara aman dan etis."
+    "content": "Dengan SavClip, Anda dapat mengunduh rekaman audio penuh dari X (Twitter) yang dikonversi langsung ke format MP3 dengan bitrate tinggi (320kbps), cocok untuk diputar secara offline. Jika Anda ingin mencoba fitur lain, Anda juga dapat menggunakan <a href=\"/x-media-downloader\">Pengunduh Media</a> kami atau memeriksa <a href=\"/x-thread-downloader\">Pengunduh Thread</a> untuk akses lengkap."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Bagaimana cara mengunduh konten X (Twitter) secara online?",
-    "a": "Cukup salin link postingan dari X (Twitter), buka SavClip, tempel to kolom di atas, lalu klik tombol unduh."
+    "q": "Bagaimana cara mengunduh audio Space X (Twitter)?",
+    "a": "Salin URL rekaman atau Space aktif, tempel di situs kami dan klik unduh untuk mendapatkan file MP3."
   },
   {
-    "q": "Apakah ada batas pengunduhan harian untuk X (Twitter)?",
-    "a": "Tidak ada batasan harian. Anda bebas mengunduh konten sebanyak apa pun tanpa biaya."
-  },
-  {
-    "q": "Apakah aman menggunakan SavClip di komputer atau HP saya?",
-    "a": "Sangat aman. SavClip bekerja secara online di browser tanpa perlu menginstal aplikasi tambahan yang berpotensi membawa virus."
-  },
-  {
-    "q": "Dalam format apa file media diunduh?",
-    "a": "Video akan disimpan dalam format MP4 dan gambar dalam format JPG untuk memastikan kecocokan dengan semua perangkat."
+    "q": "Apakah bisa mengonversi audio dalam kualitas tinggi?",
+    "a": "Ya, kami mengekstrak aliran audio mentah untuk memastikan kualitas suara terbaik tanpa kompresi berbahaya."
   }
 ];
 
 export const meta = {
-  title: "Pengunduh Spaces X (Twitter) gratis online - SavClip",
-  description: "Download video, foto, dan musik dari X (Twitter) gratis dengan kualitas terbaik. Layanan cepat, aman, dan tanpa iklan yang mengganggu."
+  title: "Pengunduh Spaces X (Twitter) Unduh MP3 - SavClip",
+  description: "Unduh rekaman audio dan Spaces dari X (Twitter) dalam kualitas tinggi MP3. Konversi siaran langsung untuk didengarkan offline."
 };
 
 export const header = {
   title: "Pengunduh Spaces",
-  title1: "Download",
-  title2: "X (Twitter) Media",
-  title3: "Online Gratis",
-  subtitle: "Unduh konten X (Twitter) dalam kualitas HD asli dengan cara yang sederhana dan aman."
+  title1: "Unduh",
+  title2: "X (Twitter) Spaces",
+  title3: "MP3 HD",
+  subtitle: "Simpan siaran audio dan Spaces dari X (Twitter) ke MP3 kualitas tinggi."
 };

@@ -2,69 +2,51 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Cara SavClip Menyederhanakan Pengunduhan YouTube"
+    "content": "Gunakan Pemilih Komentar untuk YouTube dari SavClip"
   },
   {
     "type": "paragraph",
-    "content": "Menyimpan konten kesukaan Anda kini tidak perlu ribet lagi. SavClip menghadirkan antarmuka sederhana yang fokus pada kecepatan dan kemudahan akses file tanpa iklan berlebihan yang mengganggu."
+    "content": "Bagi kreator yang ingin mengaudit metrik atau memeriksa batasan geografis, utilitas kami menyajikan data akurat secara instan. Jika Anda ingin mencoba fitur lain, Anda juga dapat menggunakan <a href=\"/youtube-video-downloader\">Pengunduh Video</a> kami atau memeriksa <a href=\"/youtube-shorts-downloader\">Pengunduh Shorts</a> untuk akses lengkap."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Akses Langsung ke File Asli"
+    "content": "Pemeriksaan metrik publik tepercaya"
   },
   {
     "type": "paragraph",
-    "content": "Kami tidak merekam layar atau menggunakan metode analog. Kami membaca metadata asli dari link yang Anda tempel, memberikan file unduhan orisinal dengan warna asli yang tajam serta audio yang jernih."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Dapat Diakses dari HP dan Komputer"
-  },
-  {
-    "type": "paragraph",
-    "content": "Platform web kami dirancang agar kompatibel dengan berbagai browser populer seperti Chrome, Safari, Firefox, dan Edge. Baik menggunakan Windows, macOS, Android, maupun iOS, Anda akan mendapatkan kecepatan unduhan yang sama."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Unduhan Aman dan Menjaga Privasi"
-  },
-  {
-    "type": "paragraph",
-    "content": "Semua permintaan unduhan dilindungi dengan enkripsi SSL. Kami berkomitmen untuk menjaga privasi dengan tidak merekam riwayat unduhan Anda atau meminta pendaftaran akun. Dapatkan file Anda secara aman dan etis."
+    "content": "Kami membaca data publik postingan YouTube secara langsung untuk mengabaikan komentar curang, memberikan peluang menang yang sama rata untuk semua peserta."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Bagaimana cara mengunduh konten YouTube secara online?",
-    "a": "Cukup salin link postingan dari YouTube, buka SavClip, tempel to kolom di atas, lalu klik tombol unduh."
+    "q": "Bagaimana cara menentukan pemenang undian komentar YouTube?",
+    "a": "Tempel link video undian, atur filter undian (seperti saring komentar ganda), lalu klik tombol undi untuk memilih pemenang acak secara transparan."
   },
   {
-    "q": "Apakah ada batas pengunduhan harian untuk YouTube?",
-    "a": "Tidak ada batasan harian. Anda bebas mengunduh konten sebanyak apa pun tanpa biaya."
+    "q": "Apakah aman menggunakan alat audit saluran ini?",
+    "a": "Sangat aman. Kami hanya memproses informasi publik yang disediakan oleh YouTube, tanpa meminta sandi atau hak akses admin."
   },
   {
-    "q": "Apakah aman menggunakan SavClip di komputer atau HP saya?",
-    "a": "Sangat aman. SavClip bekerja secara online di browser tanpa perlu menginstal aplikasi tambahan yang berpotensi membawa virus."
+    "q": "Apakah komentar undian dimuat secara real-time?",
+    "a": "Ya, alat kami mengakses API publik YouTube untuk memuat data komentar secara langsung."
   },
   {
-    "q": "Dalam format apa file media diunduh?",
-    "a": "Video akan disimpan dalam format MP4 dan gambar dalam format JPG untuk memastikan kecocokan dengan semua perangkat."
+    "q": "Apakah alat ini bisa menyaring spam atau komentar duplikat?",
+    "a": "Ya, Anda bisa menyaring spam agar undian berjalan secara adil."
   }
 ];
 
 export const meta = {
-  title: "Pemilih Komentar YouTube gratis online - SavClip",
-  description: "Download video, foto, dan musik dari YouTube gratis dengan kualitas terbaik. Layanan cepat, aman, dan tanpa iklan yang mengganggu."
+  title: "Pemilih Komentar YouTube Audit Saluran - SavClip",
+  description: "Audit akun dan cek batasan wilayah di YouTube secara adil dan gratis. Alat online tepercaya."
 };
 
 export const header = {
   title: "Pemilih Komentar",
-  title1: "Download",
-  title2: "YouTube Media",
-  title3: "Online Gratis",
-  subtitle: "Unduh konten YouTube dalam kualitas HD asli dengan cara yang sederhana dan aman."
+  title1: "Utilitas",
+  title2: "YouTube Komentar",
+  title3: "Data Resmi",
+  subtitle: "Audit saluran dan cek pemblokiran wilayah di YouTube dengan mudah."
 };

@@ -2,69 +2,34 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Como o SavClip Simplifica os Downloads do YouTube"
+    "content": "Como funciona a verificação de restrição regional do YouTube?"
   },
   {
     "type": "paragraph",
-    "content": "Salvar fotos ou vídeos do YouTube não precisa ser difícil. O SavClip oferece uma página simples e rápida, focada em entregar sua mídia no melhor formato disponível em poucos segundos."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Extração Avançada de Metadados"
-  },
-  {
-    "type": "paragraph",
-    "content": "Em vez de apenas gravar a tela ou tirar capturas, nosso sistema lê as informações brutas do post do YouTube. Isso significa que você baixa a mídia original com máxima fidelidade de cores e som estéreo integrado."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Acesso em Qualquer Celular, Tablet ou Computador"
-  },
-  {
-    "type": "paragraph",
-    "content": "O site é responsivo e otimizado para rodar em qualquer sistema (iOS, Android, Windows e Mac) e navegador (Chrome, Safari, Firefox e Edge). Você terá a mesma velocidade de download em qualquer tela."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Navegação Segura e Totalmente Anônima"
-  },
-  {
-    "type": "paragraph",
-    "content": "A privacidade dos usuários é o nosso foco. Criptografamos todas as conexões via SSL e não salvamos históricos de downloads ou pedimos cadastros de contas. Salve mídias de forma segura e ética sempre."
+    "content": "Nosso sistema consulta as informações públicas dos servidores do YouTube em tempo real para verificar se o conteúdo possui restrições geográficas ou bloqueios de exibição por direitos autorais. Se você quiser experimentar outros recursos, também poderá usar nosso <a href=\"/youtube-video-cutter\">Cortador de Vídeo</a> ou verificar o <a href=\"/youtube-comment-picker\">Selecionador de Comentários</a> para acesso completo."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Como baixar conteúdos do YouTube online?",
-    "a": "Copie o link do post do YouTube, cole no campo de pesquisa acima e clique em 'Download' para gerar os links de download direto."
+    "q": "Como verificar bloqueio regional no YouTube?",
+    "a": "Cole a URL do vídeo ou canal na caixa de busca e clique em verificar para obter o mapa de disponibilidade mundial."
   },
   {
-    "q": "Existe limite de velocidade ou arquivos para baixar?",
-    "a": "Nenhum. Nossa ferramenta oferece velocidade máxima do servidor e você pode salvar quantas mídias desejar por dia."
-  },
-  {
-    "q": "É seguro usar o SavClip para salvar arquivos?",
-    "a": "Sim. Como o SavClip roda direto na web, seu aparelho fica livre de vírus, sem a necessidade de baixar ou instalar aplicativos."
-  },
-  {
-    "q": "Qual é o formato de arquivo gerado pelo site?",
-    "a": "Geralmente, os vídeos são salvos no formato universal MP4 e as imagens são baixadas em JPG de alta resolução."
+    "q": "O verificador de restrições é preciso?",
+    "a": "Sim, consultamos as APIs públicas para entregar as restrições em tempo real."
   }
 ];
 
 export const meta = {
-  title: "Verificador de Restrição Regional YouTube Sem Marca d'Água - SavClip",
-  description: "O principal destino grátis para baixar mídias do YouTube em alta qualidade. Nosso serviço é rápido, estável e com total privacidade."
+  title: "Verificador de Restrição Regional YouTube Verificar Bloqueios - SavClip",
+  description: "Analise disponibilidade de vídeos no YouTube em tempo real. Descubra se um vídeo está bloqueado em algum país."
 };
 
 export const header = {
   title: "Verificador de Restrição Regional",
-  title1: "Download",
+  title1: "Checar",
   title2: "YouTube Restrição Regional",
-  title3: "Online Grátis",
-  subtitle: "Baixe conteúdos do YouTube em qualidade HD original de forma simples e segura."
+  title3: "Bloqueios",
+  subtitle: "Descubra restrições regionais de mídia no YouTube online."
 };

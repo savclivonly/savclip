@@ -2,69 +2,51 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Como o SavClip Simplifica os Downloads do Instagram"
+    "content": "Visualizador Anônimo e Auditor de Perfis do Instagram"
   },
   {
     "type": "paragraph",
-    "content": "Salvar fotos ou vídeos do Instagram não precisa ser difícil. O SavClip oferece uma página simples e rápida, focada em entregar sua mídia no melhor formato disponível em poucos segundos."
+    "content": "Para quem quer analisar perfis com total privacidade, nossa ferramenta pública de visualização de perfis do Instagram garante anonimato e segurança completa. Se você quiser experimentar outros recursos, também poderá usar nosso <a href=\"/instagram-story-viewer\">Visualizador de Stories</a> ou verificar o <a href=\"/instagram-video-downloader\">Baixador de Vídeos</a> para acesso completo."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Extração Avançada de Metadados"
+    "content": "Painel de análise simplificado"
   },
   {
     "type": "paragraph",
-    "content": "Em vez de apenas gravar a tela ou tirar capturas, nosso sistema lê as informações brutas do post do Instagram. Isso significa que você baixa a mídia original com máxima fidelidade de cores e som estéreo integrado."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Acesso em Qualquer Celular, Tablet ou Computador"
-  },
-  {
-    "type": "paragraph",
-    "content": "O site é responsivo e otimizado para rodar em qualquer sistema (iOS, Android, Windows e Mac) e navegador (Chrome, Safari, Firefox e Edge). Você terá a mesma velocidade de download em qualquer tela."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Navegação Segura e Totalmente Anônima"
-  },
-  {
-    "type": "paragraph",
-    "content": "A privacidade dos usuários é o nosso foco. Criptografamos todas as conexões via SSL e não salvamos históricos de downloads ou pedimos cadastros de contas. Salve mídias de forma segura e ética sempre."
+    "content": "Buscamos apenas os dados disponíveis publicamente no Instagram e estruturamos as informações de forma amigável, permitindo visualizar fotos de perfil e biografias sem comprometer sua privacidade."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Como baixar conteúdos do Instagram online?",
-    "a": "Copie o link do post do Instagram, cole no campo de pesquisa acima e clique em 'Download' para gerar os links de download direto."
+    "q": "O dono do perfil saberá que visualizei sua conta?",
+    "a": "De forma alguma. Nosso sistema não envia nenhum dado seu aos servidores do Instagram, mantendo você invisível."
   },
   {
-    "q": "Existe limite de velocidade ou arquivos para baixar?",
-    "a": "Nenhum. Nossa ferramenta oferece velocidade máxima do servidor e você pode salvar quantas mídias desejar por dia."
+    "q": "Preciso instalar alguma extensão de navegador?",
+    "a": "Não, a ferramenta funciona 100% online a partir de qualquer navegador web no celular ou PC."
   },
   {
-    "q": "É seguro usar o SavClip para salvar arquivos?",
-    "a": "Sim. Como o SavClip roda direto na web, seu aparelho fica livre de vírus, sem a necessidade de baixar ou instalar aplicativos."
+    "q": "Preciso de uma conta no Instagram para usar?",
+    "a": "Não, você pode visualizar e analisar perfis públicos sem ter cadastro na rede."
   },
   {
-    "q": "Qual é o formato de arquivo gerado pelo site?",
-    "a": "Geralmente, os vídeos são salvos no formato universal MP4 e as imagens são baixadas em JPG de alta resolução."
+    "q": "Posso ver perfis privados de forma anônima?",
+    "a": "Não, por razões de privacidade de dados, apenas exibimos informações de contas abertas."
   }
 ];
 
 export const meta = {
-  title: "Visualizador de Perfis Instagram Sem Marca d'Água - SavClip",
-  description: "O principal destino grátis para baixar mídias do Instagram em alta qualidade. Nosso serviço é rápido, estável e com total privacidade."
+  title: "Visualizador de Perfis Instagram Estatísticas - SavClip",
+  description: "Acesse perfis anonimamente do Instagram sem precisar fazer login. Monitore contas sem deixar rastros."
 };
 
 export const header = {
   title: "Visualizador de Perfis",
-  title1: "Download",
+  title1: "Analisar",
   title2: "Instagram Perfis",
-  title3: "Online Grátis",
-  subtitle: "Baixe conteúdos do Instagram em qualidade HD original de forma simples e segura."
+  title3: "Estatísticas HD",
+  subtitle: "Monitore contas públicas do Instagram sem se registrar e sem ser visto."
 };

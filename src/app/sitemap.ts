@@ -5,6 +5,7 @@ import { TOOL_CONFIGS } from "@/lib/tool-configs"
 export const revalidate = 86400 // Cache sitemap for 24 hours
 
 const SITE_URL = "https://savclip.com"
+const LAST_MODIFIED_DATE = new Date("2026-06-15")
 
 let cachedSitemap: MetadataRoute.Sitemap | null = null
 let lastCacheTime = 0
@@ -59,7 +60,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     staticRoutes.forEach((route) => {
       sitemapEntries.push({
         url: `${SITE_URL}${localePrefix}${route}`,
-        lastModified: new Date(),
+        lastModified: LAST_MODIFIED_DATE,
         changeFrequency: "weekly",
         priority: route === "" ? 1.0 : 0.8,
         alternates: getAlternatesForRoute(route),
@@ -70,7 +71,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     dynamicTools.forEach((route) => {
       sitemapEntries.push({
         url: `${SITE_URL}${localePrefix}${route}`,
-        lastModified: new Date(),
+        lastModified: LAST_MODIFIED_DATE,
         changeFrequency: "daily",
         priority: 0.9,
         alternates: getAlternatesForRoute(route),

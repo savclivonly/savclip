@@ -2,69 +2,51 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Mengapa SavClip adalah YouTube Konverter ke MP3 Terbaik"
+    "content": "Konverter ke MP3 YouTube Paling Cepat Online"
   },
   {
     "type": "paragraph",
-    "content": "Di era digital saat ini, audio yang jernih sangat penting untuk kenyamanan menikmati konten video. Alat ekstraksi audio YouTube kami dirancang untuk memberikan kualitas suara terbaik tanpa kompresi yang merusak suara asli."
+    "content": "Bagi kreator konten yang membutuhkan audio berkualitas tinggi, alat ekstrak audio YouTube kami memberikan suara yang jernih dan profesional. Jika Anda ingin mencoba fitur lain, Anda juga dapat menggunakan <a href=\"/youtube-thumbnail-downloader\">Pengunduh Thumbnail</a> kami atau memeriksa <a href=\"/youtube-playlist-downloader\">Pengunduh Daftar Putar</a> untuk akses lengkap."
   },
   {
     "type": "heading",
     "level": 3,
-    "content": "Kualitas Suara Asli dan Jernih"
+    "content": "Bitrate audio hingga 320kbps tanpa kompresi"
   },
   {
     "type": "paragraph",
-    "content": "Banyak situs pengunduh online menurunkan kualitas audio agar ukuran file lebih kecil. SavClip terhubung langsung dengan server YouTube untuk mengambil file audio asli hingga 320kbps. Dapatkan musik atau efek suara berkualitas studio secara offline."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Mudah Digunakan di Semua Perangkat"
-  },
-  {
-    "type": "paragraph",
-    "content": "Situs web kami sepenuhnya responsif dan dapat diakses dengan cepat dari perangkat apa pun. Anda dapat mengunduh audio YouTube melalui HP Android, iPhone, tablet, atau komputer. Cukup buka browser favorit Anda tanpa perlu memasang aplikasi tambahan."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "content": "Privasi Aman Tanpa Perlu Login"
-  },
-  {
-    "type": "paragraph",
-    "content": "Keamanan digital Anda adalah hal utama bagi kami. Kami tidak pernah meminta data pribadi atau informasi login akun YouTube Anda. Semua proses pengunduhan berjalan secara aman dan rahasia melalui server cepat kami."
+    "content": "SavClip melakukan ekstraksi langsung dari server YouTube. Hal ini menjaga trek audio asli dengan bitrate tinggi hingga 320kbps untuk kebutuhan offline Anda."
   }
 ];
 
 export const faqs = [
   {
-    "q": "Bagaimana cara mengekstrak audio dari video YouTube dalam kualitas tinggi?",
-    "a": "Salin link video YouTube, tempel di kolom pencarian di bagian atas halaman ini, lalu pilih format MP3 untuk mulai mengunduh."
+    "q": "Bagaimana cara mengekstrak audio dari video YouTube?",
+    "a": "Salin link video YouTube, tempel di bilah pencarian atas, dan pilih opsi unduhan format audio untuk langsung menyimpannya."
   },
   {
-    "q": "Apakah gratis untuk mengonversi video YouTube ke MP3 dengan SavClip?",
-    "a": "Ya, SavClip 100% gratis tanpa biaya tersembunyi, tanpa registrasi, dan tanpa batasan harian."
+    "q": "Apakah layanan konversi YouTube ke MP3 ini berbayar?",
+    "a": "Tidak, layanan ini sepenuhnya gratis dan Anda bebas mengonversi file tanpa batasan."
   },
   {
-    "q": "Apakah saya perlu menginstal perangkat lunak atau ekstensi browser?",
-    "a": "Tidak perlu. Pengunduh kami berbasis web dan bisa diakses langsung melalui browser di HP atau komputer."
+    "q": "Apakah aman mengonversi audio di SavClip?",
+    "a": "Ya, layanan ini sangat aman. Kami tidak menyimpan riwayat unduhan Anda di server."
   },
   {
-    "q": "Berapa bitrate audio yang disediakan oleh konverter?",
-    "a": "Kami mengunduh kualitas suara terbaik yang tersedia dari server YouTube, biasanya dalam format MP3 hingga 320kbps."
+    "q": "Apakah file MP3 bisa diputar tanpa internet?",
+    "a": "Tentu saja! Setelah file MP3 disimpan di perangkat Anda, Anda bisa memutarnya kapan saja secara offline."
   }
 ];
 
 export const meta = {
-  title: "Konverter ke MP3 YouTube gratis online - SavClip",
-  description: "Ekstrak audio berkualitas tinggi dari video YouTube secara instan. Konverter MP3 kami menjaga kualitas suara asli tanpa kompresi."
+  title: "Konverter ke MP3 YouTube Ekstrak Audio HD - SavClip",
+  description: "Konversi video ke MP3 dari YouTube secara instan. Pengonversi MP3 kami menjaga kualitas suara asli tanpa penurunan."
 };
 
 export const header = {
   title: "Konverter ke MP3",
-  title1: "Download",
+  title1: "Ekstrak",
   title2: "YouTube MP3",
-  title3: "Online Gratis",
-  subtitle: "Ekstrak dan simpan audio berkualitas tinggi dari video dan reels YouTube dalam format MP3."
+  title3: "Audio HD",
+  subtitle: "Konversi video YouTube ke MP3 dengan cepat dan aman."
 };
