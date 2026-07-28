@@ -6,11 +6,11 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Welcome to SavClip, your dedicated portal for downloading captivating content from the Snapchat Map. Snap Map is a unique feature that allows users to explore public snaps submitted from all around the globe, offering a real-time window into live events, breaking news, and everyday moments. Whether you're a journalist covering a local event, a researcher archiving location-based media, or just someone who wants to save an incredible public snap, our premium Snapchat Map Downloader is designed to provide a seamless, secure, and entirely free solution. If you want to try other features, you can also use our <a href=\"/snapchat-lens-saver\">Snapchat Lens Saver</a> or check out the <a href=\"/snapchat-private-story-downloader\">Snapchat Private Story Downloader</a> for complete access."
+    "content": "Welcome to SavClip, your dedicated portal for saving captivating content from the Snapchat Map. Snap Map is a unique feature that allows users to explore public snaps submitted from all around the globe, offering a real-time window into live events, breaking news, and everyday moments. Whether you're a journalist covering a local event, a researcher archiving location-based media, or just someone who wants to save an incredible public snap, our premium Snapchat Map Downloader is designed to provide a seamless, secure, and entirely free solution. If you want to try other features, you can also use our <a href=\"/snapchat-lens-saver\">Snapchat Lens Saver</a> or check out the <a href=\"/snapchat-private-story-downloader\">Snapchat public story saver</a> for complete access."
   },
   {
     "type": "paragraph",
-    "content": "Our advanced media extraction engine connects directly to public Snap Map feeds, allowing you to bypass the app's restrictions and download the highest quality MP4 video files available. We take pride in being a top-tier Snapchat downloader, ensuring that every clip you save is free from intrusive watermarks and retains its original HD clarity. Whether you're accessing our site via your mobile browser on iPhone or Android, or using our robust desktop version on PC or Mac, SavClip guarantees a high-speed, secure, and user-friendly experience."
+    "content": "Our advanced media extraction engine connects directly to public Snap Map feeds, allowing you to bypass the app's restrictions and save the highest quality MP4 video files available. We take pride in being a top-tier Snapchat downloader, ensuring that every clip you save is free from intrusive watermarks and retains its original HD clarity. Whether you're accessing our site via your mobile browser on iPhone or Android, or using our robust desktop version on PC or Mac, SavClip guarantees a high-speed, secure, and user-friendly experience."
   },
   {
     "type": "heading",
@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Copy Snap Link: Open the Snapchat Map, locate the public snap you want to save, tap the share icon, and select 'Copy Link'.",
       "Paste URL: Head over to SavClip's Snapchat Map Downloader and paste the copied link into the search box at the top of this page.",
-      "Download Video: Click the 'Download' button. Our system will instantly process the link and provide you with a high-speed download option for the HD MP4 file."
+      "Download Video: Click the 'Save' button. Our system will instantly process the link and provide you with a high-speed download option for the HD MP4 file."
     ]
   },
   {

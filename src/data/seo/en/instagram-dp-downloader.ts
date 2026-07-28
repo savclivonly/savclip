@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Copy Link: Open Instagram and copy the profile URL or the username of the account whose DP you want to download.",
       "Paste Details: Visit SavClip and paste the username or profile link into the search bar at the top of this page.",
-      "Download HD: Click the 'Download' button. Our system will instantly fetch the original high-resolution profile picture for you to save to your gallery."
+      "Download HD: Click the 'Save' button. Our system will instantly fetch the original high-resolution profile picture for you to save to your gallery."
     ]
   },
   {

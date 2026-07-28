@@ -10,7 +10,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Our advanced web-based extraction tool ensures that every X GIF download is handled with speed and precision. Because the source file on X is an MP4, our tool downloads the looping video file in its original quality. Whether you are looking for a Twitter GIF saver, a tool to download animated images from X, or a fast X GIF converter, SavClip delivers an unmatched experience. We take pride in providing a clean, high-performance utility that requires zero technical knowledge. Access our site via your mobile browser on iPhone or Android, or manage your digital meme archive on a desktop PC or Mac."
+    "content": "Our advanced web-based extraction tool ensures that every X GIF download is handled with speed and precision. Because the source file on X is an MP4, our tool saves the looping video file in its original quality. Whether you are looking for a Twitter GIF saver, a tool to download animated images from X, or a fast X GIF converter, SavClip delivers an unmatched experience. We take pride in providing a clean, high-performance utility that requires zero technical knowledge. Access our site via your mobile browser on iPhone or Android, or manage your digital meme archive on a desktop PC or Mac."
   },
   {
     "type": "heading",
@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Copy X Post Link: Locate the post on X containing the GIF you want to save. Tap the 'Share' icon and select 'Copy Link'.",
       "Paste URL: Navigate to SavClip's X GIF Downloader and paste the copied link into the search box at the top of this page.",
-      "Download GIF Media: Click 'Download'. Our system instantly fetches the looping media and provides you with a direct link to save the MP4 file."
+      "Download GIF Media: Click 'Save'. Our system instantly fetches the looping media and provides you with a direct link to save the MP4 file."
     ]
   },
   {
@@ -45,7 +45,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Unlike other platforms that might try to re-convert the file back into a bulky GIF format (losing quality in the process), SavClip provides the pure source video. If you've been searching for 'how to save a GIF from Twitter', 'download Twitter GIF iPhone', or 'X GIF downloader online', you have found the definitive solution. The downloaded MP4 is universally supported and can be shared easily on WhatsApp, Instagram, or iMessage."
+    "content": "Unlike other platforms that might try to re-convert the file back into a bulky GIF format (losing quality in the process), SavClip provides the pure source video. If you've been searching for 'how to save a GIF from Twitter', 'save Twitter GIF iPhone', or 'X GIF downloader online', you have found the definitive solution. The downloaded MP4 is universally supported and can be shared easily on WhatsApp, Instagram, or iMessage."
   },
   {
     "type": "heading",
@@ -73,7 +73,7 @@ export const faqs = [
   },
   {
     "q": "How do I save an X GIF to my iPhone?",
-    "a": "Open Safari, paste the X post link into SavClip, tap download, and use the Safari download manager to save the video file directly to your camera roll."
+    "a": "Open Safari, paste the X post link into SavClip, tap download, and use the Safari save manager to save the video file directly to your camera roll."
   },
   {
     "q": "Does this tool work for private X accounts?",

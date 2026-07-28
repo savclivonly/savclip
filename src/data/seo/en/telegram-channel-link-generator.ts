@@ -28,6 +28,24 @@ export const articleSections = [
       "Customize: Select your preferred redirect mode or customized URL structure.",
       "Generate & Copy: Click 'Generate'. Copy your brand-new, optimized Telegram direct join link and start sharing."
     ]
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "content": "Why SavClip's Link Generator drives faster subscriber growth"
+  },
+  {
+    "type": "paragraph",
+    "content": "By skipping intermediate web preview screens on mobile devices, users land directly inside your Telegram channel with one tap. This frictionless onboarding experience significantly improves conversion rates for marketing campaigns, bio links, and social media promotions."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "content": "100% Free & No Registration Required"
+  },
+  {
+    "type": "paragraph",
+    "content": "SavClip is a completely free utility that respects your privacy. No account sign-up, email verification, or login tokens are ever required to generate your custom Telegram channel invite links."
   }
 ];
 
@@ -45,7 +63,7 @@ export const faqs = [
     "a": "No. You only need to provide the public channel username or invite code. We never ask for passwords or account access."
   },
   {
-    "q": "Can I generate links for private Telegram channels or groups?",
+    "q": "Can I generate links for public telegram channels or groups?",
     "a": "Yes, you can generate redirect links for private channels as long as you input your official private invite code or invitation prefix. Our generator formats the URL to redirect users seamlessly."
   },
   {

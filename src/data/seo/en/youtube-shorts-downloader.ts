@@ -6,7 +6,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Welcome to SavClip, the ultimate global destination for saving YouTube Shorts with professional speed and uncompromised quality. YouTube Shorts have taken the digital world by storm, offering a constant stream of viral entertainment, quick tutorials, and breathtaking short-form cinematography. Because these videos are often fleeting, having a reliable way to save them is essential for fans and creators alike. Our premium YouTube Shorts Saver is specifically engineered to bridge the gap between these temporary viral moments and your personal media collection, offering a seamless and entirely free solution. If you want to try other features, you can also use our <a href=\"/youtube-to-mp3-converter\">YouTube to MP3 Converter</a> or check out the <a href=\"/youtube-thumbnail-downloader\">YouTube Thumbnail Downloader</a> for complete access."
+    "content": "Welcome to SavClip, the ultimate global destination for saving YouTube Shorts with professional speed and uncompromised quality. YouTube Shorts have taken the digital world by storm, offering a constant stream of viral entertainment, quick tutorials, and breathtaking short-form cinematography. Because these videos are often fleeting, having a reliable way to save them is essential for fans and creators alike. Our premium YouTube Shorts Saver is specifically engineered to bridge the gap between these temporary viral moments and your personal media collection, offering a seamless and entirely free solution. If you want to try other features, you can also use our <a href=\"/youtube-to-mp3-converter\">YouTube to MP3 Converter</a> or check out the <a href=\"/youtube-thumbnail-downloader\">YouTube Thumbnail Saver</a> for complete access."
   },
   {
     "type": "paragraph",
@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Copy Shorts Link: Open YouTube and find the Short you want to save. Tap the share button and select 'Copy Link'.",
       "Paste URL: Head over to SavClip's YouTube Shorts Saver and paste the copied link into the search box at the top of this page.",
-      "Download Now: Click the 'Download' button. Our system will instantly process the video and provide you with high-speed saving links."
+      "Download Now: Click the 'Save' button. Our system will instantly process the video and provide you with high-speed saving links."
     ]
   },
   {
@@ -95,7 +95,7 @@ export const faqs = [
   },
   {
     "q": "How do I save YouTube shorts on my iPhone?",
-    "a": "Paste the link into SavClip in Safari, click download, and then use the Safari download manager to save the video directly to your device."
+    "a": "Paste the link into SavClip in Safari, click download, and then use the Safari save manager to save the video directly to your device."
   }
 ];
 

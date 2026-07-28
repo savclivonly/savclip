@@ -2,11 +2,11 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Por qué SavClip es el Mejor Instagram Descargador Privado"
+    "content": "Por qué SavClip es el Mejor Instagram guardador público"
   },
   {
     "type": "paragraph",
-    "content": "Bienvenido a SavClip, la plataforma definitiva para world's most trusted and sophisticated destination for saving private Instagram content with absolute security and professional quality. We understand that some of the most meaningful media on Instagram is shared within private circles. Whether you're looking to save a friend's private Reel, a family member's exclusive photo, or a restricted video post that you have access to, our premium Instagram Private Saver is engineered to deliver high-performance, secure results. SavClip provides a streamlined and entirely free solution to save private IG content directly to your device. If you want to try other features, you can also use our <a href=\"/Instagram-video-compressor\">Instagram Video Compressor</a> or check out the <a href=\"/Instagram-carousel-downloader\">Instagram Carousel Downloader</a> for complete access."
+    "content": "Bienvenido a SavClip, la plataforma definitiva para world's most trusted and sophisticated destination for saving private Instagram content with absolute security and professional quality. We understand that some of the most meaningful media on Instagram is shared within private circles. Whether you're looking to save a friend's private Reel, a family member's exclusive photo, or a restricted video post that you have access to, our premium Instagram Private Saver is engineered to deliver high-performance, secure results. SavClip provides a streamlined and entirely free solution to save private IG content directly to your device. If you want to try other features, you can also use our <a href=\"/instagram-video-compressor\">Instagram Video Compressor</a> or check out the <a href=\"/instagram-carousel-downloader\">Instagram Carousel Saver</a> for complete access."
   },
   {
     "type": "paragraph",
@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Open Private Post: Log into Instagram in your browser and open the private video or photo you wish to download.",
       "Get Source Code: Right-click on the page and select 'View Page Source' (or press Ctrl+U / Cmd+Option+U). Copy the entire source code.",
-      "Paste & Download: Visit SavClip's Private Saver, paste the copied source code into the provided box, and click 'Download'. Your media will be extracted instantly."
+      "Paste & Download: Visit SavClip's Private Saver, paste the copied source code into the provided box, and click 'Save'. Your media will be extracted instantly."
     ]
   },
   {
@@ -50,7 +50,7 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "Instagram Descargador Privado Online & Free"
+    "content": "Instagram guardador público Online & Free"
   },
   {
     "type": "paragraph",
@@ -91,12 +91,12 @@ export const faqs = [
 ];
 
 export const meta = {
-  "title": "Instagram Descargador Privado - Save Private Media Online | SavClip",
-  "description": "Download videos, reels, and photos from private Instagram accounts. Secure web tool to save private profile content without any login."
+  "title": "Instagram guardador público - Save Private Media Online | SavClip",
+  "description": "Download videos, reels, and photos from public instagram profiles. Secure web tool to save private profile content without any login."
 };
 
 export const header = {
-  "title": "Instagram Descargador Privado",
+  "title": "Instagram guardador público",
   "title1": "Download",
   "title2": "Private Media",
   "title3": "100% Secure & HD",

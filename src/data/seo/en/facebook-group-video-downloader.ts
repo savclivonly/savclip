@@ -6,11 +6,11 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Welcome to SavClip, the ultimate global destination for downloading videos from Facebook groups with professional speed and uncompromised quality. Groups are the heart of Facebook's community, where niche content, exclusive tutorials, and personal stories are shared every second. Whether you're a member of a public interest group or a private community, having a reliable way to save these videos for offline viewing is essential. Our premium Facebook Group Video Downloader is specifically engineered to help you archive group media in high definition, offering a seamless, secure, and entirely free solution. If you want to try other features, you can also use our <a href=\"/facebook-audio-downloader\">Facebook Audio Downloader</a> or check out the <a href=\"/facebook-profile-viewer\">FB Profile Viewer</a> for complete access."
+    "content": "Welcome to SavClip, the ultimate global destination for saving videos from Facebook groups with professional speed and uncompromised quality. Groups are the heart of Facebook's community, where niche content, exclusive tutorials, and personal stories are shared every second. Whether you're a member of a public interest group or a private community, having a reliable way to save these videos for offline viewing is essential. Our premium Facebook Group Video Downloader is specifically engineered to help you archive group media in high definition, offering a seamless, secure, and entirely free solution. If you want to try other features, you can also use our <a href=\"/facebook-audio-downloader\">Facebook Audio Downloader</a> or check out the <a href=\"/facebook-profile-viewer\">FB Profile Viewer</a> for complete access."
   },
   {
     "type": "paragraph",
-    "content": "Our advanced downloading engine is designed to handle both public and private group posts, ensuring that you get the highest quality video download results possible. We take pride in being a top-tier Facebook group video saver, providing you with clean, original content preserved exactly as it was uploaded. Whether you're using our mobile-friendly interface on iPhone or Android, or our robust desktop version on PC or Mac, SavClip guarantees a high-speed, secure experience without requiring any suspicious app installations or browser extensions."
+    "content": "Our advanced downloading engine is designed to handle both public and private group posts, ensuring that you get the highest quality video save results possible. We take pride in being a top-tier Facebook group video saver, providing you with clean, original content preserved exactly as it was uploaded. Whether you're using our mobile-friendly interface on iPhone or Android, or our robust desktop version on PC or Mac, SavClip guarantees a high-speed, secure experience without requiring any suspicious app installations or browser extensions."
   },
   {
     "type": "heading",
@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Copy Group Video Link: Navigate to the video within the Facebook group. Click 'Share' and select 'Copy Link'.",
       "Paste URL: Visit SavClip's Facebook Group Video Downloader and paste the link into the search box at the top of the page.",
-      "Download HD: Click the 'Download' button. Our system will process the video and provide you with high-speed download links in various qualities."
+      "Download HD: Click the 'Save' button. Our system will process the video and provide you with high-speed download links in various qualities."
     ]
   },
   {

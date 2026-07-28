@@ -6,7 +6,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Welcome to SavClip, the ultimate global destination for saving TikTok Shorts and Reels with professional speed and uncompromised quality. TikTok's short-form vertical videos, often referred to as Shorts or Reels, have become the definitive heartbeat of modern digital storytelling. Whether it's a hilarious viral sketch, a quick cooking tutorial, or an inspiring travel clip, our premium TikTok Shorts Saver is specifically engineered to bridge the gap between these temporary moments and your personal media collection, offering a seamless and entirely free solution. If you want to try other features, you can also use our <a href=\"/tiktok-photo-downloader\">TikTok Photo Downloader</a> or check out the <a href=\"/tiktok-dp-downloader\">TikTok DP Downloader</a> for complete access."
+    "content": "Welcome to SavClip, the ultimate global destination for saving TikTok Shorts and Reels with professional speed and uncompromised quality. TikTok's short-form vertical videos, often referred to as Shorts or Reels, have become the definitive heartbeat of modern digital storytelling. Whether it's a hilarious viral sketch, a quick cooking tutorial, or an inspiring travel clip, our premium TikTok Shorts Saver is specifically engineered to bridge the gap between these temporary moments and your personal media collection, offering a seamless and entirely free solution. If you want to try other features, you can also use our <a href=\"/tiktok-photo-downloader\">TikTok Photo Saver</a> or check out the <a href=\"/tiktok-dp-downloader\">TikTok DP Extractor</a> for complete access."
   },
   {
     "type": "paragraph",
@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Copy Link: Open TikTok and find the Short or Reel you want to save. Tap the share button and select 'Copy Link'.",
       "Paste URL: Head over to SavClip's TikTok Shorts Saver and paste the copied link into the search box at the top of this page.",
-      "Download Now: Click the 'Download' button. Our system will instantly process the video and provide you with high-speed saving options."
+      "Download Now: Click the 'Save' button. Our system will instantly process the video and provide you with high-speed saving options."
     ]
   },
   {
@@ -95,7 +95,7 @@ export const faqs = [
   },
   {
     "q": "How do I save TikTok shorts on my Android phone?",
-    "a": "Paste the link into SavClip, click download, and then tap the 'Download' button provided. The video will be saved directly to your Downloads folder."
+    "a": "Paste the link into SavClip, click download, and then tap the 'Save' button provided. The video will be saved directly to your Downloads folder."
   }
 ];
 

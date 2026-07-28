@@ -6,7 +6,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Welcome to SavClip, your dedicated utility for securely backing up your personal Snapchat Memories. Snapchat Memories is an incredible feature for archiving your daily life, but keeping those irreplaceable moments locked inside a single app can be risky. If you lose access to your account, you lose your memories. Furthermore, downloading hundreds of memories manually through the app is a tedious process. Our premium online Snapchat Memories Downloader is specifically engineered to help you extract and save your archived snaps directly to your local device, offering a seamless, secure, and entirely free solution. If you want to try other features, you can also use our <a href=\"/snapchat-video-downloader\">Snapchat Video Downloader</a> or check out the <a href=\"/snapchat-spotlight-downloader\">Snapchat Spotlight Downloader</a> for complete access."
+    "content": "Welcome to SavClip, your dedicated utility for securely backing up your personal Snapchat Memories. Snapchat Memories is an incredible feature for archiving your daily life, but keeping those irreplaceable moments locked inside a single app can be risky. If you lose access to your account, you lose your memories. Furthermore, backuping hundreds of memories manually through the app is a tedious process. Our premium online Snapchat Memories Downloader is specifically engineered to help you extract and save your archived snaps directly to your local device, offering a seamless, secure, and entirely free solution. If you want to try other features, you can also use our <a href=\"/snapchat-video-downloader\">Snapchat Video Downloader</a> or check out the <a href=\"/snapchat-spotlight-downloader\">Snapchat Spotlight Downloader</a> for complete access."
   },
   {
     "type": "paragraph",
@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Login to Snapchat Web: Open your desktop browser and log into Snapchat Web to access your personal Memories archive.",
       "Extract Media Link: Open the specific Memory you want to save. Use your browser's Developer Tools (Inspect Element) to locate the direct media URL, or use our secure bookmarklet.",
-      "Paste & Backup: Paste that direct link into SavClip's Memories Downloader. Click 'Download' to instantly save the HD MP4 file to your hard drive."
+      "Paste & Backup: Paste that direct link into SavClip's Memories Downloader. Click 'Save' to instantly save the HD MP4 file to your hard drive."
     ]
   },
   {

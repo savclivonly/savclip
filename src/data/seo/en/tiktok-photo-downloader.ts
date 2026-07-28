@@ -6,7 +6,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Welcome to SavClip, the world's premier destination for high-resolution TikTok photo and slideshow extraction. While TikTok is primarily known for its fast-paced videos, the platform's Photo Mode and multi-image slideshows have become a significant part of its creative ecosystem. Whether it's a stunning photography gallery, a curated carousel of memes, or a visual travel diary, our premium TikTok Photo Grabber is meticulously crafted to fetch the highest quality version of any image on the platform. SavClip provides a seamless, secure, and entirely free solution for a global audience. If you want to try other features, you can also use our <a href=\"/tiktok-dp-downloader\">TikTok DP Downloader</a> or check out the <a href=\"/anonymous-tiktok-viewer\">Anonymous TikTok Viewer</a> for complete access."
+    "content": "Welcome to SavClip, the world's premier destination for high-resolution TikTok photo and slideshow extraction. While TikTok is primarily known for its fast-paced videos, the platform's Photo Mode and multi-image slideshows have become a significant part of its creative ecosystem. Whether it's a stunning photography gallery, a curated carousel of memes, or a visual travel diary, our premium TikTok Photo Grabber is meticulously crafted to fetch the highest quality version of any image on the platform. SavClip provides a seamless, secure, and entirely free solution for a global audience. If you want to try other features, you can also use our <a href=\"/tiktok-dp-downloader\">TikTok DP Saver</a> or check out the <a href=\"/anonymous-tiktok-viewer\">Anonymous TikTok Viewer</a> for complete access."
   },
   {
     "type": "paragraph",
@@ -86,7 +86,7 @@ export const faqs = [
   },
   {
     "q": "How do I save TikTok photos on my Android phone?",
-    "a": "Paste the link into SavClip, click download, and then tap the 'Download' button for each photo to save it to your phone's gallery."
+    "a": "Paste the link into SavClip, click download, and then tap the 'Save' button for each photo to save it to your phone's gallery."
   }
 ];
 

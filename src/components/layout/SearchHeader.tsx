@@ -239,15 +239,15 @@ function SearchHeaderContent({
               iconClass="text-white"
             />
             {/* Trust Badges */}
-            <div className="mt-6 flex flex-row flex-nowrap justify-center gap-3 sm:gap-8 opacity-90">
+            <div className="mt-5 flex flex-row flex-nowrap items-center justify-center gap-4 sm:gap-8 w-full overflow-x-auto no-scrollbar opacity-95">
                {[
-                 { label: "No Watermark", icon: <Video className="h-3.5 w-3.5 sm:h-4 w-4" /> },
-                 { label: "Secure", icon: <Lock className="h-3.5 w-3.5 sm:h-4 w-4" /> },
-                 { label: "100% Free", icon: <Globe className="h-3.5 w-3.5 sm:h-4 w-4" /> }
+                 { label: "No Watermark", icon: <Video className="h-4 w-4 sm:h-4.5 sm:w-4.5 text-white shrink-0" /> },
+                 { label: "Secure", icon: <Lock className="h-4 w-4 sm:h-4.5 sm:w-4.5 text-white shrink-0" /> },
+                 { label: "100% Free", icon: <Globe className="h-4 w-4 sm:h-4.5 sm:w-4.5 text-white shrink-0" /> }
                ].map((badge, i) => (
-                 <div key={i} className={`flex items-center gap-1.5 font-bold text-white uppercase tracking-wider sm:tracking-widest hover:scale-105 transition-transform whitespace-nowrap ${locale === 'ar' ? "text-[11px] sm:text-sm" : "text-[8px] sm:text-xs"}`}>
-                    <span className="p-0.5 sm:p-1 bg-white/20 rounded-lg backdrop-blur-md shrink-0">{badge.icon}</span>
-                    <span className="drop-shadow-sm">{translateToolName(badge.label, locale)}</span>
+                 <div key={i} className="flex items-center gap-1.5 text-white uppercase font-bold tracking-wider whitespace-nowrap text-xs sm:text-sm drop-shadow-md hover:scale-105 transition-transform cursor-pointer">
+                    <span className="p-1 bg-white/20 rounded-md shrink-0">{badge.icon}</span>
+                    <span className="drop-shadow-md font-bold">{translateToolName(badge.label, locale)}</span>
                  </div>
                ))}
             </div>

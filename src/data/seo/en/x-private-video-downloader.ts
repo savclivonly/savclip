@@ -6,11 +6,11 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Welcome to SavClip, your trusted portal for saving restricted media from the X platform. While downloading public videos is incredibly simple with a standard URL, downloading a video from a locked or private X (Twitter) account requires a more advanced approach. Because X blocks standard link-sharing and API access for private posts, traditional downloaders will fail. Our premium X Private Video Downloader provides a secure, browser-based solution that allows you to safely extract the media using your browser's source code. If you want to try other features, you can also use our <a href=\"/x-banner-downloader\">X Banner Downloader</a> or check out the <a href=\"/x-trending-hashtag-finder\">X Trending Hashtag Finder</a> for complete access."
+    "content": "Welcome to SavClip, your trusted portal for saving restricted media from the X platform. While downloading public videos is incredibly simple with a standard URL, backuping a video from a locked or private X (Twitter) account requires a more advanced approach. Because X blocks standard link-sharing and API access for private posts, traditional downloaders will fail. Our premium X Private Video Saver provides a secure, browser-based solution that allows you to safely extract the media using your browser's source code. If you want to try other features, you can also use our <a href=\"/x-banner-downloader\">X Banner Extractor</a> or check out the <a href=\"/x-trending-hashtag-finder\">X Trending Hashtag Finder</a> for complete access."
   },
   {
     "type": "paragraph",
-    "content": "We understand that security is paramount when handling private content. SavClip's advanced extraction engine acts as a secure bridge between your authenticated browser session and the video file. Whether you are a Twitter private video downloader, an X locked account media saver, or looking for a way to save restricted Twitter videos securely, SavClip delivers an unmatched experience. We take pride in delivering a clean, high-performance utility that requires zero shady app installations. Access our site via your desktop PC or Mac to quickly process the source code and secure your high-speed HD MP4 download."
+    "content": "We understand that security is paramount when handling private content. SavClip's advanced extraction engine acts as a secure bridge between your authenticated browser session and the video file. Whether you are a Twitter private video downloader, an X locked account media saver, or looking for a way to save restricted Twitter videos securely, SavClip delivers an unmatched experience. We take pride in delivering a clean, high-performance utility that requires zero shady app installations. Access our site via your desktop PC or Mac to quickly process the source code and secure your high-speed HD MP4 save."
   },
   {
     "type": "heading",
@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Login to X Web: Open your desktop browser (like Chrome or Firefox) and log into your X account. Navigate to the post containing the private video.",
       "Copy Page Source: Right-click on the page and select 'View Page Source' or press 'Ctrl + U' (Windows) / 'Cmd + Option + U' (Mac). Select all the text (Ctrl+A) and copy it (Ctrl+C).",
-      "Paste & Download: Return to SavClip's X Private Downloader, paste the entire source code into the search box, and click 'Download'. Our system will securely extract the MP4 link for you."
+      "Paste & Save: Return to SavClip's X Private Downloader, paste the entire source code into the search box, and click 'Download'. Our system will securely extract the MP4 link for you."
     ]
   },
   {

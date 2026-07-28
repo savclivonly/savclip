@@ -6,7 +6,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Welcome to SavClip, your professional utility for optimizing Telegram media for sharing and storage. Telegram is known for allowing massive file uploads, but often these high-resolution videos result in large file sizes that are difficult to share via email, upload to other social platforms, or store on mobile devices with limited space. If you've ever tried to send a video only to hit a file size limit, you know the frustration. Our premium Telegram Video Compressor is specifically engineered to shrink your video's file size without significantly degrading its visual quality, offering a seamless and free solution. If you want to try other features, you can also use our <a href=\"/telegram-bio-generator\">Telegram Bio Generator</a> or check out the <a href=\"/telegram-video-downloader\">Telegram Video Downloader</a> for complete access."
+    "content": "Welcome to SavClip, your professional utility for optimizing Telegram media for sharing and storage. Telegram is known for allowing massive file uploads, but often these high-resolution videos result in large file sizes that are difficult to share via email, upload to other social platforms, or store on mobile devices with limited space. If you've ever tried to send a video only to hit a file size limit, you know the frustration. Our premium Telegram Video Compressor is specifically engineered to shrink your video's file size without significantly degrading its visual quality, offering a seamless and free solution. If you want to try other features, you can also use our <a href=\"/telegram-bio-generator\">Telegram Bio Generator</a> or check out the <a href=\"/telegram-video-downloader\">Telegram Video Saver</a> for complete access."
   },
   {
     "type": "paragraph",
@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Upload or Link Video: Either upload the Telegram video file directly from your device, or paste the public post URL if you haven't downloaded it yet.",
       "Compress: Click 'Compress Video'. Our secure servers will instantly process the media, stripping out unnecessary metadata and optimizing the bitrate.",
-      "Download Optimized File: Once finished, click 'Download' to save the lightweight, high-quality MP4 to your device."
+      "Download Optimized File: Once finished, click 'Save' to save the lightweight, high-quality MP4 to your device."
     ]
   },
   {

@@ -6,7 +6,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Welcome to SavClip, the ultimate online destination for saving entire Facebook photo albums with professional speed and original quality. We understand that memories are often shared in collections, not just single photos. Whether you're looking to save a wedding album, a travel gallery, or a collection of family memories, our premium Facebook Album Saver is engineered to help you archive complete sets of images in one go. SavClip offers a streamlined, secure, and entirely free platform for users who want to save Facebook albums without the tedious task of saving images individually. If you want to try other features, you can also use our <a href=\"/facebook-live-video-downloader\">Facebook Live Downloader</a> or check out the <a href=\"/facebook-dp-downloader\">Facebook DP Downloader</a> for complete access."
+    "content": "Welcome to SavClip, the ultimate online destination for saving entire Facebook photo albums with professional speed and original quality. We understand that memories are often shared in collections, not just single photos. Whether you're looking to save a wedding album, a travel gallery, or a collection of family memories, our premium Facebook Album Saver is engineered to help you archive complete sets of images in one go. SavClip offers a streamlined, secure, and entirely free platform for users who want to save Facebook albums without the tedious task of saving images individually. If you want to try other features, you can also use our <a href=\"/facebook-live-video-downloader\">Facebook Live Saver</a> or check out the <a href=\"/facebook-dp-downloader\">Facebook DP Extractor</a> for complete access."
   },
   {
     "type": "paragraph",
@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Copy Album Link: Navigate to the public Facebook album you want to save and copy its URL from the address bar.",
       "Paste Link: Visit SavClip's Facebook Album Saver and paste the link into the primary search bar.",
-      "Fetch & Download: Click 'Download'. Our system will analyze the album and provide you with high-quality var options for every photo contained within it."
+      "Fetch & Download: Click 'Save'. Our system will analyze the album and provide you with high-quality var options for every photo contained within it."
     ]
   },
   {

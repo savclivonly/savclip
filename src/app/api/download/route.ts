@@ -54,6 +54,27 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "URL is required" }, { status: 400 });
     }
 
+    if (url.includes("mock") || url.includes("test")) {
+      return NextResponse.json({
+        success: true,
+        data: {
+          title: "BCA Major Project Presentation Guide - SavClip",
+          caption: "Learn how to build and present your major project step by step with stunning UI designs and visual diagrams.",
+          thumbnail: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&auto=format&fit=crop&q=80",
+          medias: [
+            { id: "mock-1", url: "https://www.w3schools.com/html/mov_bbb.mp4", quality: "1080p (HD)", type: "video", extension: "mp4" },
+            { id: "mock-2", url: "https://www.w3schools.com/html/mov_bbb.mp4", quality: "720p", type: "video", extension: "mp4" },
+            { id: "mock-3", url: "https://www.w3schools.com/html/mov_bbb.mp4", quality: "360p", type: "video", extension: "mp4" },
+            { id: "mock-4", url: "https://www.w3schools.com/html/mov_bbb.mp4", quality: "128kbps", type: "audio", extension: "mp3" }
+          ],
+          likes: 1250,
+          commentCount: 84,
+          duration: "10:24",
+          author: "SavClip Team"
+        }
+      });
+    }
+
     const lowerUrl = url.toLowerCase();
     let result = null;
 

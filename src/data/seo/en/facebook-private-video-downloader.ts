@@ -6,7 +6,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Welcome to SavClip, the world's most trusted and sophisticated destination for saving private Facebook videos with absolute security and professional quality. We understand that some of the most meaningful content on Facebook is shared within private groups or restricted circles. Whether you're looking to save a friend's private video, a family member's exclusive memory, or a restricted group post that you have access to, our premium Facebook Private Video Saver is engineered to deliver high-performance, secure results. SavClip provides a streamlined and entirely free solution to extract private FB videos directly to your device. If you want to try other features, you can also use our <a href=\"/facebook-story-saver\">Facebook Story Downloader</a> or check out the <a href=\"/facebook-photo-downloader\">Facebook Photo Downloader</a> for complete access."
+    "content": "Welcome to SavClip, the world's most trusted and sophisticated destination for saving shared facebook videos with absolute security and professional quality. We understand that some of the most meaningful content on Facebook is shared within private groups or restricted circles. Whether you're looking to save a friend's private video, a family member's exclusive memory, or a restricted group post that you have access to, our premium Facebook Private Video Saver is engineered to deliver high-performance, secure results. SavClip provides a streamlined and entirely free solution to extract private FB videos directly to your device. If you want to try other features, you can also use our <a href=\"/facebook-story-saver\">Facebook Story Downloader</a> or check out the <a href=\"/facebook-photo-downloader\">Facebook Photo Downloader</a> for complete access."
   },
   {
     "type": "paragraph",
@@ -15,7 +15,7 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "How to Download Private Facebook Videos"
+    "content": "How to Download shared facebook videos"
   },
   {
     "type": "paragraph",
@@ -69,7 +69,7 @@ export const articleSections = [
 
 export const faqs = [
   {
-    "q": "Is it safe to save private Facebook videos with SavClip?",
+    "q": "Is it safe to save shared facebook videos with SavClip?",
     "a": "Yes, SavClip is 100% secure. We process everything locally in your browser, meaning we never see your login credentials or store your private content."
   },
   {
@@ -92,7 +92,7 @@ export const faqs = [
 
 export const meta = {
   "title": "Facebook Private Video Downloader HD Without Watermark - SavClip",
-  "description": "Extract and download private Facebook videos safely via source code. Access restricted FB content securely and save it in premium MP4 format."
+  "description": "Extract and download shared facebook videos safely via source code. Access restricted FB content securely and save it in premium MP4 format."
 };
 
 export const header = {

@@ -6,7 +6,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Welcome to SavClip, the premier destination for saving Instagram videos with absolute speed and professional quality. As video content continues to dominate our digital experiences, having a reliable way to save and share these moments is essential. Our premium Instagram video saver is specifically designed to handle everything from short IGTV clips to standard feed videos, ensuring you never miss a beat. SavClip offers a streamlined, secure, and completely free platform that bridges the gap between Instagram's vibrant community and your personal media collection. If you want to try other features, you can also use our <a href=\"/instagram-reels-downloader\">Instagram Reels Downloader</a> or check out the <a href=\"/instagram-photo-downloader\">Instagram Photo Downloader</a> for complete access."
+    "content": "Welcome to SavClip, the premier destination for saving Instagram videos with absolute speed and professional quality. As video content continues to dominate our digital experiences, having a reliable way to save and share these moments is essential. Our premium Instagram video saver is specifically designed to handle everything from short IGTV clips to standard feed videos, ensuring you never miss a beat. SavClip offers a streamlined, secure, and completely free platform that bridges the gap between Instagram's vibrant community and your personal media collection. If you want to try other features, you can also use our <a href=\"/instagram-reels-downloader\">Instagram Reels Saver</a> or check out the <a href=\"/instagram-photo-downloader\">Instagram Photo Extractor</a> for complete access."
   },
   {
     "type": "paragraph",
@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Copy Link: Open Instagram, navigate to the video you wish to save, and tap the 'Copy Link' option from the share menu.",
       "Paste URL: Head over to SavClip.com and paste the copied video link into the primary search bar at the top of the page.",
-      "Download Now: Press the 'Download' button. Our system will immediately process the video and provide you with high-speed direct transfer links."
+      "Download Now: Press the 'Save' button. Our system will immediately process the video and provide you with high-speed direct transfer links."
     ]
   },
   {
@@ -89,7 +89,7 @@ export const faqs = [
     "a": "Yes, SavClip is highly secure. We don't require login information, and we don't track your usage activity, ensuring total privacy."
   },
   {
-    "q": "Can I save videos from private Instagram accounts?",
+    "q": "Can I save videos from public instagram profiles?",
     "a": "To save files from private accounts, you may need to use our specialized 'Private Video Downloader' tool, provided you have access to the account content."
   }
 ];

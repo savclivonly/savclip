@@ -6,7 +6,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Welcome to SavClip, your ultimate destination for viewing Snapchat profiles without boundaries. Normally, exploring a creator's profile, watching their stories, and viewing their Bitmoji requires you to have the Snapchat app installed and an active account logged in. For those who want to do market research, check on an influencer's latest posts, or simply browse without leaving a footprint, this requirement is a significant barrier. Our premium Snapchat Profile Viewer is specifically engineered to bypass these restrictions, offering a seamless, secure, and entirely free solution. If you want to try other features, you can also use our <a href=\"/snapchat-memories-downloader\">Snapchat Memories Downloader</a> or check out the <a href=\"/snapchat-video-downloader\">Snapchat Video Downloader</a> for complete access."
+    "content": "Welcome to SavClip, your ultimate destination for viewing Snapchat profiles without boundaries. Normally, exploring a creator's profile, watching their stories, and viewing their Bitmoji requires you to have the Snapchat app installed and an active account logged in. For those who want to do market research, check on an influencer's latest posts, or simply browse without leaving a footprint, this requirement is a significant barrier. Our premium Snapchat Profile Viewer is specifically engineered to bypass these restrictions, offering a seamless, secure, and entirely free solution. If you want to try other features, you can also use our <a href=\"/snapchat-memories-downloader\">Snapchat Memories Saver</a> or check out the <a href=\"/snapchat-video-downloader\">Snapchat Video Extractor</a> for complete access."
   },
   {
     "type": "paragraph",
@@ -68,7 +68,7 @@ export const faqs = [
     "a": "No, you do not need an account. SavClip is entirely web-based, allowing you to view public profiles without installing the app or logging in."
   },
   {
-    "q": "Can I view private Snapchat profiles?",
+    "q": "Can I view public snapchat profiles?",
     "a": "No. SavClip can only fetch data from accounts that are set to public. If an account is strictly private, our system cannot access it."
   },
   {

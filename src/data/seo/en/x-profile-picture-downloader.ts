@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Copy X Profile Link: Locate the profile on X. Tap the 'Share' icon on their profile page and select 'Copy Link', or simply note their @username.",
       "Paste URL or Username: Navigate to SavClip's X Profile Picture Downloader and paste the link or type the username into the search box.",
-      "View & Download: Click 'Search'. Our system instantly fetches the full-size image. You can view it directly or click 'Download' to save the high-quality JPEG or PNG to your device."
+      "View & Download: Click 'Search'. Our system instantly fetches the full-size image. You can view it directly or click 'Save' to save the high-quality JPEG or PNG to your device."
     ]
   },
   {
@@ -36,7 +36,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Unlike basic screen-grabbing methods that result in blurry, pixelated images, our Twitter DP Downloader interacts directly with the API to request the original upload. This means if the user uploaded a crisp 4K image, you will be able to download that exact 4K image. Say goodbye to the frustratingly small circular crops and enjoy the artwork in its entirety."
+    "content": "Unlike basic screen-grabbing methods that result in blurry, pixelated images, our Twitter DP Downloader interacts directly with the API to request the original upload. This means if the user uploaded a crisp 4K image, you will be able to save that exact 4K image. Say goodbye to the frustratingly small circular crops and enjoy the artwork in its entirety."
   },
   {
     "type": "heading",
@@ -69,7 +69,7 @@ export const faqs = [
   },
   {
     "q": "Does this tool also download X profile banners/headers?",
-    "a": "This specific tool is optimized for profile pictures. To download the wide cover images, we recommend using our dedicated 'X Banner Downloader' tool."
+    "a": "This specific tool is optimized for profile pictures. To save the wide cover images, we recommend using our dedicated 'X Banner Downloader' tool."
   },
   {
     "q": "Is it free to use the X Profile Picture Downloader?",

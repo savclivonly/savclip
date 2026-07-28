@@ -6,7 +6,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Welcome to SavClip, the safest online solution for downloading media from restricted Telegram channels. Many Telegram administrators restrict content forwarding, saving, and copying to protect their content. However, there are many legitimate reasons you might need to save a copy for offline reference, personal archiving, or backup. Our Telegram Restricted Content Downloader is engineered to help you extract and save copy-protected videos, photos, and files securely. If you want to try other features, you can also use our <a href=\"/telegram-photo-downloader\">Telegram Photo Downloader</a> or check out the <a href=\"/telegram-audio-downloader\">Telegram Audio Downloader</a> for complete access."
+    "content": "Welcome to SavClip, the safest online solution for backuping media from restricted Telegram channels. Many Telegram administrators restrict content forwarding, saving, and copying to protect their content. However, there are many legitimate reasons you might need to save a copy for offline reference, personal archiving, or backup. Our Telegram Restricted Content Downloader is engineered to help you extract and save copy-protected videos, photos, and files securely. If you want to try other features, you can also use our <a href=\"/telegram-photo-downloader\">Telegram Photo Downloader</a> or check out the <a href=\"/telegram-audio-downloader\">Telegram Audio Downloader</a> for complete access."
   },
   {
     "type": "paragraph",
@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Copy Link: Navigate to the public Telegram channel and copy the direct link of the post containing the restricted video or image.",
       "Paste URL: Visit SavClip's Telegram Restricted Downloader and paste the copied URL into the search box.",
-      "Download HD: Click 'Download'. Our extraction engine will process the link and generate high-speed download paths for your media."
+      "Download HD: Click 'Save'. Our extraction engine will process the link and generate high-speed download paths for your media."
     ]
   },
   {
@@ -61,7 +61,7 @@ export const faqs = [
 
 export const meta = {
   "title": "Telegram Restricted Content Downloader HD - SavClip",
-  "description": "Bypass chat forward blocks and content savings restrictions on Telegram. Safely var copy-protected channel videos and photos online."
+  "description": "backup shared channel clips and content savings restrictions on Telegram. Safely var copy-protected channel videos and photos online."
 };
 
 export const header = {

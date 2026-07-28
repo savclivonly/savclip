@@ -1038,7 +1038,7 @@ export const TOOL_CONFIGS: Record<string, ToolConfig> = {
     "relatedTools": [
       {
         "label": "Analytics Viewer",
-        "href": "/telegram-analytics-viewer"
+        "href": "/telegram-channel-link-generator"
       },
       {
         "label": "Channel Finder",
@@ -1091,7 +1091,7 @@ export const TOOL_CONFIGS: Record<string, ToolConfig> = {
       },
       {
         "label": "Media Downloader",
-        "href": "/telegram-media-downloader"
+        "href": "/telegram-video-downloader"
       }
     ],
     "ctaColor": "bg-linear-to-r from-blue-600 via-indigo-600 to-violet-600",
@@ -1108,7 +1108,7 @@ export const TOOL_CONFIGS: Record<string, ToolConfig> = {
     "relatedTools": [
       {
         "label": "Media Downloader",
-        "href": "/telegram-media-downloader"
+        "href": "/telegram-video-downloader"
       },
       {
         "label": "Video Downloader",
@@ -1145,7 +1145,7 @@ export const TOOL_CONFIGS: Record<string, ToolConfig> = {
       },
       {
         "label": "Media Downloader",
-        "href": "/telegram-media-downloader"
+        "href": "/telegram-video-downloader"
       },
       {
         "label": "Story Saver",
@@ -1170,7 +1170,7 @@ export const TOOL_CONFIGS: Record<string, ToolConfig> = {
       },
       {
         "label": "Media Downloader",
-        "href": "/telegram-media-downloader"
+        "href": "/telegram-video-downloader"
       },
       {
         "label": "Story Saver",
@@ -1203,7 +1203,7 @@ export const TOOL_CONFIGS: Record<string, ToolConfig> = {
       },
       {
         "label": "Media Downloader",
-        "href": "/telegram-media-downloader"
+        "href": "/telegram-video-downloader"
       },
       {
         "label": "File Downloader",
@@ -1248,7 +1248,7 @@ export const TOOL_CONFIGS: Record<string, ToolConfig> = {
       },
       {
         "label": "Media Downloader",
-        "href": "/telegram-media-downloader"
+        "href": "/telegram-video-downloader"
       }
     ],
     "ctaColor": "bg-linear-to-r from-blue-600 via-indigo-600 to-violet-600",
@@ -1265,7 +1265,7 @@ export const TOOL_CONFIGS: Record<string, ToolConfig> = {
     "relatedTools": [
       {
         "label": "Analytics Viewer",
-        "href": "/telegram-analytics-viewer"
+        "href": "/telegram-channel-link-generator"
       },
       {
         "label": "Video Downloader",
@@ -1298,7 +1298,7 @@ export const TOOL_CONFIGS: Record<string, ToolConfig> = {
       },
       {
         "label": "Media Downloader",
-        "href": "/telegram-media-downloader"
+        "href": "/telegram-video-downloader"
       },
       {
         "label": "Audio Downloader",
@@ -1323,7 +1323,7 @@ export const TOOL_CONFIGS: Record<string, ToolConfig> = {
       },
       {
         "label": "Media Downloader",
-        "href": "/telegram-media-downloader"
+        "href": "/telegram-video-downloader"
       },
       {
         "label": "File Downloader",

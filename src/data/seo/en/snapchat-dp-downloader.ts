@@ -6,7 +6,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Welcome to SavClip, your ultimate destination for viewing and downloading Snapchat Profile Pictures (DP) and Bitmojis in high resolution. On Snapchat, a user's profile picture or Bitmoji is a key part of their identity. Whether you want to save a friend's creative new Bitmoji outfit, download your own profile picture for use on other social networks, or simply view a tiny DP in full clarity, our premium Snapchat DP Downloader is here to help. SavClip provides a seamless, secure, and entirely free solution for a global audience. If you want to try other features, you can also use our <a href=\"/snapchat-map-downloader\">Snapchat Map Downloader</a> or check out the <a href=\"/snapchat-lens-saver\">Snapchat Lens Saver</a> for complete access."
+    "content": "Welcome to SavClip, your ultimate destination for viewing and saving Snapchat Profile Pictures (DP) and Bitmojis in high resolution. On Snapchat, a user's profile picture or Bitmoji is a key part of their identity. Whether you want to save a friend's creative new Bitmoji outfit, download your own profile picture for use on other social networks, or simply view a tiny DP in full clarity, our premium Snapchat DP Downloader is here to help. SavClip provides a seamless, secure, and entirely free solution for a global audience. If you want to try other features, you can also use our <a href=\"/snapchat-map-downloader\">Snapchat Map Downloader</a> or check out the <a href=\"/snapchat-lens-saver\">Snapchat Lens Saver</a> for complete access."
   },
   {
     "type": "paragraph",
@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Find the Username: Open Snapchat and note the exact username (not the display name) of the profile you want to view.",
       "Enter Username: Visit SavClip's Snapchat DP Downloader and type or paste the username into the search box at the top of this page.",
-      "View & Download: Click 'Search'. Our system will instantly fetch the high-resolution profile picture or Bitmoji. Click 'Download' to save it to your device."
+      "View & Download: Click 'Search'. Our system will instantly fetch the high-resolution profile picture or Bitmoji. Click 'Save' to save it to your device."
     ]
   },
   {

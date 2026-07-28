@@ -6,7 +6,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Welcome to SavClip, your ultimate online utility for reducing video file sizes. If you've ever tried to share a high-definition Snapchat video via email or a messaging app, you know the frustration of encountering 'file too large' errors. High-quality smartphone cameras generate massive video files, making them difficult to store and share. Our premium online Snapchat Video Compressor is specifically engineered to solve this problem by shrinking your video's file size without significantly degrading its visual quality, offering a seamless and free solution for users worldwide. If you want to try other features, you can also use our <a href=\"/snapchat-profile-viewer\">Snapchat Profile Viewer</a> or check out the <a href=\"/snapchat-memories-downloader\">Snapchat Memories Downloader</a> for complete access."
+    "content": "Welcome to SavClip, your ultimate online utility for reducing video file sizes. If you've ever tried to share a high-definition Snapchat video via email or a messaging app, you know the frustration of encountering 'file too large' errors. High-quality smartphone cameras generate massive video files, making them difficult to store and share. Our premium online Snapchat Video Compressor is specifically engineered to solve this problem by shrinking your video's file size without significantly degrading its visual quality, offering a seamless and free solution for users worldwide. If you want to try other features, you can also use our <a href=\"/snapchat-profile-viewer\">Snapchat Profile Viewer</a> or check out the <a href=\"/snapchat-memories-downloader\">Snapchat Memories Saver</a> for complete access."
   },
   {
     "type": "paragraph",
@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Upload or Link Video: Either upload the Snapchat video file directly from your device, or paste the SavClip link if you've just downloaded it.",
       "Select Compression Level: Choose your desired optimization level (e.g., 'Fast Compression', 'High Quality', or 'Maximum Reduction').",
-      "Compress & Download: Click 'Compress'. Our servers will instantly shrink the file. Once finished, click 'Download' to save the optimized MP4 to your device."
+      "Compress & Download: Click 'Compress'. Our servers will instantly shrink the file. Once finished, click 'Save' to save the optimized MP4 to your device."
     ]
   },
   {

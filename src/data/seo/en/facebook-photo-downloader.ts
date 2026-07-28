@@ -6,7 +6,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Welcome to SavClip, the world's premier destination for high-resolution Facebook photo preservation. In the age of visual storytelling, being able to preserve stunning photography and personal memories is more important than ever. Our premium Facebook Photo Saver is meticulously crafted to fetch the highest quality version of any image on the platform. Whether it's a single high-definition shot, a breathtaking landscape, or a multi-photo album, SavClip provides a seamless, secure, and entirely free way to save Facebook images directly to your device. If you want to try other features, you can also use our <a href=\"/facebook-album-downloader\">Facebook Album Downloader</a> or check out the <a href=\"/facebook-live-video-downloader\">Facebook Live Downloader</a> for complete access."
+    "content": "Welcome to SavClip, the world's premier destination for high-resolution Facebook photo preservation. In the age of visual storytelling, being able to preserve stunning photography and personal memories is more important than ever. Our premium Facebook Photo Saver is meticulously crafted to fetch the highest quality version of any image on the platform. Whether it's a single high-definition shot, a breathtaking landscape, or a multi-photo album, SavClip provides a seamless, secure, and entirely free way to save Facebook images directly to your device. If you want to try other features, you can also use our <a href=\"/facebook-album-downloader\">Facebook Album Saver</a> or check out the <a href=\"/facebook-live-video-downloader\">Facebook Live Extractor</a> for complete access."
   },
   {
     "type": "paragraph",
@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Copy Photo Link: Navigate to the Facebook photo or album you want to save. Click the 'Share' button and select 'Copy Link'.",
       "Paste URL: Visit SavClip and paste the photo URL into the input box at the top of the page.",
-      "Download: Click 'Download'. Our tool will instantly fetch the high-resolution image for you to save to your gallery."
+      "Download: Click 'Save'. Our tool will instantly fetch the high-resolution image for you to save to your gallery."
     ]
   },
   {

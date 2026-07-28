@@ -6,11 +6,11 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Welcome to SavClip, your premium destination for archiving and downloading Instagram Highlights with professional ease. Highlights are the curated essence of an Instagram profile, preserving the most important stories beyond their 24-hour lifespan. Whether you're looking to save a travel series, a product showcase, or a collection of personal memories, our advanced Instagram Highlights Downloader is built to deliver high-performance, archival-quality results. SavClip provides a seamless, secure, and entirely free solution to download IG highlights directly to your device. If you want to try other features, you can also use our <a href=\"/instagram-audio-downloader\">Instagram Audio Downloader</a> or check out the <a href=\"/instagram-private-downloader\">Instagram Private Downloader</a> for complete access."
+    "content": "Welcome to SavClip, your premium destination for archiving and backuping Instagram Highlights with professional ease. Highlights are the curated essence of an Instagram profile, preserving the most important stories beyond their 24-hour lifespan. Whether you're looking to save a travel series, a product showcase, or a collection of personal memories, our advanced Instagram Highlights Downloader is built to deliver high-performance, archival-quality results. SavClip provides a seamless, secure, and entirely free solution to download IG highlights directly to your device. If you want to try other features, you can also use our <a href=\"/instagram-audio-downloader\">Instagram Audio Downloader</a> or check out the <a href=\"/instagram-private-downloader\">Instagram Private Downloader</a> for complete access."
   },
   {
     "type": "paragraph",
-    "content": "Our platform is engineered for speed and precision, ensuring that every IG highlights download maintains its original Full HD quality without any intrusive watermarks. We understand the value of preserving content in its best form, which is why we bypass standard compression to fetch the original files from Instagram's servers. From mobile users on iPhone and Android to desktop creators on PC and Mac, our versatile online highlights downloader works flawlessly across all platforms. Join thousands of users worldwide who trust SavClip for the fastest and most reliable Instagram highlight download experience today."
+    "content": "Our platform is engineered for speed and precision, ensuring that every IG highlights save maintains its original Full HD quality without any intrusive watermarks. We understand the value of preserving content in its best form, which is why we bypass standard compression to fetch the original files from Instagram's servers. From mobile users on iPhone and Android to desktop creators on PC and Mac, our versatile online highlights downloader works flawlessly across all platforms. Join thousands of users worldwide who trust SavClip for the fastest and most reliable Instagram highlight download experience today."
   },
   {
     "type": "heading",
@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Copy Link: Open Instagram and navigate to the profile or the specific highlight you want to save. Copy the URL from the browser or the share menu.",
       "Paste Link: Visit SavClip and paste the highlight link into the search box at the top of this page.",
-      "Download: Click the 'Download' button. Our server will process the link and provide you with all the stories contained in that highlight for instant download."
+      "Download: Click the 'Save' button. Our server will process the link and provide you with all the stories contained in that highlight for instant download."
     ]
   },
   {
@@ -72,14 +72,14 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Whether you're on the go using a highlights downloader mobile interface or at your desk using a highlights downloader desktop setup, SavClip's responsive design adapts to your needs. iPhone users can save highlights directly to their device, while Android and PC users enjoy instant downloads with a single click. It's the most versatile Instagram highlights saver available online."
+    "content": "Whether you're on the go using a highlights downloader mobile interface or at your desk using a highlights saver desktop setup, SavClip's responsive design adapts to your needs. iPhone users can save highlights directly to their device, while Android and PC users enjoy instant downloads with a single click. It's the most versatile Instagram highlights saver available online."
   }
 ];
 
 export const faqs = [
   {
     "q": "Is it free to download Instagram Highlights using SavClip?",
-    "a": "Yes, SavClip is a 100% free online Instagram highlights downloader. You can download as many highlights as you want without any cost."
+    "a": "Yes, SavClip is a 100% free online Instagram highlights downloader. You can save as many highlights as you want without any cost."
   },
   {
     "q": "Can I download Highlights anonymously?",

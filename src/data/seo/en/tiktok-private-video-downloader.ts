@@ -6,7 +6,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Welcome to SavClip, your trusted portal for saving restricted and private TikTok content. While downloading public videos is straightforward, saving a video from a private account—or a video that a creator has restricted to 'Friends Only'—requires a more sophisticated approach. Because TikTok blocks standard link-sharing for private media, traditional downloaders fail. Our premium TikTok Private Video Downloader provides a safe, browser-based solution to extract the source code and save these private videos directly to your device. If you want to try other features, you can also use our <a href=\"/tiktok-trending-hashtag-generator\">TikTok Hashtag Generator</a> or check out the <a href=\"/tiktok-caption-generator\">TikTok Caption Generator</a> for complete access."
+    "content": "Welcome to SavClip, your trusted portal for saving restricted and private TikTok content. While downloading public videos is straightforward, saving a video from a private account—or a video that a creator has restricted to 'Friends Only'—requires a more sophisticated approach. Because TikTok blocks standard link-sharing for private media, traditional downloaders fail. Our premium TikTok Private Video Saver provides a safe, browser-based solution to extract the source code and save these private videos directly to your device. If you want to try other features, you can also use our <a href=\"/tiktok-trending-hashtag-generator\">TikTok Hashtag Generator</a> or check out the <a href=\"/tiktok-caption-generator\">TikTok Caption Generator</a> for complete access."
   },
   {
     "type": "paragraph",
@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Login to TikTok Web: Open your desktop browser (like Chrome) and log into your TikTok account to access the private video.",
       "Copy Page Source: Press 'Ctrl + U' (Windows) or 'Cmd + Option + U' (Mac) to view the page source. Select all the text (Ctrl+A) and copy it (Ctrl+C).",
-      "Paste & Download: Paste the entire source code into SavClip's Private Downloader search box. Click 'Download' to securely extract and save the MP4 file."
+      "Paste & Save: Paste the entire source code into SavClip's Private Downloader search box. Click 'Download' to securely extract and save the MP4 file."
     ]
   },
   {

@@ -6,7 +6,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Bienvenido a SavClip, la plataforma definitiva para premier destination for saving TikTok videos with lightning-fast speed and professional quality. TikTok has revolutionized the way we consume short-form content, from viral dance challenges to insightful life hacks. Our premium TikTok Video Saver is specifically designed to handle the high volume of creative output on the platform, ensuring you can save your favorite moments in their purest form. SavClip offers a streamlined, secure, and entirely free solution for users worldwide. If you want to try other features, you can also use our <a href=\"/TikTok-mp3-downloader\">TikTok MP3 Downloader</a> or check out the <a href=\"/TikTok-story-saver\">TikTok Story Downloader</a> for complete access."
+    "content": "Bienvenido a SavClip, la plataforma definitiva para premier destination for saving TikTok videos with lightning-fast speed and professional quality. TikTok has revolutionized the way we consume short-form content, from viral dance challenges to insightful life hacks. Our premium TikTok Video Saver is specifically designed to handle the high volume of creative output on the platform, ensuring you can save your favorite moments in their purest form. SavClip offers a streamlined, secure, and entirely free solution for users worldwide. If you want to try other features, you can also use our <a href=\"/tiktok-mp3-downloader\">TikTok MP3 Saver</a> or check out the <a href=\"/tiktok-story-saver\">TikTok Story Downloader</a> for complete access."
   },
   {
     "type": "paragraph",
@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Copy Video Link: Open TikTok and find the video you want to save. Tap the share button and select 'Copy Link'.",
       "Paste URL: Head over to SavClip's TikTok Video Saver and paste the copied link into the search box at the top of this page.",
-      "Download Now: Click the 'Download' button. Our servers will instantly process the video and provide you with high-speed saving options in various qualities."
+      "Download Now: Click the 'Save' button. Our servers will instantly process the video and provide you with high-speed saving options in various qualities."
     ]
   },
   {
@@ -90,7 +90,7 @@ export const faqs = [
   },
   {
     "q": "How do I save TikTok videos on my iPhone?",
-    "a": "Open SavClip in Safari, paste your TikTok link, click download, and then use the Safari download manager to save the file directly to your device."
+    "a": "Open SavClip in Safari, paste your TikTok link, click download, and then use the Safari save manager to save the file directly to your device."
   }
 ];
 

@@ -6,7 +6,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Welcome to SavClip, your professional utility for optimizing X media for sharing and storage. In an era of high-definition content, X (formerly Twitter) videos can often result in large file sizes that are difficult to share via email or messaging apps like WhatsApp. If you've ever tried to upload a video only to hit a file size limit, you know the frustration. Our premium X Video Compressor is specifically engineered to shrink your video's file size without significantly degrading its visual quality, offering a seamless and free solution for all users. If you want to try other features, you can also use our <a href=\"/x-bio-generator\">X Bio Generator</a> or check out the <a href=\"/x-video-downloader\">X Video Downloader</a> for complete access."
+    "content": "Welcome to SavClip, your professional utility for optimizing X media for sharing and storage. In an era of high-definition content, X (formerly Twitter) videos can often result in large file sizes that are difficult to share via email or messaging apps like WhatsApp. If you've ever tried to upload a video only to hit a file size limit, you know the frustration. Our premium X Video Compressor is specifically engineered to shrink your video's file size without significantly degrading its visual quality, offering a seamless and free solution for all users. If you want to try other features, you can also use our <a href=\"/x-bio-generator\">X Bio Generator</a> or check out the <a href=\"/x-video-downloader\">X Video Saver</a> for complete access."
   },
   {
     "type": "paragraph",
@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Upload or Link Video: Either upload the X video file directly from your device, or paste the post URL if you haven't downloaded it yet.",
       "Compress: Click 'Compress Video'. Our secure servers will instantly process the media, stripping out unnecessary metadata and optimizing the bitrate.",
-      "Download Optimized File: Once finished, click 'Download' to save the lightweight, high-quality MP4 to your device."
+      "Download Optimized File: Once finished, click 'Save' to save the lightweight, high-quality MP4 to your device."
     ]
   },
   {

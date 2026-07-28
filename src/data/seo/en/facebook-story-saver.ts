@@ -6,11 +6,11 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Welcome to SavClip, the ultimate global destination for viewing and downloading Facebook Stories with total anonymity and professional quality. Facebook Stories are the pulse of social interaction, capturing fleeting moments that define our digital connections. However, because they disappear after 24 hours, having a reliable way to save them is essential. Our premium Facebook Story Downloader is specifically engineered to bridge the gap between these temporary moments and your personal media collection, offering a seamless, secure, and entirely free solution. If you want to try other features, you can also use our <a href=\"/facebook-photo-downloader\">Facebook Photo Downloader</a> or check out the <a href=\"/facebook-album-downloader\">Facebook Album Downloader</a> for complete access."
+    "content": "Welcome to SavClip, the ultimate global destination for viewing and backuping Facebook Stories with total anonymity and professional quality. Facebook Stories are the pulse of social interaction, capturing fleeting moments that define our digital connections. However, because they disappear after 24 hours, having a reliable way to save them is essential. Our premium Facebook Story Downloader is specifically engineered to bridge the gap between these temporary moments and your personal media collection, offering a seamless, secure, and entirely free solution. If you want to try other features, you can also use our <a href=\"/facebook-photo-downloader\">Facebook Photo Downloader</a> or check out the <a href=\"/facebook-album-downloader\">Facebook Album Downloader</a> for complete access."
   },
   {
     "type": "paragraph",
-    "content": "Our sophisticated platform doubles as an anonymous Facebook story viewer, giving you the freedom to watch stories without the creator ever knowing. We prioritize your privacy and ease of use, ensuring that every FB story download HD result is delivered in its original high-definition resolution. Whether you're accessing our site via a story downloader mobile interface on iPhone or Android, or using our robust desktop version on PC or Mac, SavClip guarantees a high-speed, secure, and user-friendly experience without the need for any third-party app installations or account logins."
+    "content": "Our sophisticated platform doubles as an anonymous Facebook story viewer, giving you the freedom to watch stories without the creator ever knowing. We prioritize your privacy and ease of use, ensuring that every FB story save HD result is delivered in its original high-definition resolution. Whether you're accessing our site via a story downloader mobile interface on iPhone or Android, or using our robust desktop version on PC or Mac, SavClip guarantees a high-speed, secure, and user-friendly experience without the need for any third-party app installations or account logins."
   },
   {
     "type": "heading",
@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Copy Story Link: Navigate to the Facebook story you want to save and copy the link from the browser's address bar or the share menu.",
       "Paste URL: Head over to SavClip's Facebook Story Downloader and paste the copied link into the search box at the top of this page.",
-      "Download Now: Click the 'Download' button. Our system will immediately process the story and provide you with high-speed download links."
+      "Download Now: Click the 'Save' button. Our system will immediately process the story and provide you with high-speed download links."
     ]
   },
   {
@@ -45,7 +45,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Don't settle for grainy screen recordings. SavClip is a dedicated HD story downloader that fetches the source file directly from Facebook's servers. This ensures that you get the best possible quality for both video and photo stories. Experience your favorite Facebook moments in their full glory, offline and anywhere, with our high-quality story downloader."
+    "content": "Don't settle for grainy screen recordings. SavClip is a dedicated HD story downloader that fetches the source file directly from Facebook's servers. This ensures that you get the best possible quality for both video and photo stories. Experience your favorite Facebook moments in their full glory, offline and anywhere, with our high-quality story saver."
   },
   {
     "type": "heading",
@@ -63,7 +63,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Security is our highest priority. Unlike many other tools that require app downloads or browser extensions that might compromise your privacy, SavClip is a 100% secure online tool. We don't require any login information, and we don't track your download history. SavClip provides a safe, anonymous, and high-speed environment for all your Facebook story saving needs."
+    "content": "Security is our highest priority. Unlike many other tools that require app downloads or browser extensions that might compromise your privacy, SavClip is a 100% secure online tool. We don't require any login information, and we don't track your save history. SavClip provides a safe, anonymous, and high-speed environment for all your Facebook story saving needs."
   },
   {
     "type": "heading",

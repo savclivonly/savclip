@@ -49,7 +49,7 @@ export const faqs = [
 
 export const meta = {
   title: "Baixador de Reels Instagram Sem Cadastro - SavClip",
-  description: "Fazer download de vídeos do Instagram em alta definição (1080p, 4K) de forma totalmente gratuita. Nossa ferramenta online oferece a melhor velocidade de download sem anúncios intrusivos."
+  description: "Fazer download de vídeos do Instagram em alta definição (1080p, 4K) de forma totalmente gratuita. Nossa ferramenta online oferece a melhor velocidade de save sem anúncios intrusivos."
 };
 
 export const header = {

@@ -6,7 +6,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Welcome to SavClip, the world's most trusted and sophisticated platform for viewing Instagram Stories anonymously and with total privacy. Instagram Stories capture the fleeting, real-time pulse of the community, but the platform's native viewer list can sometimes be a barrier. Whether you're looking to stay updated on your favorite creators, research market trends, or simply browse privately, our premium Instagram Story Viewer is engineered to provide a seamless, secure, and entirely free way to watch IG Stories without leaving a trace. If you want to try other features, you can also use our <a href=\"/instagram-video-downloader\">Instagram Video Downloader</a> or check out the <a href=\"/instagram-reels-downloader\">Instagram Reels Downloader</a> for complete access."
+    "content": "Welcome to SavClip, the world's most trusted and sophisticated platform for viewing Instagram Stories anonymously and with total privacy. Instagram Stories capture the fleeting, real-time pulse of the community, but the platform's native viewer list can sometimes be a barrier. Whether you're looking to stay updated on your favorite creators, research market trends, or simply browse privately, our premium Instagram Story Viewer is engineered to provide a seamless, secure, and entirely free way to watch IG Stories without leaving a trace. If you want to try other features, you can also use our <a href=\"/instagram-video-downloader\">Instagram Video Saver</a> or check out the <a href=\"/instagram-reels-downloader\">Instagram Reels Extractor</a> for complete access."
   },
   {
     "type": "paragraph",
@@ -64,7 +64,7 @@ export const faqs = [
     "a": "No, SavClip is a 100% anonymous story viewer. The user will not see your name in their viewer list, and your identity remains completely hidden."
   },
   {
-    "q": "Can I watch stories from private Instagram accounts?",
+    "q": "Can I watch stories from public instagram profiles?",
     "a": "No, SavClip only supports viewing stories from public Instagram accounts. We respect user privacy settings and cannot access private content."
   },
   {

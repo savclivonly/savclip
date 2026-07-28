@@ -40,7 +40,7 @@ export const articleSections = [
 export const faqs = [
   {
     "q": "Como baixar conteúdos do Instagram online?",
-    "a": "Copie o link do post do Instagram, cole no campo de pesquisa acima e clique em 'Download' para gerar os links de download direto."
+    "a": "Copie o link do post do Instagram, cole no campo de pesquisa acima e clique em 'Download' para gerar os links de save direto."
   },
   {
     "q": "Existe limite de velocidade ou arquivos para baixar?",

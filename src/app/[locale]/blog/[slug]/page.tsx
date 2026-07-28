@@ -108,7 +108,7 @@ export default async function BlogPostPage(props: { params: Promise<{ locale: Lo
         </div>
 
         <div className="prose prose-neutral dark:prose-invert max-w-none">
-          <RichArticle sections={post.sections} />
+          <RichArticle sections={post.sections} locale={locale} />
         </div>
 
         {post.relatedTools && post.relatedTools.length > 0 && (

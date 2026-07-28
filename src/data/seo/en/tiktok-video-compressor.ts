@@ -6,7 +6,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Welcome to SavClip, your ultimate online utility for reducing TikTok video file sizes. If you've ever tried to share a high-definition TikTok video via email or WhatsApp, you know the frustration of encountering 'file too large' errors. High-quality TikTok videos—especially those shot in 1080p or 4K—generate massive files that quickly eat up your phone's storage. Our premium online TikTok Video Compressor is specifically engineered to solve this problem by shrinking your video's file size without significantly degrading its visual quality, offering a seamless and free solution for users worldwide. If you want to try other features, you can also use our <a href=\"/tiktok-song-finder\">TikTok Song Finder</a> or check out the <a href=\"/tiktok-video-downloader\">TikTok Video Downloader</a> for complete access."
+    "content": "Welcome to SavClip, your ultimate online utility for reducing TikTok video file sizes. If you've ever tried to share a high-definition TikTok video via email or WhatsApp, you know the frustration of encountering 'file too large' errors. High-quality TikTok videos—especially those shot in 1080p or 4K—generate massive files that quickly eat up your phone's storage. Our premium online TikTok Video Compressor is specifically engineered to solve this problem by shrinking your video's file size without significantly degrading its visual quality, offering a seamless and free solution for users worldwide. If you want to try other features, you can also use our <a href=\"/tiktok-song-finder\">TikTok Song Finder</a> or check out the <a href=\"/tiktok-video-downloader\">TikTok Video Saver</a> for complete access."
   },
   {
     "type": "paragraph",
@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Upload or Link Video: Either upload the TikTok video file directly from your device, or paste the TikTok URL if you haven't downloaded it yet.",
       "Compress: Click 'Compress Video'. Our servers will instantly process the video, stripping out unnecessary metadata and optimizing the bitrate.",
-      "Download Optimized File: Once finished, click 'Download' to save the optimized, lightweight MP4 to your device."
+      "Download Optimized File: Once finished, click 'Save' to save the optimized, lightweight MP4 to your device."
     ]
   },
   {

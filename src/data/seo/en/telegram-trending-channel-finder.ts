@@ -60,7 +60,7 @@ export const articleSections = [
 
 export const faqs = [
   {
-    "q": "Can I find private Telegram channels using this tool?",
+    "q": "Can I find public telegram channels using this tool?",
     "a": "No. Our tool only has access to publicly listed Telegram channels and groups. Private or invitation-only communities are not indexed for privacy reasons."
   },
   {

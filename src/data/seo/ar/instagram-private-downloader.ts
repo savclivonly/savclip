@@ -6,7 +6,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "مرحبًا بك في SavClip، الوجهة المثالية لـ world's most trusted and sophisticated destination for saving private إنستغرام content with absolute security and professional quality. We understand that some of the most meaningful media on إنستغرام is shared within private circles. Whether you're looking to save a friend's private Reel, a family member's exclusive photo, or a restricted video post that you have access to, our premium إنستغرام Private Saver is engineered to deliver high-performance, secure results. SavClip provides a streamlined and entirely free solution to save private IG content directly to your device. If you want to try other features, you can also use our <a href=\"/إنستغرام-video-compressor\">إنستغرام Video Compressor</a> or check out the <a href=\"/إنستغرام-carousel-downloader\">إنستغرام Carousel Downloader</a> for complete access."
+    "content": "مرحبًا بك في SavClip، الوجهة المثالية لـ world's most trusted and sophisticated destination for saving private إنستغرام content with absolute security and professional quality. We understand that some of the most meaningful media on إنستغرام is shared within private circles. Whether you're looking to save a friend's private Reel, a family member's exclusive photo, or a restricted video post that you have access to, our premium إنستغرام Private Saver is engineered to deliver high-performance, secure results. SavClip provides a streamlined and entirely free solution to save private IG content directly to your device. If you want to try other features, you can also use our <a href=\"/إنستغرام-video-compressor\">إنستغرام Video Compressor</a> or check out the <a href=\"/إنستغرام-carousel-downloader\">إنستغرام Carousel Saver</a> for complete access."
   },
   {
     "type": "paragraph",
@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Open Private Post: Log into إنستغرام in your browser and open the private video or photo you wish to download.",
       "Get Source Code: Right-click on the page and select 'View Page Source' (or press Ctrl+U / Cmd+Option+U). Copy the entire source code.",
-      "Paste & Download: Visit SavClip's Private Saver, paste the copied source code into the provided box, and click 'Download'. Your media will be extracted instantly."
+      "Paste & Download: Visit SavClip's Private Saver, paste the copied source code into the provided box, and click 'Save'. Your media will be extracted instantly."
     ]
   },
   {

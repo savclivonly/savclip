@@ -6,7 +6,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Welcome to SavClip, the world's leading destination for high-resolution Instagram photo preservation. In an age where visual storytelling defines our social interactions, being able to preserve stunning photography and personal memories is more important than ever. Our premium Instagram Photo Saver is meticulously crafted to fetch the highest quality version of any image on the platform. Whether it's a single high-fashion shot, a breathtaking landscape, or a multi-photo carousel, SavClip provides a seamless, secure, and entirely free way to save Instagram images directly to your device. If you want to try other features, you can also use our <a href=\"/instagram-highlights-downloader\">Instagram Highlights Downloader</a> or check out the <a href=\"/instagram-audio-downloader\">Instagram Audio Downloader</a> for complete access."
+    "content": "Welcome to SavClip, the world's leading destination for high-resolution Instagram photo preservation. In an age where visual storytelling defines our social interactions, being able to preserve stunning photography and personal memories is more important than ever. Our premium Instagram Photo Saver is meticulously crafted to fetch the highest quality version of any image on the platform. Whether it's a single high-fashion shot, a breathtaking landscape, or a multi-photo carousel, SavClip provides a seamless, secure, and entirely free way to save Instagram images directly to your device. If you want to try other features, you can also use our <a href=\"/instagram-highlights-downloader\">Instagram Highlights Saver</a> or check out the <a href=\"/instagram-audio-downloader\">Instagram Audio Extractor</a> for complete access."
   },
   {
     "type": "paragraph",
@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Copy Link: Navigate to the Instagram post you want to save. Click the three dots or the share icon and select 'Copy Link'.",
       "Paste URL: Visit SavClip and paste the photo URL into the input box at the top of the page.",
-      "Download: Click 'Download'. Our tool will instantly fetch the high-resolution image for you to save to your gallery."
+      "Download: Click 'Save'. Our tool will instantly fetch the high-resolution image for you to save to your gallery."
     ]
   },
   {

@@ -29,7 +29,7 @@ const LayoutGridIcon = (props: React.SVGProps<SVGSVGElement>) => (
   </svg>
 )
 
-export function Navbar({ locale, dict }: { locale?: string; dict: any }) {
+function NavbarInner({ locale, dict }: { locale?: string; dict: any }) {
   const [isOpen, setIsOpen] = React.useState(false)
   const [isSettingsExpanded, setIsSettingsExpanded] = React.useState(false)
 
@@ -509,3 +509,5 @@ export function Navbar({ locale, dict }: { locale?: string; dict: any }) {
     </nav>
   )
 }
+
+export const Navbar = React.memo(NavbarInner);

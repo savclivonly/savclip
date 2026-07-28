@@ -179,38 +179,38 @@ function HomeViewContent({ locale, dict }: { locale: Locale; dict: any }) {
               buttonClass="bg-linear-to-br from-pink-600 via-rose-600 to-pink-700 text-white font-bold uppercase tracking-wider shadow-lg transition-all active:translate-y-[2px] active:shadow-none"
               iconClass="text-white"
             />
-            <div className="mt-6 flex flex-row flex-nowrap justify-center gap-3 sm:gap-8 opacity-90">
+            {/* Trust Badges */}
+            <div className="mt-5 flex flex-row flex-nowrap items-center justify-center gap-4 sm:gap-8 w-full overflow-x-auto no-scrollbar opacity-95">
                {[
-                 { label: dict.home?.trust?.watermark || "No Watermark", icon: <Video className="h-3.5 w-3.5 sm:h-4 w-4" /> },
-                 { label: dict.home?.trust?.safe || "Secure", icon: <Lock className="h-3.5 w-3.5 sm:h-4 w-4" /> },
-                 { label: dict.home?.trust?.free || "100% Free", icon: <Globe className="h-3.5 w-3.5 sm:h-4 w-4" /> }
+                 { label: dict.home?.trust?.watermark || "No Watermark", icon: <Video className="h-4 w-4 sm:h-4.5 sm:w-4.5 text-white shrink-0" /> },
+                 { label: dict.home?.trust?.safe || "Secure", icon: <Lock className="h-4 w-4 sm:h-4.5 sm:w-4.5 text-white shrink-0" /> },
+                 { label: dict.home?.trust?.free || "100% Free", icon: <Globe className="h-4 w-4 sm:h-4.5 sm:w-4.5 text-white shrink-0" /> }
                ].map((badge, i) => (
-                 <div key={i} className={`flex items-center gap-1.5 font-bold text-white uppercase tracking-wider sm:tracking-widest hover:scale-105 transition-transform whitespace-nowrap ${locale === 'ar' ? "text-[11px] sm:text-sm" : "text-[8px] sm:text-xs"}`}>
-                    <span className="p-0.5 sm:p-1 bg-white/20 rounded-lg backdrop-blur-md shrink-0">{badge.icon}</span>
-                    <span className="drop-shadow-sm">{badge.label}</span>
+                 <div key={i} className="flex items-center gap-1.5 text-white uppercase font-bold tracking-wider whitespace-nowrap text-xs sm:text-sm drop-shadow-md hover:scale-105 transition-transform cursor-pointer">
+                    <span className="p-1 bg-white/20 rounded-md shrink-0">{badge.icon}</span>
+                    <span className="drop-shadow-md font-bold">{badge.label}</span>
                  </div>
                ))}
             </div>
           </div>
 
-          
-            <div className="mt-3 sm:mt-6 flex flex-col items-center">
-              <div className="flex -space-x-4 mb-4">
-                {[1,2,3,4,5].map((i) => (
-                  <Image 
-                    key={i} 
-                    src={`https://i.pravatar.cc/100?img=${i+10}`} 
-                    alt="User" 
-                    width={48} 
-                    height={48} 
-                    className="w-12 h-12 rounded-full border-2 border-fuchsia-600 shadow-lg object-cover" 
-                  />
-                ))}
-              </div>
-              <p className="text-white font-bold tracking-widest uppercase text-sm drop-shadow-md">
-                {dict.home?.trust?.users || "Trusted by 100,000+ creators worldwide"}
-              </p>
+          <div className="mt-3 sm:mt-6 flex flex-col items-center">
+            <div className="flex -space-x-4 mb-4">
+              {[1,2,3,4,5].map((i) => (
+                <Image 
+                  key={i} 
+                  src={`https://i.pravatar.cc/100?img=${i+10}`} 
+                  alt="User" 
+                  width={48} 
+                  height={48} 
+                  className="w-12 h-12 rounded-full border-2 border-fuchsia-600 shadow-lg object-cover" 
+                />
+              ))}
             </div>
+            <p className="text-white font-bold tracking-widest uppercase text-sm drop-shadow-md">
+              {dict.home?.trust?.users || "Trusted by 100,000+ creators worldwide"}
+            </p>
+          </div>
 
           <DownloadCounter accentColor="text-fuchsia-200" />
 
@@ -227,7 +227,7 @@ function HomeViewContent({ locale, dict }: { locale: Locale; dict: any }) {
           <h2 className="text-2xl md:text-3xl sm:text-4xl font-bold text-neutral-900 dark:text-white uppercase tracking-tight mb-3 text-center leading-tight">
             {translateToolName("Download Videos from Social Media", currentLocale)}
           </h2>
-          <RichArticle sections={introArticle} />
+          <RichArticle sections={introArticle} locale={currentLocale} />
         </div>
       </section>
 

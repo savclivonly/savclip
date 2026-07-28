@@ -10,7 +10,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Our advanced web-based extraction tool ensures that every Telegram GIF download retains its original smoothness and clarity. Whether you are searching for a way to save Telegram GIFs to your gallery, a tool to download custom TG animations, a high-quality Telegram GIF saver, or a reliable TG to MP4 GIF converter online, SavClip delivers an unmatched experience. We provide a clean, high-performance utility that requires zero technical knowledge. Access our site via your mobile browser on iPhone or Android, or manage your GIF library on a desktop PC or Mac. SavClip guarantees a high-speed, secure, and user-friendly experience."
+    "content": "Our advanced web-based extraction tool ensures that every Telegram GIF download retains its original smoothness and clarity. Whether you are searching for a way to save Telegram GIFs to your gallery, a tool to save custom TG animations, a high-quality Telegram GIF saver, or a reliable TG to MP4 GIF converter online, SavClip delivers an unmatched experience. We provide a clean, high-performance utility that requires zero technical knowledge. Access our site via your mobile browser on iPhone or Android, or manage your GIF library on a desktop PC or Mac. SavClip guarantees a high-speed, secure, and user-friendly experience."
   },
   {
     "type": "heading",
@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Copy Telegram GIF Link: Locate the GIF in a public Telegram channel or group. Right-click the animation or tap the share arrow and select 'Copy Link'.",
       "Paste URL: Navigate to SavClip's Telegram GIF Downloader and paste the copied link into the search box at the top of this page.",
-      "Download & Save: Click 'Download'. Our system instantly identifies the media and provides you with a direct link to save the GIF or MP4 file to your device."
+      "Download & Save: Click 'Save'. Our system instantly identifies the media and provides you with a direct link to save the GIF or MP4 file to your device."
     ]
   },
   {
@@ -45,7 +45,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Unlike other platforms that might force you through invasive ads or lower the frame rate of the animation, SavClip provides the pure file instantly. If you've been searching for 'how to save GIFs from Telegram', 'download TG animations as MP4', 'Telegram GIF to gallery', or 'TG GIF downloader for mobile', you have found the definitive solution. Our tool works seamlessly on all devices and browsers, offering the fastest GIF extraction service available."
+    "content": "Unlike other platforms that might force you through invasive ads or lower the frame rate of the animation, SavClip provides the pure file instantly. If you've been searching for 'how to save GIFs from Telegram', 'save TG animations as MP4', 'Telegram GIF to gallery', or 'TG GIF downloader for mobile', you have found the definitive solution. Our tool works seamlessly on all devices and browsers, offering the fastest GIF extraction service available."
   },
   {
     "type": "heading",
@@ -60,7 +60,7 @@ export const articleSections = [
 
 export const faqs = [
   {
-    "q": "Can I download GIFs from private Telegram channels?",
+    "q": "Can I download GIFs from public telegram channels?",
     "a": "No. Our tool can only fetch media from public Telegram channels and groups. We cannot access posts from restricted or private chats."
   },
   {

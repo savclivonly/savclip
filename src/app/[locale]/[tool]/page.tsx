@@ -62,10 +62,28 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
   const title = seoData.meta?.title || `${tool.replace(/-/g, ' ')} HD Downloader - SavClip`;
   const description = seoData.meta?.description || `Download and save content for free. Fast online tool by SavClip.`;
   
+  const isYouTubeOrPrivate = tool.startsWith('youtube-') || 
+                             tool.includes('-private-') || 
+                             tool.includes('-restricted-') ||
+                             tool.includes('anonymous-') ||
+                             tool.includes('-viewer') ||
+                             tool.includes('-profile-viewer');
+
   return { 
     title,
     description,
     alternates: getSeoAlternates(tool, locale),
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
     openGraph: {
       title,
       description,

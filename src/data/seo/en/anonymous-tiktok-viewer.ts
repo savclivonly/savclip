@@ -6,7 +6,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Welcome to SavClip, your premier destination for browsing TikTok content in complete secrecy. TikTok's algorithm and profile view features are designed to connect users, meaning creators are often notified when you view their profile or watch their stories. While this is great for engagement, there are many reasons you might want to view a public profile without leaving a digital footprint, such as competitive research, viewing influencer content, or simply maintaining your personal privacy. Our premium Anonymous TikTok Viewer is specifically engineered to bypass these tracking systems, offering a seamless, secure, and entirely free solution. If you want to try other features, you can also use our <a href=\"/tiktok-private-video-downloader\">TikTok Private Downloader</a> or check out the <a href=\"/tiktok-trending-hashtag-generator\">TikTok Hashtag Generator</a> for complete access."
+    "content": "Welcome to SavClip, your premier destination for browsing TikTok content in complete secrecy. TikTok's algorithm and profile view features are designed to connect users, meaning creators are often notified when you view their profile or watch their stories. While this is great for engagement, there are many reasons you might want to view a public profile without leaving a digital footprint, such as competitive research, viewing influencer content, or simply maintaining your personal privacy. Our premium Anonymous TikTok Viewer is specifically engineered to bypass these tracking systems, offering a seamless, secure, and entirely free solution. If you want to try other features, you can also use our <a href=\"/tiktok-private-video-downloader\">TikTok Private Saver</a> or check out the <a href=\"/tiktok-trending-hashtag-generator\">TikTok Hashtag Generator</a> for complete access."
   },
   {
     "type": "paragraph",
@@ -83,7 +83,7 @@ export const faqs = [
 
 export const meta = {
   "title": "Anonymous TikTok Viewer - Watch Profiles Privately - SavClip",
-  "description": "Watch TikTok videos and profiles anonymously without an account. Stay completely hidden, view stories safely, and bypass privacy restrictions easily."
+  "description": "Watch TikTok videos and profiles anonymously without an account. Stay completely hidden, view stories safely, and view public profiles easily."
 };
 
 export const header = {

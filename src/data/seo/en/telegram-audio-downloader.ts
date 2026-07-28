@@ -10,7 +10,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Our advanced web-based extraction tool ensures that every Telegram audio download retains its original bit-rate and clarity. Whether you are searching for a Telegram to MP3 converter, a tool to download music from TG channels, a high-quality Telegram audio saver, or a reliable TG voice note downloader online, SavClip delivers an unmatched experience. We pride ourselves on providing a clean, high-performance utility that requires zero technical knowledge. Access our site via your mobile browser on iPhone or Android, or manage your audio archive on a desktop PC or Mac. SavClip guarantees a high-speed, secure, and user-friendly experience."
+    "content": "Our advanced web-based extraction tool ensures that every Telegram audio save retains its original bit-rate and clarity. Whether you are searching for a Telegram to MP3 converter, a tool to download music from TG channels, a high-quality Telegram audio saver, or a reliable TG voice note downloader online, SavClip delivers an unmatched experience. We pride ourselves on providing a clean, high-performance utility that requires zero technical knowledge. Access our site via your mobile browser on iPhone or Android, or manage your audio archive on a desktop PC or Mac. SavClip guarantees a high-speed, secure, and user-friendly experience."
   },
   {
     "type": "heading",
@@ -45,7 +45,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Unlike other platforms that might force you through invasive ad walls or compress the audio heavily, SavClip provides the pure audio file instantly. If you've been searching for 'how to download Telegram music', 'convert Telegram video to MP3', 'save TG voice note to gallery', or 'Telegram audio downloader online', you have found the definitive solution. The downloaded MP3 is universally supported and perfect for setting as a ringtone, adding to a playlist, or using in your own video edits."
+    "content": "Unlike other platforms that might force you through invasive ad walls or compress the audio heavily, SavClip provides the pure audio file instantly. If you've been searching for 'how to save Telegram music', 'convert Telegram video to MP3', 'save TG voice note to gallery', or 'Telegram audio downloader online', you have found the definitive solution. The downloaded MP3 is universally supported and perfect for setting as a ringtone, adding to a playlist, or using in your own video edits."
   },
   {
     "type": "heading",
@@ -76,7 +76,7 @@ export const faqs = [
     "a": "Yes, SavClip's Telegram Audio Downloader is 100% free to use with no limits on how many audio files you can extract."
   },
   {
-    "q": "Does this tool work for private Telegram channels?",
+    "q": "Does this tool work for public telegram channels?",
     "a": "No. Our tool can only fetch media from public Telegram channels and groups. We cannot access posts from locked or private accounts."
   }
 ];

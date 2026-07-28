@@ -45,5 +45,11 @@ next-env.d.ts
 used_keys.txt
 debug.txt
 
-# scripts
+# scripts and temporary files
 scripts/__pycache__/
+scratch/
+chrome-profile/
+project_report*
+*.py
+*.html
+step_*.json

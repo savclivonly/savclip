@@ -6,7 +6,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Welcome to SavClip, the ultimate utility for archiving live audio conversations from X. X Spaces (formerly Twitter Spaces) have revolutionized live audio broadcasting, hosting everything from breaking news discussions and celebrity interviews to community hangouts and cryptocurrency AMAs. While hosts have the option to record their Spaces so users can listen to the replay, the platform does not offer a native way to download these recordings for offline listening. Our premium X Space Downloader is specifically engineered to bridge this gap, allowing you to extract and download the full audio recording of any public X Space as an MP3 file. If you want to try other features, you can also use our <a href=\"/x-media-downloader\">X Media Downloader</a> or check out the <a href=\"/x-thread-downloader\">X Thread Downloader</a> for complete access."
+    "content": "Welcome to SavClip, the ultimate utility for archiving live audio conversations from X. X Spaces (formerly Twitter Spaces) have revolutionized live audio broadcasting, hosting everything from breaking news discussions and celebrity interviews to community hangouts and cryptocurrency AMAs. While hosts have the option to record their Spaces so users can listen to the replay, the platform does not offer a native way to backup these recordings for offline listening. Our premium X Space Downloader is specifically engineered to bridge this gap, allowing you to extract and download the full audio recording of any public X Space as an MP3 file. If you want to try other features, you can also use our <a href=\"/x-media-downloader\">X Media Downloader</a> or check out the <a href=\"/x-thread-downloader\">X Thread Downloader</a> for complete access."
   },
   {
     "type": "paragraph",
@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Copy Space Link: Locate the recorded X Space. Tap the 'Share' icon on the Space card and select 'Copy Link'.",
       "Paste URL: Navigate to SavClip's X Space Downloader and paste the copied link into the search box at the top of this page.",
-      "Process & Download: Click 'Extract Audio'. Our system instantly fetches the recorded stream. Click 'Download MP3' to save the high-quality audio file to your device."
+      "Process & Download: Click 'Extract Audio'. Our system instantly fetches the recorded stream. Click 'Save MP3' to save the high-quality audio file to your device."
     ]
   },
   {
@@ -36,7 +36,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "When you use SavClip to download an X Space, you are not getting a muffled screen recording. Our X Space Downloader interacts directly with the API to request the original audio stream. This ensures that the MP3 you download is clear and retains the original quality of the broadcast, making it perfect for listening in the car, at the gym, or archiving for research."
+    "content": "When you use SavClip to save an X Space, you are not getting a muffled screen recording. Our X Space Downloader interacts directly with the API to request the original audio stream. This ensures that the MP3 you download is clear and retains the original quality of the broadcast, making it perfect for listening in the car, at the gym, or archiving for research."
   },
   {
     "type": "heading",

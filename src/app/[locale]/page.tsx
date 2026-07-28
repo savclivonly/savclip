@@ -54,7 +54,6 @@ export default async function HomePage(props: { params: Promise<{ locale: string
 
   return (
     <>
-      <StructuredData locale={locale} type="BreadcrumbList" data={[{ name: translateToolName("Home", locale), item: "https://savclip.com" }]} />
       <StructuredData locale={locale} type="SoftwareApplication" data={{ title: "SavClip Universal Social Media Downloader", description: "Free HD video downloader online without watermark for Instagram, TikTok, YouTube, and Facebook.", ratingValue: "4.9", reviewCount: "25420" }} />
       <StructuredData locale={locale} type="FAQPage" data={{ items: faqList }} />
       <HomeView locale={locale as Locale} dict={dict} />

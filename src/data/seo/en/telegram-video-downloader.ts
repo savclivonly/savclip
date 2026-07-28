@@ -10,7 +10,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Our advanced web-based extraction tool ensures that every Telegram video download retains its original visual fidelity. Whether you're searching for a way to save Telegram movies, a tool to download videos from TG channels, a Telegram to MP4 converter online, or a reliable TG media saver, SavClip delivers an unmatched experience. We pride ourselves on providing a clean, high-performance utility that requires zero technical knowledge. Access our site via your mobile browser on iPhone or Android, or manage your digital movie library on a desktop PC or Mac. SavClip guarantees a high-speed, secure, and user-friendly experience without the need to install suspicious third-party apps."
+    "content": "Our advanced web-based extraction tool ensures that every Telegram video download retains its original visual fidelity. Whether you're searching for a way to save Telegram movies, a tool to save videos from TG channels, a Telegram to MP4 converter online, or a reliable TG media saver, SavClip delivers an unmatched experience. We pride ourselves on providing a clean, high-performance utility that requires zero technical knowledge. Access our site via your mobile browser on iPhone or Android, or manage your digital movie library on a desktop PC or Mac. SavClip guarantees a high-speed, secure, and user-friendly experience without the need to install suspicious third-party apps."
   },
   {
     "type": "heading",
@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Copy Telegram Link: Locate the video in a public Telegram channel or group. Right-click the post or tap the 'Share' arrow and select 'Copy Link'.",
       "Paste URL: Visit SavClip's Telegram Video Downloader and paste the copied link into the search box at the top of this page.",
-      "Download HD Video: Click 'Download'. Our system instantly fetches the media and provides you with a direct link to save the clean HD MP4 file to your device."
+      "Download HD Video: Click 'Save'. Our system instantly fetches the media and provides you with a direct link to save the clean HD MP4 file to your device."
     ]
   },
   {
@@ -45,7 +45,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Unlike other sites that bombard you with invasive ads and pop-ups, SavClip provides a premium, clean experience. If you've been searching for queries like 'how to save videos from Telegram to gallery', 'download Telegram videos on iPhone', 'Telegram movie downloader online', 'save TG videos without app', or 'convert Telegram link to video', you have found the definitive solution. We support all major devices and browsers, offering the fastest Telegram video download service available."
+    "content": "Unlike other sites that bombard you with invasive ads and pop-ups, SavClip provides a premium, clean experience. If you've been searching for queries like 'how to save videos from Telegram to gallery', 'save Telegram videos on iPhone', 'Telegram movie downloader online', 'save TG videos without app', or 'convert Telegram link to video', you have found the definitive solution. We support all major devices and browsers, offering the fastest Telegram video download service available."
   },
   {
     "type": "heading",
@@ -54,7 +54,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Security is our highest priority. To use our Telegram media downloader, we do not require you to create an account, provide an email address, or log into your Telegram profile. The platform is completely anonymous. Furthermore, because it is a 100% web-based tool, you don't have to worry about downloading software that could contain malware or adware."
+    "content": "Security is our highest priority. To use our Telegram media downloader, we do not require you to create an account, provide an email address, or log into your Telegram profile. The platform is completely anonymous. Furthermore, because it is a 100% web-based tool, you don't have to worry about saving software that could contain malware or adware."
   }
 ];
 
@@ -65,15 +65,15 @@ export const faqs = [
   },
   {
     "q": "Is it free to download videos from Telegram?",
-    "a": "Yes, SavClip's Telegram Video Downloader is 100% free to use. You can download unlimited TG videos without any subscription or hidden fees."
+    "a": "Yes, SavClip's Telegram Video Downloader is 100% free to use. You can save unlimited TG videos without any subscription or hidden fees."
   },
   {
-    "q": "Can I download videos from private Telegram channels?",
+    "q": "Can I download videos from public telegram channels?",
     "a": "No. Our tool can only fetch media from public Telegram channels and groups. If a channel is private or restricted, our servers cannot access the video link."
   },
   {
     "q": "How do I save a Telegram video to my iPhone?",
-    "a": "Simply open Safari, paste the Telegram post link into SavClip, tap download, and use the Safari download manager to save the video to your camera roll."
+    "a": "Simply open Safari, paste the Telegram post link into SavClip, tap download, and use the Safari save manager to save the video to your camera roll."
   },
   {
     "q": "Is there a limit to the video file size?",

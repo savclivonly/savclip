@@ -10,7 +10,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Our advanced web-based extraction tool ensures that every Telegram photo download retains its full resolution and vibrant color profile. Whether you are searching for a way to save Telegram profile photos, a tool to download images from TG channels, a high-quality Telegram image saver, or a reliable TG photo downloader online, SavClip delivers an unmatched experience. We provide a clean, high-performance utility that requires zero technical knowledge. Access our site via your mobile browser on iPhone or Android, or manage your design inspiration on a desktop PC or Mac."
+    "content": "Our advanced web-based extraction tool ensures that every Telegram photo save retains its full resolution and vibrant color profile. Whether you are searching for a way to save Telegram profile photos, a tool to download images from TG channels, a high-quality Telegram image saver, or a reliable TG photo downloader online, SavClip delivers an unmatched experience. We provide a clean, high-performance utility that requires zero technical knowledge. Access our site via your mobile browser on iPhone or Android, or manage your design inspiration on a desktop PC or Mac."
   },
   {
     "type": "heading",
@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Copy Telegram Link: Locate the photo in a public Telegram channel or group. Right-click the image post or tap the 'Share' arrow and select 'Copy Link'.",
       "Paste URL: Navigate to SavClip's Telegram Photo Downloader and paste the copied link into the search box at the top of this page.",
-      "Download Full HD Image: Click 'Download'. Our system instantly fetches the original resolution and provides you with a direct link to save the JPEG or PNG file to your device."
+      "Download Full HD Image: Click 'Save'. Our system instantly fetches the original resolution and provides you with a direct link to save the JPEG or PNG file to your device."
     ]
   },
   {
@@ -45,7 +45,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Unlike other platforms that bombard you with invasive advertisements, SavClip provides a premium, clean experience. If you've been searching for queries like 'how to save photos from Telegram to gallery', 'download Telegram images on PC', 'Telegram photo downloader online', 'save TG profile picture', or 'TG to JPEG converter', you have found the definitive solution. We support all major devices and browsers, offering the fastest Telegram photo download service available."
+    "content": "Unlike other platforms that bombard you with invasive advertisements, SavClip provides a premium, clean experience. If you've been searching for queries like 'how to save photos from Telegram to gallery', 'save Telegram images on PC', 'Telegram photo downloader online', 'save TG profile picture', or 'TG to JPEG converter', you have found the definitive solution. We support all major devices and browsers, offering the fastest Telegram photo download service available."
   },
   {
     "type": "heading",
@@ -61,10 +61,10 @@ export const articleSections = [
 export const faqs = [
   {
     "q": "Is it free to download photos from Telegram?",
-    "a": "Yes, SavClip's Telegram Photo Downloader is 100% free to use. You can download unlimited high-resolution photos without any fees or registration."
+    "a": "Yes, SavClip's Telegram Photo Downloader is 100% free to use. You can save unlimited high-resolution photos without any fees or registration."
   },
   {
-    "q": "Can I download photos from private Telegram channels?",
+    "q": "Can I download photos from public telegram channels?",
     "a": "No. Our tool can only fetch media from public Telegram channels and groups. We cannot access posts from restricted or private accounts."
   },
   {
@@ -73,7 +73,7 @@ export const faqs = [
   },
   {
     "q": "How do I save a Telegram photo to my iPhone gallery?",
-    "a": "Open Safari, paste the link into SavClip, tap download, and use the Safari download manager to save the image directly to your Photos app."
+    "a": "Open Safari, paste the link into SavClip, tap download, and use the Safari save manager to save the image directly to your Photos app."
   },
   {
     "q": "Does SavClip store the photos I download?",

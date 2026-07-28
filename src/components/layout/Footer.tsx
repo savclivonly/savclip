@@ -4,6 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Camera, Send, Mail, Globe, ShieldCheck, Zap, HelpCircle, HardDrive, Share2, Apple as AppleIcon, Music, Play, Ghost, Hash, Instagram, Sparkles, ChevronDown, ChevronUp } from "lucide-react"
 import { usePathname } from "next/navigation"
+import * as React from "react"
 import { ReactNode, useState } from "react"
 import { translateToolName } from "@/utils/translate-tool"
 import { cn } from "@/utils/cn"
@@ -11,7 +12,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { RatingWidget } from "@/components/shared/RatingWidget"
 import { TOOL_CONFIGS } from "@/lib/tool-configs"
 
-export function Footer({ locale, dict }: { locale: string, dict: any }) {
+function FooterInner({ locale, dict }: { locale: string, dict: any }) {
   const pathname = usePathname() || "";
   const currentLocale = locale || 'en';
   
@@ -387,48 +388,44 @@ export function Footer({ locale, dict }: { locale: string, dict: any }) {
                   </div>
 
                   {/* Accordion Expandable Part */}
-                  <AnimatePresence initial={false}>
-                    {isExpanded && (
-                      <motion.div
-                        key="content"
-                        initial="collapsed"
-                        animate="open"
-                        exit="collapsed"
-                        variants={{
-                          open: { opacity: 1, height: "auto" },
-                          collapsed: { opacity: 0, height: 0 }
-                        }}
-                        transition={{ duration: 0.4, ease: [0.04, 0.62, 0.23, 0.98] }}
-                        className="overflow-hidden mt-4"
-                      >
-                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-x-8 gap-y-4 border-t border-neutral-100 dark:border-neutral-800/50 pt-4" suppressHydrationWarning={true}>
-                          {platform.tools.slice(3).map((link) => (
-                            <Link 
-                              key={link.href} 
-                              href={getLocalizedHref(link.href)} 
-                              prefetch={true} 
-                              className={cn(
-                                "text-[10px] sm:text-xs font-bold text-neutral-400 transition-colors flex items-center gap-2 group",
-                                platform.key === 'instagram' ? 'hover:text-pink-600' :
-                                platform.key === 'facebook' ? 'hover:text-blue-600' :
-                                platform.key === 'tiktok' ? 'hover:text-neutral-900 dark:hover:text-white' :
-                                platform.key === 'youtube' ? 'hover:text-red-600' :
-                                platform.key === 'snapchat' ? 'hover:text-yellow-600' :
-                                platform.key === 'x' ? 'hover:text-neutral-900 dark:hover:text-white' :
-                                'hover:text-sky-600'
-                              )}
-                            >
-                              <div className={cn(
-                                "w-1.5 h-1.5 rounded-full bg-neutral-200 dark:bg-neutral-800 transition-colors",
-                                platform.dotClass
-                              )} />
-                              {translateToolName(link.name, currentLocale)}
-                            </Link>
-                          ))}
-                        </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
+                  {/* Accordion Expandable Part (rendered unconditionally in DOM for search engines) */}
+                  <motion.div
+                    key="content"
+                    initial="collapsed"
+                    animate={isExpanded ? "open" : "collapsed"}
+                    variants={{
+                      open: { opacity: 1, height: "auto", display: "block" },
+                      collapsed: { opacity: 0, height: 0, transitionEnd: { display: "none" } }
+                    }}
+                    transition={{ duration: 0.4, ease: [0.04, 0.62, 0.23, 0.98] }}
+                    className="overflow-hidden mt-4"
+                  >
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-x-8 gap-y-4 border-t border-neutral-100 dark:border-neutral-800/50 pt-4" suppressHydrationWarning={true}>
+                      {platform.tools.slice(3).map((link) => (
+                        <Link 
+                          key={link.href} 
+                          href={getLocalizedHref(link.href)} 
+                          prefetch={true} 
+                          className={cn(
+                            "text-[10px] sm:text-xs font-bold text-neutral-400 transition-colors flex items-center gap-2 group",
+                            platform.key === 'instagram' ? 'hover:text-pink-600' :
+                            platform.key === 'facebook' ? 'hover:text-blue-600' :
+                            platform.key === 'tiktok' ? 'hover:text-neutral-900 dark:hover:text-white' :
+                            platform.key === 'youtube' ? 'hover:text-red-600' :
+                            platform.key === 'snapchat' ? 'hover:text-yellow-600' :
+                            platform.key === 'x' ? 'hover:text-neutral-900 dark:hover:text-white' :
+                            'hover:text-sky-600'
+                          )}
+                        >
+                          <div className={cn(
+                            "w-1.5 h-1.5 rounded-full bg-neutral-200 dark:bg-neutral-800 transition-colors",
+                            platform.dotClass
+                          )} />
+                          {translateToolName(link.name, currentLocale)}
+                        </Link>
+                      ))}
+                    </div>
+                  </motion.div>
                 </div>
 
                 {/* Show All / Show Less Toggle Button */}
@@ -529,3 +526,5 @@ export function Footer({ locale, dict }: { locale: string, dict: any }) {
     </footer>
   )
 }
+
+export const Footer = React.memo(FooterInner);

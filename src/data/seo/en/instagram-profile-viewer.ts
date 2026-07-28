@@ -6,7 +6,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Welcome to SavClip, the ultimate global destination for viewing Instagram profiles anonymously and downloading profile pictures with professional quality. In the social media era, being able to browse content privately or save high-resolution display pictures (DPs) is a common need. Our premium Instagram Profile Viewer is engineered to provide a seamless, secure, and entirely free way to lookup any public Instagram account without ever needing to log in or notify the user. If you want to try other features, you can also use our <a href=\"/instagram-story-viewer\">Instagram Story Viewer</a> or check out the <a href=\"/instagram-video-downloader\">Instagram Video Downloader</a> for complete access."
+    "content": "Welcome to SavClip, the ultimate global destination for viewing Instagram profiles anonymously and downloading profile pictures with professional quality. In the social media era, being able to browse content privately or save high-resolution display pictures (DPs) is a common need. Our premium Instagram Profile Viewer is engineered to provide a seamless, secure, and entirely free way to lookup any public Instagram account without ever needing to log in or notify the user. If you want to try other features, you can also use our <a href=\"/instagram-story-viewer\">Instagram Story Viewer</a> or check out the <a href=\"/instagram-video-downloader\">Instagram Video Saver</a> for complete access."
   },
   {
     "type": "paragraph",
@@ -36,7 +36,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Tired of small, blurry profile icons? SavClip is a dedicated Instagram DP downloader that fetches the original high-resolution profile picture for any account. We bypass the standard thumbnail compression, giving you access to the Full HD version of any user's display picture. Whether it's for archiving or identification, our tool ensures you get the highest quality Instagram profile picture download results possible."
+    "content": "Tired of small, blurry profile icons? SavClip is a dedicated Instagram DP downloader that fetches the original high-resolution profile picture for any account. We bypass the standard thumbnail compression, giving you access to the Full HD version of any user's display picture. Whether it's for archiving or identification, our tool ensures you get the highest quality Instagram profile picture save results possible."
   },
   {
     "type": "heading",

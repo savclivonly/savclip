@@ -6,11 +6,11 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Welcome to SavClip, the ultimate all-in-one utility for archiving content from X. While the platform (formerly Twitter) allows you to save standard photos to your camera roll, downloading mixed media posts—such as a carousel containing both images and videos—or extracting high-resolution original files can be a frustrating experience. Our premium X Media Downloader is specifically engineered to handle any type of media attached to an X post, allowing you to bulk download Twitter photos, videos, and GIFs with a single click. If you want to try other features, you can also use our <a href=\"/x-thread-downloader\">X Thread Downloader</a> or check out the <a href=\"/x-audio-downloader\">X Audio Downloader</a> for complete access."
+    "content": "Welcome to SavClip, the ultimate all-in-one utility for archiving content from X. While the platform (formerly Twitter) allows you to save standard photos to your camera roll, backuping mixed media posts—such as a carousel containing both images and videos—or extracting high-resolution original files can be a frustrating experience. Our premium X Media Downloader is specifically engineered to handle any type of media attached to an X post, allowing you to bulk download Twitter photos, videos, and GIFs with a single click. If you want to try other features, you can also use our <a href=\"/x-thread-downloader\">X Thread Downloader</a> or check out the <a href=\"/x-audio-downloader\">X Audio Downloader</a> for complete access."
   },
   {
     "type": "paragraph",
-    "content": "Our advanced web-based extraction tool analyzes the structure of the X post and isolates every attached media file. Whether you are searching for a Twitter image downloader, an X media saver, or a tool to download 4K Twitter photos, SavClip delivers an unmatched experience. We fetch the media directly from the source CDN (Content Delivery Network), ensuring that you receive the original, uncompressed quality uploaded by the creator. Access our site via your mobile browser on iPhone or Android, or manage your digital archive on a desktop PC or Mac. SavClip guarantees a high-speed, secure, and user-friendly experience."
+    "content": "Our advanced web-based extraction tool analyzes the structure of the X post and isolates every attached media file. Whether you are searching for a Twitter image downloader, an X media saver, or a tool to save 4K Twitter photos, SavClip delivers an unmatched experience. We fetch the media directly from the source CDN (Content Delivery Network), ensuring that you receive the original, uncompressed quality uploaded by the creator. Access our site via your mobile browser on iPhone or Android, or manage your digital archive on a desktop PC or Mac. SavClip guarantees a high-speed, secure, and user-friendly experience."
   },
   {
     "type": "heading",
@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Copy X Post Link: Locate the post on X containing the media you want to save. Tap the 'Share' icon and select 'Copy Link'.",
       "Paste URL: Navigate to SavClip's X Media Downloader and paste the copied link into the search box at the top of this page.",
-      "Select & Download: Click 'Download'. Our system will display all media items (photos and videos) attached to that post. Choose the ones you want and save them directly to your device."
+      "Select & Download: Click 'Save'. Our system will display all media items (photos and videos) attached to that post. Choose the ones you want and save them directly to your device."
     ]
   },
   {
@@ -36,7 +36,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Often, the Twitter app compresses images to save mobile data, meaning the photo you see on your timeline isn't the highest quality available. Our X Media Downloader bypasses this frontend compression by requesting the ':orig' (original) format from the server. This means you can download 4K Twitter images exactly as the photographer or digital artist intended them to be seen."
+    "content": "Often, the Twitter app compresses images to save mobile data, meaning the photo you see on your timeline isn't the highest quality available. Our X Media Downloader bypasses this frontend compression by requesting the ':orig' (original) format from the server. This means you can save 4K Twitter images exactly as the photographer or digital artist intended them to be seen."
   },
   {
     "type": "heading",
@@ -45,7 +45,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "X allows users to post a mix of photos, videos, and GIFs in a single tweet. Most basic downloaders will only grab the first image and fail to recognize the video. SavClip's advanced algorithm maps out the entire media grid, providing you with individual download links for every piece of content in the post."
+    "content": "X allows users to post a mix of photos, videos, and GIFs in a single tweet. Most basic downloaders will only grab the first image and fail to recognize the video. SavClip's advanced algorithm maps out the entire media grid, providing you with individual save links for every piece of content in the post."
   },
   {
     "type": "heading",
@@ -65,7 +65,7 @@ export const faqs = [
   },
   {
     "q": "Does this tool download videos as well as photos?",
-    "a": "Absolutely. Our X Media Downloader is an all-in-one tool. It detects whether the post contains images, videos, or GIFs, and allows you to download them all."
+    "a": "Absolutely. Our X Media Downloader is an all-in-one tool. It detects whether the post contains images, videos, or GIFs, and allows you to save them all."
   },
   {
     "q": "Will the downloaded photos be in high quality?",
@@ -83,7 +83,7 @@ export const faqs = [
 
 export const meta = {
   "title": "X Media Downloader HD - Save Photos & Videos - SavClip",
-  "description": "Download all images, graphics, and video grids from specific X (Twitter) threads. Bulk fetch and download dynamic media links seamlessly."
+  "description": "Download all images, graphics, and video grids from specific X (Twitter) threads. Bulk fetch and save dynamic media links seamlessly."
 };
 
 export const header = {

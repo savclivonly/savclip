@@ -6,7 +6,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Welcome to SavClip, the ultimate global destination for extracting and downloading YouTube subtitles with professional accuracy and speed. Subtitles and Closed Captions (CC) are invaluable for language learners, researchers, content creators, and the hearing impaired. Whether you need to study a documentary script, translate a viral video, or repurpose content, having a reliable way to save transcripts is essential. Our premium YouTube Subtitle Downloader is specifically engineered to fetch auto-generated and user-uploaded captions from any video, offering a seamless, secure, and entirely free solution. If you want to try other features, you can also use our <a href=\"/youtube-channel-audit-tool\">YouTube Channel Audit</a> or check out the <a href=\"/youtube-tag-generator\">YouTube Tag Generator</a> for complete access."
+    "content": "Welcome to SavClip, the ultimate global destination for extracting and saving YouTube subtitles with professional accuracy and speed. Subtitles and Closed Captions (CC) are invaluable for language learners, researchers, content creators, and the hearing impaired. Whether you need to study a documentary script, translate a viral video, or repurpose content, having a reliable way to save transcripts is essential. Our premium YouTube Subtitle Downloader is specifically engineered to fetch auto-generated and user-uploaded captions from any video, offering a seamless, secure, and entirely free solution. If you want to try other features, you can also use our <a href=\"/youtube-channel-audit-tool\">YouTube Channel Audit</a> or check out the <a href=\"/youtube-tag-generator\">YouTube Tag Generator</a> for complete access."
   },
   {
     "type": "paragraph",
@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Copy Video Link: Navigate to the YouTube video containing the subtitles you want to save and copy its URL from the address bar.",
       "Paste URL: Visit SavClip's YouTube Subtitle Downloader and paste the copied link into the search box at the top of this page.",
-      "Select Language & Download: Our system will list all available subtitle languages and formats. Choose your preferred option and click download."
+      "Select Language & Download: Our system will list all available subtitle languages and formats. Choose your preferred option and click save."
     ]
   },
   {

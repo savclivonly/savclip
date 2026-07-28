@@ -6,7 +6,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Welcome to SavClip, the premier destination for precise online video editing. Often, you don't need an entire hour-long YouTube video—you just need a specific 15-second clip for a meme, a presentation, or to share with friends. Downloading massive files only to edit them later on your computer is inefficient. Our premium online YouTube Video Cutter is engineered to let you select, trim, and download the exact segment of the video you want, offering a seamless, secure, and entirely free solution directly from your browser. If you want to try other features, you can also use our <a href=\"/youtube-comment-picker\">YouTube Comment Picker</a> or check out the <a href=\"/youtube-video-downloader\">YouTube Video Downloader</a> for complete access."
+    "content": "Welcome to SavClip, the premier destination for precise online video editing. Often, you don't need an entire hour-long YouTube video—you just need a specific 15-second clip for a meme, a presentation, or to share with friends. Downloading massive files only to edit them later on your computer is inefficient. Our premium online YouTube Video Cutter is engineered to let you select, trim, and save the exact segment of the video you want, offering a seamless, secure, and entirely free solution directly from your browser. If you want to try other features, you can also use our <a href=\"/youtube-comment-picker\">YouTube Comment Picker</a> or check out the <a href=\"/youtube-video-downloader\">YouTube Video Saver</a> for complete access."
   },
   {
     "type": "paragraph",
@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Copy Video Link: Find the YouTube video you want to clip and copy its URL from the address bar or share menu.",
       "Set Time Range: Paste the link into SavClip. Once loaded, use our intuitive sliders or manually enter the exact Start and End times for your desired clip.",
-      "Trim & Download: Click 'Cut Video'. Our servers will instantly trim the file and provide you with a high-quality download link for just that specific segment."
+      "Trim & Download: Click 'Cut Video'. Our servers will instantly trim the file and provide you with a high-quality save link for just that specific segment."
     ]
   },
   {

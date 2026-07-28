@@ -10,7 +10,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Our advanced web-based extraction tool ensures that every Telegram profile photo download retains its original visual fidelity. Whether you are searching for a Telegram DP viewer, a tool to download avatars from TG channels, a high-quality Telegram profile picture saver, or a reliable TG avatar downloader online, SavClip delivers an unmatched experience. We provide a clean, high-performance utility that requires zero technical knowledge. Access our site via your mobile browser on iPhone or Android, or manage your digital archive on a desktop PC or Mac."
+    "content": "Our advanced web-based extraction tool ensures that every Telegram profile photo save retains its original visual fidelity. Whether you are searching for a Telegram DP viewer, a tool to download avatars from TG channels, a high-quality Telegram profile picture saver, or a reliable TG avatar downloader online, SavClip delivers an unmatched experience. We provide a clean, high-performance utility that requires zero technical knowledge. Access our site via your mobile browser on iPhone or Android, or manage your digital archive on a desktop PC or Mac."
   },
   {
     "type": "heading",
@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Copy Profile Link: Navigate to the Telegram profile whose DP you want to save. Right-click or tap the share arrow and select 'Copy Link', or simply note the @username.",
       "Paste URL or Username: Visit SavClip's Telegram DP Downloader and paste the information into the search box at the top of this page.",
-      "View & Download: Click 'Fetch DP'. Our system instantly displays the full-size profile image. Click 'Download' to save the high-quality JPEG or PNG to your device."
+      "View & Download: Click 'Fetch DP'. Our system instantly displays the full-size profile image. Click 'Save' to save the high-quality JPEG or PNG to your device."
     ]
   },
   {
@@ -36,7 +36,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Unlike basic screen-grabbing methods that result in blurry or pixelated images, our Telegram DP Downloader interacts directly with the backend API to request the original upload. This means you can download profile pictures in full HD quality exactly as they were uploaded by the user or channel. Say goodbye to the frustratingly small circular crops and enjoy the artwork or headshot in its full detail."
+    "content": "Unlike basic screen-grabbing methods that result in blurry or pixelated images, our Telegram DP Downloader interacts directly with the backend API to request the original upload. This means you can save profile pictures in full HD quality exactly as they were uploaded by the user or channel. Say goodbye to the frustratingly small circular crops and enjoy the artwork or headshot in its full detail."
   },
   {
     "type": "heading",
@@ -76,7 +76,7 @@ export const faqs = [
     "a": "Yes, SavClip's Telegram DP extraction tool is 100% free to use with no limits on how many avatars you can view or save."
   },
   {
-    "q": "Does this tool work for private Telegram accounts?",
+    "q": "Does this tool work for public telegram accounts?",
     "a": "No. Our tool only has access to public Telegram profiles. If an account's profile is hidden from the public, we cannot fetch the image."
   }
 ];

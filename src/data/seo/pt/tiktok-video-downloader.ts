@@ -52,7 +52,7 @@ export const faqs = [
   },
   {
     "q": "Consigo salvar vídeos sem marca d'água no iPhone?",
-    "a": "Sim. Abra o Safari no iPhone, acesse o SavClip, cole o link e faça o download. O arquivo será salvo diretamente na pasta de downloads."
+    "a": "Sim. Abra o Safari no iPhone, acesse o SavClip, cole o link e faça o download. O arquivo será salvo diretamente na pasta de saves."
   }
 ];
 

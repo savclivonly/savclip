@@ -6,7 +6,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "En la actualidad, ver videos con excelente calidad offline es fundamental. Nuestro Descargador de Video de Telegram está diseñado para ofrecer un proceso de descarga rápido y estable. Garantizamos la extracción de cada video con la calidad original de imagen y audio directamente desde los servidores de Telegram. Si deseas probar otras funciones, también puedes usar nuestro <a href=\"/telegram-private-video-downloader\">Descargador de Medios</a> o consultar el <a href=\"/telegram-restricted-content-downloader\">Descargador de Contenido Restringido</a> para obtener un acceso completo."
+    "content": "En la actualidad, ver videos con excelente calidad offline es fundamental. Nuestro Descargador de Video de Telegram está diseñado para ofrecer un proceso de descarga rápido y estable. Garantizamos la extracción de cada video con la calidad original de imagen y audio directamente desde los servidores de Telegram. Si deseas probar otras funciones, también puedes usar nuestro <a href=\"/telegram-private-video-downloader\">Descargador de Medios</a> o consultar el <a href=\"/telegram-restricted-content-downloader\">Descargador de contenido público</a> para obtener un acceso completo."
   },
   {
     "type": "heading",

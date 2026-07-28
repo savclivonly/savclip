@@ -6,7 +6,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Welcome to SavClip, the premier destination for saving Instagram Carousels and multi-post content with professional ease and high-definition quality. Instagram carousel posts, allowing up to 10 photos or videos in a single post, are a goldmine of creative storytelling and comprehensive content. However, saving all these assets individually can be a tedious task. Our premium Instagram Carousel Saver is specifically designed to detect and fetch every single item in a multi-media post, ensuring you can save the entire collection with just one click. If you want to try other features, you can also use our <a href=\"/instagram-dp-downloader\">Instagram DP Downloader</a> or check out the <a href=\"/instagram-profile-viewer\">Instagram Profile Viewer</a> for complete access."
+    "content": "Welcome to SavClip, the premier destination for saving Instagram Carousels and multi-post content with professional ease and high-definition quality. Instagram carousel posts, allowing up to 10 photos or videos in a single post, are a goldmine of creative storytelling and comprehensive content. However, saving all these assets individually can be a tedious task. Our premium Instagram Carousel Saver is specifically designed to detect and fetch every single item in a multi-media post, ensuring you can save the entire collection with just one click. If you want to try other features, you can also use our <a href=\"/instagram-dp-downloader\">Instagram DP Saver</a> or check out the <a href=\"/instagram-profile-viewer\">Instagram Profile Viewer</a> for complete access."
   },
   {
     "type": "paragraph",
@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Copy Link: Open Instagram, navigate to the carousel post you wish to save, and tap the 'Copy Link' option from the share menu.",
       "Paste URL: Head over to SavClip and paste the copied link into the primary search bar at the top of this Carousel Downloader page.",
-      "Download All: Press the 'Download' button. Our system will immediately process the post and provide you with high-speed saving options for every photo and video in the carousel."
+      "Download All: Press the 'Save' button. Our system will immediately process the post and provide you with high-speed saving options for every photo and video in the carousel."
     ]
   },
   {

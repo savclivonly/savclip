@@ -5,7 +5,7 @@ import { TOOL_CONFIGS } from "@/lib/tool-configs"
 export const revalidate = 86400 // Cache sitemap for 24 hours
 
 const SITE_URL = "https://savclip.com"
-const LAST_MODIFIED_DATE = new Date("2026-06-15")
+const LAST_MODIFIED_DATE = new Date()
 
 let cachedSitemap: MetadataRoute.Sitemap | null = null
 let lastCacheTime = 0

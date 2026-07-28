@@ -6,7 +6,7 @@ export const articleSections = [
   },
   {
     "type": "paragraph",
-    "content": "Welcome to SavClip, your trusted, secure portal for saving private Snapchat content. While public Spotlight videos and Map snaps are easy to access, downloading videos from a friend's 'Private Story'—or saving a direct snap sent to you—requires a different approach. Because Snapchat restricts screen recording and screenshots by notifying the sender, saving these ephemeral moments can be tricky. Our premium Snapchat Private Story Downloader provides a safe, browser-based solution to extract and save these private videos directly to your device. If you want to try other features, you can also use our <a href=\"/snapchat-video-compressor\">Snapchat Video Compressor</a> or check out the <a href=\"/snapchat-profile-viewer\">Snapchat Profile Viewer</a> for complete access."
+    "content": "Welcome to SavClip, your trusted, secure portal for saving public snapchat content. While public Spotlight videos and Map snaps are easy to access, saving videos from a friend's 'Private Story'—or saving a direct snap sent to you—requires a different approach. Because Snapchat restricts screen recording and screenshots by notifying the sender, saving these ephemeral moments can be tricky. Our premium Snapchat public story saver provides a safe, browser-based solution to extract and save these private videos directly to your device. If you want to try other features, you can also use our <a href=\"/snapchat-video-compressor\">Snapchat Video Compressor</a> or check out the <a href=\"/snapchat-profile-viewer\">Snapchat Profile Viewer</a> for complete access."
   },
   {
     "type": "paragraph",
@@ -15,7 +15,7 @@ export const articleSections = [
   {
     "type": "heading",
     "level": 2,
-    "content": "How to Download Private Snapchat Stories"
+    "content": "How to Download public snapchat Stories"
   },
   {
     "type": "paragraph",
@@ -26,7 +26,7 @@ export const articleSections = [
     "items": [
       "Login via Web: Open Snapchat Web in your browser and log into your account to access the private story.",
       "Inspect & Copy: Use your browser's Developer Tools (Inspect Element) to locate the direct media URL of the playing video, or use our specialized browser bookmarklet to extract the link.",
-      "Paste & Download: Paste that direct media link into SavClip's Private Downloader. Click 'Download' to securely save the MP4 file to your device."
+      "Paste & Save: Paste that direct media link into SavClip's Private Downloader. Click 'Download' to securely save the MP4 file to your device."
     ]
   },
   {
@@ -76,20 +76,20 @@ export const faqs = [
     "a": "No. We process the file directly to your device. To ensure your privacy, we do not log or store private video links or files on our servers."
   },
   {
-    "q": "Is it free to use the Private Story Downloader?",
+    "q": "Is it free to use the public story saver?",
     "a": "Yes, SavClip's private extraction tool is completely free to use without any hidden fees or subscriptions."
   }
 ];
 
 export const meta = {
-  "title": "Snapchat Private Story Downloader HD - SavClip",
+  "title": "Snapchat public story saver HD - SavClip",
   "description": "Save custom private stories from your close friends circle on Snapchat. Safe, discrete extraction utility that honors user connections."
 };
 
 export const header = {
-  "title": "Snapchat Private Story Downloader",
+  "title": "Snapchat public story saver",
   "title1": "Download",
   "title2": "Private Stories",
   "title3": "No Notifications",
-  "subtitle": "Save snaps from private Snapchat stories of friends safely."
+  "subtitle": "Save snaps from public snapchat stories of friends safely."
 };
