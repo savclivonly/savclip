@@ -203,6 +203,7 @@ function SearchBarInner({
                   onClick={handleClear}
                   className="p-1.5 bg-neutral-100 hover:bg-neutral-200 rounded-full text-neutral-500 transition-all flex items-center justify-center shadow-sm"
                   title="Clear"
+                  aria-label="Clear Input"
                 >
                   <X className="h-4 w-4" />
                 </button>
@@ -212,6 +213,7 @@ function SearchBarInner({
                 onClick={handlePaste}
                 className="group flex items-center gap-2 rounded-lg bg-neutral-50 border border-neutral-300 px-3 py-1.5 text-sm font-bold text-neutral-700 shadow-sm transition-all hover:bg-neutral-100 active:scale-95 dark:bg-neutral-800 dark:border-neutral-700 dark:text-white"
                 title={translateToolName("Paste Link", locale)}
+                aria-label={translateToolName("Paste Link", locale)}
               >
                 <Clipboard className="h-4 w-4 text-neutral-600 dark:text-neutral-400" />
                 <span className="font-bold">{translateToolName("Paste", locale)}</span>

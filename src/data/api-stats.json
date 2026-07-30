@@ -1,7 +1,7 @@
 {
-  "totalRequests": 381,
+  "totalRequests": 384,
   "successfulRequests": 237,
-  "failedRequests": 144,
+  "failedRequests": 147,
   "savedRequests": 0,
   "totalVisits": 0,
   "platforms": {
@@ -37,9 +37,9 @@
       }
     },
     "tiktok": {
-      "total": 28,
+      "total": 31,
       "success": 15,
-      "fail": 13,
+      "fail": 16,
       "keys": {
         "9ac29222efmsh81d43b990a8ce7dp17df2jsn6f83cbfb17b7": {
           "name": "API 1",

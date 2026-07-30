@@ -44,9 +44,10 @@ export function PlatformTabs({ items, activeId, activeColor = "text-pink-600", t
               key={item.id}
               href={localizedHref}
               prefetch={true}
+              aria-label={label}
               className={cn(
                 "group relative flex flex-col sm:flex-row items-center justify-center gap-1.5 sm:gap-2 rounded-xl py-2 sm:py-2.5 text-[9px] sm:text-[13px] font-black tracking-tight transition-all duration-300 w-full",
-                isActive ? activeColor : "text-white/60 hover:text-white"
+                isActive ? activeColor : "text-white/90 hover:text-white"
               )}
             >
               <div className={cn("relative z-10 shrink-0 transition-all duration-300", isActive ? "scale-110 rotate-3" : "opacity-70 group-hover:opacity-100 group-hover:scale-105")}>
