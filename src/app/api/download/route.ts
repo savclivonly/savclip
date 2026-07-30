@@ -51,7 +51,7 @@ export async function POST(request: Request) {
     const { url, platform } = await request.json();
 
     if (!url) {
-      return NextResponse.json({ error: "URL is required" }, { status: 400 });
+      return NextResponse.json({ success: false, error: "URL is required" });
     }
 
     if (url.includes("mock") || url.includes("test")) {
@@ -98,8 +98,9 @@ export async function POST(request: Request) {
       result = await twitterHandler(url);
     } else {
       return NextResponse.json({ 
+        success: false,
         error: "Currently only Instagram, Facebook, TikTok, YouTube, Snapchat, Telegram, and X (Twitter) are supported." 
-      }, { status: 400 });
+      });
     }
 
     if (result) {
@@ -110,10 +111,10 @@ export async function POST(request: Request) {
       });
     }
 
-    return NextResponse.json({ error: "Failed to process the requested URL." }, { status: 400 });
+    return NextResponse.json({ success: false, error: "Failed to process the requested URL." });
 
   } catch (error: any) {
-    console.error("API Error:", error);
-    return NextResponse.json({ error: error.message || "Failed to process the request. Please check the URL." }, { status: 400 });
+    console.error("API Error:", error?.message || error);
+    return NextResponse.json({ success: false, error: error.message || "Failed to process the request. Please check the URL." });
   }
 }
