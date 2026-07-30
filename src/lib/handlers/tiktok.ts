@@ -198,11 +198,10 @@ async function fallbackTiktokApi(resolvedUrl: string): Promise<PlatformResult> {
 }
 
 export async function tiktokHandler(url: string): Promise<PlatformResult> {
-  // Resolve short links (vt.tiktok.com, etc.)
   let resolvedUrl = await resolveUrl(url);
+  const originalUrl = url;
   
-  // Clean URL: Remove query params for better API parsing
-  if (resolvedUrl.includes("?")) {
+  if (resolvedUrl.includes("?") && !resolvedUrl.includes("/video/")) {
     resolvedUrl = resolvedUrl.split("?")[0];
   }
 
@@ -214,8 +213,44 @@ export async function tiktokHandler(url: string): Promise<PlatformResult> {
     try {
       return await primaryTiktokApi(resolvedUrl);
     } catch (err2: any) {
-      console.warn(`[API] Primary TikTok API failed: ${err2.message}. Trying Fallback API...`);
-      return await fallbackTiktokApi(resolvedUrl);
+      console.warn(`[API] Primary TikTok API failed: ${err2.message}. Trying RapidAPI Fallback...`);
+      try {
+        return await fallbackTiktokApi(resolvedUrl);
+      } catch (err3: any) {
+        console.warn(`[API] RapidAPI Fallback failed: ${err3.message}. Triggering Cobalt fallback...`);
+        try {
+          return await cobaltTiktokApi(originalUrl);
+        } catch (cobaltErr: any) {
+          throw new Error("Unable to download TikTok video. Please verify the link is valid and from a public video.");
+        }
+      }
     }
   }
+}
+
+async function cobaltTiktokApi(url: string): Promise<PlatformResult> {
+  console.log("[API] Attempting TikTok fallback via Cobalt engine...");
+  const response = await fetch("https://api.cobalt.tools/api/json", {
+    method: "POST",
+    headers: { "Accept": "application/json", "Content-Type": "application/json" },
+    body: JSON.stringify({ url: url, videoQuality: "max" })
+  });
+
+  if (!response.ok) throw new Error("Fallback Cobalt TikTok API failed.");
+  const data = await response.json();
+  if (data.status === "error") throw new Error(data.text || "Cobalt TikTok error.");
+
+  const videoUrl = data.url || data.picker?.[0]?.url;
+  if (!videoUrl) throw new Error("No TikTok video URL found.");
+
+  return {
+    title: "TikTok Video",
+    thumbnail: "https://www.tiktok.com/favicon.ico",
+    medias: [
+      { id: `tt-${Date.now()}`, url: videoUrl, quality: "No Watermark (HD)", type: "video", extension: "mp4" }
+    ],
+    caption: "TikTok Video",
+    likes: 0,
+    commentCount: 0
+  };
 }

@@ -1,14 +1,14 @@
 {
-  "totalRequests": 369,
+  "totalRequests": 381,
   "successfulRequests": 237,
-  "failedRequests": 132,
+  "failedRequests": 144,
   "savedRequests": 0,
   "totalVisits": 0,
   "platforms": {
     "facebook": {
-      "total": 45,
+      "total": 52,
       "success": 34,
-      "fail": 11,
+      "fail": 18,
       "keys": {
         "9ac29222efmsh81d43b990a8ce7dp17df2jsn6f83cbfb17b7": {
           "name": "API 1",
@@ -37,9 +37,9 @@
       }
     },
     "tiktok": {
-      "total": 25,
+      "total": 28,
       "success": 15,
-      "fail": 10,
+      "fail": 13,
       "keys": {
         "9ac29222efmsh81d43b990a8ce7dp17df2jsn6f83cbfb17b7": {
           "name": "API 1",
@@ -56,6 +56,14 @@
           "limit": "unkn",
           "used": 3,
           "lastCheck": "2026-05-17T20:39:22.988Z"
+        },
+        "758fcf1cc5msh22d82fc41a79267p198a7cjsn191acdd3b16d": {
+          "name": "API 1",
+          "status": "active",
+          "remaining": "unkn",
+          "limit": "unkn",
+          "used": 0,
+          "lastCheck": null
         }
       }
     },
@@ -91,9 +99,9 @@
       }
     },
     "instagram": {
-      "total": 105,
+      "total": 107,
       "success": 78,
-      "fail": 27,
+      "fail": 29,
       "keys": {
         "9ac29222efmsh81d43b990a8ce7dp17df2jsn6f83cbfb17b7": {
           "name": "API 1",
