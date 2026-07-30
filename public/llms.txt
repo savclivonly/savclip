@@ -1,0 +1,15 @@
+# SavClip - Free Social Media Video & Media Downloader
+
+> SavClip is a ultra-fast, privacy-first online media extraction platform supporting Instagram, YouTube, TikTok, Facebook, Snapchat, Twitter (X), and Telegram.
+
+## Core Capabilities & Tools
+- [Instagram Video Downloader](https://savclip.com/instagram-video-downloader): Download Instagram Reels, Posts, Stories, and Carousels in 1080p HD.
+- [YouTube Video Downloader](https://savclip.com/youtube-video-downloader): Download YouTube Videos, Shorts, and MP3 audio streams.
+- [TikTok Downloader](https://savclip.com/tiktok-video-downloader): Download TikTok Videos without watermark in HD quality.
+- [Facebook Video Downloader](https://savclip.com/facebook-video-downloader): Save Facebook Public Videos and Reels in HD/SD.
+- [Snapchat Downloader](https://savclip.com/snapchat-video-downloader): Download Snapchat Spotlight videos and Stories.
+- [X / Twitter Downloader](https://savclip.com/x-video-downloader): Download Twitter/X videos, GIFs, and media attachments.
+- [Telegram Downloader](https://savclip.com/telegram-video-downloader): Save media files from public Telegram channels.
+
+## Technical Standards
+Built using Next.js 16 SSG, TypeScript, static route prerendering, and clean JSON-LD structured data schemas for high crawlability and instant user response times.
