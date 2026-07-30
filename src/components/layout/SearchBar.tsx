@@ -180,7 +180,7 @@ function SearchBarInner({
         {/* Animated Hint */}
 
 
-        <form onSubmit={handleSubmit} className="flex w-full flex-col gap-4 sm:flex-row sm:gap-0 relative z-10 transition-transform duration-500 group-focus-within:scale-[1.02] group-focus-within:shadow-2xl rounded-2xl">
+        <form onSubmit={handleSubmit} className="flex w-full flex-col gap-4 sm:flex-row sm:gap-0 relative z-10 transition-transform duration-500 group-focus-within:scale-[1.02] group-focus-within:shadow-2xl rounded-2xl md:hover:shadow-[0_0_30px_rgba(233,17,75,0.35)] md:focus-within:shadow-[0_0_40px_rgba(233,17,75,0.5)] transition-all">
           <div className="relative flex-1 flex items-center overflow-hidden rounded-2xl bg-white shadow-xl sm:rounded-r-none border border-[#e9114b] dark:border-[#e9114b] dark:bg-neutral-900 transition-all">
             <input
               ref={inputRef}

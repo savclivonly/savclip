@@ -239,7 +239,7 @@ function SearchHeaderContent({
               iconClass="text-white"
             />
             {/* Trust Badges */}
-            <div className="mt-5 flex flex-row flex-nowrap items-center justify-center gap-4 sm:gap-8 w-full overflow-x-auto no-scrollbar opacity-95">
+            <div className="mt-5 flex flex-row flex-nowrap items-center justify-center md:justify-between md:px-4 gap-4 sm:gap-8 w-full overflow-x-auto no-scrollbar opacity-95">
                {[
                  { label: "No Watermark", icon: <Video className="h-4 w-4 sm:h-4.5 sm:w-4.5 text-white shrink-0" /> },
                  { label: "Secure", icon: <Lock className="h-4 w-4 sm:h-4.5 sm:w-4.5 text-white shrink-0" /> },

@@ -160,7 +160,7 @@ function HomeViewContent({ locale, dict }: { locale: Locale; dict: any }) {
           
           <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} className="flex flex-col items-center gap-4">
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white text-center tracking-tight leading-tight drop-shadow-lg animate-fade-in-down">
-              {dict.home?.hero?.title_1 || "All-in-One"} <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 via-purple-300 to-cyan-300 drop-shadow-md">{dict.home?.hero?.title_2 || "Social Media"}</span> {dict.home?.hero?.title_3 || "Video Downloader (HD)"}
+              {dict.home?.hero?.title_1 || "All-in-One"} <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 via-purple-300 to-cyan-300 drop-shadow-md">{dict.home?.hero?.title_2 || "Social Media"}</span> {dict.home?.hero?.title_3 || "Video Downloader HD"}
             </h1>
             <p className="text-sm md:text-xl font-medium text-white/90 text-center px-4 max-w-3xl drop-shadow-md">
               {dict.home?.hero?.subtitle || "Download HD videos, Reels, Shorts, and Photos from any social platform. Fast, secure, and completely free—with absolutely no watermarks."}
@@ -180,7 +180,7 @@ function HomeViewContent({ locale, dict }: { locale: Locale; dict: any }) {
               iconClass="text-white"
             />
             {/* Trust Badges */}
-            <div className="mt-5 flex flex-row flex-nowrap items-center justify-center gap-4 sm:gap-8 w-full overflow-x-auto no-scrollbar opacity-95">
+            <div className="mt-5 flex flex-row flex-nowrap items-center justify-center md:justify-between md:px-4 gap-4 sm:gap-8 w-full overflow-x-auto no-scrollbar opacity-95">
                {[
                  { label: dict.home?.trust?.watermark || "No Watermark", icon: <Video className="h-4 w-4 sm:h-4.5 sm:w-4.5 text-white shrink-0" /> },
                  { label: dict.home?.trust?.safe || "Secure", icon: <Lock className="h-4 w-4 sm:h-4.5 sm:w-4.5 text-white shrink-0" /> },

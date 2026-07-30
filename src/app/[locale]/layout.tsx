@@ -9,9 +9,12 @@ export function generateStaticParams() {
   ];
 }
 import type { Metadata } from "next";
-import { Inter, Cairo, Tajawal } from "next/font/google";
 import "../globals.css";
 import { ThemeProvider } from "@/components/shared/ThemeProvider";
+
+const inter = { variable: "--font-inter" };
+const cairo = { variable: "--font-cairo" };
+const tajawal = { variable: "--font-tajawal" };
 import { Toaster } from "react-hot-toast";
 import { getDictionary, isRTL, locales } from "@/i18n";
 
@@ -98,25 +101,6 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
   };
 }
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
-const cairo = Cairo({
-  subsets: ["arabic"],
-  variable: "--font-cairo",
-  display: "swap",
-});
-
-const tajawal = Tajawal({
-  subsets: ["arabic"],
-  weight: ["200", "300", "400", "500", "700", "800", "900"],
-  variable: "--font-tajawal",
-  display: "swap",
-});
-
 export const viewport: Viewport = {
   themeColor: "#ec4899",
   width: "device-width",
@@ -128,8 +112,7 @@ export default async function RootLayout(props: { children: React.ReactNode; par
   const direction = isRTL(locale) ? 'rtl' : 'ltr';
   const fullDict = await getDictionary(locale);
   
-  // Create a truly minimal dictionary for the layout (Navbar/Footer)
-  // This avoids serializing the massive seo_pages object
+  // Create a minimal dictionary for the layout (Navbar/Footer)
   const layoutDict = {
     categories: fullDict?.categories,
     navbar: fullDict?.navbar,
@@ -143,13 +126,11 @@ export default async function RootLayout(props: { children: React.ReactNode; par
       title: fullDict?.faq?.title,
       items: (fullDict?.faq?.items || []).slice(0, 3)
     },
-    // Only include necessary platform titles and sub-tool titles for Navbar dropdowns
     platforms: Object.keys(fullDict?.platforms || {}).reduce((acc: any, key) => {
       if (key !== 'seo_pages') {
         const platform = fullDict.platforms[key];
         acc[key] = {
           title: platform?.title,
-          // Map sub-tools (like reels, story, music) to include their titles for Navbar
           ...Object.keys(platform || {}).reduce((pAcc: any, pKey) => {
             if (platform[pKey] && typeof platform[pKey] === 'object' && platform[pKey].title) {
               pAcc[pKey] = { title: platform[pKey].title };
@@ -165,17 +146,6 @@ export default async function RootLayout(props: { children: React.ReactNode; par
   return (
     <html lang={locale} dir={direction} suppressHydrationWarning className="scroll-smooth" data-scroll-behavior="smooth">
       <head>
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="512x512" href="/icon.png" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-
-        
-        
-        
-        
-        
-        
-        
         <Script
           id="service-worker-registration"
           strategy="afterInteractive"

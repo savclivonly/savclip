@@ -30,8 +30,7 @@ export function proxy(request: NextRequest) {
       url.searchParams.set(key, val)
     })
     
-    const response = NextResponse.redirect(url, 301)
-    return response
+    return NextResponse.redirect(url, 301)
   }
 
   // 2. Check if the pathname starts with another supported locale (e.g. /es, /pt)
@@ -40,7 +39,6 @@ export function proxy(request: NextRequest) {
   )
 
   if (matchedLocale) {
-    // Let Next.js dynamic routing handle this path directly under [locale]/...
     return NextResponse.next()
   }
 
@@ -53,12 +51,10 @@ export function proxy(request: NextRequest) {
   return NextResponse.rewrite(url)
 }
 
-// Alias for compatibility
-export const middleware = proxy;
-
 export const config = {
   matcher: [
-    // Match all paths except static files, api, etc.
     '/((?!_next/static|_next/image|favicon.ico|manifest.json|sw.js|sitemap.xml|robots.txt|assets|images).*)',
   ],
 }
+
+export default proxy;

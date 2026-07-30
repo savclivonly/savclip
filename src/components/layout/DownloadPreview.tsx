@@ -10,11 +10,6 @@ import { requestNotificationPermission, sendDownloadCompleteNotification } from 
 import { toast } from "react-hot-toast"
 import { DownloadProgress } from "@/components/ui/DownloadProgress"
 import { downloadFile } from "@/utils/client-download"
-import confetti from 'canvas-confetti'
-import JSZip from 'jszip'
-
-
-
 
 const MOCK_COMMENTS = [
   { username: "@alex_smith_22", text: "Truly incredible content! 🔥", mention: "" },
@@ -223,39 +218,36 @@ export function DownloadPreview({
   // Confetti effect on success
   React.useEffect(() => {
     if (showSuccess) {
+      let interval: any;
       const duration = 3 * 1000;
       const animationEnd = Date.now() + duration;
-      const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 150 }; // Above modal
-
+      const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 150 };
       const randomInRange = (min: number, max: number) => Math.random() * (max - min) + min;
 
-      const interval: any = setInterval(function() {
-        const timeLeft = animationEnd - Date.now();
+      import('canvas-confetti').then((confettiModule) => {
+        const confetti = confettiModule.default;
+        interval = setInterval(function() {
+          const timeLeft = animationEnd - Date.now();
+          if (timeLeft <= 0) {
+            return clearInterval(interval);
+          }
+          const particleCount = 40 * (timeLeft / duration);
+          confetti({ 
+            ...defaults, 
+            particleCount, 
+            origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 }, 
+            colors: ['#2563eb', '#c026d3', '#db2777', '#06b6d4'] 
+          });
+          confetti({ 
+            ...defaults, 
+            particleCount, 
+            origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 }, 
+            colors: ['#2563eb', '#c026d3', '#db2777', '#06b6d4'] 
+          });
+        }, 250);
+      });
 
-        if (timeLeft <= 0) {
-          return clearInterval(interval);
-        }
-
-        const particleCount = 40 * (timeLeft / duration);
-        
-        // Launch from left
-        confetti({ 
-          ...defaults, 
-          particleCount, 
-          origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 }, 
-          colors: ['#2563eb', '#c026d3', '#db2777', '#06b6d4'] 
-        });
-        
-        // Launch from right
-        confetti({ 
-          ...defaults, 
-          particleCount, 
-          origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 }, 
-          colors: ['#2563eb', '#c026d3', '#db2777', '#06b6d4'] 
-        });
-      }, 250);
-
-      return () => clearInterval(interval);
+      return () => { if (interval) clearInterval(interval); };
     }
   }, [showSuccess]);
 
@@ -267,6 +259,8 @@ export function DownloadPreview({
     setDownloadStatus("Preparing ZIP package...");
 
     try {
+      const JSZipModule = await import('jszip');
+      const JSZip = JSZipModule.default;
       const zip = new JSZip();
       const folder = zip.folder("SavClip_Batch");
 

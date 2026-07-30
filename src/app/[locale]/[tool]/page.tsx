@@ -70,6 +70,7 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
                              tool.includes('-profile-viewer');
 
   return { 
+    metadataBase: new URL("https://savclip.com"),
     title,
     description,
     alternates: getSeoAlternates(tool, locale),

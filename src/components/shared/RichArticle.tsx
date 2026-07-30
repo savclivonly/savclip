@@ -134,10 +134,10 @@ export function RichArticle({ sections, accentColor = "text-pink-600", boilerpla
                        idx === 0 ? "md:pt-8" : ""
                      } mb-1`}
                    >
-                     <span className={`block ${h2SizeClass || "text-xl sm:text-3xl md:text-4xl"} uppercase tracking-tight mb-1`}>
+                     <span className={`block md:inline ${h2SizeClass || "text-xl sm:text-2xl md:text-3xl lg:text-[2.1rem] xl:text-[2.5rem]"} uppercase tracking-tight mb-1 md:mb-0 mr-0 md:mr-2`}>
                        {line1}
                      </span>
-                     <span className={`block ${h2SizeClass || "text-xl sm:text-3xl md:text-4xl"} uppercase tracking-tight`}>
+                     <span className={`block md:inline ${h2SizeClass || "text-xl sm:text-2xl md:text-3xl lg:text-[2.1rem] xl:text-[2.5rem]"} uppercase tracking-tight`}>
                        {line2}
                      </span>
                    </HeadingTag>
@@ -147,7 +147,7 @@ export function RichArticle({ sections, accentColor = "text-pink-600", boilerpla
                       idx === 0 ? "md:pt-8" : ""
                     } ${
                       section.level === 2
-                        ? `${h2SizeClass || "text-2xl sm:text-3xl md:text-4xl"} uppercase tracking-tight mb-1`
+                        ? `${h2SizeClass || "text-xl sm:text-2xl md:text-3xl lg:text-[2.1rem] xl:text-[2.5rem]"} uppercase tracking-tight mb-1`
                         : "text-lg md:text-xl tracking-normal mt-4"
                     }`}
                   >
@@ -159,14 +159,48 @@ export function RichArticle({ sections, accentColor = "text-pink-600", boilerpla
 
           case "paragraph":
             return (
-              <p
-                key={idx}
-                className={cn(
-                  "text-lg leading-relaxed text-neutral-600 dark:text-neutral-400 font-medium opacity-90 text-justify md:text-start hyphens-auto",
-                  idx === 1 && sections[0].type === 'heading' ? "-mt-6 md:mt-0" : ""
+              <React.Fragment key={idx}>
+                {idx === 1 && sections[0].type === 'heading' && (
+                  <div className="hidden md:grid grid-cols-3 gap-5 my-2">
+                    <div className="flex items-center gap-3.5 p-4 rounded-2xl bg-white/80 dark:bg-neutral-900/70 border border-neutral-200/80 dark:border-neutral-800 shadow-sm backdrop-blur-md hover:border-pink-500/40 hover:shadow-md transition-all">
+                      <div className="p-2.5 rounded-xl bg-pink-500/10 text-pink-500 shrink-0">
+                        <Zap className="h-5 w-5" />
+                      </div>
+                      <div>
+                        <h4 className="text-xs font-black uppercase text-neutral-900 dark:text-white tracking-wider">Fast Speed</h4>
+                        <p className="text-xs text-neutral-500 dark:text-neutral-400 font-medium">Instant HD downloads</p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center gap-3.5 p-4 rounded-2xl bg-white/80 dark:bg-neutral-900/70 border border-neutral-200/80 dark:border-neutral-800 shadow-sm backdrop-blur-md hover:border-cyan-500/40 hover:shadow-md transition-all">
+                      <div className="p-2.5 rounded-xl bg-cyan-500/10 text-cyan-500 shrink-0">
+                        <Shield className="h-5 w-5" />
+                      </div>
+                      <div>
+                        <h4 className="text-xs font-black uppercase text-neutral-900 dark:text-white tracking-wider">100% Safe</h4>
+                        <p className="text-xs text-neutral-500 dark:text-neutral-400 font-medium">No login required</p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center gap-3.5 p-4 rounded-2xl bg-white/80 dark:bg-neutral-900/70 border border-neutral-200/80 dark:border-neutral-800 shadow-sm backdrop-blur-md hover:border-emerald-500/40 hover:shadow-md transition-all">
+                      <div className="p-2.5 rounded-xl bg-emerald-500/10 text-emerald-500 shrink-0">
+                        <Info className="h-5 w-5" />
+                      </div>
+                      <div>
+                        <h4 className="text-xs font-black uppercase text-neutral-900 dark:text-white tracking-wider">Original Quality</h4>
+                        <p className="text-xs text-neutral-500 dark:text-neutral-400 font-medium">No watermarks</p>
+                      </div>
+                    </div>
+                  </div>
                 )}
-                dangerouslySetInnerHTML={{ __html: localizeHtmlLinks(section.content || "", locale) }}
-              />
+                <p
+                  className={cn(
+                    "text-lg leading-relaxed text-neutral-600 dark:text-neutral-400 font-medium opacity-90 text-justify md:text-start hyphens-auto",
+                    idx === 1 && sections[0].type === 'heading' ? "-mt-6 md:mt-2" : ""
+                  )}
+                  dangerouslySetInnerHTML={{ __html: localizeHtmlLinks(section.content || "", locale) }}
+                />
+              </React.Fragment>
             )
 
           case "list":

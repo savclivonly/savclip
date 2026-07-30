@@ -56,7 +56,7 @@ export function PlatformTabs({ items, activeId, activeColor = "text-pink-600", t
               {isActive && (
                 <motion.div
                   layoutId="activeTabIndicator"
-                  className={cn("absolute inset-0 rounded-xl shadow-[0_4px_20px_rgba(255,255,255,0.4)]", indicatorColor)}
+                  className={cn("absolute inset-0 rounded-xl shadow-[0_4px_20px_rgba(255,255,255,0.4)] md:shadow-[0_4px_25px_rgba(255,255,255,0.6)] md:ring-1 md:ring-white/40", indicatorColor)}
                   transition={{ type: "spring", bounce: 0.25, duration: 0.6 }}
                 />
               )}
