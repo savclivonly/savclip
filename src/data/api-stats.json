@@ -1,14 +1,14 @@
 {
-  "totalRequests": 364,
+  "totalRequests": 369,
   "successfulRequests": 237,
-  "failedRequests": 127,
+  "failedRequests": 132,
   "savedRequests": 0,
   "totalVisits": 0,
   "platforms": {
     "facebook": {
-      "total": 44,
+      "total": 45,
       "success": 34,
-      "fail": 10,
+      "fail": 11,
       "keys": {
         "9ac29222efmsh81d43b990a8ce7dp17df2jsn6f83cbfb17b7": {
           "name": "API 1",
@@ -60,9 +60,9 @@
       }
     },
     "youtube": {
-      "total": 163,
+      "total": 167,
       "success": 84,
-      "fail": 79,
+      "fail": 83,
       "keys": {
         "9ac29222efmsh81d43b990a8ce7dp17df2jsn6f83cbfb17b7": {
           "name": "API 1",

@@ -367,7 +367,39 @@ export async function youtubeHandler(url: string): Promise<PlatformResult> {
     }
     throw new Error("All format APIs returned no usable formats.");
   } catch (err: any) {
-    throw err;
+    console.warn(`[API] RapidAPI YouTube failed: ${err.message}. Triggering Cobalt fallback...`);
+    try {
+      return await fallbackYoutubeApi(finalUrl);
+    } catch (fallbackErr: any) {
+      throw new Error("Unable to download YouTube video. Please check the video URL.");
+    }
   }
+}
+
+async function fallbackYoutubeApi(url: string): Promise<PlatformResult> {
+  console.log("[API] Attempting YouTube fallback via Cobalt engine...");
+  const response = await fetch("https://api.cobalt.tools/api/json", {
+    method: "POST",
+    headers: { "Accept": "application/json", "Content-Type": "application/json" },
+    body: JSON.stringify({ url: url, videoQuality: "max" })
+  });
+  if (!response.ok) throw new Error("Fallback Cobalt YT API failed.");
+  const data = await response.json();
+  if (data.status === "error") throw new Error(data.text || "Cobalt YT error.");
+
+  const videoUrl = data.url || data.picker?.[0]?.url;
+  if (!videoUrl) throw new Error("No YouTube video URL found.");
+
+  return {
+    title: "YouTube Video",
+    thumbnail: "https://www.youtube.com/s/desktop/f5af2e17/img/favicon.ico",
+    medias: [
+      { id: `yt-${Date.now()}-1080`, url: videoUrl, quality: "1080p (HD)", type: "video", extension: "mp4" },
+      { id: `yt-${Date.now()}-720`, url: videoUrl, quality: "720p", type: "video", extension: "mp4" }
+    ],
+    caption: "YouTube Video",
+    likes: 0,
+    commentCount: 0
+  };
 }
 

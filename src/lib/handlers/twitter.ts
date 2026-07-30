@@ -225,8 +225,36 @@ export async function twitterHandler(url: string): Promise<PlatformResult> {
     lastError = err;
   }
 
-  throw new Error(
-    lastError?.message || 
-    "Failed to fetch tweet details. Please verify the URL is public and correct."
-  );
+  try {
+    return await fallbackTwitterApi(url);
+  } catch (fallbackErr: any) {
+    throw new Error(
+      lastError?.message || 
+      "Failed to fetch tweet details. Please verify the URL is public and correct."
+    );
+  }
+}
+
+async function fallbackTwitterApi(url: string): Promise<PlatformResult> {
+  console.log("[API] Attempting Twitter fallback via Cobalt engine...");
+  const response = await fetch("https://api.cobalt.tools/api/json", {
+    method: "POST",
+    headers: { "Accept": "application/json", "Content-Type": "application/json" },
+    body: JSON.stringify({ url: url, videoQuality: "max" })
+  });
+  if (!response.ok) throw new Error("Fallback Cobalt Twitter API failed.");
+  const data = await response.json();
+  if (data.status === "error") throw new Error(data.text || "Cobalt Twitter error.");
+
+  const videoUrl = data.url || data.picker?.[0]?.url;
+  if (!videoUrl) throw new Error("No Twitter video URL found.");
+
+  return {
+    title: "X (Twitter) Video",
+    thumbnail: "https://abs.twimg.com/favicons/twitter.3.ico",
+    medias: [{ id: `x-${Date.now()}`, url: videoUrl, quality: "High Quality (HD)", type: "video", extension: "mp4" }],
+    caption: "X Video",
+    likes: 0,
+    commentCount: 0
+  };
 }
