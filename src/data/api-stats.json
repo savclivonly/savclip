@@ -1,7 +1,7 @@
 {
-  "totalRequests": 362,
+  "totalRequests": 364,
   "successfulRequests": 237,
-  "failedRequests": 125,
+  "failedRequests": 127,
   "savedRequests": 0,
   "totalVisits": 0,
   "platforms": {
@@ -91,9 +91,9 @@
       }
     },
     "instagram": {
-      "total": 103,
+      "total": 105,
       "success": 78,
-      "fail": 25,
+      "fail": 27,
       "keys": {
         "9ac29222efmsh81d43b990a8ce7dp17df2jsn6f83cbfb17b7": {
           "name": "API 1",
