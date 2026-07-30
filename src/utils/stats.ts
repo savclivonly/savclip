@@ -192,8 +192,10 @@ class StatsManager {
         fs.mkdirSync(dir, { recursive: true });
       }
       fs.writeFileSync(STATS_FILE_PATH, JSON.stringify(this.stats, null, 2), 'utf-8');
-    } catch (error) {
-      console.error("Error saving stats:", error);
+    } catch (error: any) {
+      if (error?.code !== 'EROFS') {
+        console.error("Error saving stats:", error);
+      }
     }
   }
 

@@ -44,7 +44,8 @@ export async function GET(request: Request) {
     });
 
     if (!response.ok && response.status !== 206) {
-      throw new Error(`Upstream Error ${response.status}`);
+      console.warn(`[Proxy] Upstream status ${response.status}. Redirecting directly to media URL...`);
+      return NextResponse.redirect(fileUrl, 302);
     }
 
     // Force essential headers for video streaming
