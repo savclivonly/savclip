@@ -137,7 +137,7 @@ function NavbarInner({ locale, dict }: { locale?: string; dict: any }) {
               <div className="relative h-8 w-8 sm:h-10 sm:w-10 flex items-center justify-center overflow-hidden rounded-xl shadow-xl group-hover:scale-110 transition-transform bg-white dark:bg-white/10 dark:backdrop-blur-md dark:border dark:border-white/20">
                 <div className="absolute inset-0 bg-blue-500/10 blur-xl opacity-0 dark:opacity-100" />
                 <Image 
-                  src="/assets/logo.png" 
+                  src="/icon.png" 
                   alt="SavClip Logo - All-in-One Social Media Downloader" 
                   width={40} 
                   height={40} 

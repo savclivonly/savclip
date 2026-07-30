@@ -232,7 +232,7 @@ function FooterInner({ locale, dict }: { locale: string, dict: any }) {
             <Link href={getLocalizedHref("/")} className="flex items-center gap-3 group">
               <div className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl bg-white dark:bg-white/10 dark:backdrop-blur-md dark:border dark:border-white/20 shadow-xl group-hover:scale-110 transition-transform">
                 <Image 
-                  src="/assets/logo.png" 
+                  src="/icon.png" 
                   alt="SavClip Logo - Free Video Downloader Online" 
                   width={32} 
                   height={32} 
